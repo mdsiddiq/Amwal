@@ -1,0 +1,829 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xmlns="http://www.mulesource.org/schema/mule/core/2.2"
+      xmlns:vm="http://www.mulesource.org/schema/mule/vm/2.2"
+      xmlns:xm="http://www.mulesource.org/schema/mule/xml/2.2"
+      xmlns:cxf="http://www.mulesource.org/schema/mule/cxf/2.2"
+      xmlns:http="http://www.mulesource.org/schema/mule/http/2.2"
+      xmlns:cxf-core="http://cxf.apache.org/core"
+      xmlns:spring="http://www.springframework.org/schema/beans"
+      xmlns:stdio="http://www.mulesource.org/schema/mule/stdio/2.2"
+      xmlns:servlet="http://www.mulesource.org/schema/mule/servlet/2.2"
+      xsi:schemaLocation="
+               http://www.mulesource.org/schema/mule/core/2.2 http://www.mulesource.org/schema/mule/core/2.2/mule.xsd
+               http://www.mulesource.org/schema/mule/vm/2.2 http://www.mulesource.org/schema/mule/vm/2.2/mule-vm.xsd
+               http://www.mulesource.org/schema/mule/xml/2.2 http://www.mulesource.org/schema/mule/xml/2.2/mule-xml.xsd
+               http://www.mulesource.org/schema/mule/cxf/2.2 http://www.mulesource.org/schema/mule/cxf/2.2/mule-cxf.xsd
+               http://www.mulesource.org/schema/mule/http/2.2 http://www.mulesource.org/schema/mule/http/2.2/mule-http.xsd
+               http://cxf.apache.org/core http://cxf.apache.org/schemas/core.xsd
+               http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+               http://www.mulesource.org/schema/mule/stdio/2.2 http://www.mulesource.org/schema/mule/stdio/2.2/mule-stdio.xsd
+               http://www.mulesource.org/schema/mule/servlet/2.2 http://www.mulesource.org/schema/mule/servlet/2.2/mule-servlet.xsd">
+
+    <description>JAllInOne web services over CXF.</description>
+    <spring:beans>
+        <spring:import resource="classpath:conf/applicationContext.xml"/>
+    </spring:beans>
+
+    <model name="JAllInOne">
+          <service name="ContactService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/Contact" /></inbound>
+               <pooled-component><spring-object bean="ContactBean" ></spring-object></pooled-component>
+          </service>
+          <service name="ContactsService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/Contacts" /></inbound>
+               <pooled-component><spring-object bean="ContactsBean" ></spring-object></pooled-component>
+          </service>
+          <service name="LoadDocumentLinksService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/LoadDocumentLinks" /></inbound>
+               <pooled-component><spring-object bean="LoadDocumentLinksBean" ></spring-object></pooled-component>
+          </service>
+          <service name="InsertDocumentLinkService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/InsertDocumentLink" /></inbound>
+               <pooled-component><spring-object bean="InsertDocumentLinkBean" ></spring-object></pooled-component>
+          </service>
+          <service name="DocumentsService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/Documents" /></inbound>
+               <pooled-component><spring-object bean="DocumentsBean" ></spring-object></pooled-component>
+          </service>
+          <service name="DocumentTypesService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/DocumentTypes" /></inbound>
+               <pooled-component><spring-object bean="DocumentTypesBean" ></spring-object></pooled-component>
+          </service>
+          <service name="InsertEmployeeCalendarsService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/InsertEmployeeCalendars" /></inbound>
+               <pooled-component><spring-object bean="InsertEmployeeCalendarsBean" ></spring-object></pooled-component>
+          </service>
+          <service name="EmployeesService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/Employees" /></inbound>
+               <pooled-component><spring-object bean="EmployeesBean" ></spring-object></pooled-component>
+          </service>
+          <service name="LoadExpirationsService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/LoadExpirations" /></inbound>
+               <pooled-component><spring-object bean="LoadExpirationsBean" ></spring-object></pooled-component>
+          </service>
+          <service name="UpdateExpirationsService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/UpdateExpirations" /></inbound>
+               <pooled-component><spring-object bean="UpdateExpirationsBean" ></spring-object></pooled-component>
+          </service>
+          <service name="HierarchiesService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/Hierarchies" /></inbound>
+               <pooled-component><spring-object bean="HierarchiesBean" ></spring-object></pooled-component>
+          </service>
+          <service name="CompanyHierarchiesService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/CompanyHierarchies" /></inbound>
+               <pooled-component><spring-object bean="CompanyHierarchiesBean" ></spring-object></pooled-component>
+          </service>
+          <service name="CreateBarcodeLabelsDataService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/CreateBarcodeLabelsData" /></inbound>
+               <pooled-component><spring-object bean="CreateBarcodeLabelsDataBean" ></spring-object></pooled-component>
+          </service>
+          <service name="DeleteBarcodeLabelsDataService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/DeleteBarcodeLabelsData" /></inbound>
+               <pooled-component><spring-object bean="DeleteBarcodeLabelsDataBean" ></spring-object></pooled-component>
+          </service>
+          <service name="DeleteItemAttachedDocsService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/DeleteItemAttachedDocs" /></inbound>
+               <pooled-component><spring-object bean="DeleteItemAttachedDocsBean" ></spring-object></pooled-component>
+          </service>
+          <service name="DeleteItemsService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/DeleteItems" /></inbound>
+               <pooled-component><spring-object bean="DeleteItemsBean" ></spring-object></pooled-component>
+          </service>
+          <service name="DeleteItemTypeService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/DeleteItemType" /></inbound>
+               <pooled-component><spring-object bean="DeleteItemTypeBean" ></spring-object></pooled-component>
+          </service>
+          <service name="InsertItemService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/InsertItem" /></inbound>
+               <pooled-component><spring-object bean="InsertItemBean" ></spring-object></pooled-component>
+          </service>
+          <service name="InsertItemAttachedDocsService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/InsertItemAttachedDocs" /></inbound>
+               <pooled-component><spring-object bean="InsertItemAttachedDocsBean" ></spring-object></pooled-component>
+          </service>
+          <service name="InsertItemTypeService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/InsertItemType" /></inbound>
+               <pooled-component><spring-object bean="InsertItemTypeBean" ></spring-object></pooled-component>
+          </service>
+          <service name="LoadItemService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/LoadItem" /></inbound>
+               <pooled-component><spring-object bean="LoadItemBean" ></spring-object></pooled-component>
+          </service>
+          <service name="LoadItemAttachedDocsService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/LoadItemAttachedDocs" /></inbound>
+               <pooled-component><spring-object bean="LoadItemAttachedDocsBean" ></spring-object></pooled-component>
+          </service>
+          <service name="LoadItemsService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/LoadItems" /></inbound>
+               <pooled-component><spring-object bean="LoadItemsBean" ></spring-object></pooled-component>
+          </service>
+          <service name="LoadItemTypesService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/LoadItemTypes" /></inbound>
+               <pooled-component><spring-object bean="LoadItemTypesBean" ></spring-object></pooled-component>
+          </service>
+          <service name="LoadItemVariantsService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/LoadItemVariants" /></inbound>
+               <pooled-component><spring-object bean="LoadItemVariantsBean" ></spring-object></pooled-component>
+          </service>
+          <service name="LoadVariantBarcodesService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/LoadVariantBarcodes" /></inbound>
+               <pooled-component><spring-object bean="LoadVariantBarcodesBean" ></spring-object></pooled-component>
+          </service>
+          <service name="LoadVariantMinStocksService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/LoadVariantMinStocks" /></inbound>
+               <pooled-component><spring-object bean="LoadVariantMinStocksBean" ></spring-object></pooled-component>
+          </service>
+          <service name="UpdateItemService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/UpdateItem" /></inbound>
+               <pooled-component><spring-object bean="UpdateItemBean" ></spring-object></pooled-component>
+          </service>
+          <service name="UpdateItemTypesService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/UpdateItemTypes" /></inbound>
+               <pooled-component><spring-object bean="UpdateItemTypesBean" ></spring-object></pooled-component>
+          </service>
+          <service name="UpdateItemVariantsService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/UpdateItemVariants" /></inbound>
+               <pooled-component><spring-object bean="UpdateItemVariantsBean" ></spring-object></pooled-component>
+          </service>
+          <service name="UpdateMinStocksService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/UpdateMinStocks" /></inbound>
+               <pooled-component><spring-object bean="UpdateMinStocksBean" ></spring-object></pooled-component>
+          </service>
+          <service name="UpdateVariantBarcodesService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/UpdateVariantBarcodes" /></inbound>
+               <pooled-component><spring-object bean="UpdateVariantBarcodesBean" ></spring-object></pooled-component>
+          </service>
+          <service name="UpdateVariantMinStocksService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/UpdateVariantMinStocks" /></inbound>
+               <pooled-component><spring-object bean="UpdateVariantMinStocksBean" ></spring-object></pooled-component>
+          </service>
+          <service name="ValidateItemCodeService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/ValidateItemCode" /></inbound>
+               <pooled-component><spring-object bean="ValidateItemCodeBean" ></spring-object></pooled-component>
+          </service>
+          <service name="ValidateVariantBarcodeService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/ValidateVariantBarcode" /></inbound>
+               <pooled-component><spring-object bean="ValidateVariantBarcodeBean" ></spring-object></pooled-component>
+          </service>
+          <service name="LoadOrderTrackingService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/LoadOrderTracking" /></inbound>
+               <pooled-component><spring-object bean="LoadOrderTrackingBean" ></spring-object></pooled-component>
+          </service>
+          <service name="BillOfMaterialsService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/BillOfMaterials" /></inbound>
+               <pooled-component><spring-object bean="BillOfMaterialsBean" ></spring-object></pooled-component>
+          </service>
+          <service name="MachineriesService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/Machineries" /></inbound>
+               <pooled-component><spring-object bean="MachineriesBean" ></spring-object></pooled-component>
+          </service>
+          <service name="ManufacturePhasesService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/ManufacturePhases" /></inbound>
+               <pooled-component><spring-object bean="ManufacturePhasesBean" ></spring-object></pooled-component>
+          </service>
+          <service name="ManufacturesService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/Manufactures" /></inbound>
+               <pooled-component><spring-object bean="ManufacturesBean" ></spring-object></pooled-component>
+          </service>
+          <service name="OperationsService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/Operations" /></inbound>
+               <pooled-component><spring-object bean="OperationsBean" ></spring-object></pooled-component>
+          </service>
+          <service name="ProdOrdersService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/ProdOrders" /></inbound>
+               <pooled-component><spring-object bean="ProdOrdersBean" ></spring-object></pooled-component>
+          </service>
+          <service name="ProdOrderProductsService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/ProdOrderProducts" /></inbound>
+               <pooled-component><spring-object bean="ProdOrderProductsBean" ></spring-object></pooled-component>
+          </service>
+          <service name="ClosePurchaseDocService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/ClosePurchaseDoc" /></inbound>
+               <pooled-component><spring-object bean="ClosePurchaseDocBean" ></spring-object></pooled-component>
+          </service>
+          <service name="ConfirmPurchaseOrderService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/ConfirmPurchaseOrder" /></inbound>
+               <pooled-component><spring-object bean="ConfirmPurchaseOrderBean" ></spring-object></pooled-component>
+          </service>
+          <service name="CreateBarcodeLabelsDataFromPurchaseDocService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/CreateBarcodeLabelsDataFromPurchaseDoc" /></inbound>
+               <pooled-component><spring-object bean="CreateBarcodeLabelsDataFromPurchaseDocBean" ></spring-object></pooled-component>
+          </service>
+          <service name="CreateInvoiceFromInDelivNotesService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/CreateInvoiceFromInDelivNotes" /></inbound>
+               <pooled-component><spring-object bean="CreateInvoiceFromInDelivNotesBean" ></spring-object></pooled-component>
+          </service>
+          <service name="CreateInvoiceFromPurchaseDocService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/CreateInvoiceFromPurchaseDoc" /></inbound>
+               <pooled-component><spring-object bean="CreateInvoiceFromPurchaseDocBean" ></spring-object></pooled-component>
+          </service>
+          <service name="CreatePurchaseOrdersService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/CreatePurchaseOrders" /></inbound>
+               <pooled-component><spring-object bean="CreatePurchaseOrdersBean" ></spring-object></pooled-component>
+          </service>
+          <service name="DeletePurchaseDocRowsService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/DeletePurchaseDocRows" /></inbound>
+               <pooled-component><spring-object bean="DeletePurchaseDocRowsBean" ></spring-object></pooled-component>
+          </service>
+          <service name="DeletePurchaseDocsService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/DeletePurchaseDocs" /></inbound>
+               <pooled-component><spring-object bean="DeletePurchaseDocsBean" ></spring-object></pooled-component>
+          </service>
+          <service name="InsertPurchaseDocService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/InsertPurchaseDoc" /></inbound>
+               <pooled-component><spring-object bean="InsertPurchaseDocBean" ></spring-object></pooled-component>
+          </service>
+          <service name="InsertPurchaseDocRowService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/InsertPurchaseDocRow" /></inbound>
+               <pooled-component><spring-object bean="InsertPurchaseDocRowBean" ></spring-object></pooled-component>
+          </service>
+          <service name="InsertPurchaseDocRowsService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/InsertPurchaseDocRows" /></inbound>
+               <pooled-component><spring-object bean="InsertPurchaseDocRowsBean" ></spring-object></pooled-component>
+          </service>
+          <service name="LoadInDeliveryNotesForPurchaseDocService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/LoadInDeliveryNotesForPurchaseDoc" /></inbound>
+               <pooled-component><spring-object bean="LoadInDeliveryNotesForPurchaseDocBean" ></spring-object></pooled-component>
+          </service>
+          <service name="LoadPurchaseDocService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/LoadPurchaseDoc" /></inbound>
+               <pooled-component><spring-object bean="LoadPurchaseDocBean" ></spring-object></pooled-component>
+          </service>
+          <service name="LoadPurchaseDocAndDelivNoteRowsService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/LoadPurchaseDocAndDelivNoteRows" /></inbound>
+               <pooled-component><spring-object bean="LoadPurchaseDocAndDelivNoteRowsBean" ></spring-object></pooled-component>
+          </service>
+          <service name="LoadPurchaseDocRowService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/LoadPurchaseDocRow" /></inbound>
+               <pooled-component><spring-object bean="LoadPurchaseDocRowBean" ></spring-object></pooled-component>
+          </service>
+          <service name="LoadPurchaseDocRowsService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/LoadPurchaseDocRows" /></inbound>
+               <pooled-component><spring-object bean="LoadPurchaseDocRowsBean" ></spring-object></pooled-component>
+          </service>
+          <service name="LoadPurchaseDocsService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/LoadPurchaseDocs" /></inbound>
+               <pooled-component><spring-object bean="LoadPurchaseDocsBean" ></spring-object></pooled-component>
+          </service>
+          <service name="LoadPurchaseDocVariantsRowService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/LoadPurchaseDocVariantsRow" /></inbound>
+               <pooled-component><spring-object bean="LoadPurchaseDocVariantsRowBean" ></spring-object></pooled-component>
+          </service>
+          <service name="LoadSupplierPriceItemsService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/LoadSupplierPriceItems" /></inbound>
+               <pooled-component><spring-object bean="LoadSupplierPriceItemsBean" ></spring-object></pooled-component>
+          </service>
+          <service name="PurchaseDocTotalsService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/PurchaseDocTotals" /></inbound>
+               <pooled-component><spring-object bean="PurchaseDocTotalsBean" ></spring-object></pooled-component>
+          </service>
+          <service name="ReorderFromMinStocksService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/ReorderFromMinStocks" /></inbound>
+               <pooled-component><spring-object bean="ReorderFromMinStocksBean" ></spring-object></pooled-component>
+          </service>
+          <service name="UpdatePurchaseDocService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/UpdatePurchaseDoc" /></inbound>
+               <pooled-component><spring-object bean="UpdatePurchaseDocBean" ></spring-object></pooled-component>
+          </service>
+          <service name="UpdatePurchaseDocRowService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/UpdatePurchaseDocRow" /></inbound>
+               <pooled-component><spring-object bean="UpdatePurchaseDocRowBean" ></spring-object></pooled-component>
+          </service>
+          <service name="ValidatePurchaseDocNumberService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/ValidatePurchaseDocNumber" /></inbound>
+               <pooled-component><spring-object bean="ValidatePurchaseDocNumberBean" ></spring-object></pooled-component>
+          </service>
+          <service name="ValidateSupplierPriceItemCodeService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/ValidateSupplierPriceItemCode" /></inbound>
+               <pooled-component><spring-object bean="ValidateSupplierPriceItemCodeBean" ></spring-object></pooled-component>
+          </service>
+          <service name="DeleteABCService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/DeleteABC" /></inbound>
+               <pooled-component><spring-object bean="DeleteABCBean" ></spring-object></pooled-component>
+          </service>
+          <service name="ABCService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/ABCService" /></inbound>
+               <pooled-component><spring-object bean="ABCServiceBean" ></spring-object></pooled-component>
+          </service>
+          <service name="SupplierItemsService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/SupplierItems" /></inbound>
+               <pooled-component><spring-object bean="SupplierItemsBean" ></spring-object></pooled-component>
+          </service>
+          <service name="SupplierPricelistsService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/SupplierPricelists" /></inbound>
+               <pooled-component><spring-object bean="SupplierPricelistsBean" ></spring-object></pooled-component>
+          </service>
+          <service name="SupplierPricesService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/SupplierPrices" /></inbound>
+               <pooled-component><spring-object bean="SupplierPricesBean" ></spring-object></pooled-component>
+          </service>
+          <service name="SuppliersService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/Suppliers" /></inbound>
+               <pooled-component><spring-object bean="SuppliersBean" ></spring-object></pooled-component>
+          </service>
+          <service name="SaleActivitiesService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/SaleActivities" /></inbound>
+               <pooled-component><spring-object bean="SaleActivitiesBean" ></spring-object></pooled-component>
+          </service>
+          <service name="AgentsService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/Agents" /></inbound>
+               <pooled-component><spring-object bean="AgentsBean" ></spring-object></pooled-component>
+          </service>
+          <service name="ChargesService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/Charges" /></inbound>
+               <pooled-component><spring-object bean="ChargesBean" ></spring-object></pooled-component>
+          </service>
+          <service name="CustomersService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/Customers" /></inbound>
+               <pooled-component><spring-object bean="CustomersBean" ></spring-object></pooled-component>
+          </service>
+          <service name="DestinationsService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/Destinations" /></inbound>
+               <pooled-component><spring-object bean="DestinationsBean" ></spring-object></pooled-component>
+          </service>
+          <service name="CustomerDiscountsService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/CustomerDiscounts" /></inbound>
+               <pooled-component><spring-object bean="CustomerDiscountsBean" ></spring-object></pooled-component>
+          </service>
+          <service name="HierarCustomerDiscountsService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/HierarCustomerDiscounts" /></inbound>
+               <pooled-component><spring-object bean="HierarCustomerDiscountsBean" ></spring-object></pooled-component>
+          </service>
+          <service name="HierarItemDiscountsService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/HierarItemDiscounts" /></inbound>
+               <pooled-component><spring-object bean="HierarItemDiscountsBean" ></spring-object></pooled-component>
+          </service>
+          <service name="ItemDiscountsService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/ItemDiscounts" /></inbound>
+               <pooled-component><spring-object bean="ItemDiscountsBean" ></spring-object></pooled-component>
+          </service>
+          <service name="InsertSaleDocActivitiesService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/InsertSaleDocActivities" /></inbound>
+               <pooled-component><spring-object bean="InsertSaleDocActivitiesBean" ></spring-object></pooled-component>
+          </service>
+          <service name="SaleDocActivitiesService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/SaleDocActivities" /></inbound>
+               <pooled-component><spring-object bean="SaleDocActivitiesBean" ></spring-object></pooled-component>
+          </service>
+          <service name="SaleDocChargesService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/SaleDocCharges" /></inbound>
+               <pooled-component><spring-object bean="SaleDocChargesBean" ></spring-object></pooled-component>
+          </service>
+          <service name="SaleDocDiscountsService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/SaleDocDiscounts" /></inbound>
+               <pooled-component><spring-object bean="SaleDocDiscountsBean" ></spring-object></pooled-component>
+          </service>
+          <service name="SaleDocRowDiscountsService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/SaleDocRowDiscounts" /></inbound>
+               <pooled-component><spring-object bean="SaleDocRowDiscountsBean" ></spring-object></pooled-component>
+          </service>
+          <service name="InsertSaleDocRowDiscountService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/InsertSaleDocRowDiscount" /></inbound>
+               <pooled-component><spring-object bean="InsertSaleDocRowDiscountBean" ></spring-object></pooled-component>
+          </service>
+          <service name="InsertSaleDocRowDiscountsService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/InsertSaleDocRowDiscounts" /></inbound>
+               <pooled-component><spring-object bean="InsertSaleDocRowDiscountsBean" ></spring-object></pooled-component>
+          </service>
+          <service name="CloseSaleDocService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/CloseSaleDoc" /></inbound>
+               <pooled-component><spring-object bean="CloseSaleDocBean" ></spring-object></pooled-component>
+          </service>
+          <service name="ConfirmSaleDocService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/ConfirmSaleDoc" /></inbound>
+               <pooled-component><spring-object bean="ConfirmSaleDocBean" ></spring-object></pooled-component>
+          </service>
+          <service name="CreateInvoiceFromOutDelivNotesService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/CreateInvoiceFromOutDelivNotes" /></inbound>
+               <pooled-component><spring-object bean="CreateInvoiceFromOutDelivNotesBean" ></spring-object></pooled-component>
+          </service>
+          <service name="CreateInvoiceFromSaleDocService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/CreateInvoiceFromSaleDoc" /></inbound>
+               <pooled-component><spring-object bean="CreateInvoiceFromSaleDocBean" ></spring-object></pooled-component>
+          </service>
+          <service name="CreateSaleDocFromEstimateService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/CreateSaleDocFromEstimate" /></inbound>
+               <pooled-component><spring-object bean="CreateSaleDocFromEstimateBean" ></spring-object></pooled-component>
+          </service>
+          <service name="SaleDocRowsService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/SaleDocRows" /></inbound>
+               <pooled-component><spring-object bean="SaleDocRowsBean" ></spring-object></pooled-component>
+          </service>
+          <service name="LoadSaleDocService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/LoadSaleDoc" /></inbound>
+               <pooled-component><spring-object bean="LoadSaleDocBean" ></spring-object></pooled-component>
+          </service>
+          <service name="SaleDocsService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/SaleDocs" /></inbound>
+               <pooled-component><spring-object bean="SaleDocsBean" ></spring-object></pooled-component>
+          </service>
+          <service name="LoadItemsSoldToOtherCustomersService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/LoadItemsSoldToOtherCustomers" /></inbound>
+               <pooled-component><spring-object bean="LoadItemsSoldToOtherCustomersBean" ></spring-object></pooled-component>
+          </service>
+          <service name="LoadOutDeliveryNotesForSaleDocService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/LoadOutDeliveryNotesForSaleDoc" /></inbound>
+               <pooled-component><spring-object bean="LoadOutDeliveryNotesForSaleDocBean" ></spring-object></pooled-component>
+          </service>
+          <service name="LoadPriceItemsService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/LoadPriceItems" /></inbound>
+               <pooled-component><spring-object bean="LoadPriceItemsBean" ></spring-object></pooled-component>
+          </service>
+          <service name="LoadSaleDocAndDelivNoteRowsService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/LoadSaleDocAndDelivNoteRows" /></inbound>
+               <pooled-component><spring-object bean="LoadSaleDocAndDelivNoteRowsBean" ></spring-object></pooled-component>
+          </service>
+          <service name="InsertSaleItemService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/InsertSaleItem" /></inbound>
+               <pooled-component><spring-object bean="InsertSaleItemBean" ></spring-object></pooled-component>
+          </service>
+          <service name="SaleDocTotalsService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/SaleDocTotals" /></inbound>
+               <pooled-component><spring-object bean="SaleDocTotalsBean" ></spring-object></pooled-component>
+          </service>
+          <service name="SaleItemTotalDiscountService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/SaleItemTotalDiscount" /></inbound>
+               <pooled-component><spring-object bean="SaleItemTotalDiscountBean" ></spring-object></pooled-component>
+          </service>
+          <service name="ValidatePriceItemCodeService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/ValidatePriceItemCode" /></inbound>
+               <pooled-component><spring-object bean="ValidatePriceItemCodeBean" ></spring-object></pooled-component>
+          </service>
+          <service name="SalePricelistsService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/SalePricelists" /></inbound>
+               <pooled-component><spring-object bean="SalePricelistsBean" ></spring-object></pooled-component>
+          </service>
+          <service name="SalePricesService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/SalePrices" /></inbound>
+               <pooled-component><spring-object bean="SalePricesBean" ></spring-object></pooled-component>
+          </service>
+          <service name="ScheduledActivitiesService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/ScheduledActivities" /></inbound>
+               <pooled-component><spring-object bean="ScheduledActivitiesBean" ></spring-object></pooled-component>
+          </service>
+          <service name="SchedulerAttachedDocsService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/SchedulerAttachedDocs" /></inbound>
+               <pooled-component><spring-object bean="SchedulerAttachedDocsBean" ></spring-object></pooled-component>
+          </service>
+          <service name="ScheduledEmployeesService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/ScheduledEmployees" /></inbound>
+               <pooled-component><spring-object bean="ScheduledEmployeesBean" ></spring-object></pooled-component>
+          </service>
+          <service name="ScheduledItemsService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/ScheduledItems" /></inbound>
+               <pooled-component><spring-object bean="ScheduledItemsBean" ></spring-object></pooled-component>
+          </service>
+          <service name="ScheduledMachineriesService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/ScheduledMachineries" /></inbound>
+               <pooled-component><spring-object bean="ScheduledMachineriesBean" ></spring-object></pooled-component>
+          </service>
+          <service name="CreateInvoiceFromScheduledActivityService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/CreateInvoiceFromScheduledActivity" /></inbound>
+               <pooled-component><spring-object bean="CreateInvoiceFromScheduledActivityBean" ></spring-object></pooled-component>
+          </service>
+          <service name="CallOutItemsService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/CallOutItems" /></inbound>
+               <pooled-component><spring-object bean="CallOutItemsBean" ></spring-object></pooled-component>
+          </service>
+          <service name="CallOutMachineriesService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/CallOutMachineries" /></inbound>
+               <pooled-component><spring-object bean="CallOutMachineriesBean" ></spring-object></pooled-component>
+          </service>
+          <service name="CallOutRequestsService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/CallOutRequests" /></inbound>
+               <pooled-component><spring-object bean="CallOutRequestsBean" ></spring-object></pooled-component>
+          </service>
+          <service name="CallOutsService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/CallOuts" /></inbound>
+               <pooled-component><spring-object bean="CallOutsBean" ></spring-object></pooled-component>
+          </service>
+          <service name="CallOutTasksService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/CallOutTasks" /></inbound>
+               <pooled-component><spring-object bean="CallOutTasksBean" ></spring-object></pooled-component>
+          </service>
+          <service name="CallOutTypesService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/CallOutTypes" /></inbound>
+               <pooled-component><spring-object bean="CallOutTypesBean" ></spring-object></pooled-component>
+          </service>
+          <service name="LinkScheduledActivityToCallOutRequestService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/LinkScheduledActivityToCallOutRequest" /></inbound>
+               <pooled-component><spring-object bean="LinkScheduledActivityToCallOutRequestBean" ></spring-object></pooled-component>
+          </service>
+          <service name="SubjectsService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/Subjects" /></inbound>
+               <pooled-component><spring-object bean="SubjectsBean" ></spring-object></pooled-component>
+          </service>
+          <service name="CompaniesService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/Companies" /></inbound>
+               <pooled-component><spring-object bean="CompaniesBean" ></spring-object></pooled-component>
+          </service>
+          <service name="DeleteCustomFunctionsService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/DeleteCustomFunctions" /></inbound>
+               <pooled-component><spring-object bean="DeleteCustomFunctionsBean" ></spring-object></pooled-component>
+          </service>
+          <service name="DeleteWindowCustomizationsService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/DeleteWindowCustomizations" /></inbound>
+               <pooled-component><spring-object bean="DeleteWindowCustomizationsBean" ></spring-object></pooled-component>
+          </service>
+          <service name="InsertCustomFunctionService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/InsertCustomFunction" /></inbound>
+               <pooled-component><spring-object bean="InsertCustomFunctionBean" ></spring-object></pooled-component>
+          </service>
+          <service name="InsertWindowCustomizationsService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/InsertWindowCustomizations" /></inbound>
+               <pooled-component><spring-object bean="InsertWindowCustomizationsBean" ></spring-object></pooled-component>
+          </service>
+          <service name="LoadCustomColumnsService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/LoadCustomColumns" /></inbound>
+               <pooled-component><spring-object bean="LoadCustomColumnsBean" ></spring-object></pooled-component>
+          </service>
+          <service name="LoadCustomFunctionService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/LoadCustomFunction" /></inbound>
+               <pooled-component><spring-object bean="LoadCustomFunctionBean" ></spring-object></pooled-component>
+          </service>
+          <service name="LoadCustomFunctionsService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/LoadCustomFunctions" /></inbound>
+               <pooled-component><spring-object bean="LoadCustomFunctionsBean" ></spring-object></pooled-component>
+          </service>
+          <service name="LoadCustomizedReportsService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/LoadCustomizedReports" /></inbound>
+               <pooled-component><spring-object bean="LoadCustomizedReportsBean" ></spring-object></pooled-component>
+          </service>
+          <service name="LoadWindowCustomizationsService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/LoadWindowCustomizations" /></inbound>
+               <pooled-component><spring-object bean="LoadWindowCustomizationsBean" ></spring-object></pooled-component>
+          </service>
+          <service name="UpdateCustomColumnsService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/UpdateCustomColumns" /></inbound>
+               <pooled-component><spring-object bean="UpdateCustomColumnsBean" ></spring-object></pooled-component>
+          </service>
+          <service name="UpdateCustomFunctionService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/UpdateCustomFunction" /></inbound>
+               <pooled-component><spring-object bean="UpdateCustomFunctionBean" ></spring-object></pooled-component>
+          </service>
+          <service name="UpdateCustomReportsService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/UpdateCustomReports" /></inbound>
+               <pooled-component><spring-object bean="UpdateCustomReportsBean" ></spring-object></pooled-component>
+          </service>
+          <service name="UpdateWindowCustomizationsService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/UpdateWindowCustomizations" /></inbound>
+               <pooled-component><spring-object bean="UpdateWindowCustomizationsBean" ></spring-object></pooled-component>
+          </service>
+          <service name="DeleteETLProcessesService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/DeleteETLProcesses" /></inbound>
+               <pooled-component><spring-object bean="DeleteETLProcessesBean" ></spring-object></pooled-component>
+          </service>
+          <service name="GetFolderContentService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/GetFolderContent" /></inbound>
+               <pooled-component><spring-object bean="GetFolderContentBean" ></spring-object></pooled-component>
+          </service>
+          <service name="InsertETLProcessService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/InsertETLProcess" /></inbound>
+               <pooled-component><spring-object bean="InsertETLProcessBean" ></spring-object></pooled-component>
+          </service>
+          <service name="LoadETLProcessService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/LoadETLProcess" /></inbound>
+               <pooled-component><spring-object bean="LoadETLProcessBean" ></spring-object></pooled-component>
+          </service>
+          <service name="LoadETLProcessesService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/LoadETLProcesses" /></inbound>
+               <pooled-component><spring-object bean="LoadETLProcessesBean" ></spring-object></pooled-component>
+          </service>
+          <service name="LoadSelectableFieldsService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/LoadSelectableFields" /></inbound>
+               <pooled-component><spring-object bean="LoadSelectableFieldsBean" ></spring-object></pooled-component>
+          </service>
+          <service name="StartETLProcessService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/StartETLProcess" /></inbound>
+               <pooled-component><spring-object bean="StartETLProcessBean" ></spring-object></pooled-component>
+          </service>
+          <service name="LanguagesService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/Languages" /></inbound>
+               <pooled-component><spring-object bean="LanguagesBean" ></spring-object></pooled-component>
+          </service>
+          <service name="RolesService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/Roles" /></inbound>
+               <pooled-component><spring-object bean="RolesBean" ></spring-object></pooled-component>
+          </service>
+          <service name="UsersService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/Users" /></inbound>
+               <pooled-component><spring-object bean="UsersBean" ></spring-object></pooled-component>
+          </service>
+          <service name="FunctionsService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/Functions" /></inbound>
+               <pooled-component><spring-object bean="FunctionsBean" ></spring-object></pooled-component>
+          </service>
+          <service name="ParamsService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/Params" /></inbound>
+               <pooled-component><spring-object bean="ParamsBean" ></spring-object></pooled-component>
+          </service>
+          <service name="TranslationsService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/Translations" /></inbound>
+               <pooled-component><spring-object bean="TranslationsBean" ></spring-object></pooled-component>
+          </service>
+          <service name="VariantsService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/Variants" /></inbound>
+               <pooled-component><spring-object bean="VariantsBean" ></spring-object></pooled-component>
+          </service>
+          <service name="VariantTypesService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/VariantTypes" /></inbound>
+               <pooled-component><spring-object bean="VariantTypesBean" ></spring-object></pooled-component>
+          </service>
+          <service name="ItemAvailabilitiesService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/ItemAvailabilities" /></inbound>
+               <pooled-component><spring-object bean="ItemAvailabilitiesBean" ></spring-object></pooled-component>
+          </service>
+          <service name="DeliveryNotesService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/DeliveryNotes" /></inbound>
+               <pooled-component><spring-object bean="DeliveryNotesBean" ></spring-object></pooled-component>
+          </service>
+          <service name="WarehouseUtilsService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/WarehouseUtils" /></inbound>
+               <pooled-component><spring-object bean="WarehouseUtilsBean" ></spring-object></pooled-component>
+          </service>
+          <service name="InDeliveryNotesService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/InDeliveryNotes" /></inbound>
+               <pooled-component><spring-object bean="InDeliveryNotesBean" ></spring-object></pooled-component>
+          </service>
+          <service name="OutDeliveryNotesService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/OutDeliveryNotes" /></inbound>
+               <pooled-component><spring-object bean="OutDeliveryNotesBean" ></spring-object></pooled-component>
+          </service>
+          <service name="WarehousesService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/Warehouses" /></inbound>
+               <pooled-component><spring-object bean="WarehousesBean" ></spring-object></pooled-component>
+          </service>
+          <service name="WarehouseMotivesService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/WarehouseMotives" /></inbound>
+               <pooled-component><spring-object bean="WarehouseMotivesBean" ></spring-object></pooled-component>
+          </service>
+          <service name="LoadMovementsService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/LoadMovements" /></inbound>
+               <pooled-component><spring-object bean="LoadMovementsBean" ></spring-object></pooled-component>
+          </service>
+          <service name="PurchaseDocTaxableIncomesService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/PurchaseDocTaxableIncomes" /></inbound>
+               <pooled-component><spring-object bean="PurchaseDocTaxableIncomesBean" ></spring-object></pooled-component>
+          </service>
+          <service name="DiscountService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/Discount" /></inbound>
+               <pooled-component><spring-object bean="DiscountBean" ></spring-object></pooled-component>
+          </service>
+          <service name="ExportRetailSaleOnFileService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/ExportRetailSaleOnFile" /></inbound>
+               <pooled-component><spring-object bean="ExportRetailSaleOnFileBean" ></spring-object></pooled-component>
+          </service>
+          <service name="InsertSaleSerialNumbersService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/InsertSaleSerialNumbers" /></inbound>
+               <pooled-component><spring-object bean="InsertSaleSerialNumbersBean" ></spring-object></pooled-component>
+          </service>
+          <service name="SaleDocTaxableIncomesService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/SaleDocTaxableIncomes" /></inbound>
+               <pooled-component><spring-object bean="SaleDocTaxableIncomesBean" ></spring-object></pooled-component>
+          </service>
+          <service name="UpdateTaxableIncomesService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/UpdateTaxableIncomes" /></inbound>
+               <pooled-component><spring-object bean="UpdateTaxableIncomesBean" ></spring-object></pooled-component>
+          </service>
+          <service name="CheckSubjectExistService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/CheckSubjectExist" /></inbound>
+               <pooled-component><spring-object bean="CheckSubjectExistBean" ></spring-object></pooled-component>
+          </service>
+          <service name="OrganizationService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/Organization" /></inbound>
+               <pooled-component><spring-object bean="OrganizationBean" ></spring-object></pooled-component>
+          </service>
+          <service name="PeopleService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/People" /></inbound>
+               <pooled-component><spring-object bean="PeopleBean" ></spring-object></pooled-component>
+          </service>
+          <service name="ImportDataService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/ImportData" /></inbound>
+               <pooled-component><spring-object bean="ImportDataBean" ></spring-object></pooled-component>
+          </service>
+          <service name="ManualMovementsService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/ManualMovements" /></inbound>
+               <pooled-component><spring-object bean="ManualMovementsBean" ></spring-object></pooled-component>
+          </service>
+          <service name="LoadProductVariantsMatrixService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/LoadProductVariantsMatrix" /></inbound>
+               <pooled-component><spring-object bean="LoadProductVariantsMatrixBean" ></spring-object></pooled-component>
+          </service>
+          <service name="CheckComponentsAvailabilityService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/CheckComponentsAvailability" /></inbound>
+               <pooled-component><spring-object bean="CheckComponentsAvailabilityBean" ></spring-object></pooled-component>
+          </service>
+          <service name="LoadETLProcessFieldsService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/LoadETLProcessFields" /></inbound>
+               <pooled-component><spring-object bean="LoadETLProcessFieldsBean" ></spring-object></pooled-component>
+          </service>
+          <service name="AccountingMotivesService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/AccountingMotives" /></inbound>
+               <pooled-component><spring-object bean="AccountingMotivesBean" ></spring-object></pooled-component>
+          </service>
+          <service name="AccountsService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/Accounts" /></inbound>
+               <pooled-component><spring-object bean="AccountsBean" ></spring-object></pooled-component>
+          </service>
+          <service name="LedgerServicesService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/LedgerServices" /></inbound>
+               <pooled-component><spring-object bean="LedgerServicesBean" ></spring-object></pooled-component>
+          </service>
+          <service name="InsertJournalItemService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/InsertJournalItem" /></inbound>
+               <pooled-component><spring-object bean="InsertJournalItemBean" ></spring-object></pooled-component>
+          </service>
+          <service name="AccountingMovementsService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/AccountingMovements" /></inbound>
+               <pooled-component><spring-object bean="AccountingMovementsBean" ></spring-object></pooled-component>
+          </service>
+          <service name="VatRegistersService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/VatRegisters" /></inbound>
+               <pooled-component><spring-object bean="VatRegistersBean" ></spring-object></pooled-component>
+          </service>
+
+          <service name="BanksService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/Banks" /></inbound>
+               <pooled-component><spring-object bean="BanksBean" ></spring-object></pooled-component>
+          </service>
+          <service name="CarriersService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/Carriers" /></inbound>
+               <pooled-component><spring-object bean="CarriersBean" ></spring-object></pooled-component>
+          </service>
+          <service name="CurrenciesService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/Currencies" /></inbound>
+               <pooled-component><spring-object bean="CurrenciesBean" ></spring-object></pooled-component>
+          </service>
+          <service name="PaymentsService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/Payments" /></inbound>
+               <pooled-component><spring-object bean="PaymentsBean" ></spring-object></pooled-component>
+          </service>
+          <service name="TasksService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/Tasks" /></inbound>
+               <pooled-component><spring-object bean="TasksBean" ></spring-object></pooled-component>
+          </service>
+          <service name="TransportMotivesService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/TransportMotives" /></inbound>
+               <pooled-component><spring-object bean="TransportMotivesBean" ></spring-object></pooled-component>
+          </service>
+          <service name="VatsService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/Vats" /></inbound>
+               <pooled-component><spring-object bean="VatsBean" ></spring-object></pooled-component>
+          </service>
+          <service name="UserAuthorizationsService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/UserAuthorizations" /></inbound>
+               <pooled-component><spring-object bean="UserAuthorizationsBean" ></spring-object></pooled-component>
+          </service>
+         <service name="UserLoginService" >
+              <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/UserLogin" /></inbound>
+              <pooled-component><spring-object bean="UserLoginBean" ></spring-object></pooled-component>
+         </service>
+         <service name="LoadLanguagesService">
+              <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/LoadLanguages" /></inbound>
+              <pooled-component><spring-object bean="LoadLanguagesBean" ></spring-object></pooled-component>
+         </service>
+         <service name="AddMovementService">
+              <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/AddMovement" /></inbound>
+              <pooled-component><spring-object bean="AddMovementBean" ></spring-object></pooled-component>
+         </service>
+         <service name="MeasuresService">
+              <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/Measures" /></inbound>
+              <pooled-component><spring-object bean="MeasuresBean" ></spring-object></pooled-component>
+         </service>
+         <service name="LoadSaleDocRowsService">
+              <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/LoadSaleDocRows" /></inbound>
+              <pooled-component><spring-object bean="LoadSaleDocRowsBean" ></spring-object></pooled-component>
+         </service>
+         <service name="InventoriesService">
+              <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/Inventories" /></inbound>
+              <pooled-component><spring-object bean="InventoriesBean" ></spring-object></pooled-component>
+         </service>
+         <service name="ItemSheetsService">
+              <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/ItemSheets" /></inbound>
+              <pooled-component><spring-object bean="ItemSheetsBean" ></spring-object></pooled-component>
+         </service>
+         <service name="LoadSaleDocRowService">
+              <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/LoadSaleDocRow" /></inbound>
+              <pooled-component><spring-object bean="LoadSaleDocRowBean" ></spring-object></pooled-component>
+         </service>
+          <service name="BrandsService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/Brands" /></inbound>
+               <pooled-component><spring-object bean="BrandsBean" ></spring-object></pooled-component>
+          </service>
+          <service name="ItemFieldsService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/ItemFields" /></inbound>
+               <pooled-component><spring-object bean="ItemFieldsBean" ></spring-object></pooled-component>
+          </service>
+          <service name="ItemVariantImagesService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/ItemVariantImages" /></inbound>
+               <pooled-component><spring-object bean="ItemVariantImagesBean" ></spring-object></pooled-component>
+          </service>
+          <service name="SetLevelImageService">
+               <inbound><inbound-endpoint address="cxf:http://localhost:8777/services/SetLevelImage" /></inbound>
+               <pooled-component><spring-object bean="SetLevelImageBean" ></spring-object></pooled-component>
+          </service>
+
+     </model>
+</mule>
+

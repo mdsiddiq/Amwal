@@ -1,0 +1,1686 @@
+
+<objects>
+
+<!-- common -->
+  <object key="yes" value="Da" />
+  <object key="no" value="Ne" />
+
+<!-- grid -->
+  <object key="Remove Filter" value="Ukloniti filtar" />
+  <object key="This column is not sorteable" value="Stupac nema poredak" />
+  <object key="Sorting not allowed" value="Poredak nije dozvoljen" />
+  <object key="Maximum number of sorted columns" value="Najve&#263;i broj poredanih stupaca" />
+  <object key="Sorting not applicable" value="Poredak nije dozvoljen" />
+  <object key="Selected Row" value="Izabrani redak" />
+  <object key="Selected Rows" value="Izabrani redci" />
+  <object key="Cancel changes and reload data?" value="Napustiti i ponovno u&#269;itati podatke?" />
+  <object key="Attention" value="Pa≈ænja" />
+  <object key="Loading data..." value="U&#269;itavanje podataka ..." />
+  <object key="Error while loading data" value="Pogre&#353;ka pri u&#269;itavanju podataka" />
+  <object key="Loading Data Error" value="Pogre&#353;ka &#269;itanja podataka" />
+  <object key="Delete Rows?" value="Brisati retke" />
+  <object key="Delete Confirmation" value="Brisati" />
+  <object key="Deleting Error" value="Pogre&#353;ka brisanja" />
+  <object key="Error while deleting rows." value="Pogre&#353;ka brisanja redaka" />
+  <object key="Error while saving" value="Pogre&#353;ka pohrane" />
+  <object key="Saving Error" value="Pogre&#353;ka pohrane" />
+  <object key="A mandatory column is empty." value="Obvezni stupac je prazan" />
+  <object key="Value not valid" value="Vrijednost nije ispravna" />
+  <object key="Select the previous row in grid" value="Izabrati prethodni redak u tablici" />
+  <object key="Select the next row in grid" value="Izabrati slijede&#263;i redak u tablici" />
+
+<!-- export -->
+  <object key="grid export" value="Izvesti tablicu" />
+  <object key="export" value="Izvesti" />
+  <object key="exportmnemonic" value="X" />
+  <object key="column" value="Stupac" />
+  <object key="sel." value="Izb." />
+  <object key="you must select at least one column" value="Izabrati najmanje jedan stupac" />
+  <object key="columns to export" value="Stupci za izvoz" />
+  <object key="export type" value="Oblik izvoza" />
+
+<!-- import -->
+  <object key="Import records (CTRL+M)" value="Uvesti zapise CTRL+M" />
+  <object key="grid import" value="Uvoz tablice" />
+  <object key="import" value="Uvesti" />
+  <object key="importmnemonic" value="M" />
+  <object key="columns to import" value="Stupci za uvoz" />
+  <object key="import type" value="Oblik datoteke uvoza" />
+  <object key="file to import" value="Datoteke za uvoz" />
+  <object key="error while importing data" value="Pogre&#353;ka uvoza zapisa" />
+  <object key="import completed" value="Uvoz zavr&#353;en" />
+
+<!-- quick filter -->
+  <object key="To value" value="Do vrijednosti" />
+  <object key="Filter by" value="Filtar po" />
+  <object key="From value" value="Do vrijednosti" />
+  <object key="equals" value="jednako" />
+  <object key="contains" value="sadr&#382;i" />
+  <object key="starts with" value="po&#269;inje s" />
+  <object key="ends with" value="zavr&#353;ava s" />
+
+<!-- lookup -->
+  <object key="Code is not correct." value="Kod nije ispravan" />
+  <object key="Code Validation" value="Provjera valjanosti koda" />
+  <object key="Code Selection" value="Izbor koda" />
+
+<!-- form -->
+  <object key="Confirm deliting data?" value="Potvrditi brisanje podataka?" />
+  <object key="Error while saving: incorrect data." value="Pogre&#353;ka tijekom pohrane - podaci nisu valjani" />
+  <object key="Error on deleting:" value="Pogre&#353;ka brisanja -" />
+  <object key="Error on Loading" value="Gre&#353;ka &#269;itanja" />
+  <object key="Error while loading data:" value="Gre&#353;ka &#269;itanja podataka - " />
+
+<!-- toolbar buttons -->
+  <object key="Delete record (CTRL+D)" value="Brisati zapis CTRL+D" />
+  <object key="Edit record (CTRL+E)" value="Urediti zapis CTRL+E" />
+  <object key="New record (CTRL+I)" value="Novi zapis CTRL+I" />
+  <object key="Reload record/Cancel current operation (CTRL+Z)" value="Ponovno u&#269;itati zapis - Napustiti trenutni postupak CTRL+Z" />
+  <object key="Save record (CTRL+S)" value="Pohraniti zapis CTRL+S" />
+  <object key="Copy record (CTRL+C)" value="Preslikati zapis CTRL+C" />
+  <object key="Export record (CTRL+X)" value="Izvesti zapis CTRL+X" />
+  <object key="Load the first block of records" value="U&#269;itati prvi blok zapisa" />
+  <object key="Load the previous block of records" value="U&#269;itati prethodni blok zapisa" />
+  <object key="Load the next block of records" value="U&#269;itati slijede&#263;i blok zapisa" />
+  <object key="Load the last block of records" value="U&#269;itati posljednji blok zapisa" />
+
+  <object key="Insert" value="Upisati" />
+  <object key="edit" value="Urediti" />
+  <object key="Edit" value="Urediti" />
+  <object key="Copy" value="Preslikati" />
+  <object key="Delete" value="Brisati" />
+  <object key="Save" value="Pohraniti" />
+  <object key="Reload" value="Ponovno u&#269;itati" />
+  <object key="Export" value="Izvesti" />
+  <object key="Filter" value="Filtar" />
+
+<!-- MDI Frame -->
+  <object key="file" value="Datoteka" />
+  <object key="exit" value="Izlaz" />
+  <object key="filemnemonic" value="D" />
+  <object key="exitmnemonic" value="I" />
+  <object key="change user" value="Promjena korisnika" />
+  <object key="changeusermnemonic" value="P" />
+  <object key="changelanguagemnemonic" value="J" />
+  <object key="help" value="Pomo&#263;" />
+  <object key="about" value="O" />
+  <object key="helpmnemonic" value="H" />
+  <object key="aboutmnemonic" value="O" />
+  <object key="are you sure to quit application?" value="Napustiti sustav?" />
+  <object key="quit application" value="Napustiti sustav!" />
+  <object key="forcegcmnemonic" value="F" />
+  <object key="Force GC" value="GC Prislino" />
+  <object key="Java Heap" value="Java Heap" />
+  <object key="used" value="Kori&#353;ten" />
+  <object key="allocated" value="Dodijeljen" />
+  <object key="change language" value="Izmijeniti jezik" />
+  <object key="changemnemonic" value="J" />
+  <object key="cancelmnemonic" value="N" />
+  <object key="Functions" value="Funkcije" />
+  <object key="Error while executing function" value="Gre&#353;ka pri izvr&#353;avanju funkcije" />
+  <object key="Error" value="Pogre&#353;ka" />
+  <object key="infoPanel" value="Obavijest" />
+  <object key="imageButton" value="O" />
+  <object key="Window" value="Prozor" />
+  <object key="windowmnemonic" value="P" />
+  <object key="Close All" value="Zatvoriti sve" />
+  <object key="closeallmnemonic" value="Z" />
+  <object key="Press ENTER to find function" value= "ENTER za tra&#382;iti funkciju" />
+  <object key="Find Function" value= "Tra&#382;iti funkciju" />
+  <object key="Operation in progress..." value="Radim..." />
+  <object key="close window" value="Zatvoriti prozor" />
+  <object key="reduce to icon" value="Smanjiti na traku" />
+  <object key="save changes?" value="Pohraniti?" />
+  <object key="confirm window closing" value="Zatvoriti prozor!" />
+
+  <object key="switch" value="Prebaciti" />
+  <object key="switchmnemonic" value="P" />
+  <object key="window name" value="Naziv prozora" />
+  <object key="opened windows" value="Otvoreni prozori" />
+  <object key="tile horizontally" value="Postaviti vodoravno" />
+  <object key="tilehorizontallymnemonic" value="V" />
+  <object key="tile vertically" value="Postaviti okomito" />
+  <object key="tileverticallymnemonic" value="O" />
+  <object key="cascade" value="Kaskadno" />
+  <object key="cascademnemonic" value="K" />
+  <object key="minimize" value="Smanjiti" />
+  <object key="minimizemnemonic" value="S" />
+  <object key="minimize all" value="Smanjiti sve" />
+  <object key="minimizeallmnemonic" value="M" />
+  <object key="change background" value="Izmijeniti pozadinu" />
+  <object key="reset background" value="Vratiti osnovnu pozadinu" />
+
+
+<!-- select/deselect all -->
+  <object key="select all" value="Izabrati sve" />
+  <object key="deselect all" value="Otpustiti sve" />
+
+
+<!-- copy/cut/paste -->
+  <object key="copy" value="Preslikati" />
+  <object key="copymnemonic" value="P" />
+  <object key="cut" value="Izrezati" />
+  <object key="cutmnemonic" value="I" />
+  <object key="paste" value="Zalijepiti" />
+  <object key="pastemnemonic" value="Z" />
+
+<!-- grid profile -->
+  <object key="grid profile management" value="Upravljanje postavom mre&#382;e"/>
+  <object key="restore default grid profile" value="Vratiti osnovne postavke mre&#382;e"/>
+  <object key="create new grid profile" value="Stvoriti nove postavke mre&#382;e"/>
+  <object key="profile description" value="Opis postavki"/>
+  <object key="remove current grid profile" value="Ukloniti sada&#353;nje postavke mre&#382;e"/>
+  <object key="select grid profile" value="Izabrati postavke mre&#382;e"/>
+  <object key="default profile" value="Osnovne postavke"/>
+
+<!-- search box -->
+  <object key="search" value="Tra&#382;iti"/>
+  <object key="not found" value="Ne postoji"/>
+
+
+<!-- server -->
+
+  <object key="Client request not supported" value="Zahtjev nije podr&#382;an" />
+  <object key="User disconnected" value="Korisnik isklju&#269;en" />
+  <object key="Updating not performed: the record was previously updated." value="A&#382;uriranje nije izvr&#353;eno - zapis je ve&#263; a&#382;uriran" />
+
+<!-- application domains -->
+
+  <object key="text" value="Tekst" />
+  <object key="date" value="Datum" />
+  <object key="numeric" value="Broj" />
+
+  <object key="english" value="Engleski" />
+  <object key="italian" value="Talijanski" />
+  <object key="spanish" value="&#352;panjolski" />
+  <object key="brazilian" value="Portugalski" />
+  <object key="german" value="German" />
+  <object key="croatian" value="Hrvatska" />
+  <object key="russian" value="Russian" />
+
+  <object key="male" value="Gospodin" />
+  <object key="female" value="Gospo&#273;a" />
+
+  <object key="officeNr" value="Na&#353; znak" />
+  <object key="otherRef" value="Druge napomene" />
+
+<!-- application translations -->
+
+  <object key="customizable windows" value="Prilagodljivi prozori" />
+  <object key="columnNameSYS12" value="Naziv polja u bazi podataka" />
+  <object key="columnTypeSYS12" value="Vrsta polja" />
+  <object key="columnSizeSYS12" value="Cijeli broj" />
+  <object key="columnDecSYS12" value="Decimalni broj" />
+  <object key="descriptionSYS10" value="Opis" />
+  <object key="The specified field name already exixts." value="Naziv polja postoji" />
+  <object key="Maximum number of customized columns reached." value="Dostignut najve&#263;i broj prilago&#273;enih stupaca" />
+  <object key="You must specify the number of integers and decimals for the column" value="Odrediti broj cijelih i decimalnih mjesta za stupac" />
+  <object key="You must specify the column length" value="Odrediti duljinu stupca" />
+  <object key="You are not allowed to delete the selected row." value=" Brisanje izabranog redka nije dozvoljeno" />
+  <object key="You are not allowed to delete data." value=" Brisanje zapisa nije dozvoljeno" />
+  <object key="You are not allowed to edit data." value=" Ure&#273;ivanje zapisa nije dozvoljeno" />
+  <object key="You are not allowed to insert data." value=" Umetanje zapisa nije dozvoljeno" />
+  <object key="newlevel.text" value="Upisati novu razinu" />
+  <object key="newlevel.mnemonic" value="N" />
+  <object key="removelevel.text" value="Ukloniti aktivnu razinu" />
+  <object key="removelevel.mnemonic" value="U" />
+  <object key="new level" value="Nova razina" />
+  <object key="You must specify a description for the new level." value="Potrebit opis nove razine" />
+  <object key="this will remove the current level and all sub-levels.Are you sure?" value="Postupak uklanja sada&#353;nju razinu i sve pod-razine \nJeste li sigurni?" />
+  <object key="change level description" value="Izmijeniti opis razine" />
+  <object key="You must specify a description for the level." value="Potrebit opis razine" />
+  <object key="level description: " value="Opis razine - " />
+  <object key="updatelevel.text" value="Izmijeniti opis razine" />
+  <object key="updatelevel.mnemonic" value="I" />
+
+
+  <object key="companies list" value="Popis tvrtki" />
+  <object key="companyCodeSYS01" value="ID tvrtke" />
+  <object key="company detail" value="Op&#353;irnije o tvrtki" />
+  <object key="organization data" value="Podaci o organizaciji" />
+  <object key="corporateName1" value="Naziv tvrtke" />
+  <object key="corporateName2" value="Dopunski naziv" />
+  <object key="address" value="Addresa" />
+  <object key="city" value="Grad" />
+  <object key="zip" value="HP" />
+  <object key="prov" value="&#381;upanija" />
+  <object key="country" value="Dr&#382;ava" />
+  <object key="taxCode" value="Porezni broj" />
+  <object key="phone" value="Telefon" />
+  <object key="fax" value="Telefaks" />
+  <object key="email" value="e-Po&#353;ta" />
+  <object key="webSite" value="WWW" />
+  <object key="lawfulSite" value="Domicil tvrtke" />
+  <object key="note" value="Opaska" />
+  <object key="languages list" value="Popis jezika" />
+  <object key="languageCodeSYS09" value="ID jezika" />
+  <object key="descriptionSYS09" value="Opis" />
+  <object key="clientLanguageCodeSYS09" value="ID jezika korisnika" />
+
+  <object key="companyCodeSys01WAR01" value="ID tvrtke" />
+  <object key="warehouse" value="Skladi&#353;te" />
+  <object key="warehouseCodeWAR01" value="ID skladi&#353;ta" />
+  <object key="descriptionWAR01" value="Opis skladi&#353;ta" />
+  <object key="addressWAR01" value="Addresa" />
+  <object key="cityWAR01" value="Grad" />
+  <object key="zipWAR01" value="HP" />
+  <object key="provinceWAR01" value="&#381;upanija" />
+  <object key="countryWAR01" value="Dr&#382;ava" />
+  <object key="warehouses" value="Skladi&#353;ta" />
+  <object key="warehouse detail" value="Skladi&#353;te op&#353;irnije" />
+  <object key="warehouse data" value="Podaci o skladi&#353;tu" />
+  <object key="positions" value="Spremnik" />
+  <object key="custom data" value="Prilago&#273;eni podaci" />
+  <object key="edit/delete warehouse role" value="Urediti - brisati ovlasti skladi&#353;ta" />
+  <object key="bookedItemsPanel" value="Koli&#269;ina rezerviranih i raspolo&#382;ivih artikala" />
+  <object key="orderedItemsPanel" value="Koli&#269;ina naru&#269;enih artikala" />
+  <object key="warehouseCodeWar01DOC06" value="Skl. oznaka" />
+  <object key="warehouseCodeWar01WAR03" value="Skl. oznaka" />
+
+  <object key="roles" value="Roles" />
+  <object key="you cannot change the administrator role" value="Ne mogu izmijeniti ovlasti upravitelja sustava" />
+  <object key="you cannot delete the administrator role" value="Ne mogu brisati ovlasti upravitelja sustava" />
+  <object key="function" value="Funckcija" />
+  <object key="canView" value="Pregled" />
+  <object key="canInsSYS07" value="Upisati" />
+  <object key="canUpdSYS07" value="A&#382;urirati" />
+  <object key="canDelSYS07" value="Brisati" />
+  <object key="there are users with the current role associated." value="Postoje korisnici navedene ovlasti" />
+  <object key="companyCodeSys01SYS02" value="ID tvrtke" />
+  <object key="canInsSYS02" value="Upisati" />
+  <object key="canUpdSYS02" value="A&#382;urirati" />
+  <object key="canDelSYS02" value="Brisati" />
+  <object key="users" value="Users" />
+  <object key="usernameSYS03" value="Nadimak" />
+  <object key="passwdSYS03" value="Zaporka" />
+  <object key="passwdExpirationSYS03" value="Zastara zaporke" />
+  <object key="languageCodeSys09SYS03" value="ID jezika" />
+  <object key="firstNameSYS03" value="Ime" />
+  <object key="lastNameSYS03" value="Prezime" />
+  <object key="companyCodeSys01SYS03" value="" />
+  <object key="progressiveReg04SYS03" value="" />
+  <object key="roleDescription" value="Opis ovlasti" />
+  <object key="selected" value="Selected" />
+  <object key="you cannot delete administrator user" value="Ne mogu brisati upravitelja sustava" />
+  <object key="user roles" value="User Roles" />
+  <object key="you must specify a date greater than today." value="Upisati budu&#263;i datum" />
+
+  <object key="vats" value="Porezi" />
+  <object key="vatDescription" value="Opis poreza" />
+  <object key="vatCodeREG01" value="ID poreza" />
+  <object key="valueREG01" value="Stopa poreza" />
+  <object key="deductibleREG01" value="% Odbitka" />
+  <object key="vatDeductibleREG01" value="% Odbitka" />
+
+  <object key="colors" value="Boje" />
+  <object key="colorCodeREG13" value="ID boje" />
+  <object key="colorDescription" value="Opis boje" />
+
+  <object key="sizes" value="Veli&#269;ine" />
+  <object key="sizeCodeREG14" value="ID veli&#269;ine" />
+  <object key="sizeDescription" value="Opis veli&#269;ine" />
+
+  <object key="banks" value="Banke" />
+  <object key="bank detail" value="Banka op&#353;irnije" />
+  <object key="bankCodeREG12" value="ID Banke" />
+  <object key="descriptionREG12" value="Opis banke" />
+  <object key="bbanREG12" value="BBAN" />
+  <object key="ibanREG12" value="IBAN" />
+
+  <object key="carriers" value="Prijevoznici" />
+  <object key="carrierCodeREG09" value="ID prevoznika" />
+  <object key="carrierDescription" value="Opis prevoznika" />
+
+  <object key="currencies" value="Valute" />
+  <object key="currencyCodeREG03" value="ID Valute" />
+  <object key="currencySymbolREG03" value="Znak valute" />
+  <object key="decimalSymbolREG03" value="Decimalni znak" />
+  <object key="thousandSymbolREG03" value="Znak ticu&#263;e" />
+  <object key="currencyCodeReg03REG06" value="Od ID valute" />
+  <object key="currencyCode2Reg03REG06" value="Do ID valute" />
+  <object key="decimalsREG03" value="Decimala" />
+  <object key="valueREG06" value="Stopa pretvorbe" />
+  <object key="currency conversions" value="Pretvorba valuta" />
+
+  <object key="measures" value="Jedinice mjere" />
+  <object key="umCodeREG02" value="Jedinica mjere" />
+  <object key="decimalsREG02" value="Broj decimala" />
+  <object key="measure conversions" value="Pretvorba mjera" />
+  <object key="umCodeReg02REG05" value="U jedinicu mjere" />
+  <object key="umCodeREG05" value="Iz jedinice mjere" />
+  <object key="valueREG05" value="Stopa pretvorbe" />
+
+  <object key="tasks" value="Du&#382;nosti" />
+  <object key="taskCodeREG07" value="ID du&#382;nosti" />
+  <object key="activityCodeSal09REG07" value="Oznaka" />
+  <object key="activityDescriptionREG07" value="Opis" />
+  <object key="companyCodeSys01REG07" value="ID tvrtke" />
+  <object key="taskDescription" value="Opis du&#382;nosti" />
+  <object key="currencyCodeReg03REG07" value="ID valute" />
+  <object key="durationREG07" value="Trajanje [min]" />
+  <object key="valueREG07" value="Mjera" />
+  <object key="finiteCapacityREG07" value="Kona&#269;ni kapacitet" />
+
+  <object key="item types" value="Vrste predmeta" />
+  <object key="item type" value="Vrsta predmeta" />
+  <object key="hierarchy" value="Hijerarhija" />
+  <object key="companyCodeSys01ITM02" value="ID tvrtke" />
+
+
+  <object key="companyCodeSys01ITM01" value="ID tvrtke" />
+  <object key="itemCodeITM01" value="ID predmeta" />
+  <object key="items" value="Predmeti" />
+  <object key="item detail" value="Predmet op&#353;irnije" />
+  <object key="images" value="Slike" />
+  <object key="level" value="Razina" />
+  <object key="addDescr" value="Dopunski opis" />
+  <object key="minSellingQtyITM01" value="Min. kol. prodaje" />
+  <object key="minSellingQtyUmCodeReg02ITM01" value="M.U." />
+  <object key="vat" value="PDV" />
+  <object key="grossWeightITM01" value="Btto te&#382;ina" />
+  <object key="netWeightITM01" value="Ntto te&#382;ina" />
+  <object key="widthITM01" value="&#352;irina" />
+  <object key="heightITM01" value="Te&#382;ina" />
+  <object key="load large image" value="U&#269;itati veliku sliku" />
+  <object key="load small image" value="U&#269;itati malu sliku" />
+  <object key="clear large image" value="Brisati veliku sliku" />
+  <object key="clear small image" value="Brisati malu sliku" />
+  <object key="serial number required" value="Potrebit broj serije" />
+
+  <object key="firstname" value="Ime" />
+  <object key="lastname" value="Prezime" />
+  <object key="mobile" value="Mobitel" />
+  <object key="socialsecnum" value="OIB" />
+  <object key="personal data" value="Osobni podaci" />
+  <object key="marital status" value="Bra&#269;no stanje" />
+  <object key="birthday" value="Datum ro&#273;enja" />
+  <object key="birthplace" value="Mjesto ro&#273;enja" />
+  <object key="nationality" value="Nacionalnost" />
+
+  <object key="customers" value="Kupci" />
+  <object key="taxCodeREG04" value="Porezni broj" />
+  <object key="companyCodeSys01REG04" value="ID tvrtke" />
+  <object key="customerCodeSAL07" value="ID Kupca" />
+  <object key="name_1REG04" value="Naziv - Ime" />
+  <object key="name_2REG04" value="Naziv I - Prezime" />
+  <object key="customer detail" value="Customer Detail" />
+  <object key="generic data" value="Osnovni podaci" />
+  <object key="customer data" value="Podaci o Kupcu" />
+  <object key="customer type" value="Vrsta Kupca" />
+  <object key="bank" value="Banka" />
+  <object key="pricelist" value="Cjenik" />
+  <object key="payment terms" value="Uvjeti pla&#263;anja" />
+  <object key="customer" value="Kupac" />
+  <object key="sex" value="Spol" />
+  <object key="destinations" value="Odredi&#353;ta" />
+  <object key="destinationCodeREG18" value="ID odredi&#353;ta" />
+  <object key="descriptionREG18" value="Opis" />
+  <object key="customer code already exist." value="ID kupca postoji" />
+
+  <object key="organization" value="Organizacija" />
+  <object key="organization contact" value="Kontakt osoba" />
+  <object key="organization customer" value="Organizacija kupca" />
+  <object key="private contact" value="Osobni kontakt" />
+  <object key="private customer" value="Privatni kupac" />
+  <object key="supplier" value="Dobavlja&#269;" />
+
+  <object key="private" value="Privatno" />
+
+  <object key="payment types" value="Vrste pla&#263;anja" />
+  <object key="paymentTypeCodeREG11" value="ID vrste pla&#263;anja" />
+  <object key="paymentTypeDescription" value="Opis vrste pla&#263;anja" />
+  <object key="payments" value="Pla&#263;anja" />
+  <object key="paymentDescription" value="Opis pla&#263;anja" />
+  <object key="paymentCodeREG10" value="ID pla&#263;anja" />
+  <object key="instalmentNumberREG10" value="Broj rata" />
+  <object key="startDayREG10" value="Po&#269;etni datum" />
+  <object key="invoice date" value="Datum ra&#269;una" />
+  <object key="end month" value="Kraj mjeseca" />
+  <object key="stepREG10" value="Korak" />
+  <object key="firstInstalmentDaysREG10" value="Dani prve rate" />
+  <object key="paymentTypeCodeReg11REG10" value="Osnovna vrsta pla&#263;anja" />
+  <object key="you must define at least one instalment" value="Postaviti barem jednu ratu" />
+  <object key="instalments" value="Rate" />
+  <object key="rateNumberREG17" value="Br" />
+  <object key="paymentTypeCodeReg11REG17" value="Vrsta pla&#263;anja" />
+  <object key="paymentTypeDescriptionSYS10" value="Opis vrste pla&#263;anja" />
+  <object key="percentageREG17" value="%" />
+  <object key="the sum of percentages must be 100" value="Zbir postotaka mora biti 100" />
+  <object key="instalmentDaysREG17" value="Proteklo dana" />
+  <object key="references" value="Preporuke" />
+  <object key="discounts" value="Popusti" />
+  <object key="discountCodeSAL03" value="ID popusta" />
+  <object key="discountDescription" value="Opis popusta" />
+  <object key="currencyCodeReg03SAL03" value="ID valute" />
+  <object key="minValueSAL03" value="Min vrijednost" />
+  <object key="maxValueSAL03" value="Max vrijednost" />
+  <object key="minPercSAL03" value="Min %" />
+  <object key="maxPercSAL03" value="Max %" />
+  <object key="startDateSAL03" value="Po&#269;etni datum" />
+  <object key="endDateSAL03" value="Xsvr&#353;ni datum" />
+  <object key="minQtySAL03" value="Min kol" />
+  <object key="multipleQtySAL03" value="Vi&#353;e kol" />
+  <object key="max and min values must be both setted." value="Postaviti najmanju i najve&#263;u vrijednost" />
+  <object key="max and min percentages must be both setted." value="Postaviti najmanji i najve&#263;i postotak" />
+  <object key="you must define max and min percentages or max and min values." value="Odrediti najmanji i najve&#263;i postotak ili najmanju i najve&#263;u vrijednost" />
+  <object key="you must define max and min percentages otherwise max and min values." value="Odrediti ili najmanji i najve&#263;i postotak ili najmanju i najve&#263;u vrijednost" />
+  <object key="min value must be less than or equals to max value." value="Najmanja vrijednost mora bit manja ili jednaka najve&#263;oj" />
+  <object key="min percentage must be less than or equals to max percentage." value="Najmanji postotak mora bit manji ili jednaki najve&#263;em" />
+  <object key="start date must be less than or equals to end date." value="Po&#269;etni datum mora biti prije ili jednak zavr&#353;nom" />
+
+  <object key="charges" value="Tro&#353;kovi" />
+  <object key="chargeCodeSAL06" value="ID tro&#353;ka" />
+  <object key="chargeDescription" value="Opis tro&#353;ka" />
+  <object key="valueSAL06" value="Stopa" />
+  <object key="percSAL06" value="%" />
+  <object key="vatCodeReg01SAL06" value="ID PDV" />
+  <object key="currencyCodeReg03SAL06" value="ID valute" />
+  <object key="vatValueREG01" value="Stopa PDV" />
+  <object key="companyCodeSys01SAL06" value="ID tvrtke" />
+  <object key="vatDescriptionSYS10" value="Opis PDV" />
+  <object key="you must define a value or a percentage charge." value="Postaviti vrijednost ili postotak tro&#353;ka" />
+  <object key="a charge must be define as a value or as a percentage." value="Tro&#353;ak odrediti kao vrijednost ili postotak" />
+  <object key="vat code is required for a charge expressed as a value." value="ID PDV potrebit za postavu vrijednosti tro&#353;ka" />
+
+  <object key="customer hierarchies" value="Hijerarhija kupaca" />
+  <object key="subjectTypeREG04" value="Vrsta" />
+  <object key="companyCodeSys01REG08" value="ID tvrtke" />
+  <object key="you must select a leaf node in the tree" value="Izabrati &#269;vor na stablu" />
+  <object key="hierarchies" value="Hijerarhija" />
+  <object key="SubjectHierarchyLevelsPanel" value="Razina u hijerarhiji" />
+  <object key="levelDescriptionSYS10" value="Razina hijerarhije" />
+
+  <object key="items hierarchy discounts" value="Popust po artiklu u hijerarhiji" />
+  <object key="customers hierarchy discounts" value="Popust po kupcu u hijerarhiji" />
+
+  <object key="referenceTypeREG15" value="Referentna vrsta" />
+  <object key="valueREG15" value="Vrijednost" />
+
+  <object key="pricelists" value="Cjenici" />
+  <object key="companyCodeSys01SAL01" value="ID tvrtke" />
+  <object key="currencyCodeReg03SAL01" value="ID valute" />
+  <object key="pricelistCodeSAL01" value="ID cjenika" />
+  <object key="validity date filter" value="Filtar po datumu valjanosti" />
+  <object key="item prices" value="Cijene artikla" />
+  <object key="valueSAL02" value="Cijena" />
+  <object key="startDateSAL02" value="Po&#269;etni datum valjanosti" />
+  <object key="endDateSAL02" value="Zavr&#353;ni datum valjanosti" />
+  <object key="itemCodeItm01SAL02" value="ID artikla" />
+  <object key="progressiveHie02ITM01" value="Vrsta artikla" />
+  <object key="itemDescriptionSYS10" value="Opis artikla" />
+  <object key="import items" value="Uvesti predmete" />
+  <object key="ok" value="OK" />
+  <object key="okmnemonic" value="O" />
+  <object key="validation dates and price are required." value="Potrebiti datumi valjanosti i cijena" />
+  <object key="changes to pricelist" value="Izmjene cjenika" />
+  <object key="new start validation date" value="Novi Po&#269;etni datum valjanosti" />
+  <object key="new end validation date" value="Novi Zavr&#353;ni datum valjanosti" />
+  <object key="add this delta to all prices" value="Dodati ovu razliku svim cijenema" />
+  <object key="add to all prices a %" value="Dodati % svim cijenema" />
+  <object key="truncate decimals" value="Skratiti decimale" />
+  <object key="change date interval" value="Izmijeniti datume" />
+  <object key="date interval" value="Razmak datuma" />
+  <object key="change prices" value="Izmijeniti cijene" />
+  <object key="import all items" value="Uvesti sve artikle" />
+  <object key="import all supplier items" value="Uvesti sve artikle dobavlja&#269;a" />
+  <object key="validation dates are required." value="Potrebiti datumi valjanosti" />
+  <object key="price value is required." value="Upisati cijenu" />
+  <object key="price % is required." value="Upisati % cijene" />
+  <object key="pricelistCodeSal01SAL02" value="ID cjenika" />
+  <object key="pricelistDescriptionSYS10" value="Opis cjenika" />
+
+  <object key="trustAmountSAL07" value="Iznos povjerenja" />
+
+  <object key="agentTypeDescription" value="Vrsta agenta" />
+  <object key="agent types" value="Vrste agenata" />
+  <object key="an agent with the same code already exists." value="ID agenta postoji" />
+  <object key="agents" value="Agenti" />
+  <object key="agentCodeSAL10" value="ID Agenta" />
+  <object key="percentageSAL10" value="Provizija %" />
+  <object key="progressiveSys10SAL10" value="Vrsta" />
+  <object key="progressiveReg04SAL10" value="Djelatnik" />
+
+  <object key="employees" value="Djelatnici" />
+  <object key="employee detail" value="Op&#353;irnije o djelatniku" />
+  <object key="employee data" value="Podaci djelatnika" />
+  <object key="people data" value="Podaci" />
+  <object key="employeeCodeSCH01" value="ID djelatnika" />
+  <object key="phoneNumberSCH01" value="Telefon" />
+  <object key="officeSCH01" value="Ured" />
+  <object key="taskCodeReg07SCH01" value="Oznaka zada&#263;e" />
+  <object key="divisionSCH01" value="Odjeljenje" />
+  <object key="engagedDateSCH01" value="Datum zaposlenja" />
+  <object key="dismissalDateSCH01" value="Datum otkaza" />
+  <object key="levelSCH01" value="Razina" />
+  <object key="salarySCH01" value="Pla&#263;a" />
+  <object key="manager" value="Rukovodilac" />
+  <object key="assistant" value="Asistent" />
+  <object key="employee" value="Djelatnik" />
+  <object key="companyCodeSys01SCH01" value="ID tvrtke" />
+
+  <object key="there is already another people with the same first and last name." value="Djelatnik istog imena i prezimena postoji" />
+  <object key="there is already another organization with same the corporate name" value="Djelatnik postoji u tvrtki istog naziva" />
+  <object key="there is already another employee with the same employee code." value="ID djelatnika postoji" />
+
+  <object key="suppliers" value="Dobavlja&#269;i" />
+  <object key="supplierCodePUR01" value="ID dobavlja&#269;a" />
+  <object key="supplier detail" value="Dobavlja&#269; op&#353;irnije" />
+  <object key="supplier data" value="Podaci o dobavlja&#269;u" />
+  <object key="supplier code already exist." value="ID dobavlja&#269;a postoji" />
+  <object key="supplier hierarchies" value="Hijerarhija dobavlja&#269;a" />
+  <object key="item hierarchies" value="Hijerarhija artikala" />
+  <object key="supplierItemCodePUR02" value="ID artikla dobavlja&#269;a" />
+  <object key="umCodeReg02PUR02" value="JM kupnje" />
+  <object key="minPurchaseQtyPUR02" value="Min. Kol." />
+  <object key="multipleQtyPUR02" value="Vi&#353;estruka Kol." />
+  <object key="you are allowed to insert data only on a leaf node." value="Upisati na &#269;voru stabla" />
+  <object key="supplierItems" value="Artikli dobavlja&#269;a" />
+  <object key="import supplier items" value="Uvesti artikle dobavlja&#269;a" />
+  <object key="supplierPricelists" value="Cjenici dobavlja&#269;a" />
+  <object key="companyCodeSys01PUR03" value="ID tvrtke" />
+  <object key="currencyCodeReg03PUR03" value="ID valute" />
+  <object key="pricelistDescription" value="Opis cjenika" />
+  <object key="pricelistCodePUR03" value="ID cjenika" />
+  <object key="valuePUR04" value="Cijena" />
+  <object key="startDatePUR04" value="Po&#269;etni datum valjanosti" />
+  <object key="endDatePUR04" value="Zavr&#353;ni datum valjanosti" />
+  <object key="itemCodeItm01PUR04" value="ID artikla" />
+
+  <object key="document identification" value="Oznaka dokumenta" />
+  <object key="docNumber" value="Broj Dok." />
+  <object key="docYear" value="Godina" />
+  <object key="docType" value="Vrsta Dok." />
+  <object key="docRif" value="Ref. Dok." />
+  <object key="docDate" value="Datum Dok." />
+  <object key="docState" value="Stanje Dok." />
+  <object key="supplier data" value="Podaci dobavlja&#269;a" />
+  <object key="documents" value="Documenti" />
+
+  <object key="companyCodeSys01DOC06" value="ID tvrtke" />
+  <object key="docTypeDOC06" value="Vrsta Dok." />
+  <object key="docStateDOC06" value="Stanje Dok." />
+  <object key="pricelistCodePur03DOC06" value="ID cjenika" />
+  <object key="pricelistDescriptionDOC06" value="Opis cjenika" />
+  <object key="currencyCodeReg03DOC06" value="ID valute" />
+  <object key="docYearDOC06" value="Godina" />
+  <object key="docNumberDOC06" value="Broj Dok." />
+  <object key="taxableIncomeDOC06" value="Porezna osnovica" />
+  <object key="totalVatDOC06" value="PDV" />
+  <object key="totalDOC06" value="Ukupno" />
+  <object key="docDateDOC06" value="Datum Dok." />
+  <object key="discounts and charges" value="Popusti i tro&#353;kovi" />
+  <object key="discount value" value="Vrijednost popusta" />
+  <object key="net discount value" value="Ntto Vrijednost popusta" />
+  <object key="discount perc" value="Popust %" />
+  <object key="charge value" value="Iznos tro&#353;ka" />
+  <object key="charge perc" value="Tro&#353;ak %" />
+  <object key="totals" value="Ukupno" />
+  <object key="taxableIncome" value="Porezna osnovica" />
+  <object key="totalVat" value="PDV" />
+  <object key="total" value="Ukupno" />
+  <object key="purchase orders" value="Narud&#382;benice" />
+  <object key="purchase order" value="Narud&#382;benica op&#353;irnije" />
+  <object key="header" value="Zaglavlje" />
+  <object key="lines" value="Redci" />
+  <object key="opened" value="Otvoreno" />
+  <object key="header blocked" value="Zaglavlje blokirano" />
+  <object key="suspended" value="Zaustavljeno" />
+  <object key="confirmed" value="Potvr&#273;eno" />
+  <object key="closed" value="Zatvoreno" />
+  <object key="line detail" value="Redak op&#353;irnije" />
+  <object key="itemCodeItm01DOC07" value="ID artikla" />
+  <object key="supplierItemCode" value="ID artikla dob." />
+  <object key="vatCode" value="ID PDV" />
+  <object key="valuePur04DOC07" value="Jedini&#269;na cijena" />
+  <object key="valueDOC07" value="Ukupno" />
+  <object key="qtyDOC07" value="Kol" />
+  <object key="discountValueDOC07" value="Vrijednost popusta" />
+  <object key="discountPercDOC07" value="Popust %" />
+  <object key="vatValueDOC07" value="PDV" />
+  <object key="valueReg01DOC07" value="PDV %" />
+  <object key="deductibleReg01DOC07" value="Odbirak PDV %" />
+  <object key="the price is no more valid" value="Cijena vi&#353;e nije valjana" />
+  <object key="itemCodeItm01PUR02" value="ID artikla" />
+  <object key="item" value="Artikl" />
+  <object key="confirm purchase order?" value="Potvrditi narud&#382;benicu?&#10;Nakon potvrde urediti" />
+  <object key="order confirmation" value="Potvrda narud&#382;be" />
+  <object key="deliveryDateDOC07" value="Planiran datum isporuke" />
+  <object key="inQtyDOC07" value="U kol." />
+
+  <object key="in delivery notes" value="Primke" />
+  <object key="companyCodeSys01DOC08" value="ID tvrtke" />
+  <object key="docTypeDOC08" value="Vrsta Dok." />
+  <object key="docStateDOC08" value="Stanje Dok." />
+  <object key="warehouseCodeWar01DOC08" value="ID skladi&#353;ta" />
+  <object key="docRefDOC08" value="Ref. Dok." />
+  <object key="warehouseDescriptionDOC08" value="Skladi&#353;te op&#353;irnije" />
+  <object key="docDateDOC08" value="Datum Dok." />
+  <object key="docYearDOC08" value="Godina" />
+  <object key="docNumberDOC08" value="Broj Dok." />
+  <object key="in delivery note" value="Primka" />
+  <object key="delivery note closure" value="Zatvoriti dok." />
+  <object key="close delivery note?" value="Zatvoriti primku i prenijeti na skladi&#353;te?" />
+  <object key="other data" value="Ostali podaci" />
+  <object key="docYearDoc06DOC09" value="Godina narud&#382;be" />
+  <object key="docNumberDoc06DOC09" value="Narud&#382;benica br." />
+  <object key="progressiveHie02DOC09" value="Vrsta artikla" />
+  <object key="qtyDOC09" value="Ulazna kol." />
+  <object key="supplierQtyDOC09" value="Ulazna kol. dobavlja&#269;a" />
+  <object key="itemCodeItm01DOC09" value="ID artikla" />
+  <object key="supplier items" value="Artikli dobavlja&#269;a" />
+  <object key="um" value="JM" />
+  <object key="no delivery note to update" value="Nema dostavnice za osvje&#382;iti" />
+  <object key="record not found" value="Zapis ne postoji" />
+  <object key="warehouse positions" value="Spremnici skladi&#353;ta" />
+  <object key="the warehouse motive specified is not defined" value="Navedeno skladi&#353;no pravilo nije postavljeno" />
+  <object key="load items from purchase order" value="U&#269;itati artikle iz narud&#382;benice" />
+  <object key="purchase order rows" value="Redci narud&#382;benice" />
+  <object key="import purchase order rows" value="U&#269;itati redke narud&#382;benice" />
+  <object key="purchaseOrder" value="Narud&#382;benica" />
+  <object key="confirmed purchase orders" value="Potvr&#273;ene narud&#382;benice" />
+  <object key="unload items from delivery request" value="Isprazniti artikle iz zahtjeva za isporuku" />
+  <object key="docSequenceDoc01DOC01" value="Broj prod. dok." />
+  <object key="docSequenceDOC01" value="Broj prod. dok." />
+  <object key="docSequenceDoc06DOC06" value="Broj nab. dok." />
+  <object key="docSequenceDOC06" value="Broj nab. dok." />
+  <object key="docSequenceDoc06DOC09" value="Broj nab. dok." />
+  <object key="docSequenceDoc01DOC10" value="Broj prod. dok." />
+  <object key="docSequenceDOC08" value="Broj otpremnice" />
+  <object key="sectionalDOC01" value="Sekcijski" />
+
+  <object key="close out delivery note?" value="Zatvoriti dostavnicu i isprazniti artikle sa skladi&#353;ta?" />
+  <object key="out delivery notes" value="Otpremnice" />
+  <object key="out delivery note" value="Otpremnica" />
+  <object key="docYearDoc01DOC10" value="Godina Dol." />
+  <object key="docNumberDoc01DOC10" value="Broj Dok." />
+  <object key="progressiveHie02DOC10" value="Vrsta artikla" />
+  <object key="qtyDOC10" value="Isp. kol." />
+  <object key="saleQtyDOC02" value="Prod. kol." />
+  <object key="saleOutQtyDOC02" value="Prodajna kol." />
+  <object key="itemCodeItm01DOC10" value="ID artikla" />
+  <object key="confirmed sale documents" value="Potvr&#273;eni prod. dok." />
+  <object key="sale document rows" value="Redci prodajnog dok." />
+  <object key="import delivery request rows" value="U&#269;itati redke zahtjeva za isporuku" />
+
+  <object key="locationDescriptionSYS10" value="Spremnik artikla" />
+  <object key="itemCodeItm01WAR03" value="ID artikla" />
+  <object key="availableQtyWAR03" value="Raspolo&#382;iva kol." />
+  <object key="damagedQtyWAR03" value="O&#353;te&#263;eno kol." />
+  <object key="item availability" value="Raspolo&#382;ivost artikla" />
+
+  <object key="warehouse motives" value="Skladi&#353;na Pravila" />
+  <object key="warehouseMotiveWAR04" value="Pravilo" />
+  <object key="motiveDescription" value="Opis pravila" />
+  <object key="itemTypeWAR04" value="Vrsta artikla" />
+  <object key="qtySignWAR04" value="Oznaka koli&#269;ine" />
+  <object key="good item" value="Ispravan artikl" />
+  <object key="damaged item" value="O&#353;te&#263;en artikl" />
+  <object key="add" value="Dodati" />
+  <object key="substract" value="Oduzeti" />
+
+  <object key="warehouse movements" value="Skladi&#353;ni promet" />
+  <object key="sign" value="Oznaka" />
+  <object key="type" value="Vrsta" />
+  <object key="warehouseCodeWar01WAR02" value="Skladi&#353;ni ID" />
+  <object key="itemCodeItm01WAR02" value="ID artikla" />
+  <object key="movementDateWAR02" value="Datum prometa" />
+  <object key="usernameWAR02" value="Nadimak" />
+  <object key="noteWAR02" value="Opaska" />
+  <object key="deltaQtyWAR02" value="Kol" />
+  <object key="warehouseMotiveWar04WAR02" value="Pravilo" />
+  <object key="motiveDescriptionSYS10" value="Opis pravila" />
+  <object key="update not allowed until serial numbers are not defined" value="Prethodno odrediti broj serije" />
+  <object key="insert not allowed until serial numbers are not defined" value="Prethodno odrediti broj serije" />
+  <object key="serial numbers from item" value="Broj serije artikla" />
+  <object key="serial number" value="Serijski broj" />
+  <object key="bar code" value="Crti&#269;ni kod" />
+  <object key="you must define a serial number for each row" value="Upisati broj serije za svaki redak" />
+  <object key="close" value="Zatvoriti" />
+
+  <object key="booked items and availability" value="Rezervirani artikli i dostupnost" />
+  <object key="future item availability" value="Budu&#263;a raspolo&#382;ivost artikla" />
+  <object key="itemCodeItm01DOC02" value="ID artikla" />
+  <object key="bookQtyDOC02" value="Rezervirana kol." />
+  <object key="orderQtyDOC07" value="Naru&#269;ena kol." />
+
+  <object key="manual movement" value="Ru&#269;ni promet" />
+  <object key="manual movement correctly inserted" value="Ru&#269;no promet ispravno upisan" />
+
+  <object key="companyCodeSys01DOC01" value="ID tvrtke" />
+  <object key="docTypeDOC01" value="Vrsta Dok." />
+  <object key="docStateDOC01" value="Stanje Dok." />
+  <object key="pricelistCodeSal01DOC01" value="ID cjenika" />
+  <object key="pricelistDescriptionDOC01" value="Opis cjenika" />
+  <object key="currencyCodeReg03DOC01" value="ID valute" />
+  <object key="docYearDOC01" value="Godina" />
+  <object key="docNumberDOC01" value="Broj Dok." />
+  <object key="taxableIncomeDOC01" value="Porezna osnovica" />
+  <object key="totalVatDOC01" value="PDV" />
+  <object key="totalDOC01" value="Ukupno" />
+  <object key="docDateDOC01" value="Datum Dok." />
+  <object key="valueSal02DOC02" value="Jedini&#269;na cijena" />
+  <object key="valueDOC02" value="Ukupno" />
+  <object key="qtyDOC02" value="Kol" />
+  <object key="totalDiscountDOC02" value="Popust ukupno" />
+  <object key="vatValueDOC02" value="PDV ukupno" />
+  <object key="valueReg01DOC02" value="PDV %" />
+  <object key="deductibleReg01DOC02" value="Odbitak PDV %" />
+  <object key="deliveryDateDOC02" value="Prethodni datum isporuke" />
+  <object key="outQtyDOC02" value="Izlazna kol" />
+  <object key="sale orders" value="Prodajni nalog" />
+  <object key="notes" value="Opaske" />
+  <object key="allowanceDOC01" value="Isplata" />
+  <object key="depositDOC01" value="Polog" />
+  <object key="docRef" value="Ref.Br.Dok." />
+  <object key="percentageDOC01" value="Provizija %" />
+  <object key="header note" value="Opaska u zaglavlju" />
+  <object key="footer note" value="Opaska u podno&#382;ju" />
+  <object key="delivery note" value="Otpremnica" />
+  <object key="sale order" value="Prodajni nalog" />
+  <object key="agent" value="Agent" />
+  <object key="error on applying item discounts" value="Gre&#353;ka pridru&#382;ivanja popusta za artikl" />
+  <object key="confirm sale order?" value="Potvrditi prodajni nalog?" />
+  <object key="document total cannot be less than zero!" value="Ukupni iznos ne mo&#382;e biti manji od nula!" />
+  <object key="item discounts" value="Popusti artikla" />
+  <object key="minValueDOC04" value="Min Vrijednost" />
+  <object key="maxValueDOC04" value="Max Vrijednost" />
+  <object key="minPercDOC04" value="Min %" />
+  <object key="maxPercDOC04" value="Max %" />
+  <object key="discountCodeSal03DOC04" value="ID popusta" />
+  <object key="discountDescriptionDOC04" value="Opis popusta" />
+  <object key="valueDOC04" value="Vrijednost" />
+  <object key="percDOC04" value="%" />
+  <object key="minQtyDOC04" value="Min kol" />
+  <object key="multipleQtyDOC04" value="Vi&#353;estr.kol" />
+
+  <object key="customer discounts" value="Popusti kupcu" />
+  <object key="minValueDOC05" value="Min Vrijednost" />
+  <object key="maxValueDOC05" value="Max Vrijednost" />
+  <object key="minPercDOC05" value="Min %" />
+  <object key="maxPercDOC05" value="Max %" />
+  <object key="discountCodeSal03DOC05" value="ID popusta" />
+  <object key="discountDescriptionDOC05" value="Opis popusta" />
+  <object key="valueDOC05" value="Vrijednost" />
+  <object key="percDOC05" value="%" />
+  <object key="you must define a discount as value or as a percentage" value="Odrediti popust kao vrijednost u valuti ili kao postotak" />
+
+  <object key="you must define a charge as value or as a percentage" value="Odrediti tro&#353;ak kao vrijednost u valuti ili kao postotak" />
+  <object key="valueSal06DOC03" value="Osnovna vrijedost" />
+  <object key="percSal06DOC03" value="Osnovn1 %" />
+  <object key="chargeCodeSal06DOC03" value="ID tro&#353;ka" />
+  <object key="chargeDescriptionDOC03" value="Opis tro&#353;ka" />
+  <object key="valueDOC03" value="Vrijednost" />
+  <object key="percDOC03" value="%" />
+
+  <object key="sale activities" value="Prodajne aktvnosti" />
+  <object key="scheduled activities" value="Planirane aktivnosti" />
+  <object key="activityCodeSAL09" value="ID aktivnosti" />
+  <object key="activityDescriptionDOC13" value="Opis aktivnosti" />
+  <object key="valueSAL09" value="Cijena" />
+  <object key="valueSal09DOC13" value="Cijena na sat" />
+  <object key="valueReg01DOC13" value="Iznos poreza" />
+  <object key="currencyCodeReg03SAL09" value="ID valute" />
+  <object key="currencyCodeReg03DOC13" value="ID valute" />
+  <object key="descriptionSCH06" value="Opis planirane aktvnosti" />
+  <object key="startDateSCH06" value="Datum po&#269;etka" />
+  <object key="endDateSCH06" value="Datum zavr&#353;etka" />
+  <object key="durationSCH06" value="Trajanje [min]" />
+  <object key="durationDOC13" value="Trajanje [min]" />
+  <object key="valueDOC13" value="Cijena ukupno" />
+  <object key="companyCodeSys01SAL09" value="ID tvrtke" />
+  <object key="vatCodeReg01SAL09" value="ID poreza" />
+  <object key="vatCodeSal09DOC13" value="ID poreza" />
+  <object key="activityCodeSal09DOC13" value="ID aktivnosti" />
+  <object key="vatValueDOC13" value="Vrijednost poreza" />
+  <object key="vatDeductibleDOC13" value="% Odbitno" />
+  <object key="vatDescriptionDOC13" value="Opis poreza" />
+
+  <object key="sale contract" value="Prodajni ugovor" />
+  <object key="sale contracts" value="Prodajni ugovori" />
+  <object key="contract confirmation" value="Potvrda ugovora" />
+  <object key="confirm sale contract?" value="Potvrditi prodajni ugovor?" />
+
+  <object key="sale estimate" value="Prodajna Procjena/Punuda" />
+  <object key="sale estimates" value="Prodajne Procjene/Punude" />
+
+  <object key="desk selling" value="Prodaja na malo" />
+  <object key="desk sellings" value="Prodaja na malo" />
+  <object key="confirm desk selling?" value="Zatvoriti i isprazniti artikle sa skladi&#353;ta?" />
+  <object key="desk selling confirmation" value="Zatvaram maloprodaju i uklanjam artikle sa skladi&#353;ta?" />
+  <object key="document closing not allowed: item not available in warehouse" value="Ne mogu zatvoriti dokument - artikl nije raspolo&#382;iv na skladi&#353;tu" />
+  <object key="create sale invoice?" value="Stvoriti ra&#269;un?" />
+  <object key="desk selling invoice" value="Maloprodajni ra&#269;un" />
+  <object key="manually created" value="Ru&#269;no stvoreno" />
+  <object key="from deliv.note" value="Iz otpremnice" />
+  <object key="from sale doc." value="Iz prodajnog dokumenta" />
+
+  <object key="user parameters" value="O korisniku" />
+  <object key="company" value="Tvrtka" />
+  <object key="retail sale customer" value="Rabi se u maloprodaji" />
+  <object key="retail warehouse" value="Maloprodajno skladi&#353;te" />
+  <object key="receipt manager" value="Upravitelj primki" />
+  <object key="receipts management program selection" value="Izbor programa koji upravlja primkama" />
+  <object key="retail sale export non allowed: receipt path has not been defined as user parameter." value="Izvoz u maloprodaju nije dozvoljen - put do ispisa ra&#269;un nije postavljen na razini korisnika" />
+  <object key="company not found." value="Tvrtka ne postoji" />
+  <object key="error while executing external application; return code:" value="Gre&#353;ka izvo&#273;enja vanjskog programa oznake - " />
+
+  <object key="sale invoices" value="Fakture" />
+  <object key="sale invoice" value="Faktura" />
+  <object key="close sale invoice?" value="Zatvoriti fakturu?" />
+  <object key="invoice closing" value="Zatvaram fakturu" />
+  <object key="sale invoice from delivery notes" value="Faktura iz otpremnica" />
+  <object key="sale invoice from sale document" value="Faktura iz prodajnog dokumenta" />
+  <object key="invoiceQtyDOC02" value="Fakturirana kol." />
+  <object key="invoiceType" value="Vrsta fakture" />
+  <object key="invoiceNumber" value="Br. Fakture" />
+  <object key="create sale document from estimate" value="Stvoriti prodajni dokument iz prora&#269;una" />
+  <object key="create sale document from estimate?" value="Stvoriti prodajni dokument iz prora&#269;una?" />
+  <object key="sale document creation" value="Stvaram prodajni dokument" />
+  <object key="estimate nr. " value="Br. prora&#269;una " />
+  <object key="province" value="&#381;upanija" />
+  <object key="invoicedValueDOC13" value="Vrijednost ra&#269;una" />
+  <object key="invoicedValueDOC03" value="Vrijednost ra&#269;una" />
+
+  <object key="credit notes" value="Odobrenja" />
+  <object key="credit note" value="Odobrenje" />
+  <object key="credit note closing" value="Zatvaram odobrenje" />
+  <object key="close credit note?" value="Zatvoriti odobrenje?" />
+  <object key="debiting notes" value="Tere&#263;enja" />
+  <object key="debiting note" value="Tere&#263;enje" />
+  <object key="close debiting note?" value="Zatvoriti tere&#263;enje?" />
+  <object key="debiting note closing" value="Zatvaram tere&#263;enje" />
+  <object key="noteNumber" value="Br. dokumenta" />
+
+  <object key="expirations" value="Istek" />
+  <object key="docTypeDOC19" value="Vrsta Dok." />
+  <object key="docYearDOC19" value="Godina" />
+  <object key="docSequenceDOC19" value="Nr." />
+  <object key="companyCodeSys01DOC19" value="ID tvrtke" />
+  <object key="valueDOC19" value="Vrijednost" />
+  <object key="expirationDateDOC19" value="Datum isteka" />
+  <object key="docDateDOC19" value="Datum Dok." />
+  <object key="customerSupplierCodeDOC19" value="ID Kupca/Dobavlja&#269;a" />
+  <object key="name_1DOC19" value="Naziv tvrtke - Ime" />
+  <object key="name_2DOC19" value="Naziv tvrtke I - Prezime" />
+  <object key="payedDOC19" value="Pla&#263;eno" />
+  <object key="startDate" value="Po&#269;etni datum" />
+  <object key="endDate" value="Zavr&#353;ni datum" />
+  <object key="show also payed expirations" value="Prikazati i istekla pla&#263;anja" />
+  <object key="purchase invoice" value="Ulazni ra&#269;un" />
+  <object key="all invoices" value="Svi ra&#269;uni" />
+  <object key="you must select at least one delivery note" value="Izabrati barem jednu dostavnicu" />
+  <object key="delivery notes" value="Dostavnice" />
+  <object key="descriptionDOC08" value="Opis odredi&#353;ta" />
+  <object key="destinationCodeReg18DOC08" value="ID Odredi&#353;ta" />
+
+  <object key="contact" value="Kontakt" />
+  <object key="contact detail" value="Kontakt op&#353;irnije" />
+  <object key="contacts" value="Kontakti" />
+  <object key="contact type" value="Vrsta kontakta" />
+  <object key="contacts hierarchies" value="Hijerarhija kontakata" />
+  <object key="organizationName_1REG04" value="Referentna organizacija" />
+
+  <object key="create purchase invoice?" value="Stvoriti ulaznu fakturu?" />
+  <object key="from purchase doc." value="Iz narud&#382;benice" />
+  <object key="purchase invoices" value="Odbitne ulazne fakture" />
+  <object key="close purchase invoice?" value="Zatvoriti ulaznu fakturu?" />
+  <object key="purchase invoice from delivery notes" value="Ulazna faktura iz otpremnice" />
+  <object key="purchase invoice from purchase document" value="Ulazna faktura iz narud&#382;benice" />
+  <object key="invoiceQtyDOC07" value="Fakturna kol" />
+  <object key="purchase document creation" value="Stvaranje dokumenta o kupnji" />
+
+  <object key="jasper file not found: report generation is not possible." value="Jasper datoteka ne postoji - ne mogu sa&#269;initi izvje&#353;&#263;e" />
+  <object key="print document" value="Tiskati dokument" />
+  <object key="warehouse inventory" value="Popis skladni&#353;ta" />
+  <object key="please select a company" value="Izabrati tvrtku!" />
+
+  <object key="contact to customer conversion" value="Pretvorba kontakt u kupac" />
+  <object key="convert contact to customer" value="Pretvoriti kontakt u kupca" />
+  <object key="transport motives" value="Pravila prijevoza" />
+  <object key="transportMotiveCodeREG20" value="Pravilo prijevoza" />
+  <object key="deliveryDate" value="Datum isporuke" />
+
+  <object key="ledger" value="Glavna knjiga" />
+  <object key="ledgerCodeACC01" value="Oznaka glavne knjige" />
+  <object key="accountTypeACC01" value="Vrsta" />
+  <object key="patrimonial" value="Bilan&#269;ni konto" />
+  <object key="economic" value="Konto do(gu)bitka" />
+
+  <object key="accountingMotives" value="Ra&#269;unovodstvena pravila" />
+  <object key="accountingMotiveCodeACC03" value="Oznaka" />
+  <object key="deleting not allowed" value="Brisanje nije dozvoljeno" />
+  <object key="intracom. on purchase" value="Unutarnji kupnja" />
+  <object key="intracom. on selling" value="Unutarnji prodaja" />
+  <object key="selling" value="Prodaja" />
+  <object key="retail" value="Maloprodaja" />
+  <object key="purchase" value="Kupnja" />
+  <object key="accountCodeAcc02ACC04" value="Oznaka ra&#269;una" />
+  <object key="registerTypeACC04" value="Vrsta" />
+  <object key="accountDescriptionACC04" value="Opis" />
+  <object key="edit not allowed" value="Ure&#273;ivanje nije dozvoljeno" />
+  <object key="vat registers" value="Popisi poreza" />
+  <object key="vat register" value="Popis poreza" />
+  <object key="registerCodeACC04" value="Oznaka popisa" />
+  <object key="companyCode" value="ID tvrtke" />
+  <object key="insert not allowed" value="Upis nije dozvoljen" />
+  <object key="accountCodeACC02" value="Oznaka ra&#269;una" />
+  <object key="accountTypeACC02" value="Osnovni stupac" />
+  <object key="ledgerCodeAcc01ACC02" value="Oznaka GK" />
+  <object key="ledgerDescriptionACC02" value="Opis GK" />
+  <object key="debits/proceedings" value="Duguje/Prihod" />
+  <object key="credits/costs" value="Potra&#382;uje/Tro&#353;ak" />
+  <object key="accounts" value="Ra&#269;uni" />
+
+  <object key="company filter" value="Filtar tvrtka" />
+  <object key="retail selling" value="Maloprodaja" />
+  <object key="accounting" value="Ra&#269;unovodstvo" />
+  <object key="credits account" value="Potra&#382;ni ra&#269;un" />
+  <object key="selling items account" value="Ra&#269;un prodane robe" />
+  <object key="selling activities account" value="Ra&#269;un prodajnih aktivnosti" />
+  <object key="selling charges account" value="Ra&#269;un tro&#353;kova prodaje" />
+  <object key="debits account" value="Dugovni ra&#269;un" />
+  <object key="purchase costs account" value="Ra&#269;un tro&#353;kova kupnje" />
+  <object key="case account" value="Ra&#269;un slu&#269;aja" />
+
+  <object key="print journal" value="Tiskati dnevnik" />
+  <object key="from item number" value="Od broja" />
+  <object key="from date" value="Od datuma" />
+  <object key="to date" value="Do datuma" />
+  <object key="please set a from/to date" value="Postaviti datume od - do" />
+  <object key="print costs/preceedings" value="Tiskati tro&#353;kove - prihode" />
+  <object key="print debit/credit" value="Tiskati duguje - potra&#382;uje" />
+  <object key="print budget" value="Tiskati probnu bilancu" />
+  <object key="print accounts movements" value="Tiskati promet ra&#269;una" />
+  <object key="please set a from/to account code" value="Postaviti od - do &#353;ifru ra&#269;una" />
+  <object key="from account" value="Od ra&#269;una" />
+  <object key="to account" value="Do ra&#269;una" />
+  <object key="print statement of account" value="Tiskati promet ra&#269;una" />
+  <object key="please set a customer code" value="Postaviti &#353;ifru poslovnog partnera" />
+  <object key="vat endorsing" value="Potvrda poreza" />
+  <object key="please set the date" value="Postavti datum" />
+  <object key="vat endorsing completed." value="Potvrda poreza zavr&#353;ena" />
+  <object key="endorse vat from register" value="Porez iz popisa" />
+  <object key="period" value="Razdoblje" />
+  <object key="vat endorse account" value="Ra&#269;un poreza" />
+  <object key="bank account" value="Bankovni ra&#269;un" />
+  <object key="itemNumber" value="Stavka broj" />
+  <object key="registrationDate" value="Datum upisa" />
+  <object key="accountingMotive" value="Ra&#269;unovodstveno pravilo" />
+  <object key="description" value="Opis" />
+  <object key="cust./suppl./acc." value="Kupac/Dobavlj./Rn" />
+  <object key="code" value="Oznaka" />
+  <object key="debit" value="Duguje" />
+  <object key="credit" value="Potra&#382;uje" />
+  <object key="totalDebit" value="Duguje ukupno" />
+  <object key="totalCredit" value="Potra&#382;uje ukupno" />
+  <object key="lack of balance" value="Nije u ravnote&#382;i" />
+  <object key="new item without vat" value="Novo bez poreza" />
+  <object key="descriptionACC06" value="Opis" />
+  <object key="accountCodeACC06" value="Oznaka ra&#269;una" />
+  <object key="accountDescriptionACC06" value="Opis ra&#269;una" />
+  <object key="debitAmountACC06" value="Duguje" />
+  <object key="creditAmountACC06" value="Potra&#382;uje" />
+  <object key="accountCodeTypeACC06" value="Kupac/Dobavlj./Rn" />
+  <object key="you must specify a debit or credit amount" value="Upisati iznos duguje ili potra&#382;uje" />
+  <object key="you must specify a code" value="Upisati &#353;ifru" />
+  <object key="you must insert al least two rows" value="Upisati barem dva redka" />
+  <object key="there is a lack of balance between debit and credit amounts" value="Iznos duguje - potra&#382;uje nije istovjetan" />
+  <object key="item created" value="Stvoreno" />
+  <object key="you must insert al least one row" value="Upisati barem jedan redak" />
+  <object key="new item with vat" value="Novo s porezom" />
+  <object key="cust./suppl." value="Kupac/Dobavlja&#269;" />
+  <object key="payment" value="Pla&#263;anje" />
+  <object key="sale generic document" value="Osnovni dokument prodaje" />
+  <object key="purchase generic document" value="Osnovni dokument kupnje" />
+  <object key="docNr" value="Broj Dok." />
+  <object key="please set a date" value="Upisati datum" />
+  <object key="item date" value="Datum stavke" />
+  <object key="loss/profit econ. account" value="Konto dobiti - gubitka" />
+  <object key="loss/profit patrim. account" value="Nasljedni konto dobiti - gubitka" />
+  <object key="endorse loss/profit to econ. account" value="Odobriti konto dobiti - gubitka" />
+  <object key="endorse loss/profit to patrim. account" value="Odobriti nasljefni konto dobiti - gubitka" />
+  <object key="closing account" value="Zatvaranje ra&#269;una" />
+  <object key="close accounts" value="Zatvoriti ra&#269;une" />
+  <object key="please set the economic account code" value="Upisati oznaku konta" />
+  <object key="please set the patrimonial account code" value="Upisati oznaku nasljednog konta" />
+  <object key="after closing accounts you will not be able to move settlements to new year. Continue?" value="Nakon zatvaranja konta nije mogu&#263; prijenos u novu godinu - Nastaviti?" />
+  <object key="operation completed" value="Postupak zavr&#353;en" />
+  <object key="no loss/profit found in the economic account" value="Nema dobiti - gubitka na kontu" />
+  <object key="endorse profit to patrimonial account" value="Odobriti dobitak na nasljednom kontu" />
+  <object key="endorse loss to patrimonial account" value="Odobriti gubitak na nasljednom kontu" />
+  <object key="close patrimonial accounts" value="Zatvoriti nasljedni konto" />
+  <object key="open patrimonial accounts, using patrimonial settlements of year " value="Otvoriti nasljedni konto rabe&#263;i saldo godine " />
+  <object key="endorse economic accounts to loss/profit economic account and to loss/profit patrimonial account" value="Odobriti dobitak - gubitak na konto i nasljedni konto" />
+  <object key="endorse patrimonial accounts settlements of the previous year to the current one" value="Odobriti nasljedni konto saldom prethodne gofine" />
+  <object key="open accounts" value="Otvoriti ra&#269;une" />
+  <object key="opening account" value="Otvaranje ra&#269;una" />
+  <object key="account" value="Ra&#269;un" />
+
+  <object key="application parameters" value="Postavke sustava" />
+  <object key="image repository path" value="Put do spremnika slika" />
+  <object key="image repository path selection" value="Izbor puta do spremnika slika" />
+  <object key="company parameters" value="Postavke tvrtke" />
+  <object key="document repository path" value="Put do spremnika dokumenata" />
+  <object key="document repository path selection" value="Izbor puta do spremnika dokumenata" />
+
+  <object key="loss/profit econ. endorse account" value="Konto odobrenja dobiti - gubitka" />
+  <object key="loss/profit patrim. endorse account" value="Nasljedni konto odobrenja dobiti - gubitka" />
+  <object key="accounts closing account" value="Konta - Zatvaranje" />
+  <object key="accounts opening account" value="Konta - Otvaranje" />
+  <object key="user level parameters" value="Korisni&#269;ke postavke" />
+  <object key="company level parameters" value="Korisni&#269;ke postavke tvrtke" />
+
+  <object key="companyCodeSys01SYS15" value="ID tvrtke" />
+  <object key="customize reports" value="Prilagodba izvje&#353;&#263;a" />
+  <object key="upload files" value="Pohraniti datoteke" />
+  <object key="reports list" value="Popis izvje&#353;&#263;s" />
+  <object key="reportNameSYS15" value="Naziv datoteke izvje&#353;&#263;a" />
+  <object key="functionDescription" value="Opis funkcije" />
+  <object key="files to upload" value="Datoteke za pohranu" />
+  <object key="clear files" value="Brisati datoteke" />
+  <object key="import files" value="Uvesti datoteke" />
+  <object key="there already exists a file with the same name in the list" value="Postoji datoteka istog naziva na popisu" />
+  <object key="select files" value="Izabrati datoteke" />
+  <object key="you must select at least one file to upload" value="Izabrati barem jednu datoteku za pohranu" />
+  <object key="reportFileName" value="Naziv datoteke izvje&#353;&#263;a" />
+  <object key="files" value="Datoteke" />
+  <object key="customFunction" value="Prilago&#273;ena funkcija" />
+  <object key="upload completed." value="Pohrana zavr&#353;ena" />
+  <object key="some uploaded files already exists. overwrite them?" value="Neke datoteke pohrane postoje - prepisati preko?" />
+
+  <object key="sunday" value="Nedjelja" />
+  <object key="monday" value="Ponedjeljak" />
+  <object key="tuesday" value="Utorak" />
+  <object key="wednesday" value="Srijeda" />
+  <object key="thursday" value="&#262;etvrtak" />
+  <object key="friday" value="Petak" />
+  <object key="saturday" value="Subora" />
+  <object key="dayOfWeekSCH02" value="Dan tjedna" />
+  <object key="morningStartHourSCH02" value="Po&#269;etak ujutro" />
+  <object key="morningEndHourSCH02" value="Zavr&#353;etak ujutro" />
+  <object key="afternoonStartHourSCH02" value="Po&#269;etak popodne" />
+  <object key="afternoonEndHourSCH02" value="Zavr&#353;etak popodne" />
+  <object key="start time must be less than end time" value="Po&#269;etak mora biti prije zavr&#353;etka" />
+  <object key="working days" value="Radni dani" />
+
+  <object key="scheduled activity" value="Planirana aktivnost" />
+  <object key="companyCodeSys01SCH06" value="ID tvrtke" />
+  <object key="activityPaleSCH06" value="Mjesto" />
+  <object key="managerName_1SCH06" value="Ime rukovoditelja" />
+  <object key="managerName_2SCH06" value="Prezime rukovoditelja" />
+  <object key="subjectName_1SCH06" value="Ime izvr&#353;itelja" />
+  <object key="subjectName_2SCH06" value="Prezime izvr&#353;itelja" />
+  <object key="activityCodeSal09SCH06" value="Oznaka aktivnosti" />
+  <object key="activityDescriptionSCH06" value="Opis aktivnosti" />
+
+  <object key="call-out types" value="Vrste intervencija" />
+  <object key="call-out type" value="Vrsta intervencije" />
+  <object key="companyCodeSys01SCH11" value="ID tvrtke" />
+  <object key="call-outs" value="Intervencije" />
+  <object key="callOutCodeSCH10" value="Oznaka intervencije" />
+  <object key="companyCodeSys01SCH10" value="ID tvrtke" />
+  <object key="call-out detail" value="Op&#353;irnije" />
+  <object key="rateSCH10" value="Cijena" />
+  <object key="machineries" value="Oprema" />
+  <object key="call-out resources" value="Resursi" />
+  <object key="taskCodeReg07SCH12" value="Oznaka zada&#263;e" />
+  <object key="machineryCodePro03SCH13" value="Oznaka opreme" />
+  <object key="itemCodeItm01SCH14" value="ID predmeta" />
+
+  <object key="call-out requests" value="Zahtjevi za intervencijom" />
+  <object key="call-out request detail" value="Op&#353;irnije" />
+  <object key="progressiveSCH03" value="Int. Br." />
+  <object key="requestYearSCH03" value="Godina" />
+  <object key="callOutDescriptionSYS10" value="Opis" />
+  <object key="callOutCodeSch10SCH03" value="Oznaka" />
+  <object key="prioritySCH03" value="Prioritet" />
+  <object key="callOutStateSCH03" value="Stanje zahtjeva" />
+  <object key="requestDateSCH03" value="Datum zahtjeva" />
+  <object key="usernameSys03SCH03" value="Korisnik zahtjeva" />
+  <object key="descriptionSCH03" value="Opis zahtjeva" />
+  <object key="companyCodeSys01SCH03" value="Tvrtka" />
+  <object key="subject identification" value="Oznaka predmeta" />
+  <object key="retrieve organization type subjects" value="Preuzeti predmete tvrtke" />
+  <object key="retrieve people type subjects" value="Preuzeti predmete osoba" />
+  <object key="organizations" value="Tvrtke" />
+  <object key="people" value="Osobe" />
+  <object key="reload non allowed" value="Ponovno u&#269;itavanje nije dozvoljeno" />
+  <object key="subject type" value="Vrsta predmeta" />
+  <object key="call-out number" value="Broj intervencije" />
+  <object key="highest" value="Naj&#382;urnije" />
+  <object key="high" value="&#381;urno" />
+  <object key="normal" value="Redovito" />
+  <object key="low" value="Manje va&#382;no" />
+  <object key="trivial" value="Neva&#382;no" />
+  <object key="callOutType" value="Vrsta intervencije" />
+  <object key="noteSCH03" value="Opaska" />
+  <object key="invoiced" value="Fakturirano" />
+
+  <object key="activityTypeSCH06" value="Vrsta aktivnosti" />
+  <object key="generic task" value="Osnovna zada&#263;a" />
+  <object key="appointment" value="Susret" />
+  <object key="send email" value="Poslati e-Po&#353;tu" />
+  <object key="send fax" value="Poslati telefaks" />
+  <object key="meeting" value="Sastanak" />
+  <object key="telephone call" value="Telefonski poziv" />
+  <object key="telephone" value="Telefon" />
+  <object key="call-out" value="Intervencija" />
+  <object key="absence" value="Odsustvo" />
+  <object key="holiday" value="Praznik" />
+  <object key="illness" value="Bolest" />
+  <object key="activityStateSCH06" value="Stanje aktivnosti" />
+  <object key="estimatedEndDateSCH06" value="Planiran datum zavr&#353;etka" />
+  <object key="expirationDateSCH06" value="Datum dospije&#263;a" />
+  <object key="estimatedDurationSCH06" value="Plan trajanje [min]" />
+  <object key="prioritySCH06" value="Va&#382;nost" />
+  <object key="completionPercSCH06" value="Zavr&#353;eno %" />
+  <object key="activityPlaceSCH06" value="Mjesto aktivnosti" />
+  <object key="noteSCH06" value="Opaska" />
+  <object key="noteSCH07" value="Opaska" />
+  <object key="durationSCH07" value="Trajanje [min]" />
+  <object key="startDateSCH07" value="Po&#269;etni datum" />
+  <object key="endDateSCH07" value="Zavr&#353;ni datum" />
+  <object key="taskCodeReg07SCH07" value="Oznaka aktivnosti" />
+  <object key="employeeCodeSch01SCH07" value="Oznaka djelatnika" />
+  <object key="machineryDescription" value="Opis opreme" />
+  <object key="noteSCH09" value="Opaska" />
+  <object key="durationSCH09" value="Trajanje [min]" />
+  <object key="startDateSCH09" value="Po&#269;etni datum" />
+  <object key="endDateSCH09" value="Zavr&#353;ni datum" />
+  <object key="machineryCodePro03SCH09" value="Oznaka opreme" />
+  <object key="descriptionDOC14" value="Naziv dokumenta" />
+  <object key="itemCodeItm01SCH15" value="ID artikla" />
+  <object key="qtySCH15" value="Koli&#269;ina" />
+  <object key="scheduled resources" value="Planirani resursi" />
+  <object key="progressiveDoc14SCH08" value="Sel." />
+  <object key="attached documents" value="Priviti dokumenti" />
+  <object key="activity resources" value="Resursi aktivnosti" />
+
+  <object key="finiteCapacityPRO03" value="Kona&#269;ni kapacitet" />
+  <object key="companyCodeSys01PRO03" value="ID tvrtke" />
+  <object key="machineryCodePRO03" value="Oznaka opreme" />
+  <object key="valuePRO03" value="Vrijednost" />
+  <object key="currencyCodeReg03PRO03" value="Oznaka valute" />
+  <object key="durationPRO03" value="Trajanje [min]" />
+
+  <object key="close activity" value="Zatvoriti aktivnost" />
+  <object key="confirm activity closing?" value="Potvrditi zatvaranje aktivnosti" />
+  <object key="activity closing" value="Aktivnost  " />
+  <object key="confirm call-out request closing?" value="Potvrditi zahtjev zatvaranja intervencije" />
+  <object key="call-out request" value="Zahtjev za intervenciju" />
+  <object key="create invoice" value="Stvoriti ra&#269;un" />
+  <object key="invoice creation" value="Invoice creation" />
+  <object key="you must define the customer code" value="Upisati oznaku poslovnog partnera" />
+  <object key="you must select a pricelist" value="Izabrati cjenik" />
+  <object key="invoice from call-out request nr." value="Faktura iz zahtjeva za intervenciju broj" />
+  <object key="you must select a payment" value="Izabrati na&#269;in pla&#263;anja" />
+  <object key="no price defined for the scheduled item" value="Nema cijene za planirano" />
+  <object key="no task defined for the scheduled employee" value="Nema zada&#263;e za planiranog djelatnika" />
+  <object key="you must select all account codes" value="Izabrati sve oznake ra&#269;una" />
+  <object key="no sale activity code linked to the task" value="Nema oznake prodajne aktivnosti povezane sa zada&#263;om" />
+  <object key="you must select a warehouse" value="Izabrati skladi&#353;te" />
+  <object key="view invoice" value="Pregledati fakturu" />
+
+  <object key="day appointments" value="Podsjetnik" />
+  <object key="no employee code linked to the current user" value="Nema oznake djelatnika povezane s poslovnim partnerom" />
+  <object key="appointments cannot be viewed" value="Pregled susreta nije dozvoljen" />
+  <object key="absences" value="Odsustva" />
+  <object key="find next appointment" value="Prona&#263;i slijede&#263;i susret" />
+  <object key="find appointment" value="Prona&#263;i susret" />
+  <object key="no appointment found" value="Ne postoji" />
+  <object key="gantt diagram" value="Gantt dijagram" />
+  <object key="employees having task" value="Djelatnici sa zada&#263;ama" />
+  <object key="gantt" value="Gantt" />
+  <object key="reload data" value="Ponovno u&#269;itati podatke" />
+  <object key="you must specify both dates" value="Upisati oba datuma" />
+  <object key="fill in the whole day" value="Upisati cijeli dan" />
+  <object key="remove all day appointments" value="Brisati cjelodnevne susrete" />
+  <object key="no working hours defined for this day" value="Radni sati za dan nisu postavljeni" />
+  <object key="you must specify employee code" value="Upisati oznaku djelatnika" />
+
+  <object key="document types" value="Hijerarhija dokumenata" />
+  <object key="document type" value="Vrsta dokumenta" />
+  <object key="companyCodeSys01DOC16" value="ID tvrtke" />
+  <object key="companyCodeSys01DOC14" value="ID tvrtke" />
+  <object key="document detail" value="Dokument op&#353;irnije" />
+  <object key="document links" value="Veze dokumenta" />
+  <object key="document versions" value="Ina&#269;ice dokumenta" />
+  <object key="document properties" value="Svojstva dokumenta" />
+  <object key="documentType" value="Vrsta dokumenta" />
+  <object key="you must attach a file" value="Priviti datoteku" />
+  <object key="you are not allowed to delete all document versions" value="Nedovoljne ovlasti brisanja svih ina&#269;ica dokumenta" />
+  <object key="you are not allowed to delete all document links" value="Nedovoljne ovlasti brisanja svih veza dokumenta" />
+  <object key="you must select a tree level before inserting new document" value="Izabrati razinu na stablu prije upisa novog dokumenta" />
+  <object key="uploaded document" value="Pohranjeni dokument" />
+  <object key="progressiveHie01DOC17" value="Razina" />
+  <object key="createUsernameDOC15" value="Pohranio" />
+  <object key="createDateDOC15" value="Darum stvaranja" />
+  <object key="versionDOC15" value="Ina&#269;ica" />
+  <object key="double click to open the document" value="Dvostruki klik za otvoriti" />
+  <object key="you must select a tree level before inserting new property" value="Izabrati razinu na stablu prije upisa novog svojstva" />
+  <object key="companyCodeSys01DOC21" value="ID tvrtke" />
+  <object key="propertyTypeDOC21" value="Vrsta" />
+  <object key="properties" value="Svojstva" />
+  <object key="documents filter" value="Filtar dokumenata" />
+  <object key="docsPanel" value="Priviti dokumenti" />
+  <object key="progressiveDoc14ITM05" value="..." />
+
+  <object key="products" value="Proizvodi" />
+  <object key="billofmaterial" value="Sastavnica" />
+  <object key="product detail" value="Proizvod op&#353;irnije" />
+  <object key="components" value="Komponente" />
+  <object key="manufactures" value="Proizvo&#273;a&#269;i" />
+  <object key="versionITM01" value="Ina&#269;ica" />
+  <object key="revisionITM01" value="Revizija" />
+  <object key="versionITM03" value="Ina&#269;ica" />
+  <object key="revisionITM03" value="Revizija" />
+  <object key="startDateITM01" value="Po&#269;etni datum valjanosti" />
+  <object key="startDateITM03" value="Po&#269;etni datum valjanosti" />
+  <object key="endDateITM03" value="Zavr&#353;nni datum valjanosti" />
+  <object key="itemType" value="Vrsta artikla" />
+  <object key="manufactureCodePro01ITM01" value="Proizvo&#273;a&#269;ka oznaka" />
+  <object key="itemCodeItm01ITM03" value="ID artikla" />
+  <object key="sequenceITM03" value="Sek." />
+  <object key="qtyITM03" value="Kol&#269;" />
+  <object key="itemDescription" value="Opis artikla" />
+  <object key="itemDescription2" value="Opis zamjenskog proizvoda" />
+  <object key="substItemCodeItm01ITM03" value="Zamjenski proizvod" />
+  <object key="production cycles" value="Proizvodni slijed" />
+  <object key="you must define either a machinery or a duty" value="Upisati opremu ili zada&#263;u" />
+  <object key="internal" value="Interno" />
+  <object key="external" value="Ekterno" />
+  <object key="you must define the resources number" value="Upisati broj resursa" />
+  <object key="qtyPRO02" value="Br. Resursa" />
+  <object key="valuePRO02" value="Tro&#353;ak" />
+  <object key="durationPRO02" value="Trajanje" />
+  <object key="phaseNumberPRO02" value="Sek." />
+  <object key="manufactureTypePRO02" value="Vrsta Op." />
+  <object key="completionPercPRO02" value="% zavr&#353;eno" />
+  <object key="notePRO02" value="Opaska" />
+  <object key="taskCodeReg07PRO02" value="Oznaka zada&#263;e" />
+  <object key="taskDescriptionSYS10" value="Opis zada&#263;e" />
+  <object key="machineryDescriptionSYS10" value="Opis opreme" />
+  <object key="machineryCodePro03PRO02" value="Oznaka opreme" />
+  <object key="companyCodeSys01PRO01" value="Tvrtka" />
+  <object key="description2" value="Opis zamjene" />
+  <object key="operations" value="Postupci" />
+  <object key="qtyPRO04" value="Res.Br." />
+  <object key="valuePRO04" value="Tro&#353;ak" />
+  <object key="durationPRO04" value="Trajanje" />
+  <object key="machineryCodePro03PRO04" value="Ozn. Opreme" />
+  <object key="taskCodeReg07PRO04" value="Oznaka zada&#263;e" />
+  <object key="notePRO04" value="Opaska" />
+  <object key="companyCodeSys01PRO04" value="Tvrtka" />
+  <object key="operationCodePro04PRO02" value="Ozn. postupka" />
+  <object key="operationCodePRO04" value="Ozn. postupka" />
+  <object key="currencyCodeReg03PRO01" value="Oznaka valute" />
+  <object key="manufactureCodePRO01" value="Oznaka" />
+  <object key="completion % must be between 0 and 100" value="Zavr&#353;eno % - 0 do 100" />
+  <object key="specified item already defined as product" value="Predmet ve&#263; ozna&#269;en kao proizvod" />
+  <object key="implosionPanel" value="Sa&#382;eti" />
+  <object key="explosionPanel" value="Razviti" />
+  <object key="productInfo" value="O proizvodu" />
+  <object key="totalCosts" value="Tro&#353;ak ukupno" />
+  <object key="totalPrices" value="Cijena ukupno" />
+  <object key="parentItemCodeItm01ITM03" value="Proizvodi" />
+  <object key="supplierDescription" value="Dobavlja&#269;" />
+  <object key="pricelistCodePur03PUR04" value="ID cjenika" />
+  <object key="purchase item prices" value="Nabavne cijene" />
+  <object key="the selected item requires serial number definition: this kind of item is not allowed" value="Izabrani predmet zahtijeva upis serijskog broja - nije dozvoljeno" />
+  <object key="a product cannot require serial number definition" value="Proizvod ne dozvoljava upis serijskog broja" />
+
+  <object key="component is not available in the specified warehouse" value="Komponenta nije raspolo&#382;iva na upisanom skladi&#353;tu" />
+  <object key="found" value="Na&#273;eno" />
+  <object key="required" value="Potrebito" />
+  <object key="unload items from production order" value="Isprazniti proizvode iz proizvodnog naloga" />
+  <object key="load items from production order" value="U&#269;itati proizvode iz proizvodnog naloga" />
+  <object key="production orders" value="Nalozi za proizvodnju" />
+  <object key="production order" value="Proizvodni nalog" />
+  <object key="descriptionWar01DOC22" value="Skladi&#353;te materijala" />
+  <object key="description2War01DOC22" value="Skladi&#353;te proizvoda" />
+  <object key="warehouseCodeWar01DOC22" value="Oznaka Skl. Mat." />
+  <object key="warehouseCode2War01DOC22" value="Oznaka Skl. Pr." />
+  <object key="docYearDOC22" value="Godina" />
+  <object key="docSequenceDOC22" value="Nalog Br." />
+  <object key="companyCodeSys01DOC22" value="Tvrtka" />
+  <object key="docDateDOC22" value="Datum naloga" />
+  <object key="docStateDOC22" value="Stanje naloga" />
+  <object key="confirm production order?" value="Potvrditi proizvodni nalog" />
+  <object key="availableQty" value="Raspolo&#382;iva kol" />
+  <object key="qtyDOC24" value="Potrebita kol" />
+  <object key="qtyDOC23" value="Kol" />
+  <object key="itemCodeItm01DOC23" value="Oznaka proizvoda" />
+  <object key="itemCodeItm01DOC24" value="Oznaka komponente" />
+  <object key="progressiveHie01DOC23" value="Skladi&#353;ni spremnik" />
+  <object key="progressiveHie02DOC23" value="Vrsta artikla" />
+  <object key="headerFormPanel" value="Proizvodni nalog" />
+  <object key="order closing" value="Zatvaranje naloga" />
+  <object key="close production order?" value="Zatvoriti proizvodni nalog" />
+  <object key="print bill of materials" value="Tiskati sastavnicu materijala" />
+  <object key="alternativeComponents" value="Zamjenske proizvode" />
+  <object key="you cannot define this item as a product because there are alternative components defined." value="Ne mogu postaviti proizvod jer su postavljene zamjenske komponente" />
+  <object key="itemCodeItm01ITM04" value="Alt.Item Code" />
+  <object key="you cannot set the current item as alternative component" value="Ne mogu postaviti kao zamjensku komponentu" />
+  <object key="you cannot set the current item as a product, because it has alternative components" value="Ne mogu postaviti proizvod jer su postavljene zamjenske komponente" />
+
+  <object key="application functions" value="Funkcije programa" />
+  <object key="new description:" value="Novi opis" />
+  <object key="change description" value="Izmijeniti opis" />
+  <object key="which operation?" value="Koji postupak" />
+  <object key="node dropped" value="&#262;vor napu&#353;ten" />
+  <object key="move node" value="Premjestiti &#269;vor" />
+  <object key="copy node" value="Preslikati &#269;vor" />
+
+  <object key="employees hierarchies" value="Hijerarhija djelatnika" />
+
+  <object key="sql" value="SQL ljuska" />
+  <object key="entities" value="Popis pojmova" />
+  <object key="data" value="Podaci" />
+  <object key="structure" value="Struktura" />
+  <object key="tables" value="Tablice" />
+  <object key="views" value="Pregledi" />
+  <object key="synonyms" value="Sinonimi" />
+  <object key="sql tool" value="SQL Alat" />
+  <object key="you must define a sql statement!" value="Postaviti SQL upit" />
+  <object key="rows affected." value="redaka izvr&#353;eno" />
+  <object key="select has not been correctly parsed" value="Naredba nije uredno ra&#353;&#269;lanjena" />
+  <object key="no pk defined: delete not allowed" value="Nije postavljen osnovni klju&#269; - brisanje nije dozvoljeno" />
+  <object key="no pk defined: update not allowed" value="Nije postavljen osnovni klju&#269; - osvje&#382;avanje nije dozvoljeno" />
+  <object key="columnNameWithoutTable" value="Naziv stupca" />
+  <object key="columnType" value="Vrsta stupca" />
+  <object key="primaryKey" value="Osn. Klju&#269;" />
+  <object key="columnRequired" value="Porebito" />
+
+  <object key="custom functions" value="Prilago&#273;ene funkcije" />
+  <object key="functionCodeSYS06" value="Oznaka funkcije" />
+  <object key="functionCodeSys06SYS16" value="Oznaka funkcije" />
+  <object key="custom function" value="Prilago&#273;ena funkcija" />
+  <object key="useCompanyCodeSYS06" value="Pristup na razini tvrtke" />
+  <object key="column properties" value="Svojstva stupca" />
+  <object key="tables to save" value="Tablice za pohranu" />
+  <object key="columnNameSYS22" value="Naziv stupca" />
+  <object key="columnTypeSYS22" value="Vrsta stupca" />
+  <object key="defaultValueTextSYS22" value="Osnovna poruka" />
+  <object key="defaultValueNumSYS22" value="Osnovna vrijednost" />
+  <object key="defaultValueDateSYS22" value="Osnovni datum" />
+  <object key="columnVisibleSYS22" value="Vidljivo" />
+  <object key="autoLoadDataSYS16" value="Samostalno u&#269;itati podatke" />
+  <object key="select" value="SQL" />
+  <object key="enumeration" value="Nabrajanje" />
+  <object key="progressive" value="Progresivno" />
+  <object key="constraintValuesSYS22" value="Nabrajanje" />
+  <object key="show data" value="Prikazati podatke" />
+  <object key="isParamSYS22" value="U kojem" />
+  <object key="isParamRequiredSYS22" value="Tra&#382;eno U kojem" />
+  <object key="filter conditions" value="Uvjeti filtra" />
+  <object key="where param" value="Gdje parametar" />
+  <object key="variantsPanel" value="Varijante i pod-varijante" />
+  <object key="variantType" value="Pod-varijanta" />
+  <object key="variantTypeDesc" value="Opis pod-varijante" />
+  <object key="variantCode" value="Varijanta" />
+  <object key="variantDesc" value="Opis varijante" />
+  <object key="variant types" value="Pod-varijante" />
+  <object key="variant" value="Varijanta" />
+  <object key="variants" value="Varijante" />
+  <object key="codeOrder" value="Poredak" />
+  <object key="filenameDOC14" value="Naziv datoteke" />
+  <object key="barcode" value="Crti&#269;ni kod" />
+  <object key="barcodes" value="Crti&#269;ni kodovi" />
+  <object key="serialNumbers" value="Serijski brojevi" />
+  <object key="subtotal" value="Ukupno" />
+  <object key="discount" value="Popust" />
+  <object key="payed" value="Pla&#263;eno" />
+  <object key="discount on total value" value="Discount (on total)" />
+  <object key="change" value="Izvratiti" />
+  <object key="enter" value="Zabilje&#382;iti" />
+  <object key="cancel" value="Napustiti" />
+  <object key="company selection" value="Izbor tvrtke" />
+  <object key="you need to specifify the default customer for retail sale" value="Izabrati osnovnog kupca maloprodaje" />
+  <object key="you need to specifify the default warehouse for retail sale" value="Izabrati osnovno skladi&#353;te maloprodaje" />
+  <object key="ESC back" value="ESC - natrag" />
+  <object key="ESC back tooltip" value="Poni&#353;titi trenutni postupak" />
+  <object key="1 remove" value="1 Ukloniti" />
+  <object key="1 remove tooltip" value="Ukloniti izabrani redak" />
+  <object key="2 qty" value="2 Kol" />
+  <object key="2 qty tooltip" value="Koli&#269;ina" />
+  <object key="3 discount" value="3 Popust" />
+  <object key="3 discount tooltip" value="Postaviti popust izabranog artikla" />
+  <object key="4 customer" value="4 Kupac" />
+  <object key="4 customer tooltip" value="Postavke kupca" />
+  <object key="5 start" value="5 Zapo&#269;eti" />
+  <object key="5 start tooltip" value="Zapo&#269;eti novi postupak maloprodaje" />
+  <object key="6 close" value="6 Zatvoriti" />
+  <object key="6 close tooltip" value="Zatvoriti aktivni postupak maloprodaje" />
+  <object key="7 exit" value="7 Izlaz" />
+  <object key="7 exit tooltip" value="Napustiti aktivni prozor" />
+  <object key="are you sure to quit" value="Napustiti?" />
+  <object key="quit window" value="Napustiti prozor" />
+  <object key="point of sale" value="POS" />
+  <object key="barcodesPanel" value="Crti&#269;ni kod" />
+  <object key="discountValue" value="Popust" />
+  <object key="confirm sale closing" value="Potvrditi zatvaranje" />
+  <object key="sale closing" value="Zatvaranje prodaje" />
+  <object key="customers that have bought these items also bought" value="Kupci ovog kupili su i slijede&#263;e proizvode" />
+  <object key="avg. purchase cost" value="Prosje&#269;ni tro&#353;kovi kupovine" />
+  <object key="last purchase cost" value="Posljednji tro&#353;ak kupovine" />
+  <object key="last purchase date" value="Posljednji datum kupovine" />
+  <object key="order tracking" value="Pra&#263;enje narud&#382;bi" />
+  <object key="docSequence" value="Dok. Br."/>
+  <object key="customerSupplierCode" value="Oznaka K/D" />
+  <object key="docTypeDescr" value="Vrsta Dok." />
+  <object key="barcode already assigned to another item" value="Crti&#269;ni kod dodijeljen drugom proizvodu" />
+  <object key="print barcode labels" value="Tiskati naljepnice crti&#269;nog koda" />
+  <object key="qty" value="Kol" />
+  <object key="set the same value when matching the same" value="Postaviti istu vrijednost kod usporedbe istog" />
+  <object key="prices saved" value="Cijene pohranjene" />
+  <object key="it is not allowed to insert variants having different unit prices" value="Ne mogu upisati varijante razli&#269;itih jedini&#269;nih cijena" />
+  <object key="supplierCustomerCodeDOC08" value="Oznaka poslovnog partnera" />
+  <object key="Error while validating data:" value="Slijede&#263;e kontrole upisa nisu valjane" />
+  <object key="Validation Error" value="Podaci neispravni" />
+  <object key="pivot table for sales" value="Sto&#382;erna tablica prodaje" />
+  <object key="sellAmount" value="Iznos" />
+  <object key="sellQty" value="Kol" />
+  <object key="data fields" value="Podatkovna polja" />
+  <object key="row fields" value="Polja redka" />
+  <object key="column fields" value="Polja stupca" />
+  <object key="warehouseCodeWar01DOC01" value="Skladi&#353;te" />
+  <object key="year" value="Godina" />
+  <object key="quarter" value="Kvartal" />
+  <object key="pivot table settings" value="Postavke sto&#382;erne tablice" />
+  <object key="field" value="Polje" />
+  <object key="checked" value="Provjereno" />
+  <object key="Error on reading data in input." value="Gre&#353;ka u&#269;itavanja ulaznih podataka" />
+  <object key="delivery request" value="Otpremnica" />
+  <object key="delivery requests" value="Otpremnice" />
+  <object key="deliveryDateDOC01" value="Datum isporuke" />
+  <object key="delivery request rows" value="Redci otpremnice" />
+  <object key="delivreqnr" value="Br. otpremnice" />
+  <object key="until date" value="Do datuma" />
+
+  <object key="translations" value="Prijevodi" />
+  <object key="item descriptions" value="Opis pojma" />
+  <object key="item additional descriptions" value="Dopunski opis" />
+  <object key="vat descriptions" value="Opis poreza" />
+  <object key="topic" value="Tema" />
+  <object key="hierarchies names" value="Hijerarhija naziva" />
+  <object key="hierarchy levels names" value="Hijerarhija razina naziva" />
+  <object key="variant names" value="Varijanta naziva" />
+  <object key="variant type" value="Vrsta varijante" />
+  <object key="task descriptions" value="Opis zada&#263;e" />
+  <object key="payment descriptions" value="Opis pla&#263;anja" />
+  <object key="payment type descriptions" value="Opis vrste pla&#263;anja" />
+  <object key="pricelist descriptions" value="Opis cjenika" />
+  <object key="discount descriptions" value="Opis popusta" />
+  <object key="charge descriptions" value="Opis tro&#353;kova" />
+  <object key="activity descriptions" value="Opis aktivnosti" />
+  <object key="role descriptions" value="Opis ovlasti" />
+  <object key="function descriptions" value="Opis funkcija" />
+  <object key="ledger descriptions" value="Opis glavne knjige" />
+  <object key="account descriptions" value="Opis ra&#269;una" />
+  <object key="account motives" value="Pravila ra&#269;una" />
+
+  <object key="connected users" value="Povezani na sustav" />
+
+  <object key="min stock" value="Min zaliha" />
+  <object key="items reorder" value="Ponovno naru&#269;iti stavke" />
+  <object key="minStockITM23" value="Min zaliha" />
+  <object key="proposedQty" value="Preporu&#269;ena kol" />
+  <object key="pawnedQty" value="Jam&#269;ena kol" />
+  <object key="goodQty" value="Koli&#269;ina dobrih" />
+  <object key="orderedQty" value="Budu&#263;a kol" />
+  <object key="create orders" value="Stvoriti narud&#382;be" />
+  <object key="orders created" value="Narud&#382;be stvorene" />
+  <object key="you must select at least one row and a qty greater than zero" value="Izabrati barem jedan redak i koli&#269;inu ve&#263;u od nule" />
+  <object key="order created using reorder functionality" value="Narud&#382;ba stvorena postupkom ponovnog naru&#269;ivanja" />
+
+  <object key="abc classification" value="ABC podjela" />
+  <object key="create abc" value="Stvoriti ABC podjelu" />
+  <object key="invoiced" value="Fakturirano" />
+  <object key="unsold" value="Neprodano" />
+  <object key="abc aa" value="visoka razina zaliha i visoka razina fakturiranih koli&#269;ina - mogu&#263;e bolje upravljanje artiklima u skladi&#353;tu smanjenjem i boljim obrtom zaliha" />
+  <object key="abc ac" value="visoka razina zaliha i niska razina fakturiranih koli&#269;ina - mogu&#263;e bolje upravljanje artiklima u skladi&#353;tu smanjenjem zaliha" />
+  <object key="abc ca" value="niska razina zaliha i visoka razina fakturiranih koli&#269;ina - izvrsno vo&#273;enje zaliha bez potrebe za izmjenom" />
+  <object key="abc cc" value="niska razina zaliha i niska razina fakturiranih koli&#269;ina - manje va&#382;ni artikli bez potrebe za izmjenom" />
+  <object key="change min stocks" value="Izmijeniti minimalne zalihe izabranih artikala" />
+  <object key="perc2Invoiced" value="C fakkturirana grupa - %..100%" />
+  <object key="perc1Unsold" value="A neprodana grupa - 0..%" />
+  <object key="perc2Unsold" value="C neprodana grupa - %..100%" />
+  <object key="abc" value="ABC" />
+  <object key="you have to select at least one row" value="Izabrati barem jedan redak" />
+  <object key="min stocks updated" value="Min zaliihe osvje&#382;ene" />
+  <object key="set qty to zero" value="Postaviti koli&#269;inu na nula" />
+  <object key="update completed" value="Osvje&#382;avanje zavr&#353;eno" />
+
+  <object key="increment value in progr" value="Pove&#263;anje vrijednosti u tijeku" />
+  <object key="initial value in progr" value="Osnovna vrijednost u tijeku" />
+  <object key="default company" value="Osnovna tvrtka" />
+  <object key="etl processes" value="Uvoz postupaka nad podacima" />
+  <object key="etl process" value="Uvoz postupka nad podacima" />
+  <object key="scheduler settings" value="Postavke planera" />
+  <object key="import settings" value="Uvesti postavke" />
+  <object key="field.start" value="Zapo&#269;eti" />
+  <object key="field.end" value="Kraj" />
+  <object key="field.pos" value="POS" />
+  <object key="useVariant1ITM01" value="Rabiti varijantu 1" />
+  <object key="useVariant2ITM01" value="Rabiti varijantu 2" />
+  <object key="useVariant3ITM01" value="Rabiti varijantu 3" />
+  <object key="useVariant4ITM01" value="Rabiti varijantu 4" />
+  <object key="useVariant5ITM01" value="Rabiti varijantu 5" />
+  <object key="barcode type" value="Vrsta crti&#269;nog koda" />
+  <object key="minSellingUmCodeReg02ITM01" value="Min prodajna koli&#269;ina" />
+  <object key="grossWeightUmCodeReg02ITM01" value="Brutto te&#382;ina" />
+  <object key="netWeightUmCodeReg02ITM01" value="Netto te&#382;ina" />
+  <object key="widthUmCodeReg02ITM01" value="&#352;irina" />
+  <object key="heightUmCodeReg02ITM01" value="Te&#382;ina" />
+  <object key="data import type" value="Uvoz podataka" />
+  <object key="file format" value="Oblik datoteke" />
+  <object key="local file" value="Datoteka na ra&#269;unalu" />
+  <object key="remote file" value="Udaljena datoteka" />
+  <object key="no scheduling" value="Bez rasporeda" />
+  <object key="each day" value="Dnevno" />
+  <object key="each week" value="Tjedno" />
+  <object key="start date" value="Po&#269;etni datum i vrijeme" />
+  <object key="start process now" value="Zapo&#269;eti postupak sada" />
+  <object key="File not exists" value="Datoteka ne postoji" />
+  <object key="file preview" value="Pregledati datoteku" />
+  <object key="field.dateFormatSYS24" value="Oblik datuma" />
+  <object key="execution time" value="Vrijeme izvo&#273;enja" />
+  <object key="records read" value="Zapisa pro&#269;itano" />
+  <object key="records inserted" value="Zapisa umetnuto" />
+  <object key="records updated" value="Zapisa osvje&#382;eno" />
+  <object key="data import completed" value="Uvoz podataka zavr&#353;en" />
+  <object key="levels separator" value="Razdjelnik razina" />
+  <object key="companies permissions" value="Ovlasti na razini tvrtke" />
+  <object key="columns permissions" value="Ovlasti na razini stupca" />
+  <object key="editableInIns" value="Umetnuti" />
+  <object key="editableInEdit" value="Urediti" />
+  <object key="colRequired" value="Potrebito" />
+  <object key="colVisibile" value="Vidljivo" />
+
+  <object key="import prices" value="Uvesti cijene" />
+  <object key="for supplier" value="Za dobavlja&#269;a" />
+  <object key="in pricelist" value="U cjenik" />
+  <object key="import sale prices" value="Uvesti prodajne cijene" />
+  <object key="nr" value="Nr." />
+
+  <object key="no warehouse movements" value="No warehouse movements" />
+
+  <object key="cannot delete sheet: it is currently referenced by another sheet" value="Cannot delete sheet: it is currently referenced by another sheet" />
+  <object key="cannot delete sheet: it is currently referenced in an item" value="Cannot delete sheet: it is currently referenced in an item" />
+  <object key="item spare parts" value="Item's Spare parts" />
+  <object key="image" value="Image" />
+  <object key="item models" value="Item Models" />
+  <object key="sheetCodeITM25" value="Sheet Code" />
+  <object key="sheets" value="Sheets" />
+  <object key="spare parts catalogue" value="Spare parts Catalogue" />
+  <object key="start region" value="Start region" />
+  <object key="clear region" value="Clear region" />
+  <object key="save region" value="Save region" />
+  <object key="cannot delete levels: there are sheets having these levels" value="Cannot delete levels: there are sheets having these levels." />
+  <object key="cannot insert levels: there are sheets binded to spare parts" value="Cannot insert levels: there are sheets binded to spare parts" />
+  <object key="levITM29" value="Level" />
+  <object key="spare parts sheets levels" value="Spare parts sheets levels" />
+  <object key="spare parts sheets for level" value="Spare parts sheets for level" />
+  <object key="imageITM05" value="Image" />
+  <object key="item model" value="Item Model" />
+  <object key="itemCodeItm01ITM28" value="Spare Part Code" />
+  <object key="path" value="Path" />
+  <object key="spare parts" value="Spare parts" />
+  <object key="manual doc num in sale docs" value="Allow manual numer. in sales documents" />
+  <object key="show purchased items" value="Show purchased items" />
+  <object key="show only spare parts" value="Show only spare parts" />
+  <object key="sale date" value="Sale date" />
+  <object key="item sold on" value="Item sold on" />
+  <object key="total amount must not be zero" value="Total amount must not be zero!" />
+  <object key="is an ancestor of the current item" value="is an ancestor of the current item" />
+  <object key="only an immediate payment is allowed" value="Only an immediate payment is allowed" />
+  <object key="payedDateDOC19" value="Payed date" />
+  <object key="payedValueDOC19" value="Payed" />
+  <object key="realPaymentTypeCodeReg11DOC19" value="Real Paym. Type" />
+  <object key="realPaymentDescriptionSYS10" value="Real Payment Type" />
+  <object key="create payment immediately" value="Create payment immediately?" />
+  <object key="you need to specify a rounding account code" value="You need to specify a rounding account code" />
+  <object key="roundingAccountCode" value="Rounding Acc. Code" />
+  <object key="roundingDescription" value="Rounding account" />
+  <object key="rounding costs account code" value="Rounding costs account code" />
+  <object key="rounding proceeds account code" value="Rounding proceeds account code" />
+
+  <object key="already payed" value="Already payed" />
+  <object key="payment date" value="Payment date" />
+  <object key="account description" value="Account description" />
+  <object key="exp" value="Exp." />
+  <object key="you need to specify at least one expiration" value="You need to specify at least one expiration" />
+  <object key="expirations must have a payment value" value="Expirations must have a payment value" />
+  <object key="payments specified for expirations are not equal to the total payment value" value="Payments specified for expirations are not equal to the total payment value" />
+  <object key="reports repository path" value="Reports repository path" />
+  <object key="print invoices" value="Print invoices" />
+
+  <object key="brands" value="Brands" />
+  <object key="brand code" value="Brand code" />
+  <object key="ec customer" value="eCommerce Customer" />
+  <object key="ec warehouse" value="eCommerce Warehouse" />
+  <object key="datetime" value="Date+Time"/>
+  <object key="decimal" value="Decimal"/>
+  <object key="item characteristics in ECommerce" value="Item characteristics in eCommerce"/>
+  <object key="fieldTypeITM32" value="Type"/>
+  <object key="selectedITM32" value="Sel."/>
+  <object key="posTM32" value="Position"/>
+  <object key="images per variant" value="Images per variant"/>
+  <object key="lastVariantDescription" value="Variant"/>
+  <object key="smallImage" value="Small Image"/>
+  <object key="largeImage" value="Large Image"/>
+  <object key="company logo" value="Company logo"/>
+  <object key="ec expense" value="eCommerce Expense"/>
+  <object key="hierarTreePanel" value="Hierarchy levels"/>
+  <object key="itemFieldsPanel" value="Fields per level"/>
+  <object key="set image" value="Set image"/>
+  
+  <currencySymbol>Kn</currencySymbol>
+  <decimalSymbol>,</decimalSymbol>
+  <groupingSymbol>.</groupingSymbol>
+  <dateFormat>DMY</dateFormat>
+  <showCenturyInDateFormat>true</showCenturyInDateFormat>
+  <dateFormatSeparator>.</dateFormatSeparator>
+  <timeFormat>hh:mm</timeFormat>
+
+</objects>

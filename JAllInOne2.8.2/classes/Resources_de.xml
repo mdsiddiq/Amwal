@@ -1,0 +1,1725 @@
+
+<objects>
+
+<!-- common -->
+  <object key="yes" value="Ja" />
+  <object key="no" value="Nein" />
+
+<!-- grid -->
+  <object key="Remove Filter" value="Filter entfernen" />
+  <object key="This column is not sorteable" value="Diese Spalte ist nicht sortierbar" />
+  <object key="Sorting not allowed" value="Sortieren nicht erlaubt" />
+  <object key="Maximum number of sorted columns" value="Max. Anzahl sortierter Spalten" />
+  <object key="Sorting not applicable" value="Sortieren nicht m&#xF6;glich" />
+  <object key="Selected Row" value="Gew&#xE4;hlte Zeile" />
+  <object key="Selected Rows" value="Gew&#xE4;hlte Zeilen" />
+  <object key="Cancel changes and reload data?" value="&#xC4;nderungen verwerfen und neu laden?" />
+  <object key="Attention" value="Achtung" />
+  <object key="Loading data..." value="Daten laden..." />
+  <object key="Error while loading data" value="Fehler beim Laden der Daten" />
+  <object key="Loading Data Error" value="Daten-Lade-Fehler" />
+  <object key="Delete Rows?" value="Zeilen l&#xF6;schen?" />
+  <object key="Delete Confirmation" value="L&#xF6;schbest&#xE4;tigung" />
+  <object key="Deleting Error" value="L&#xF6;sch-Fehler" />
+  <object key="Error while deleting rows." value="Fehler beim L&#xF6;schen der Zeilen." />
+  <object key="Error while saving" value="Fehler beim Speichern" />
+  <object key="Saving Error" value="Speichern-Fehler" />
+  <object key="A mandatory column is empty." value="Eine Pflicht-Spalte ist leer" />
+  <object key="Value not valid" value="Wert ung&#xFC;ltig" />
+  <object key="Select the previous row in grid" value="Vorheriger Datensatz" />
+  <object key="Select the next row in grid" value="N&#xE4;chster Datensatz" />
+
+<!-- export -->
+  <object key="grid export" value="Tabellen-Export" />
+  <object key="export" value="Export" />
+  <object key="exportmnemonic" value="X" />
+  <object key="column" value="Spalte" />
+  <object key="sel." value="ausw." />
+  <object key="you must select at least one column" value="Sie m&#xFC;ssen min. eine Spalte ausw&#xE4;hlen" />
+  <object key="columns to export" value="Spalten f&#xFC;r export" />
+  <object key="export type" value="Export-Format" />
+
+<!-- import -->
+  <object key="Import records (CTRL+M)" value="Datens&#xE4;tze importieren (CTRL+M)" />
+  <object key="grid import" value="Tabellenimport" />
+  <object key="import" value="Import" />
+  <object key="importmnemonic" value="M" />
+  <object key="columns to import" value="Spalten f&#xFC;r Import" />
+  <object key="import type" value="Dateiformat f&#xFC;r Import" />
+  <object key="file to import" value="Zu importierende Datei" />
+  <object key="error while importing data" value="Fehler w&#xE4;hrend des Datenimports" />
+  <object key="import completed" value="Datenimport abgeschlossen" />
+
+<!-- quick filter -->
+  <object key="To value" value="Bis Wert" />
+  <object key="Filter by" value="Filtern nach" />
+  <object key="From value" value="Von Wert" />
+  <object key="equals" value="gleich" />
+  <object key="contains" value="enth&#xE4;lt" />
+  <object key="starts with" value="beginnt mit" />
+  <object key="ends with" value="endet mit" />
+
+<!-- lookup -->
+  <object key="Code is not correct." value="Code ist nicht korrekt." />
+  <object key="Code Validation" value="Code Validierung" />
+  <object key="Code Selection" value="Code Auswahl" />
+
+<!-- form -->
+  <object key="Confirm deliting data?" value="Sollen die Daten gel&#xF6;scht werden?" />
+  <object key="Error while saving: incorrect data." value="Fehler beim Speichern: Daten nicht korrekt." />
+  <object key="Error on deleting:" value="Fehler beim L&#xF6;schen:" />
+  <object key="Error on Loading" value="Fehler beim Laden" />
+  <object key="Error while loading data:" value="Fehler beim Laden von Daten:" />
+
+<!-- toolbar buttons -->
+  <object key="Delete record (CTRL+D)" value="Datensatz l&#xF6;schen (CTRL+D)" />
+  <object key="Edit record (CTRL+E)" value="Datensatz bearbeiten (CTRL+E)" />
+  <object key="New record (CTRL+I)" value="Neuer Datensatz (CTRL+I)" />
+  <object key="Reload record/Cancel current operation (CTRL+Z)" value="Datensatz neu laden/Bearbeitung abbrechen (CTRL+Z)" />
+  <object key="Save record (CTRL+S)" value="Datensatz speichern (CTRL+S)" />
+  <object key="Copy record (CTRL+C)" value="Datensatz kopieren (CTRL+C)" />
+  <object key="Export record (CTRL+X)" value="Datensatz exportieren (CTRL+X)" />
+  <object key="Load the first block of records" value="Erste Datensatzgruppe" />
+  <object key="Load the previous block of records" value="Vorherige Datensatzgruppe" />
+  <object key="Load the next block of records" value="N&#xE4;chste Datensatzgruppe" />
+  <object key="Load the last block of records" value="Letzte Datensatzgruppe" />
+
+  <object key="Insert" value="Einf&#xFC;gen" />
+  <object key="edit" value="Bearbeiten" />
+  <object key="Edit" value="Bearbeiten" />
+  <object key="Copy" value="Kopieren" />
+  <object key="Delete" value="L&#xF6;schen" />
+  <object key="Save" value="Speichern" />
+  <object key="Reload" value="Erneut laden" />
+  <object key="Export" value="Exportieren" />
+  <object key="Filter" value="Filtern" />
+
+<!-- MDI Frame -->
+  <object key="file" value="Datei" />
+  <object key="exit" value="Exit" />
+  <object key="filemnemonic" value="F" />
+  <object key="exitmnemonic" value="E" />
+  <object key="change user" value="Benutzer wechseln" />
+  <object key="changeusermnemonic" value="U" />
+  <object key="changelanguagemnemonic" value="L" />
+  <object key="help" value="Hilfe" />
+  <object key="about" value="&#xDC;ber" />
+  <object key="helpmnemonic" value="H" />
+  <object key="aboutmnemonic" value="&#xDC;" />
+  <object key="are you sure to quit application?" value="Wollen Sie das Programm wirklich beenden?" />
+  <object key="quit application" value="Programm beenden" />
+  <object key="forcegcmnemonic" value="E" />
+  <object key="Force GC" value="Erzwinge GC" />
+  <object key="Java Heap" value="Java Heap" />
+  <object key="used" value="genutzt" />
+  <object key="allocated" value="zugeordnet" />
+  <object key="change language" value="Sprache wechseln" />
+  <object key="changemnemonic" value="S" />
+  <object key="cancelmnemonic" value="A" />
+  <object key="Functions" value="Funktionen" />
+  <object key="Error while executing function" value="Fehler beim Ausf&#xFC;hren der Funktion" />
+  <object key="Error" value="Fehler" />
+  <object key="infoPanel" value="Info" />
+  <object key="imageButton" value="&#xDC;ber" />
+  <object key="Window" value="Fenster" />
+  <object key="windowmnemonic" value="F" />
+  <object key="Close All" value="Alle schlie&#xDF;en" />
+  <object key="closeallmnemonic" value="A" />
+  <object key="Press ENTER to find function" value= "Um Funktion zu finden [Enter-Taste] dr&#xFC;cken" />
+  <object key="Find Function" value= "Funktion finden" />
+  <object key="Operation in progress..." value="Vorgang wird ausgef&#xFC;hrt..." />
+  <object key="close window" value="Fenster schlie&#xDF;en" />
+  <object key="reduce to icon" value="Auf Icon minimieren" />
+  <object key="save changes?" value="&#xC4;nderungen speichern?" />
+  <object key="confirm window closing" value="Fenster schlie&#xDF;en" />
+
+  <object key="switch" value="Wechseln" />
+  <object key="switchmnemonic" value="S" />
+  <object key="window name" value="Fenstername" />
+  <object key="opened windows" value="Ge&#xF6;ffnete Fenster" />
+  <object key="tile horizontally" value="Horizontal anordnen" />
+  <object key="tilehorizontallymnemonic" value="H" />
+  <object key="tile vertically" value="Vertikal anordnen" />
+  <object key="tileverticallymnemonic" value="V" />
+  <object key="cascade" value="Kaskade" />
+  <object key="cascademnemonic" value="K" />
+  <object key="minimize" value="Minimieren" />
+  <object key="minimizemnemonic" value="M" />
+  <object key="minimize all" value="Alle minimieren" />
+  <object key="minimizeallmnemonic" value="A" />
+  <object key="change background" value="Hintergrund wechseln" />
+  <object key="reset background" value="Standard-Hintergrund wiederherstellen" />
+
+
+<!-- select/deselect all -->
+  <object key="select all" value="Alle ausw&#xE4;hlen" />
+  <object key="deselect all" value="Alle abw&#xE4;hlen" />
+
+
+<!-- copy/cut/paste -->
+  <object key="copy" value="Kopieren" />
+  <object key="copymnemonic" value="K" />
+  <object key="cut" value="Ausschneiden" />
+  <object key="cutmnemonic" value="A" />
+  <object key="paste" value="Einf&#xFC;gen" />
+  <object key="pastemnemonic" value="E" />
+
+<!-- grid profile -->
+  <object key="grid profile management" value="Tabellen-Profil Management"/>
+  <object key="restore default grid profile" value="Standard-Tabellen-Profil wiederherstellen"/>
+  <object key="create new grid profile" value="Neues Tabellen-Profil erstellen"/>
+  <object key="profile description" value="Profilbeschreibung"/>
+  <object key="remove current grid profile" value="Aktuelles Tabellen-Profil entfernen"/>
+  <object key="select grid profile" value="Tabellen-Profil w&#xE4;hlen"/>
+  <object key="default profile" value="Standardprofil"/>
+
+<!-- search box -->
+  <object key="search" value="Suchen"/>
+  <object key="not found" value="Nicht gefunden"/>
+
+
+<!-- server -->
+
+  <object key="Client request not supported" value="Nicht unterst&#xFC;tzte Client Anfrage" />
+  <object key="User disconnected" value="Benutzer abgemeldet" />
+  <object key="Updating not performed: the record was previously updated." value="Aktualisierung fehlgeschlagen: Der Datensatz wurde schon ge&#xE4;ndert." />
+
+<!-- application domains -->
+
+  <object key="text" value="Text" />
+  <object key="date" value="Datum" />
+  <object key="numeric" value="Numerisch" />
+
+  <object key="german" value="Deutsch" />
+  <object key="english" value="Englisch" />
+  <object key="italian" value="Italienisch" />
+  <object key="spanish" value="Spanisch" />
+  <object key="brazilian" value="Brasilianisch" />
+  <object key="croatian" value="Croatian" />
+  <object key="russian" value="Russian" />
+
+  <object key="male" value="Mann" />
+  <object key="female" value="Frau" />
+
+  <object key="officeNr" value="B&#xFC;ro Nr." />
+  <object key="otherRef" value="Andere Referenz" />
+
+<!-- application translations -->
+
+  <object key="customizable windows" value="Customizable Windows" />
+  <object key="columnNameSYS12" value="Datenbank Feldname" />
+  <object key="columnTypeSYS12" value="Feldtyp" />
+  <object key="columnSizeSYS12" value="Ganzzahlen" />
+  <object key="columnDecSYS12" value="Dezimalzahlen" />
+  <object key="descriptionSYS10" value="Beschreibung" />
+  <object key="The specified field name already exixts." value="Der vergebene Feldname existiert bereits." />
+  <object key="Maximum number of customized columns reached." value="Max. Anzahl benutzerdefinierter Spalten erreicht." />
+  <object key="You must specify the number of integers and decimals for the column" value="Sie m&#xFC;ssen Vor- und Nachkommastellen f&#xFC;r diese Spalte angeben" />
+  <object key="You must specify the column length" value="Sie m&#xFC;ssen die Spaltenl&#xE4;nge angeben" />
+  <object key="You are not allowed to delete the selected row." value=" Sie haben nicht die Berechtigung den Datensatz zu l&#xF6;schen." />
+  <object key="You are not allowed to delete data." value=" Sie haben nicht die Berechtigung Datens&#xE4;tze zu l&#xF6;schen." />
+  <object key="You are not allowed to edit data." value=" Sie haben nicht die Berechtigung Datens&#xE4;tze zu &#xE4;ndern." />
+  <object key="You are not allowed to insert data." value="Sie haben nicht die Berechtigung Datens&#xE4;tze zu erstellen." />
+  <object key="newlevel.text" value="Neue Ebene erstellen" />
+  <object key="newlevel.mnemonic" value="N" />
+  <object key="removelevel.text" value="Aktuelle Ebene entfernen" />
+  <object key="removelevel.mnemonic" value="R" />
+  <object key="new level" value="Neue Ebene" />
+  <object key="You must specify a description for the new level." value="Sie m&#xFC;ssen eine Beschreibung f&#xFC;r die neue Ebene angeben." />
+  <object key="this will remove the current level and all sub-levels.Are you sure?" value="Aktuelle Ebene und alle Unterebenen werden gel&#xF6;scht.\nSind Sie sicher?" />
+  <object key="change level description" value="Beschreibung der Ebene &#xE4;ndern" />
+  <object key="You must specify a description for the level." value="Sie m&#xFC;ssen eine Beschreibung f&#xFC;r die Ebene angeben." />
+  <object key="level description: " value="Ebenenbeschreibung: " />
+  <object key="updatelevel.text" value="Beschreibung der Ebene &#xE4;ndern" />
+  <object key="updatelevel.mnemonic" value="C" />
+
+
+  <object key="companies list" value="Firmenliste" />
+  <object key="companyCodeSYS01" value="Firmen Id" />
+  <object key="company detail" value="Firmendetails" />
+  <object key="organization data" value="Firmendaten" />
+  <object key="corporateName1" value="Firmenname1" />
+  <object key="corporateName2" value="Firmenname2" />
+  <object key="address" value="Adresse" />
+  <object key="city" value="Ort" />
+  <object key="zip" value="PLZ" />
+  <object key="prov" value="Region" />
+  <object key="country" value="Land" />
+  <object key="taxCode" value="USt-IdNr." />
+  <object key="phone" value="Telefon" />
+  <object key="fax" value="Fax" />
+  <object key="email" value="Email" />
+  <object key="webSite" value="Web" />
+  <object key="lawfulSite" value="Firmensitz" />
+  <object key="note" value="Bemerkung" />
+  <object key="languages list" value="Sprachen" />
+  <object key="languageCodeSYS09" value="Sprache" />
+  <object key="descriptionSYS09" value="Sprachenbeschreibung" />
+  <object key="clientLanguageCodeSYS09" value="Client Sprache" />
+
+  <object key="companyCodeSys01WAR01" value="Firmen Id" />
+  <object key="warehouse" value="Lager" />
+  <object key="warehouseCodeWAR01" value="K&#xFC;rzel" />
+  <object key="descriptionWAR01" value="Beschreibung" />
+  <object key="addressWAR01" value="Adresse" />
+  <object key="cityWAR01" value="Ort" />
+  <object key="zipWAR01" value="PLZ" />
+  <object key="provinceWAR01" value="Region" />
+  <object key="countryWAR01" value="Land" />
+  <object key="warehouses" value="L&#xE4;ger" />
+  <object key="warehouse detail" value="Lagerdetails" />
+  <object key="warehouse data" value="Lagerdaten" />
+  <object key="positions" value="Lagerort" />
+  <object key="custom data" value="Benutzerdefinierte Daten" />
+  <object key="edit/delete warehouse role" value="Lager bearbeiten/l&#xF6;schen Rolle" />
+  <object key="bookedItemsPanel" value="Artikelst&#xFC;ckzahlen reserviert/verf&#xFC;gbar" />
+  <object key="orderedItemsPanel" value="Artikelst&#xFC;ckzahlen bestellt" />
+  <object key="warehouseCodeWar01DOC06" value="Lager" />
+  <object key="warehouseCodeWar01WAR03" value="Lager" />
+
+  <object key="roles" value="Roles" />
+  <object key="you cannot change the administrator role" value="Administrator Rolle kann nicht ge&#xE4;ndert werden." />
+  <object key="you cannot delete the administrator role" value="Administrator Rolle kann nicht gel&#xF6;scht werden." />
+  <object key="function" value="Funktion" />
+  <object key="canView" value="Anzeigen" />
+  <object key="canInsSYS07" value="Erstellen" />
+  <object key="canUpdSYS07" value="Bearbeiten" />
+  <object key="canDelSYS07" value="L&#xF6;schen" />
+  <object key="there are users with the current role associated." value="Der Rolle sind Benutzer zugeordnet." />
+  <object key="companyCodeSys01SYS02" value="Firmen Id" />
+  <object key="canInsSYS02" value="Erstellen" />
+  <object key="canUpdSYS02" value="Bearbeiten" />
+  <object key="canDelSYS02" value="L&#xF6;schen" />
+  <object key="users" value="Benutzer" />
+  <object key="usernameSYS03" value="Benutzername" />
+  <object key="passwdSYS03" value="Kennwort" />
+  <object key="passwdExpirationSYS03" value="Kennwort Abl." />
+  <object key="languageCodeSys09SYS03" value="Sprache" />
+  <object key="firstNameSYS03" value="Vorname" />
+  <object key="lastNameSYS03" value="Name" />
+  <object key="companyCodeSys01SYS03" value="" />
+  <object key="progressiveReg04SYS03" value="" />
+  <object key="roleDescription" value="Rollenbeschreibung" />
+  <object key="selected" value="Ausgew&#xE4;hlt" />
+  <object key="you cannot delete administrator user" value="Benutzer Administrator kann nicht gel&#xF6;scht werden." />
+  <object key="user roles" value="Benutzer Rollen" />
+  <object key="you must specify a date greater than today." value="Sie m&#xFC;ssen ein sp&#xE4;teres Datum als heute angeben." />
+
+  <object key="vats" value="Mehrwertsteuers&#xE4;tze" />
+  <object key="vatDescription" value="Beschreibung" />
+  <object key="vatCodeREG01" value="Schl&#xFC;ssel" />
+  <object key="valueREG01" value="Steuersatz" />
+  <object key="deductibleREG01" value="% Abzugsf&#xE4;hig" />
+  <object key="vatDeductibleREG01" value="% Abzugsf&#xE4;hig" />
+
+  <object key="colors" value="Farben" />
+  <object key="colorCodeREG13" value="K&#xFC;rzel" />
+  <object key="colorDescription" value="Bezeichnung" />
+
+  <object key="sizes" value="Gr&#xF6;&#xDF;en" />
+  <object key="sizeCodeREG14" value="K&#xFC;rzel" />
+  <object key="sizeDescription" value="Bezeichnung" />
+
+  <object key="banks" value="Banken" />
+  <object key="bank detail" value="Bankdetails" />
+  <object key="bankCodeREG12" value="K&#xFC;rzel" />
+  <object key="descriptionREG12" value="Bezeichnung" />
+  <object key="bbanREG12" value="BBAN" />
+  <object key="ibanREG12" value="IBAN" />
+
+  <object key="carriers" value="Speditionen" />
+  <object key="carrierCodeREG09" value="K&#xFC;rzel" />
+  <object key="carrierDescription" value="Beschreibung" />
+
+  <object key="currencies" value="W&#xE4;hrungen" />
+  <object key="currencyCodeREG03" value="Code" />
+  <object key="currencySymbolREG03" value="Symbol" />
+  <object key="decimalSymbolREG03" value="Dezimaltrennzeichen" />
+  <object key="thousandSymbolREG03" value="Tausendertrennzeichen" />
+  <object key="currencyCodeReg03REG06" value="Von W&#xE4;hrung" />
+  <object key="currencyCode2Reg03REG06" value="Nach W&#xE4;hrung" />
+  <object key="decimalsREG03" value="Dezimalstellen" />
+  <object key="valueREG06" value="Umrechnungsfaktor" />
+  <object key="currency conversions" value="W&#xE4;hrungsumrechnung" />
+
+  <object key="measures" value="Ma&#xDF;einheiten" />
+  <object key="umCodeREG02" value="Ma&#xDF;einheit" />
+  <object key="decimalsREG02" value="Dezimalstellen" />
+  <object key="measure conversions" value="Ma&#xDF;einheiten umrechnen" />
+  <object key="umCodeReg02REG05" value="Nach Ma&#xDF;einheit" />
+  <object key="umCodeREG05" value="Von Ma&#xDF;einheit" />
+  <object key="valueREG05" value="Umrechnungsfaktor" />
+
+  <object key="tasks" value="Aufgaben" />
+  <object key="taskCodeREG07" value="K&#xFC;rzel" />
+  <object key="activityCodeSal09REG07" value="T&#xE4;tigkeit" />
+  <object key="activityDescriptionREG07" value="T&#xE4;tigkeitsbeschreibung" />
+  <object key="companyCodeSys01REG07" value="Firmen Id" />
+  <object key="taskDescription" value="Beschreibung" />
+  <object key="currencyCodeReg03REG07" value="W&#xE4;hrungscode" />
+  <object key="durationREG07" value="Auf.Dauer [min]" />
+  <object key="valueREG07" value="Auf.Kosten" />
+  <object key="finiteCapacityREG07" value="Begrenzte Kap." />
+
+  <object key="item types" value="Artikeltypen" />
+  <object key="item type" value="Artikeltyp" />
+  <object key="hierarchy" value="Hierarchie" />
+  <object key="companyCodeSys01ITM02" value="Firmen Id" />
+
+
+  <object key="companyCodeSys01ITM01" value="Firmen Id" />
+  <object key="itemCodeITM01" value="ArtikelNr." />
+  <object key="items" value="Artikel" />
+  <object key="item detail" value="Artikeldetails" />
+  <object key="images" value="Bilder" />
+  <object key="level" value="Ebene" />
+  <object key="addDescr" value="Zusatzbeschr." />
+  <object key="minSellingQtyITM01" value="Min.Verkaufsmenge" />
+  <object key="minSellingQtyUmCodeReg02ITM01" value="M.V." />
+  <object key="vat" value="MwSt" />
+  <object key="grossWeightITM01" value="Bruttogewicht" />
+  <object key="netWeightITM01" value="Nettogewicht" />
+  <object key="widthITM01" value="Breite" />
+  <object key="heightITM01" value="H&#xF6;he" />
+  <object key="load large image" value="Gro&#xDF;es Bild laden" />
+  <object key="load small image" value="Kleines Bild laden" />
+  <object key="clear large image" value="Gro&#xDF;es Bild leeren" />
+  <object key="clear small image" value="Kleines Bild leeren" />
+  <object key="serial number required" value="Seriennr.Pflicht" />
+
+  <object key="firstname" value="Vorname" />
+  <object key="lastname" value="Name" />
+  <object key="mobile" value="Mobil-Nr." />
+  <object key="socialsecnum" value="Sozialvers. Nr." />
+  <object key="personal data" value="Pers&#xF6;nliche Daten" />
+  <object key="marital status" value="Familienstand" />
+  <object key="birthday" value="Geburtsdatum" />
+  <object key="birthplace" value="Geburtsort" />
+  <object key="nationality" value="Nationalit&#xE4;t" />
+
+  <object key="customers" value="Kunden" />
+  <object key="taxCodeREG04" value="UStId/Soz.Vers.Nr." />
+  <object key="companyCodeSys01REG04" value="Firmen Id" />
+  <object key="customerCodeSAL07" value="KundenNr." />
+  <object key="name_1REG04" value="Firmenname1/Vorname" />
+  <object key="name_2REG04" value="Firmenname2/Name" />
+  <object key="customer detail" value="Kundendetails" />
+  <object key="generic data" value="Allgem.Daten" />
+  <object key="customer data" value="Kundendaten" />
+  <object key="customer type" value="Kundentyp" />
+  <object key="bank" value="Bank" />
+  <object key="pricelist" value="Preisliste" />
+  <object key="payment terms" value="Zahlungsziel" />
+  <object key="customer" value="Kunde" />
+  <object key="sex" value="Geschlecht" />
+  <object key="destinations" value="Lieferadressen" />
+  <object key="destinationCodeREG18" value="K&#xFC;rzel" />
+  <object key="descriptionREG18" value="Beschreibung" />
+  <object key="customer code already exist." value="KundenNr. bereits vorhanden." />
+
+  <object key="organization" value="Unternehmen" />
+  <object key="organization contact" value="Firmenkontakt" />
+  <object key="organization customer" value="Firmenkunde" />
+  <object key="private contact" value="Privatkontakt" />
+  <object key="private customer" value="Privatkunde" />
+  <object key="supplier" value="Lieferant" />
+
+  <object key="private" value="Privat" />
+
+  <object key="payment types" value="Zahlungsarten" />
+  <object key="paymentTypeCodeREG11" value="K&#xFC;rzel" />
+  <object key="paymentTypeDescription" value="Beschreibung" />
+  <object key="payments" value="Zahlungsziele" />
+  <object key="paymentDescription" value="Beschreibung" />
+  <object key="paymentCodeREG10" value="K&#xFC;rzel" />
+  <object key="instalmentNumberREG10" value="Raten Nr." />
+  <object key="startDayREG10" value="Beginnt ab" />
+  <object key="invoice date" value="Rech.Datum" />
+  <object key="end month" value="Monatsende" />
+  <object key="stepREG10" value="Schritt" />
+  <object key="firstInstalmentDaysREG10" value="1. Zahlung Tage" />
+  <object key="paymentTypeCodeReg11REG10" value="Zahlungsart" />
+  <object key="you must define at least one instalment" value="Sie m&#xFC;ssen min. eine Zahlung definieren" />
+  <object key="instalments" value="Zahlungen" />
+  <object key="rateNumberREG17" value="Nr." />
+  <object key="paymentTypeCodeReg11REG17" value="Zahlungsart" />
+  <object key="paymentTypeDescriptionSYS10" value="Zahlungsartbeschreibung" />
+  <object key="percentageREG17" value="%" />
+  <object key="the sum of percentages must be 100" value="Die Summe der Prozentwerte muss 100 ergeben." />
+  <object key="instalmentDaysREG17" value="F&#xE4;llig.Tage" />
+  <object key="references" value="Referenzen" />
+  <object key="discounts" value="Rabatte" />
+  <object key="discountCodeSAL03" value="Rabatt" />
+  <object key="discountDescription" value="Rabattbeschreibung" />
+  <object key="currencyCodeReg03SAL03" value="W&#xE4;hrung" />
+  <object key="minValueSAL03" value="Min Wert" />
+  <object key="maxValueSAL03" value="Max Wert" />
+  <object key="minPercSAL03" value="Min %" />
+  <object key="maxPercSAL03" value="Max %" />
+  <object key="startDateSAL03" value="Startdatum" />
+  <object key="endDateSAL03" value="Enddatum" />
+  <object key="minQtySAL03" value="Min Menge" />
+  <object key="multipleQtySAL03" value="Mult.Menge" />
+  <object key="max and min values must be both setted." value="Max und Min Werte m&#xFC;ssen gesetzt werden." />
+  <object key="max and min percentages must be both setted." value="Max und Min Prozents&#xE4;tze m&#xFC;ssen gesetzt werden." />
+  <object key="you must define max and min percentages or max and min values." value="Sie m&#xFC;ssen Max und Min Werte oder Max und Min Prozents&#xE4;tze angeben." />
+  <object key="you must define max and min percentages otherwise max and min values." value="Sie m&#xFC;ssen Max und Min Prozents&#xE4;tze angeben ansonsten Max und Min Werte." />
+  <object key="min value must be less than or equals to max value." value="Min Wert muss kleiner oder gleich Max Wert sein." />
+  <object key="min percentage must be less than or equals to max percentage." value="Min Prozentsatz muss kleiner oder gleich Max Prozentsatz sein." />
+  <object key="start date must be less than or equals to end date." value="Startdatum muss kleiner oder gleich Enddatum sein." />
+
+  <object key="charges" value="Zuschl&#xE4;ge" />
+  <object key="chargeCodeSAL06" value="K&#xFC;rzel" />
+  <object key="chargeDescription" value="Beschreibung" />
+  <object key="valueSAL06" value="Betrag" />
+  <object key="percSAL06" value="%" />
+  <object key="vatCodeReg01SAL06" value="MwSt Schl&#xFC;ssel" />
+  <object key="currencyCodeReg03SAL06" value="W&#xE4;hrung" />
+  <object key="vatValueREG01" value="MwSt Satz" />
+  <object key="companyCodeSys01SAL06" value="Firmen Id" />
+  <object key="vatDescriptionSYS10" value="MwSt Beschreibung" />
+  <object key="you must define a value or a percentage charge." value="Sie m&#xFC;ssen einen Betrag oder Prozentsatz angeben." />
+  <object key="a charge must be define as a value or as a percentage." value="Ein Zuschlag muss als Betrag oder Prozentsatz angegeben werden." />
+  <object key="vat code is required for a charge expressed as a value." value="F&#xFC;r einen Betragszuschlag wird ein MwSt Schl&#xFC;ssel ben&#xF6;tigt." />
+
+  <object key="customer hierarchies" value="Kundenhierarchien" />
+  <object key="subjectTypeREG04" value="Typ" />
+  <object key="companyCodeSys01REG08" value="Firmen Id" />
+  <object key="you must select a leaf node in the tree" value="Sie m&#xFC;ssen einen Blattknoten des Baumes ausw&#xE4;hlen." />
+  <object key="hierarchies" value="Hierarchien" />
+  <object key="SubjectHierarchyLevelsPanel" value="Hierarchie Ebene" />
+  <object key="levelDescriptionSYS10" value="Hiearchie Ebene" />
+
+  <object key="items hierarchy discounts" value="Artikelhierarchie Rabatte" />
+  <object key="customers hierarchy discounts" value="Kundenhierarchie Rabatte" />
+
+  <object key="referenceTypeREG15" value="Referenztyp" />
+  <object key="valueREG15" value="Wert" />
+
+  <object key="pricelists" value="Preislisten" />
+  <object key="companyCodeSys01SAL01" value="Firmen Id" />
+  <object key="currencyCodeReg03SAL01" value="W&#xE4;hrung" />
+  <object key="pricelistCodeSAL01" value="K&#xFC;rzel" />
+  <object key="validity date filter" value="Filter G&#xFC;ltigkeitsdatum" />
+  <object key="item prices" value="Artikelpreise" />
+  <object key="valueSAL02" value="Preis" />
+  <object key="startDateSAL02" value="G&#xFC;ltig ab" />
+  <object key="endDateSAL02" value="G&#xFC;ltig bis" />
+  <object key="itemCodeItm01SAL02" value="Artikel" />
+  <object key="progressiveHie02ITM01" value="Artikeltyp" />
+  <object key="itemDescriptionSYS10" value="Artikelbeschreibung" />
+  <object key="import items" value="Artikel importieren" />
+  <object key="ok" value="Ok" />
+  <object key="okmnemonic" value="O" />
+  <object key="validation dates and price are required." value="G&#xFC;ltigkeitsdatum und Preis werden ben&#xF6;tigt." />
+  <object key="changes to pricelist" value="&#xC4;nderungen in Preisliste" />
+  <object key="new start validation date" value="Neues Startdatum f&#xFC;r G&#xFC;ltigkeitspr&#xFC;fung" />
+  <object key="new end validation date" value="Neues Enddatum f&#xFC;r G&#xFC;ltigkeitspr&#xFC;fung" />
+  <object key="add this delta to all prices" value="Dalta auf alle Preise addieren" />
+  <object key="add to all prices a %" value="% Auf alle Preise addieren" />
+  <object key="truncate decimals" value="Dezimalstellen abschneiden" />
+  <object key="change date interval" value="Datumsinterval &#xE4;ndern" />
+  <object key="date interval" value="Datumsinterval" />
+  <object key="change prices" value="Preise &#xE4;ndern" />
+  <object key="import all items" value="Alle Artikel importieren" />
+  <object key="import all supplier items" value="Alle Lieferanten importieren" />
+  <object key="validation dates are required." value="G&#xFC;ltigkeitsdatum wird ben&#xF6;tigt." />
+  <object key="price value is required." value="Ein Betrag wird ben&#xF6;tigt." />
+  <object key="price % is required." value="% Preis wird ben&#xF6;tigt." />
+  <object key="pricelistCodeSal01SAL02" value="Preisliste" />
+  <object key="pricelistDescriptionSYS10" value="Preislistenbeschreibung" />
+
+  <object key="trustAmountSAL07" value="Kreditlimit" />
+
+  <object key="agentTypeDescription" value="Verk&#xE4;ufertyp" />
+  <object key="agent types" value="Verk&#xE4;ufertypen" />
+  <object key="an agent with the same code already exists." value="Ein Verk&#xE4;ufer mit gleicher Verk&#xE4;uferNr. existiert bereits." />
+  <object key="agents" value="Verk&#xE4;ufer" />
+  <object key="agentCodeSAL10" value="Verk&#xE4;uferNr." />
+  <object key="percentageSAL10" value="Provision (%)" />
+  <object key="progressiveSys10SAL10" value="Verk&#xE4;ufertyp" />
+  <object key="progressiveReg04SAL10" value="Mitarb." />
+
+  <object key="employees" value="Mitarbeiter" />
+  <object key="employee detail" value="Mitarbeiterdetails" />
+  <object key="employee data" value="Mitarbeiterdaten" />
+  <object key="people data" value="Personendaten" />
+  <object key="employeeCodeSCH01" value="PersonalNr." />
+  <object key="phoneNumberSCH01" value="Telefon" />
+  <object key="officeSCH01" value="B&#xFC;ro" />
+  <object key="taskCodeReg07SCH01" value="Aufgaben Id" />
+  <object key="divisionSCH01" value="Abteilung" />
+  <object key="engagedDateSCH01" value="Einstelldatum" />
+  <object key="dismissalDateSCH01" value="Ausscheidedatum" />
+  <object key="levelSCH01" value="Ebene" />
+  <object key="salarySCH01" value="Verdienst" />
+  <object key="manager" value="Vorgesetzter" />
+  <object key="assistant" value="Assistent" />
+  <object key="employee" value="Mitarbeiter" />
+  <object key="companyCodeSys01SCH01" value="Firmen Id" />
+
+  <object key="there is already another people with the same first and last name." value="Person mit gleichem Vor- und Nachnamen bereits vorhanden." />
+  <object key="there is already another organization with the same corporate name." value="Unternehmen mit gleichem Firmennamen bereits vorhanden." />
+  <object key="there is already another employee with the same employee code." value="Mitarbeiter mit gleicher PersonalNr. bereits vorhandne." />
+
+  <object key="suppliers" value="Lieferanten" />
+  <object key="supplierCodePUR01" value="LieferantNr." />
+  <object key="supplier detail" value="Lieferantendetails" />
+  <object key="supplier data" value="Lieferantendaten" />
+  <object key="supplier code already exist." value="LieferantNr. existiert bereits." />
+  <object key="supplier hierarchies" value="Lieferantenhierarchien" />
+  <object key="item hierarchies" value="Artikelhierarchien" />
+  <object key="supplierItemCodePUR02" value="Bestellnummer" />
+  <object key="umCodeReg02PUR02" value="Einkauf M.E." />
+  <object key="minPurchaseQtyPUR02" value="Min. Anz." />
+  <object key="multipleQtyPUR02" value="Multi Anz." />
+  <object key="you are allowed to insert data only on a leaf node." value="Sie k&#xF6;nnen Daten nur in einen Blattknoten einf&#xFC;gen." />
+  <object key="supplierItems" value="Lieferantenartikel" />
+  <object key="import supplier items" value="Lieferantenartikel importieren" />
+  <object key="supplierPricelists" value="Lieferantenpreislisten" />
+  <object key="companyCodeSys01PUR03" value="Firmen Id" />
+  <object key="currencyCodeReg03PUR03" value="W&#xE4;hrung" />
+  <object key="pricelistDescription" value="Preislistenbeschreibung" />
+  <object key="pricelistCodePUR03" value="K&#xFC;rzel" />
+  <object key="valuePUR04" value="Preis" />
+  <object key="startDatePUR04" value="G&#xFC;ltig ab" />
+  <object key="endDatePUR04" value="G&#xFC;ltig bis" />
+  <object key="itemCodeItm01PUR04" value="ArtikelNr." />
+
+  <object key="document identification" value="Dokumentkennzeichen" />
+  <object key="docNumber" value="DokumentNr." />
+  <object key="docYear" value="Jahr" />
+  <object key="docType" value="Typ" />
+  <object key="docRif" value="Ref. Dok." />
+  <object key="docDate" value="Datum" />
+  <object key="docState" value="Status" />
+  <object key="supplier data" value="Lieferantendaten" />
+  <object key="documents" value="Dokumente" />
+
+  <object key="companyCodeSys01DOC06" value="Firmen Id" />
+  <object key="docTypeDOC06" value="Dok. Typ" />
+  <object key="docStateDOC06" value="Dok. Status" />
+  <object key="pricelistCodePur03DOC06" value="Priceliste" />
+  <object key="pricelistDescriptionDOC06" value="Pricelistenbeschreibung" />
+  <object key="currencyCodeReg03DOC06" value="W&#xE4;hrung" />
+  <object key="docYearDOC06" value="Jahr" />
+  <object key="docNumberDOC06" value="Dok. Nr." />
+  <object key="taxableIncomeDOC06" value="Netto Summe" />
+  <object key="totalVatDOC06" value="MwSt Summe" />
+  <object key="totalDOC06" value="Brutto Summe" />
+  <object key="docDateDOC06" value="Dok. Datum" />
+  <object key="discounts and charges" value="Rabatte und Zuschl&#xE4;ge" />
+  <object key="discount value" value="Rab. Betr." />
+  <object key="net discount value" value="Netto Rabattbetrag" />
+  <object key="discount perc" value="Rabatt %" />
+  <object key="charge value" value="Zuschl. Betrag" />
+  <object key="charge perc" value="Zuschlag %" />
+  <object key="totals" value="Summen" />
+  <object key="taxableIncome" value="Netto Summe" />
+  <object key="totalVat" value="MwSt Summe" />
+  <object key="total" value="Brutto Summe" />
+  <object key="purchase orders" value="Bestellungen" />
+  <object key="purchase order" value="Bestelldetails" />
+  <object key="header" value="Kopfdaten" />
+  <object key="lines" value="Positionen" />
+  <object key="opened" value="Offen" />
+  <object key="header blocked" value="Header blocked" />
+  <object key="suspended" value="Ausgesetzt" />
+  <object key="confirmed" value="Best&#xE4;tigt" />
+  <object key="closed" value="Geschlossen" />
+  <object key="line detail" value="Positionsdetails" />
+  <object key="itemCodeItm01DOC07" value="ArtikelNr." />
+  <object key="supplierItemCode" value="Lief. ArtikelNr." />
+  <object key="vatCode" value="MwSt Schl." />
+  <object key="valuePur04DOC07" value="St&#xFC;ckpreis" />
+  <object key="valueDOC07" value="Summe" />
+  <object key="qtyDOC07" value="Menge" />
+  <object key="discountValueDOC07" value="Rab. Betrag" />
+  <object key="discountPercDOC07" value="Rabatt %" />
+  <object key="vatValueDOC07" value="MwSt Summe" />
+  <object key="valueReg01DOC07" value="MwSt %" />
+  <object key="deductibleReg01DOC07" value="Abz. MwSt %" />
+  <object key="the price is no more valid" value="Der Preis ist nicht mehr g&#xFC;ltig." />
+  <object key="itemCodeItm01PUR02" value="ArtikelNr." />
+  <object key="item" value="Artikel" />
+  <object key="confirm purchase order?" value="Bestellung best&#xE4;tigen?&#10;Nach Best&#xE4;tigung ist die Bestellung nicht mehr &#xE4;nderbar." />
+  <object key="order confirmation" value="Order Confirmation" />
+  <object key="deliveryDateDOC07" value="Gepl. Lieferdatum" />
+  <object key="inQtyDOC07" value="Eing. Menge" />
+
+  <object key="in delivery notes" value="Wareneing&#xE4;nge" />
+  <object key="companyCodeSys01DOC08" value="Firmen Id" />
+  <object key="docTypeDOC08" value="Dok. Typ" />
+  <object key="docStateDOC08" value="Dok. Status" />
+  <object key="warehouseCodeWar01DOC08" value="Lager" />
+  <object key="docRefDOC08" value="Ref. Dok." />
+  <object key="warehouseDescriptionDOC08" value="Lagerbeschreib." />
+  <object key="docDateDOC08" value="Dok. Datum" />
+  <object key="docYearDOC08" value="Jahr" />
+  <object key="docNumberDOC08" value="Dok. Nr." />
+  <object key="in delivery note" value="Wareneingang" />
+  <object key="delivery note closure" value="WE Abschlu&#xDF;" />
+  <object key="close delivery note?" value="Wareneingang abschlie&#xDF;en und Artikel ins Lager einbuchen?" />
+  <object key="other data" value="Sonstiges" />
+  <object key="docYearDoc06DOC09" value="Best. Jahr" />
+  <object key="docNumberDoc06DOC09" value="Bestllung Nr." />
+  <object key="progressiveHie02DOC09" value="Artikel Typ" />
+  <object key="qtyDOC09" value="Eing. Menge" />
+  <object key="supplierQtyDOC09" value="Lief Eing. Menge" />
+  <object key="itemCodeItm01DOC09" value="ArtikelNr." />
+  <object key="supplier items" value="Lief. Artikel" />
+  <object key="um" value="M.E." />
+  <object key="no delivery note to update" value="Kein Lieferschein zum aktualisieren." />
+  <object key="record not found" value="Datensatz nicht gefunden" />
+  <object key="warehouse positions" value="Lagerorte" />
+  <object key="the warehouse motive specified is not defined" value="Der gew&#xE4;hlte Lagervorgang ist nicht vorhanden" />
+  <object key="load items from purchase order" value="Artikelpos. aus Bestellung &#xFC;bernehmen" />
+  <object key="purchase order rows" value="Bestellpositionen" />
+  <object key="import purchase order rows" value="Bestellpositionen importieren" />
+  <object key="purchaseOrder" value="Bestellung" />
+  <object key="confirmed purchase orders" value="Bestellungen best&#xE4;tigen" />
+  <object key="unload items from delivery request" value="Artikelpos. aus Lieferanfrage &#xFC;bernehmen" />
+  <object key="docSequenceDoc01DOC01" value="Verk.Dok. Nr." />
+  <object key="docSequenceDOC01" value="Verk.Dok. Nr." />
+  <object key="docSequenceDoc06DOC06" value="Eink.Dok. Nr." />
+  <object key="docSequenceDOC06" value="Eink.Dok. Nr." />
+  <object key="docSequenceDoc06DOC09" value="Eink.Dok. Nr." />
+  <object key="docSequenceDoc01DOC10" value="Verk.Dok. Nr." />
+  <object key="docSequenceDOC08" value="Lief.Sch. Nr." />
+  <object key="sectionalDOC01" value="Sectional" />
+
+  <object key="close out delivery note?" value="Lieferschein abschlie&#xDF;en und Artikel aus Lager ausbuchen?" />
+  <object key="out delivery notes" value="Lieferscheine" />
+  <object key="out delivery note" value="Lieferschein" />
+  <object key="docYearDoc01DOC10" value="Dok. Jahr" />
+  <object key="docNumberDoc01DOC10" value="Dok. Nr." />
+  <object key="progressiveHie02DOC10" value="Artikel Type" />
+  <object key="qtyDOC10" value="Lief. Menge" />
+  <object key="saleQtyDOC02" value="Verk. Menge" />
+  <object key="saleOutQtyDOC02" value="Sale Out Qty." />
+  <object key="itemCodeItm01DOC10" value="ArtikelNr." />
+  <object key="confirmed sale documents" value="Verkaufsdokumente best&#xE4;tigen" />
+  <object key="sale document rows" value="Verkaufsdok. Positionen" />
+  <object key="import delivery request rows" value="Positionen aus Lieferanfrage importieren" />
+
+  <object key="locationDescriptionSYS10" value="Lagerort" />
+  <object key="itemCodeItm01WAR03" value="ArtikelNr." />
+  <object key="availableQtyWAR03" value="Menge Verf&#xFC;g." />
+  <object key="damagedQtyWAR03" value="Menge Defekt" />
+  <object key="item availability" value="Artikelverf&#xFC;gbarkeit" />
+
+  <object key="warehouse motives" value="Lagervorg&#xE4;nge" />
+  <object key="warehouseMotiveWAR04" value="Vorgang" />
+  <object key="motiveDescription" value="Beschreibung" />
+  <object key="itemTypeWAR04" value="Artikel Typ" />
+  <object key="qtySignWAR04" value="Qty sign" />
+  <object key="good item" value="Gut Artikel" />
+  <object key="damaged item" value="Defekt Artikel" />
+  <object key="add" value="Erh&#xF6;hen" />
+  <object key="substract" value="Veringern" />
+
+  <object key="warehouse movements" value="Lagerbewegungen" />
+  <object key="sign" value="Sign" />
+  <object key="type" value="Type" />
+  <object key="warehouseCodeWar01WAR02" value="Lager" />
+  <object key="itemCodeItm01WAR02" value="ArtikelNr." />
+  <object key="movementDateWAR02" value="Datum" />
+  <object key="usernameWAR02" value="Benutzer" />
+  <object key="noteWAR02" value="Bemerkung" />
+  <object key="deltaQtyWAR02" value="Menge" />
+  <object key="warehouseMotiveWar04WAR02" value="Vorgang" />
+  <object key="motiveDescriptionSYS10" value="Vorgangsbeschreibung" />
+  <object key="update not allowed until serial numbers are not defined" value="Aktualisieren nicht erlaubt solange keine Seriennummern angegeben sind" />
+  <object key="insert not allowed until serial numbers are not defined" value="Einf&#xFC;gen nicht erlaubt solange keine Seriennummern angegeben sind" />
+  <object key="serial numbers from item" value="Seriennummern des Artikel" />
+  <object key="serial number" value="Seriennummer" />
+  <object key="bar code" value="Bar Code" />
+  <object key="you must define a serial number for each row" value="Sie m&#xFC;ssen in jede Zeile eine Seriennummer eingeben" />
+  <object key="close" value="Close" />
+
+  <object key="booked items and availability" value="Artikel Reserv./Verf&#xFC;g." />
+  <object key="future item availability" value="Zuk&#xFC;nftige Artikelverf&#xFC;g." />
+  <object key="itemCodeItm01DOC02" value="ArtikelNr." />
+  <object key="bookQtyDOC02" value="Reserv. Menge" />
+  <object key="orderQtyDOC07" value="Bestell. Menge" />
+
+  <object key="manual movement" value="Manuelle Bewegung" />
+  <object key="manual movement correctly inserted" value="Mauelle Bewegung korrekt eingef&#xFC;gt." />
+
+  <object key="companyCodeSys01DOC01" value="Firm Id" />
+  <object key="docTypeDOC01" value="Dok. Typ" />
+  <object key="docStateDOC01" value="Dok. Status" />
+  <object key="pricelistCodeSal01DOC01" value="Preisliste" />
+  <object key="pricelistDescriptionDOC01" value="Preislistenbeschreibung" />
+  <object key="currencyCodeReg03DOC01" value="W&#xE4;hrung" />
+  <object key="docYearDOC01" value="Jahr" />
+  <object key="docNumberDOC01" value="Dok. Nr." />
+  <object key="taxableIncomeDOC01" value="Netto Summe" />
+  <object key="totalVatDOC01" value="MwSt Summe" />
+  <object key="totalDOC01" value="Brutto Summe" />
+  <object key="docDateDOC01" value="Dok. Datum" />
+  <object key="valueSal02DOC02" value="St&#xFC;ckpreis" />
+  <object key="valueDOC02" value="Summe" />
+  <object key="qtyDOC02" value="Menge" />
+  <object key="totalDiscountDOC02" value="Rab. Summe" />
+  <object key="vatValueDOC02" value="MwSt Summe" />
+  <object key="valueReg01DOC02" value="MwSt %" />
+  <object key="deductibleReg01DOC02" value="Abz. MwSt %" />
+  <object key="deliveryDateDOC02" value="Vorher. Lieferdatum" />
+  <object key="outQtyDOC02" value="Out Qty." />
+  <object key="sale orders" value="Auftr&#xE4;ge" />
+  <object key="notes" value="Bemerkungen" />
+  <object key="allowanceDOC01" value="Preisnachlass" />
+  <object key="depositDOC01" value="Anzahlung" />
+  <object key="docRef" value="Dok.Ref.Nr." />
+  <object key="percentageDOC01" value="Provision %" />
+  <object key="header note" value="Vortext" />
+  <object key="footer note" value="Endtext" />
+  <object key="delivery note" value="Lieferschein" />
+  <object key="sale order" value="Auftrag" />
+  <object key="agent" value="Verk&#xE4;ufer" />
+  <object key="error on applying item discounts" value="Fehler beim Anwenden der Artikelrabatte" />
+  <object key="confirm sale order?" value="Auftrag best&#xE4;tigen?" />
+  <object key="document total cannot be less than zero!" value="Dokumnet Summe darf nicht kleiner null sein!" />
+  <object key="item discounts" value="Artikelrabatte" />
+  <object key="minValueDOC04" value="Min Betrag" />
+  <object key="maxValueDOC04" value="Max Betrag" />
+  <object key="minPercDOC04" value="Min %" />
+  <object key="maxPercDOC04" value="Max %" />
+  <object key="discountCodeSal03DOC04" value="Rabatt" />
+  <object key="discountDescriptionDOC04" value="Rabattbeschreibung" />
+  <object key="valueDOC04" value="Betrag" />
+  <object key="percDOC04" value="%" />
+  <object key="minQtyDOC04" value="Min Menge" />
+  <object key="multipleQtyDOC04" value="Mult.Menge" />
+
+  <object key="customer discounts" value="Kunden spez. Rabatte" />
+  <object key="minValueDOC05" value="Min Betrag" />
+  <object key="maxValueDOC05" value="Max Betrag" />
+  <object key="minPercDOC05" value="Min %" />
+  <object key="maxPercDOC05" value="Max %" />
+  <object key="discountCodeSal03DOC05" value="K&#xFC;rzel" />
+  <object key="discountDescriptionDOC05" value="Rabattbeschreibung" />
+  <object key="valueDOC05" value="Betrag" />
+  <object key="percDOC05" value="%" />
+  <object key="you must define a discount as value or as a percentage" value="Sie m&#xFC;ssen einen Rabatt als Betrag oder Prozentsatz angeben" />
+
+  <object key="you must define a charge as value or as a percentage" value="Sie m&#xFC;ssen einen Zuschlag als Betrag oder Prozentsatz angeben" />
+  <object key="valueSal06DOC03" value="Vorgabe Betrag" />
+  <object key="percSal06DOC03" value="Vorgabe %" />
+  <object key="chargeCodeSal06DOC03" value="Zuschlag" />
+  <object key="chargeDescriptionDOC03" value="Zuschlagsbeschreibung" />
+  <object key="valueDOC03" value="Betrag" />
+  <object key="percDOC03" value="%" />
+
+  <object key="sale activities" value="Verkaufsaktivit&#xE4;ten" />
+  <object key="scheduled activities" value="Geplante Aktivit&#xE4;ten" />
+  <object key="activityCodeSAL09" value="K&#xFC;rzel" />
+  <object key="activityDescriptionDOC13" value="Aktivit&#xE4;tbeschreibung" />
+  <object key="valueSAL09" value="Betrag" />
+  <object key="valueSal09DOC13" value="Stundensatz" />
+  <object key="valueReg01DOC13" value="MwSt Satz" />
+  <object key="currencyCodeReg03SAL09" value="W&#xE4;hrung" />
+  <object key="currencyCodeReg03DOC13" value="W&#xE4;hrung" />
+  <object key="descriptionSCH06" value="Geplante Aktivit&#xE4;tsbeschreibung" />
+  <object key="startDateSCH06" value="Startdatum Akt." />
+  <object key="endDateSCH06" value="Enddatum Akt." />
+  <object key="durationSCH06" value="Dauer [min]" />
+  <object key="durationDOC13" value="Dauer [min]" />
+  <object key="valueDOC13" value="Sum. Betrag" />
+  <object key="companyCodeSys01SAL09" value="Firm Id" />
+  <object key="vatCodeReg01SAL09" value="MwSt Satz" />
+  <object key="vatCodeSal09DOC13" value="MwSt Satz" />
+  <object key="activityCodeSal09DOC13" value="Aktivit&#xE4;t" />
+  <object key="vatValueDOC13" value="MwSt Betrag" />
+  <object key="vatDeductibleDOC13" value="% Abz" />
+  <object key="vatDescriptionDOC13" value="MwSt Beschreibung" />
+
+  <object key="sale contract" value="Rahmenvertrag" />
+  <object key="sale contracts" value="Rahmenvertr&#xE4;ge" />
+  <object key="contract confirmation" value="Vertagsbest&#xE4;tigung" />
+  <object key="confirm sale contract?" value="Rahmenvertrag best&#xE4;tigen?" />
+
+  <object key="sale estimate" value="Angebot" />
+  <object key="sale estimates" value="Angebote" />
+
+  <object key="desk selling" value="Direktverkauf" />
+  <object key="desk sellings" value="Direktverk&#xE4;ufe" />
+  <object key="confirm desk selling?" value="Direktverkauf abschlie&#xDF;en und Artikel aus Lager ausbuchen?" />
+  <object key="desk selling confirmation" value="Direktverkauf mit Lagerabbuchung abschlie&#xDF;en" />
+  <object key="document closing not allowed: item not available in warehouse" value="Dokumentabschlu&#xDF; nicht m&#xF6;glich: Artikel in Lager nicht verf&#xFC;gbar" />
+  <object key="create sale invoice?" value="Verkaufsrechnung erstellen?" />
+  <object key="desk selling invoice" value="Direktverkaufsrechnung" />
+  <object key="manually created" value="Manuell erstellt" />
+  <object key="from deliv.note" value="Aus Lieferschein" />
+  <object key="from sale doc." value="Aus Verkaufsdok." />
+
+  <object key="user parameters" value="Benutzerparameter" />
+  <object key="company" value="Firma" />
+  <object key="retail sale customer" value="Kundevorgabe f&#xFC;r Direktverkauf" />
+  <object key="retail warehouse" value="Lagervorgabe f&#xFC;r Direktverkauf" />
+  <object key="receipt manager" value="Kassenbon-Manager" />
+  <object key="receipts management program selection" value="Kassenbon-Management-Programm w&#xE4;hlen" />
+  <object key="retail sale export non allowed: receipt path has not been defined as user parameter." value="Direktverkauf Export nicht m&#xF6;glich:&#10;Kassenbon-Manager in Benutzerparameter nicht konfiguriert." />
+  <object key="company not found." value="Firma nicht gefunden." />
+  <object key="error while executing external application; return code:" value="Fehler beim ausf&#xFC;hren eines externen Programms; return code:" />
+
+  <object key="sale invoices" value="Verkaufsrechnungen" />
+  <object key="sale invoice" value="Verkaufsrechnung" />
+  <object key="close sale invoice?" value="Verkaufsrechnung abschlie&#xDF;en?" />
+  <object key="invoice closing" value="Verkaufsrechnung abschlie&#xDF;en" />
+  <object key="sale invoice from delivery notes" value="Verkaufsrechnung aus Lieferscheinen" />
+  <object key="sale invoice from sale document" value="Verkaufsrechnung aus Verkaufsdok." />
+  <object key="invoiceQtyDOC02" value="Rech. Qty." />
+  <object key="invoiceType" value="Rech. Typ" />
+  <object key="invoiceNumber" value="Rech. Nr." />
+  <object key="create sale document from estimate" value="Verkaufsdokument aus Angebot" />
+  <object key="create sale document from estimate?" value="Verkaufsdokument aus Angebot?" />
+  <object key="sale document creation" value="Verkaufsdokument erstellen" />
+  <object key="estimate nr. " value="Angebots Nr. " />
+  <object key="province" value="Region" />
+  <object key="invoicedValueDOC13" value="Rech. Betr." />
+  <object key="invoicedValueDOC03" value="Rech. Betr." />
+
+  <object key="credit notes" value="Gutschriften" />
+  <object key="credit note" value="Gutschrift" />
+  <object key="credit note closing" value="Gutschrift abschlie&#xDF;en" />
+  <object key="close credit note?" value="Gutschrift abschlie&#xDF;en?" />
+  <object key="debiting notes" value="Lastschriften" />
+  <object key="debiting note" value="Lastschrift" />
+  <object key="close debiting note?" value="Lastschrift abschlie&#xDF;en?" />
+  <object key="debiting note closing" value="Lastschrift abschlie&#xDF;en" />
+  <object key="noteNumber" value="Note Nr." />
+
+  <object key="expirations" value="Offene Posten" />
+  <object key="docTypeDOC19" value="Dok. Typ" />
+  <object key="docYearDOC19" value="Jahr" />
+  <object key="docSequenceDOC19" value="Nr." />
+  <object key="companyCodeSys01DOC19" value="Firm Id" />
+  <object key="valueDOC19" value="Betrag" />
+  <object key="expirationDateDOC19" value="F&#xE4;llig. Datum" />
+  <object key="docDateDOC19" value="Dok. Datum" />
+  <object key="customerSupplierCodeDOC19" value="Kund./Lief.Code" />
+  <object key="name_1DOC19" value="Firmenname1/Vorname" />
+  <object key="name_2DOC19" value="Firmenname2/Name" />
+  <object key="payedDOC19" value="Bezahlt" />
+  <object key="startDate" value="Von Datum" />
+  <object key="endDate" value="Bis Datum" />
+  <object key="show also payed expirations" value="Auch bereits bezahlte Posten anzeigen" />
+  <object key="purchase invoice" value="Einkaufsrechnung" />
+  <object key="all invoices" value="Alle Rechnungen" />
+  <object key="you must select at least one delivery note" value="Sie m&#xFC;ssen min. einen Lieferschein ausw&#xE4;hlen" />
+  <object key="delivery notes" value="Lieferscheine" />
+  <object key="descriptionDOC08" value="Lieferortbeschreibung" />
+  <object key="destinationCodeReg18DOC08" value="Lieferort" />
+
+  <object key="contact" value="Kontakt" />
+  <object key="contact detail" value="Kontaktdetails" />
+  <object key="contacts" value="Kontakte" />
+  <object key="contact type" value="Kontakt Typ" />
+  <object key="contacts hierarchies" value="Kontakthierarchien" />
+  <object key="organizationName_1REG04" value="Zugeordnetes Unternehmen" />
+
+  <object key="create purchase invoice?" value="Eingangsrechnung erzeugen?" />
+  <object key="from purchase doc." value="Aus Bestellung." />
+  <object key="purchase invoices" value="Eingangsrechnung verbuchen" />
+  <object key="close purchase invoice?" value="Eingangsrechnung abschlie&#xDF;en?" />
+  <object key="purchase invoice from delivery notes" value="Eingangsrechnung aus Lieferschein" />
+  <object key="purchase invoice from purchase document" value="Eingangsrechnung aus Einkaufsdok." />
+  <object key="invoiceQtyDOC07" value="Rech. Menge" />
+  <object key="purchase document creation" value="Einkaufsdok. erstellen" />
+
+  <object key="jasper file not found: report generation is not possible." value="Jasper Datei nicht gefunden: Reporterzeugung ist nicht m&#xF6;glich." />
+  <object key="print document" value="Dokument drucken" />
+  <object key="warehouse inventory" value="Lagerbestand drucken" />
+  <object key="please select a company" value="Bitte eine Firma ausw&#xE4;hlen!" />
+
+  <object key="contact to customer conversion" value="Kontakt in Kunde Umwandelung" />
+  <object key="convert contact to customer" value="Kontakt in Kunde umwandeln" />
+  <object key="transport motives" value="Transportgr&#xFC;nde" />
+  <object key="transportMotiveCodeREG20" value="Transportgrund" />
+  <object key="deliveryDate" value="Lieferdatum" />
+
+  <object key="ledger" value="Hauptbuch" />
+  <object key="ledgerCodeACC01" value="KontoNr." />
+  <object key="accountTypeACC01" value="Typ" />
+  <object key="patrimonial" value="Bilanzkonto" />
+  <object key="economic" value="Erfolgskonto" />
+
+  <object key="accountingMotives" value="Buchungstexte" />
+  <object key="accountingMotiveCodeACC03" value="K&#xFC;rzel" />
+  <object key="deleting not allowed" value="L&#xF6;schen nicht erlaubt" />
+  <object key="intracom. on purchase" value="Innergem. an Einkauf" />
+  <object key="intracom. on selling" value="Innergem. an Verkauf" />
+  <object key="selling" value="Verkauf" />
+  <object key="retail" value="Direktverkauf" />
+  <object key="purchase" value="Einkauf" />
+  <object key="accountCodeAcc02ACC04" value="KontoNr." />
+  <object key="registerTypeACC04" value="Typ" />
+  <object key="accountDescriptionACC04" value="Kontobeschr." />
+  <object key="edit not allowed" value="&#xC4;nderungen nicht erlaubt" />
+  <object key="vat registers" value="MwSt. S&#xE4;tze" />
+  <object key="vat register" value="MwSt. Satz" />
+  <object key="registerCodeACC04" value="Reg.K&#xFC;rzel" />
+  <object key="companyCode" value="Firma ID" />
+  <object key="insert not allowed" value="Einf&#xFC;gen nicht erlaubt" />
+  <object key="accountCodeACC02" value="Konto ID" />
+  <object key="accountTypeACC02" value="Standardspalte" />
+  <object key="ledgerCodeAcc01ACC02" value="KontoNr. Hauptb." />
+  <object key="ledgerDescriptionACC02" value="Beschreib. Hauptb." />
+  <object key="debits/proceedings" value="Verbindl./Erl&#xF6;se" />
+  <object key="credits/costs" value="Au&#xDF;enst./Verbindl." />
+  <object key="accounts" value="Konten" />
+
+  <object key="company filter" value="Firmen-Filter" />
+  <object key="retail selling" value="Direktverkauf" />
+  <object key="accounting" value="Buchhaltung" />
+  <object key="credits account" value="Au&#xDF;enst&#xE4;nde" />
+  <object key="selling items account" value="Warenabsatz" />
+  <object key="selling activities account" value="Dienstl.-absatz" />
+  <object key="selling charges account" value="Berechn. Geb&#xFC;hren" />
+  <object key="debits account" value="Verbindlichkeiten" />
+  <object key="purchase costs account" value="Wareneinkauf" />
+  <object key="case account" value="Kasse" />
+
+  <object key="print journal" value="Journal drucken" />
+  <object key="from item number" value="From Item Nr." />
+  <object key="from date" value="Von Datum" />
+  <object key="to date" value="Bis Datum" />
+  <object key="please set a from/to date" value="Bitte von/bis Datum angeben" />
+  <object key="print costs/preceedings" value="Verbindl./Erl&#xF6;se drucken" />
+  <object key="print debit/credit" value="Verbindl./Au&#xDF;enst. drucken" />
+  <object key="print budget" value="Vorl. Bilanz drucken" />
+  <object key="print accounts movements" value="Buchungsjournal drucken" />
+  <object key="please set a from/to account code" value="Bitte von/bis KontoNr. angeben" />
+  <object key="from account" value="Von Konto" />
+  <object key="to account" value="Bis Konto" />
+  <object key="print statement of account" value="Kontoauszug drucken" />
+  <object key="please set a customer code" value="Bitte eine Kunden ID angeben" />
+  <object key="vat endorsing" value="USt. Abschlu&#xDF;" />
+  <object key="please set the date" value="Bitte das Datum angeben" />
+  <object key="vat endorsing completed." value="USt. &#xDC;bertr. durgef&#xFC;hrt." />
+  <object key="endorse vat from register" value="USt. &#xFC;bertragen" />
+  <object key="period" value="Periode" />
+  <object key="vat endorse account" value="Kto. USt. &#xDC;bertr." />
+  <object key="bank account" value="Bankkonto" />
+  <object key="itemNumber" value="Pos Nr." />
+  <object key="registrationDate" value="Aufzeichnungsdatum" />
+  <object key="accountingMotive" value="Buchungsgrund" />
+  <object key="description" value="Beschreibung" />
+  <object key="cust./suppl./acc." value="Knd/Lief./Kto." />
+  <object key="code" value="ID" />
+  <object key="debit" value="Verbindl." />
+  <object key="credit" value="Forderung" />
+  <object key="totalDebit" value="Summe Verbindl." />
+  <object key="totalCredit" value="Summe Au&#xDF;enst." />
+  <object key="lack of balance" value="Defizit" />
+  <object key="new item without vat" value="Neue Pos. ohne MwSt." />
+  <object key="descriptionACC06" value="Beschreibung" />
+  <object key="accountCodeACC06" value="KontoNr." />
+  <object key="accountDescriptionACC06" value="Konto Beschreibung" />
+  <object key="debitAmountACC06" value="Verbindl." />
+  <object key="creditAmountACC06" value="Forderung" />
+  <object key="accountCodeTypeACC06" value="Knd./Lief./Kto." />
+  <object key="you must specify a debit or credit amount" value="Sie m&#xFC;ssen einen Verbindl.- oder Forderungsbetrag angeben" />
+  <object key="you must specify a code" value="Sie m&#xFC;ssen einen code angeben" />
+  <object key="you must insert al least two rows" value="Sie m&#xFC;ssen min. zwei Zeilen eingeben" />
+  <object key="there is a lack of balance between debit and credit amounts" value="Verbindl./Au&#xDF;enst. nicht ausgeglichen" />
+  <object key="item created" value="Position erstellt" />
+  <object key="you must insert al least one row" value="Sie m&#xFC;ssen min. eine Zeile eingeben" />
+  <object key="new item with vat" value="Neue Pos. mit MwSt." />
+  <object key="cust./suppl." value="Knd./Lief." />
+  <object key="payment" value="Zahlung" />
+  <object key="sale generic document" value="Verkaufsdokument" />
+  <object key="purchase generic document" value="Einkaufdokument" />
+  <object key="docNr" value="Dok. Nr." />
+  <object key="please set a date" value="Bitte ein Datum angeben" />
+  <object key="item date" value="Pos. Datum" />
+  <object key="loss/profit econ. account" value="Gewinn/Verlust Erfolgskonto" />
+  <object key="loss/profit patrim. account" value="Gweinn/Verlust Bilanzkonto" />
+  <object key="endorse loss/profit to econ. account" value="Gewinn/Verlust-&#xDC;bertag auf Erfolgskonto" />
+  <object key="endorse loss/profit to patrim. account" value="Gewinn/Verlust-&#xDC;bertag auf Bilanzkonto" />
+  <object key="closing account" value="Konto abschlie&#xDF;en" />
+  <object key="close accounts" value="Konten abschlie&#xDF;en" />
+  <object key="please set the economic account code" value="Bitte Erfolgskono angeben" />
+  <object key="please set the patrimonial account code" value="Bitte Bilanzkonto angeben" />
+  <object key="after closing accounts you will not be able to move settlements to new year. Continue?" value="Nach Abschlu&#xDF; der Konten k&#xF6;nnen keine Vortr&#xE4;ge mehr ins neue Jahr vorgenommen werden. Fortfahren?" />
+  <object key="operation completed" value="Vorgang abgeschlossen." />
+  <object key="no loss/profit found in the economic account" value="Keine Verluste/Gewinne auf Erfolgskonto gefunden" />
+  <object key="endorse profit to patrimonial account" value="Gewinn auf Bilanzkonto &#xFC;bertragen" />
+  <object key="endorse loss to patrimonial account" value="Verlust auf Bilanzkonto &#xFC;bertragen" />
+  <object key="close patrimonial accounts" value="Bilanzkonten abschlie&#xDF;en" />
+  <object key="open patrimonial accounts, using patrimonial settlements of year " value="Bilanzkonten er&#xF6;ffen und Er&#xF6;ffnungswerte &#xFC;bernehmen aus Jahr " />
+  <object key="endorse economic accounts to loss/profit economic account and to loss/profit patrimonial account" value="Erfolgskonten auf Gewinn/Verlust-Erfolgs- u. Bilanzkonto &#xFC;bertragen" />
+  <object key="endorse patrimonial accounts settlements of the previous year to the current one" value="Kontost&#xE4;nde der Bilanzkonten aus Vorjahr in aktuelles Jahr &#xFC;bernehmen" />
+  <object key="open accounts" value="Konten er&#xF6;ffnen" />
+  <object key="opening account" value="Konto er&#xF6;ffnen" />
+  <object key="account" value="Konto" />
+
+  <object key="application parameters" value="Programm Parameter" />
+  <object key="image repository path" value="Pfad zum Bilder Repository" />
+  <object key="image repository path selection" value="Pfad zum Bilder Repository ausw&#xE4;hlen" />
+  <object key="company parameters" value="Firemen Parameter" />
+  <object key="document repository path" value="Pfad zum Dokumenten Repository" />
+  <object key="document repository path selection" value="Pfad zum Dokumenten Repository ausw&#xE4;hlen" />
+
+  <object key="loss/profit econ. endorse account" value="Gewinn/Verlust &#xDC;bertrags-Erfolgskonto" />
+  <object key="loss/profit patrim. endorse account" value="Gewinn/Verlust &#xDC;bertrags-Bilanzkonto" />
+  <object key="accounts closing account" value="Konto abschlie&#xDF;en" />
+  <object key="accounts opening account" value="Konto er&#xF6;ffnen" />
+  <object key="user level parameters" value="Benutzerbezogene Parameter" />
+  <object key="company level parameters" value="Firmenbezogene Parameter" />
+
+  <object key="companyCodeSys01SYS15" value="Firmen K&#xFC;rzel" />
+  <object key="customize reports" value="Berichte anpassen" />
+  <object key="upload files" value="Dateien hochladen" />
+  <object key="reports list" value="Berichtsliste" />
+  <object key="reportNameSYS15" value="Berichts-Dateiname" />
+  <object key="functionDescription" value="Funktionsbeschreibung" />
+  <object key="files to upload" value="Dateien zum Hochladen" />
+  <object key="clear files" value="Dateiliste leeren" />
+  <object key="import files" value="Dateien importieren" />
+  <object key="there already exists a file with the same name in the list" value="Datei mit gleichem Namen existiert bereits in der Liste." />
+  <object key="select files" value="Dateien ausw&#xE4;hlen" />
+  <object key="you must select at least one file to upload" value="Sie m&#xFC;ssen min. eine Datei zum Hochladen ausw&#xE4;hlen" />
+  <object key="reportFileName" value="Berichts-Dateiname" />
+  <object key="files" value="Dateien" />
+  <object key="customFunction" value="Benutzerdef. Funk." />
+  <object key="upload completed." value="Hochladen komplett." />
+  <object key="some uploaded files already exists. overwrite them?" value="Einige Dateien zum Hochladen existieren bereits. &#xDC;berschreiben?" />
+
+  <object key="sunday" value="Sonntag" />
+  <object key="monday" value="Montag" />
+  <object key="tuesday" value="Dienstag" />
+  <object key="wednesday" value="Mittwoch" />
+  <object key="thursday" value="Donnerstag" />
+  <object key="friday" value="Freitag" />
+  <object key="saturday" value="Samstag" />
+  <object key="dayOfWeekSCH02" value="Wochentag" />
+  <object key="morningStartHourSCH02" value="Start Morgen" />
+  <object key="morningEndHourSCH02" value="Ende Morgen" />
+  <object key="afternoonStartHourSCH02" value="Start Nachmittag" />
+  <object key="afternoonEndHourSCH02" value="Ende Nachmittag" />
+  <object key="start time must be less than end time" value="Die Startuhrzeit muss vor der Enduhrzeit liegen." />
+  <object key="working days" value="Arbeitstage" />
+
+  <object key="scheduled activity" value="Geplante Aktivit&#xE4;t" />
+  <object key="companyCodeSys01SCH06" value="Firmen Id" />
+  <object key="activityPaleSCH06" value="Ort" />
+  <object key="managerName_1SCH06" value="Manager Vorname" />
+  <object key="managerName_2SCH06" value="Manager Name" />
+  <object key="subjectName_1SCH06" value="Commitee Vorname" />
+  <object key="subjectName_2SCH06" value="Commitee Name" />
+  <object key="activityCodeSal09SCH06" value="Verkaufs-Akt." />
+  <object key="activityDescriptionSCH06" value="Verkaufs-Aktivit&#xE4;tsbeschreibung" />
+
+  <object key="call-out types" value="Servicetypen" />
+  <object key="call-out type" value="Servicetyp" />
+  <object key="companyCodeSys01SCH11" value="Firmen Id" />
+  <object key="call-outs" value="Services" />
+  <object key="callOutCodeSCH10" value="K&#xFC;rzel" />
+  <object key="companyCodeSys01SCH10" value="Firmen Id" />
+  <object key="call-out detail" value="Servicedetails" />
+  <object key="rateSCH10" value="Kosten" />
+  <object key="machineries" value="Maschinen" />
+  <object key="call-out resources" value="Service Ressourcen" />
+  <object key="taskCodeReg07SCH12" value="Aufgabe" />
+  <object key="machineryCodePro03SCH13" value="Maschinen" />
+  <object key="itemCodeItm01SCH14" value="Artikel" />
+
+  <object key="call-out requests" value="Serviceanfragen" />
+  <object key="call-out request detail" value="Serviceanfragedetails" />
+  <object key="progressiveSCH03" value="Anf.Nr." />
+  <object key="requestYearSCH03" value="Anf.Jahr" />
+  <object key="callOutDescriptionSYS10" value="Beschreibung" />
+  <object key="callOutCodeSch10SCH03" value="K&#xFC;rzel" />
+  <object key="prioritySCH03" value="Priorit&#xE4;t" />
+  <object key="callOutStateSCH03" value="Anf. Status" />
+  <object key="requestDateSCH03" value="Anf. Datum" />
+  <object key="usernameSys03SCH03" value="Benutzer" />
+  <object key="descriptionSCH03" value="Anf. Beschreibung" />
+  <object key="companyCodeSys01SCH03" value="Firma" />
+  <object key="subject identification" value="Betreff K&#xFC;rzel" />
+  <object key="retrieve organization type subjects" value="Laden von Organisationen bezogener Betreffs" />
+  <object key="retrieve people type subjects" value="Laden von Personen bezogener Betreffs" />
+  <object key="organizations" value="Organisationen" />
+  <object key="people" value="Personen" />
+  <object key="reload non allowed" value="Neu laden nicht erlaubt" />
+  <object key="subject type" value="Betreff-Typ" />
+  <object key="call-out number" value="Notruf-Nummer" />
+  <object key="highest" value="H&#xF6;chste" />
+  <object key="high" value="Hoch" />
+  <object key="normal" value="Normal" />
+  <object key="low" value="Niedrig" />
+  <object key="trivial" value="Trivial" />
+  <object key="callOutType" value="Notruf Typ" />
+  <object key="noteSCH03" value="Bemerkung" />
+  <object key="invoiced" value="Berechnet" />
+
+  <object key="activityTypeSCH06" value="Akt.Type" />
+  <object key="generic task" value="Gen. Aufgabe" />
+  <object key="appointment" value="Termin" />
+  <object key="send email" value="Email senden" />
+  <object key="send fax" value="Fax senden" />
+  <object key="meeting" value="Besprechnung" />
+  <object key="telephone call" value="Anruf" />
+  <object key="telephone" value="Telefon-Nr." />
+  <object key="call-out" value="Vorort-Einsatz" />
+  <object key="absence" value="Abwesenheit" />
+  <object key="holiday" value="Urlaub" />
+  <object key="illness" value="Krankheit" />
+  <object key="activityStateSCH06" value="Akt.Status" />
+  <object key="estimatedEndDateSCH06" value="Gesch.Enddatum" />
+  <object key="expirationDateSCH06" value="F&#xE4;lligkeitsdatum" />
+  <object key="estimatedDurationSCH06" value="Gesch.Dauer. [min]" />
+  <object key="prioritySCH06" value="Priorit&#xE4;t" />
+  <object key="completionPercSCH06" value="Abgeschlossen %" />
+  <object key="activityPlaceSCH06" value="T&#xE4;tigkeitsort" />
+  <object key="noteSCH06" value="Bemerkung" />
+  <object key="noteSCH07" value="Bemerkung" />
+  <object key="durationSCH07" value="Dauer [min]" />
+  <object key="startDateSCH07" value="Startdatum" />
+  <object key="endDateSCH07" value="Enddatum" />
+  <object key="taskCodeReg07SCH07" value="T&#xE4;tigkeit Code" />
+  <object key="employeeCodeSch01SCH07" value="Mitarb.Code" />
+  <object key="machineryDescription" value="Anlagenbeschr." />
+  <object key="noteSCH09" value="Bemerkung" />
+  <object key="durationSCH09" value="Dauer [min]" />
+  <object key="startDateSCH09" value="Startdatum" />
+  <object key="endDateSCH09" value="Enddatem" />
+  <object key="machineryCodePro03SCH09" value="Machin.Code" />
+  <object key="descriptionDOC14" value="Dokumentname" />
+  <object key="itemCodeItm01SCH15" value="Pos. Code" />
+  <object key="qtySCH15" value="Pos. Anz." />
+  <object key="scheduled resources" value="Verplante Resourcen" />
+  <object key="progressiveDoc14SCH08" value="Ausw." />
+  <object key="attached documents" value="Angeh&#xE4;ngte Documente" />
+  <object key="activity resources" value="T&#xE4;tigkeits Resourcen" />
+
+  <object key="finiteCapacityPRO03" value="Begr. Kap." />
+  <object key="companyCodeSys01PRO03" value="Firmen Id" />
+  <object key="machineryCodePRO03" value="Machin.Code" />
+  <object key="valuePRO03" value="Betrag" />
+  <object key="currencyCodeReg03PRO03" value="W&#xE4;hr.Code" />
+  <object key="durationPRO03" value="Dauer [min]" />
+
+  <object key="close activity" value="T&#xE4;tig. abschl." />
+  <object key="confirm activity closing?" value="T&#xE4;tigkeit abschlie&#xDF;en?" />
+  <object key="activity closing" value="T&#xE4;tigkeit  " />
+  <object key="confirm call-out request closing?" value="Vor-Ort-Service Anforderung schlie&#xDF;en?" />
+  <object key="call-out request" value="Vor-Ort-Service Anforderung" />
+  <object key="create invoice" value="Rechnung erstellen" />
+  <object key="invoice creation" value="Rechnungststellung" />
+  <object key="you must define the customer code" value="Bitte Kundennummer angeben" />
+  <object key="you must select a pricelist" value="Bitte Peisliste ausw&#xE4;hlen" />
+  <object key="invoice from call-out request nr." value="Rechnung zu Service Anf. Nr." />
+  <object key="you must select a payment" value="Bitte Zahlungsart w&#xE4;hlen" />
+  <object key="no price defined for the scheduled item" value="Keinen Preis f&#xFC;r geplante Pos. definiert" />
+  <object key="no task defined for the scheduled employee" value="Keine T&#xE4;tigkeit f&#xFC;r verplanten Mitarbeiter definiert" />
+  <object key="you must select all account codes" value="Sie m&#xFC;ssen alle Kontencodes ausw&#xE4;hlen" />
+  <object key="no sale activity code linked to the task" value="Dieser Aufgage ist kein T&#xE4;tigkeits-Verkaufscode zugeordnet" />
+  <object key="you must select a warehouse" value="Sie m&#xFC;ssen ein Lager ausw&#xE4;hlen" />
+  <object key="view invoice" value="Rechnung anzeigen" />
+
+  <object key="day appointments" value="Tagestermine" />
+  <object key="no employee code linked to the current user" value="Der aktuelle Benutzer hat keine Mitarbeiter Id zugeordnet" />
+  <object key="appointments cannot be viewed" value="Termine k&#xF6;nnen nicht angezeigt werden" />
+  <object key="absences" value="Abwesenheit" />
+  <object key="find next appointment" value="N&#xE4;chsten Termin finden" />
+  <object key="find appointment" value="Termin finden" />
+  <object key="no appointment found" value="Keinen Termin gefunden" />
+  <object key="gantt diagram" value="Gantt Diagramm" />
+  <object key="employees having task" value="Mitarbeiter belegt" />
+  <object key="gantt" value="Gantt" />
+  <object key="reload data" value="Daten neu laden" />
+  <object key="you must specify both dates" value="Sie m&#xFC;ssen beide Datum spezifizieren" />
+  <object key="fill in the whole day" value="Den ganzen Tag belegen" />
+  <object key="remove all day appointments" value="Alle Tagestermine entfernen" />
+  <object key="no working hours defined for this day" value="F&#xFC;r diesen Tag ist keine Arbeitszeit definiert" />
+  <object key="you must specify employee code" value="Sie m&#xFC;ssen eine Mitarbeiter Id angeben" />
+
+  <object key="document types" value="Dokument Hierarchie" />
+  <object key="document type" value="Dokument Typ" />
+  <object key="companyCodeSys01DOC16" value="Firmen Id" />
+  <object key="companyCodeSys01DOC14" value="Firmen Id" />
+  <object key="document detail" value="Dokument Details" />
+  <object key="document links" value="Dokument Verkn&#xFC;pfungen" />
+  <object key="document versions" value="Dokument Versionen" />
+  <object key="document properties" value="Dokument Eigenschaften" />
+  <object key="documentType" value="Dokument Typ" />
+  <object key="you must attach a file" value="Sie m&#xFC;ssen eine Datei anh&#xE4;ngen" />
+  <object key="you are not allowed to delete all document versions" value="Sie d&#xFC;rfen nicht alle Dokument Versionen l&#xF6;schen" />
+  <object key="you are not allowed to delete all document links" value="Sie d&#xFC;rfen nicht alle Dokument Verkn&#xFC;pfungen l&#xF6;schen" />
+  <object key="you must select a tree level before inserting new document" value="Sie m&#xFC;ssen eine Baumebene w&#xE4;hlen bevor Sie ein Dokument einf&#xFC;gen" />
+  <object key="uploaded document" value="Hochgeladenes Dokument" />
+  <object key="progressiveHie01DOC17" value="Ebe." />
+  <object key="createUsernameDOC15" value="Hoch.Dok. Benutzer" />
+  <object key="createDateDOC15" value="Anlagedatum" />
+  <object key="versionDOC15" value="Dok.Version" />
+  <object key="double click to open the document" value="Doppelklick um das Dokument zu &#xF6;ffnen" />
+  <object key="you must select a tree level before inserting new property" value="Sie m&#xFC;ssen eine Baumebene w&#xE4;hlen bevor Sie eine Eigenschaft einf&#xFC;gen" />
+  <object key="companyCodeSys01DOC21" value="Firmen Id" />
+  <object key="propertyTypeDOC21" value="Typ" />
+  <object key="properties" value="Eigenschaften" />
+  <object key="documents filter" value="Dokumenten Filter" />
+  <object key="docsPanel" value="Angeh&#xE4;ngte Dokumente" />
+  <object key="progressiveDoc14ITM05" value="..." />
+
+  <object key="products" value="Produkte" />
+  <object key="billofmaterial" value="St&#xFC;ckliste" />
+  <object key="product detail" value="Produkt Details" />
+  <object key="components" value="Componenten" />
+  <object key="manufactures" value="Hersteller" />
+  <object key="versionITM01" value="Version" />
+  <object key="revisionITM01" value="Revision" />
+  <object key="versionITM03" value="Version" />
+  <object key="revisionITM03" value="Revision" />
+  <object key="startDateITM01" value="Start G&#xFC;ltig.Dat." />
+  <object key="startDateITM03" value="Start G&#xFC;ltig.Dat." />
+  <object key="endDateITM03" value="End G&#xFC;ltig.Dat." />
+  <object key="itemType" value="Pos. Typ" />
+  <object key="manufactureCodePro01ITM01" value="Hersteller Code" />
+  <object key="itemCodeItm01ITM03" value="Pos. Code" />
+  <object key="sequenceITM03" value="Seq." />
+  <object key="qtyITM03" value="Anz." />
+  <object key="itemDescription" value="Pos. Beschreibung" />
+  <object key="itemDescription2" value="Altern. Pos. Beschr." />
+  <object key="substItemCodeItm01ITM03" value="Altern. Pos." />
+  <object key="production cycles" value="Produktionszyklen" />
+  <object key="you must define either a machinery or a duty" value="Sie m&#xFC;ssen eine Maschine oder eine Aufgabe definieren." />
+  <object key="internal" value="Intern" />
+  <object key="external" value="Extern" />
+  <object key="you must define the resources number" value="Sie m&#xFC;ssen eine Resourcen Nummer definieren." />
+  <object key="qtyPRO02" value="Res.Nr." />
+  <object key="valuePRO02" value="Kost." />
+  <object key="durationPRO02" value="Dauer" />
+  <object key="phaseNumberPRO02" value="Seq." />
+  <object key="manufactureTypePRO02" value="T&#xE4;t.Typ" />
+  <object key="completionPercPRO02" value="% abgeschl." />
+  <object key="notePRO02" value="Bemerkung" />
+  <object key="taskCodeReg07PRO02" value="Aufgaben Code" />
+  <object key="taskDescriptionSYS10" value="Aufgaben Description" />
+  <object key="machineryDescriptionSYS10" value="Masch. Beschreibung" />
+  <object key="machineryCodePro03PRO02" value="Masch.Code" />
+  <object key="companyCodeSys01PRO01" value="Firma" />
+  <object key="description2" value="Altern. T&#xE4;t." />
+  <object key="operations" value="T&#xE4;tigkeiten" />
+  <object key="qtyPRO04" value="Res.Nr." />
+  <object key="valuePRO04" value="Kost." />
+  <object key="durationPRO04" value="Dauer" />
+  <object key="machineryCodePro03PRO04" value="Masch.Code" />
+  <object key="taskCodeReg07PRO04" value="Aufgabe Code" />
+  <object key="notePRO04" value="Bemerkung" />
+  <object key="companyCodeSys01PRO04" value="Firma" />
+  <object key="operationCodePro04PRO02" value="T&#xE4;t.Code" />
+  <object key="operationCodePRO04" value="T&#xE4;t.Code" />
+  <object key="currencyCodeReg03PRO01" value="W&#xE4;hr.Code" />
+  <object key="manufactureCodePRO01" value="Code" />
+  <object key="completion % must be between 0 and 100" value="Abgeschlossen % muss zwischen 0 und 100 sein" />
+  <object key="specified item already defined as product" value="Angegebene Position bereits als Produkt definiert" />
+  <object key="implosionPanel" value="Produkt Implosion" />
+  <object key="explosionPanel" value="Produkt Explosion" />
+  <object key="productInfo" value="Produkt Info" />
+  <object key="totalCosts" value="Ges.Kosten" />
+  <object key="totalPrices" value="Ges.Preis" />
+  <object key="parentItemCodeItm01ITM03" value="Produkte" />
+  <object key="supplierDescription" value="Lieferant" />
+  <object key="pricelistCodePur03PUR04" value="Preisl. Code" />
+  <object key="purchase item prices" value="Pos. Einkaufspreise" />
+  <object key="the selected item requires serial number definition: this kind of item is not allowed" value="Die gew&#xE4;hlte Position ben&#xF6;tigt die Angabe eine SerienNr.: Diese Art Position ist nicht erlaubt" />
+  <object key="a product cannot require serial number definition" value="Ein Produkt darf keine SerienNr. Angabe ben&#xF6;tigen" />
+
+  <object key="component is not available in the specified warehouse" value="Komponente in angegebenem Lager nicht verf&#xFC;gbar" />
+  <object key="found" value="Gefunden" />
+  <object key="required" value="ben&#xF6;tigt" />
+  <object key="unload items from production order" value="Komponenten aus Produktionsauftrag entnehmen" />
+  <object key="load items from production order" value="Komponenten aus Produktionsauftrag laden" />
+  <object key="production orders" value="Produktionsauftr&#xE4;ge" />
+  <object key="production order" value="Produktionsauftrag" />
+  <object key="descriptionWar01DOC22" value="Komponenten Lager" />
+  <object key="description2War01DOC22" value="Produkt Lager" />
+  <object key="warehouseCodeWar01DOC22" value="Komp.Lag.Code" />
+  <object key="warehouseCode2War01DOC22" value="Prod.Lag.Code" />
+  <object key="docYearDOC22" value="Jahr" />
+  <object key="docSequenceDOC22" value="Auftr.Nr" />
+  <object key="companyCodeSys01DOC22" value="Firma" />
+  <object key="docDateDOC22" value="Auftr. Datum" />
+  <object key="docStateDOC22" value="Auftr. Status" />
+  <object key="confirm production order?" value="Produktionsauftrag best&#xE4;tigen?" />
+  <object key="availableQty" value="Anz.Verf." />
+  <object key="qtyDOC24" value="Anz.Ben." />
+  <object key="qtyDOC23" value="Anz." />
+  <object key="itemCodeItm01DOC23" value="Produkt Code" />
+  <object key="itemCodeItm01DOC24" value="Komponenten Code" />
+  <object key="progressiveHie01DOC23" value="Lagerort" />
+  <object key="progressiveHie02DOC23" value="Pos. Typ" />
+  <object key="headerFormPanel" value="Produktionsauftrag" />
+  <object key="order closing" value="schlie&#xDF;e Auftrag" />
+  <object key="close production order?" value="Produktionsauftrag abschlie&#xDF;en?" />
+  <object key="print bill of materials" value="St&#xFC;ckliste drucken" />
+  <object key="alternativeComponents" value="Alternative Artikels" />
+  <object key="you cannot define this item as a product because there are alternative components defined." value="Sie k&#xF6;nnen diese Position nicht als Produkt definieren weil alternativ Komponenten angebeben sind." />
+  <object key="itemCodeItm01ITM04" value="Alt.Pos. Code" />
+  <object key="you cannot set the current item as alternative component" value="Sie k&#xF6;nnen die aktuelle Position nicht als alternativ Komponente definieren." />
+  <object key="you cannot set the current item as a product, because it has alternative components" value="Sie k&#xF6;nnen die aktuelle Position nicht als Produkt definieren, weil sie alternativ Komponenten enth&#xE4;lt." />
+
+  <object key="application functions" value="Programm Funktionen" />
+  <object key="new description:" value="Neue Beschreibung:" />
+  <object key="change description" value="Beschreibung &#xE4;ndern" />
+  <object key="which operation?" value="Welche Funktion?" />
+  <object key="node dropped" value="Knoten entfernt" />
+  <object key="move node" value="Knoten verschieben" />
+  <object key="copy node" value="Knoten kopieren" />
+
+  <object key="employees hierarchies" value="Mitarbeiter Hierarchie" />
+
+  <object key="sql" value="SQL Eingabe" />
+  <object key="entities" value="Entit&#xE4;ten Liste" />
+  <object key="data" value="Daten" />
+  <object key="structure" value="Struktur" />
+  <object key="tables" value="Tabellen" />
+  <object key="views" value="Ansichten" />
+  <object key="synonyms" value="Synonyme" />
+  <object key="sql tool" value="SQL Werkzeug" />
+  <object key="you must define a sql statement!" value="Sie m&#xFC;ssen einen SQL Befehl angeben!" />
+  <object key="rows affected." value="betroffene Zeilen." />
+  <object key="select has not been correctly parsed" value="Select konnte nicht geparsed werden" />
+  <object key="no pk defined: delete not allowed" value="Kein Prim&#xE4;rschl&#xFC;ssel: l&#xF6;schen nicht erlaubt" />
+  <object key="no pk defined: update not allowed" value="Kein Prim&#xE4;rschl&#xFC;ssel: &#xE4;ndern nicht erlaubt" />
+  <object key="columnNameWithoutTable" value="Spalten Name" />
+  <object key="columnType" value="Spalten Typ" />
+  <object key="primaryKey" value="PK" />
+  <object key="columnRequired" value="Req." />
+
+  <object key="custom functions" value="Benutzerdef. Funktionen" />
+  <object key="functionCodeSYS06" value="Funktion Code" />
+  <object key="functionCodeSys06SYS16" value="Funktion Code" />
+  <object key="custom function" value="Benutzerdef. Funktion" />
+  <object key="useCompanyCodeSYS06" value="Zugriff auf Firmen Ebene" />
+  <object key="column properties" value="Spalten Eigenschaften" />
+  <object key="tables to save" value="Zu speichernde Tabellen" />
+  <object key="columnNameSYS22" value="Sp.Name" />
+  <object key="columnTypeSYS22" value="Typ" />
+  <object key="defaultValueTextSYS22" value="Std.Text" />
+  <object key="defaultValueNumSYS22" value="Std.Num." />
+  <object key="defaultValueDateSYS22" value="Std.Dat." />
+  <object key="columnVisibleSYS22" value="Sicht." />
+  <object key="autoLoadDataSYS16" value="Autoladen Daten" />
+  <object key="select" value="SQL" />
+  <object key="enumeration" value="Aufz&#xE4;hlung" />
+  <object key="progressive" value="Fortlaufend" />
+  <object key="constraintValuesSYS22" value="Aufz&#xE4;hlung" />
+  <object key="show data" value="Daten Anzeigen" />
+  <object key="isParamSYS22" value="Where Bedingung" />
+  <object key="isParamRequiredSYS22" value="Ben.in Where" />
+  <object key="filter conditions" value="Filter Bedingungen" />
+  <object key="where param" value="Where Parameter" />
+  <object key="variantsPanel" value="Varianten und Subvarianten" />
+  <object key="variantType" value="Subvariante" />
+  <object key="variantTypeDesc" value="Subvariante Beschreibung" />
+  <object key="variantCode" value="Variante" />
+  <object key="variantDesc" value="Variante Beschreibung" />
+  <object key="variant types" value="Subvarianten" />
+  <object key="variant" value="Variante" />
+  <object key="variants" value="Varianten" />
+  <object key="codeOrder" value="Order" />
+  <object key="filenameDOC14" value="Dateiname" />
+  <object key="barcode" value="Barcode" />
+  <object key="barcodes" value="Barcodes" />
+  <object key="serialNumbers" value="Seriennummern" />
+  <object key="subtotal" value="Zwischensumme" />
+  <object key="discount" value="Rabatt" />
+  <object key="payed" value="Bezahlt" />
+  <object key="discount on total value" value="Discount (on total)" />
+  <object key="change" value="&#xC4;ndern" />
+  <object key="enter" value="Eingabe" />
+  <object key="cancel" value="Abbr." />
+  <object key="company selection" value="Firmenauswahl" />
+  <object key="you need to specifify the default customer for retail sale" value="Sie m&#xFC;ssen einen Standardkunden f&#xFC;r Direktverk&#xE4;ufe definieren" />
+  <object key="you need to specifify the default warehouse for retail sale" value="Sie m&#xFC;ssen ein Standardlager f&#xFC;r Direktverk&#xE4;ufe definieren" />
+  <object key="ESC back" value="ESC Zur&#xFC;ck" />
+  <object key="ESC back tooltip" value="Aktuelle &#xC4;nderung zur&#xFC;cknehmen" />
+  <object key="1 remove" value="1 Entfernen" />
+  <object key="1 remove tooltip" value="Gew&#xE4;hlte Zeile l&#xF6;schen" />
+  <object key="2 qty" value="2 Anz." />
+  <object key="2 qty tooltip" value="Positionsmenge eingeben" />
+  <object key="3 discount" value="3 Positionsrabatt" />
+  <object key="3 discount tooltip" value="Positionsrabatt eingeben" />
+  <object key="4 customer" value="4 Kunde" />
+  <object key="4 customer tooltip" value="Kundendaten eingeben" />
+  <object key="5 start" value="5 Verkauf starten" />
+  <object key="5 start tooltip" value="Neuen Direktverkauf starten" />
+  <object key="6 close" value="6 Verkauf abschlie&#xDF;en" />
+  <object key="6 close tooltip" value="Aktuellen Direktverkauf abschlie&#xDF;en" />
+  <object key="7 exit" value="7 Verlassen" />
+  <object key="7 exit tooltip" value="Aktuelles Fenster verlassen" />
+  <object key="are you sure to quit" value="Wollen Sie wirklich die aktuelle Eingabe abbrechen?" />
+  <object key="quit window" value="Eingabe abbrechen" />
+  <object key="point of sale" value="Kasse" />
+  <object key="barcodesPanel" value="Barcode" />
+  <object key="discountValue" value="Rabatt" />
+  <object key="confirm sale closing" value="Verkauf abschlie&#xDF;en best&#xE4;tigen?" />
+  <object key="sale closing" value="Verkauf abschlie&#xDF;en" />
+  <object key="customers that have bought these items also bought" value="Kunden die diese Artikel gekauft haben, haben auch gekauft" />
+  <object key="avg. purchase cost" value="Durch. Einkaufspreis" />
+  <object key="last purchase cost" value="Letzter Einkaufspreis" />
+  <object key="last purchase date" value="Letztes Einkaufsdatum" />
+  <object key="order tracking" value="Auftragsverfolgung" />
+  <object key="docSequence" value="Dok.Nr." />
+  <object key="customerSupplierCode" value="Knd/Lief Code" />
+  <object key="docTypeDescr" value="Dok. Typ" />
+  <object key="barcode already assigned to another item" value="Barcode schon vergeben" />
+  <object key="print barcode labels" value="Barcode Etiketten drucken" />
+  <object key="qty" value="Anz." />
+  <object key="set the same value when matching the same" value="Set the same value when matching the same" />
+  <object key="prices saved" value="Preise gespeichert" />
+  <object key="it is not allowed to insert variants having different unit prices" value="Es ist nicht erlaubt Varianten mit unterchiedlichen St&#xFC;ckpreisen einzuf&#xFC;gen" />
+  <object key="supplierCustomerCodeDOC08" value="Knd/Lief code" />
+  <object key="Error while validating data:" value="Folgende Eingaben sind nicht g&#xFC;ltig:" />
+  <object key="Validation Error" value="Daten nicht korrekt" />
+  <object key="pivot table for sales" value="Pivot Tabelle f&#xFC;r den Vertrieb" />
+  <object key="sellAmount" value="Betrag" />
+  <object key="sellQty" value="Anz." />
+  <object key="data fields" value="Daten Felder" />
+  <object key="row fields" value="Zeilen Felder" />
+  <object key="column fields" value="Spalten Felder" />
+  <object key="warehouseCodeWar01DOC01" value="Lager" />
+  <object key="year" value="Jahr" />
+  <object key="quarter" value="Quartal" />
+  <object key="pivot table settings" value="Pivot Tabelle Einstellungen" />
+  <object key="field" value="Feld" />
+  <object key="checked" value="Gew&#xE4;hlt" />
+  <object key="Error on reading data in input." value="Fehler beim einlesen der Eingabe." />
+  <object key="delivery request" value="Lieferanforderung" />
+  <object key="delivery requests" value="Lieferanforderungen" />
+  <object key="deliveryDateDOC01" value="Lieferdatum" />
+  <object key="delivery request rows" value="Lieferanf. Positionen" />
+  <object key="delivreqnr" value="Lief.Anf.Nr." />
+  <object key="until date" value="Bis Datum" />
+
+  <object key="translations" value="&#xDC;bersetzungen" />
+  <object key="item descriptions" value="Item Bezeichn." />
+  <object key="item additional descriptions" value="Item zus&#xE4;tzl. Beschreibung" />
+  <object key="vat descriptions" value="MwSt. Bezeichn." />
+  <object key="topic" value="Gegenstand" />
+  <object key="hierarchies names" value="Hierarchien Namen" />
+  <object key="hierarchy levels names" value="Hierarchie Ebenen Namen" />
+  <object key="variant names" value="Varianten Namen" />
+  <object key="variant type" value="Varianten typ" />
+  <object key="task descriptions" value="Aufgaben Bezeichnungen" />
+  <object key="payment descriptions" value="Zahlung Bezeichnungen" />
+  <object key="payment type descriptions" value="Zahlungsart Bezeichnungen" />
+  <object key="pricelist descriptions" value="Preislisten Bezeichnugnen" />
+  <object key="discount descriptions" value="Rabatt Bezeichnungen" />
+  <object key="charge descriptions" value="Geb&#xFC;hren Bezeichn." />
+  <object key="activity descriptions" value="T&#xE4;tigkeiten Bezeichn." />
+  <object key="role descriptions" value="Rollen Bezeichnungen" />
+  <object key="function descriptions" value="Funktionen Bezeichn." />
+  <object key="ledger descriptions" value="Buchhaltung Bezeichn." />
+  <object key="account descriptions" value="Konto Bezeichnungen" />
+  <object key="account motives" value="Buchungsgr&#xFC;nde" />
+
+  <object key="connected users" value="Verbundene Benutzer" />
+
+  <object key="min stock" value="Min.Bestand" />
+  <object key="items reorder" value="Artikel nachbestellen" />
+  <object key="minStockITM23" value="Min.Bestand" />
+  <object key="proposedQty" value="Vorschl.Anz." />
+  <object key="pawnedQty" value="Verpl. Anz." />
+  <object key="goodQty" value="Verf&#xFC;g. Anz." />
+  <object key="orderedQty" value="Best. Anz." />
+  <object key="create orders" value="Bestellungen erstellen" />
+  <object key="orders created" value="Bestellungen erstellt." />
+  <object key="you must select at least one row and a qty greater than zero" value="Sie m&#xFC;ssen min. eine Zeile und eine Menge gr&#xF6;&#xDF;er 0 w&#xE4;hlen." />
+  <object key="order created using reorder functionality" value="Bestellung erstellt durch Funktion Nachbestellung" />
+
+  <object key="abc classification" value="ABC Klassifizierung" />
+  <object key="create abc" value="Create ABC Klassifizierung" />
+  <object key="invoiced" value="Berechnet" />
+  <object key="unsold" value="Unverkauft" />
+  <object key="abc aa" value="Hoher Bestand und hohe Verkaufszahlen: Zur besseren Verwaltung k&#xF6;nnten f&#xFC;r diese Artikel die Best&#xE4;nde reduziert werden" />
+  <object key="abc ac" value="Hoher Bestand und niedrige Verkaufszahlen: Zur besseren Verwaltung m&#xFC;ssen f&#xFC;r diese Artikel die Best&#xE4;nde reduziert werden" />
+  <object key="abc ca" value="Niedriger Bestand und hohe Verkaufszahlen: Gute Verwaltung der Best&#xE4;nde, keine &#xC4;nderung notwendig" />
+  <object key="abc cc" value="Niedriger Bestand und niedrige Verkaufszahlen: Verwaltung der Best&#xE4;nde k&#xF6;nnte so bleiben, diese Artikel haben kaum Bewegungen" />
+  <object key="change min stocks" value="Bindestbestand f&#xFC;r gew&#xE4;hlten Artikel &#xE4;ndern" />
+  <object key="perc1Invoiced" value="A berechnet band: 0..%" />
+  <object key="perc2Invoiced" value="C berechnet band: %..100%" />
+  <object key="perc1Unsold" value="A unverkauft band: 0..%" />
+  <object key="perc2Unsold" value="C unverkauft band: %..100%" />
+  <object key="abc" value="ABC" />
+  <object key="you have to select at least one row" value="Sie m&#xFC;ssen min. eine Zeile ausw&#xE4;hlen" />
+  <object key="min stocks updated" value="Min.Best&#xE4;nde aktualisiert" />
+  <object key="set qty to zero" value="Anzahl auf 0 setzen" />
+  <object key="update completed" value="Aktualisierung abgeschlossen" />
+
+  <object key="increment value in progr" value="Schrittwert in progr." />
+  <object key="initial value in progr" value="Startwert in progr" />
+  <object key="default company" value="Standard Firma" />
+  <object key="etl processes" value="Import Daten Prozesse" />
+  <object key="etl process" value="Import Daten Prozess" />
+  <object key="scheduler settings" value="Kalender Einstell." />
+  <object key="import settings" value="Import Einstell." />
+  <object key="field.start" value="Start" />
+  <object key="field.end" value="End" />
+  <object key="field.pos" value="Pos" />
+  <object key="useVariant1ITM01" value="Ben. Variante 1" />
+  <object key="useVariant2ITM01" value="Ben. Variante 2" />
+  <object key="useVariant3ITM01" value="Ben. Variante 3" />
+  <object key="useVariant4ITM01" value="Ben. Variante 4" />
+  <object key="useVariant5ITM01" value="Ben. Variante 5" />
+  <object key="barcode type" value="Barcode Typ" />
+  <object key="minSellingUmCodeReg02ITM01" value="M.U. min. Verk. Anz." />
+  <object key="grossWeightUmCodeReg02ITM01" value="M.U. brut. Gew." />
+  <object key="netWeightUmCodeReg02ITM01" value="M.U. net. Gew." />
+  <object key="widthUmCodeReg02ITM01" value="M.U. Breite" />
+  <object key="heightUmCodeReg02ITM01" value="M.U. H&#xF6;he" />
+  <object key="data import type" value="Daten Import" />
+  <object key="file format" value="File format" />
+  <object key="local file" value="Lokale Datei" />
+  <object key="remote file" value="Entfernte Datei" />
+  <object key="no scheduling" value="Keine Terminplanung" />
+  <object key="each day" value="Jeder Tag" />
+  <object key="each week" value="Jede Woche" />
+  <object key="start date" value="Start Datum/Zeit" />
+  <object key="start process now" value="Prozess jetzt starten" />
+  <object key="File not exists" value="Datei nicht vorhanden" />
+  <object key="file preview" value="Datei Vorschau" />
+  <object key="field.dateFormatSYS24" value="Datum Format" />
+  <object key="execution time" value="Ausf&#xFC;hrungszeit" />
+  <object key="records read" value="Datens&#xE4;tze gelesen" />
+  <object key="records inserted" value="Datens&#xE4;tze eingef&#xFC;gt" />
+  <object key="records updated" value="Datens&#xE4;tze aktualisiert" />
+  <object key="data import completed" value="Datenimport abgeschlossen" />
+  <object key="levels separator" value="Ebenen Trenner" />
+  <object key="companies permissions" value="Firmen Berechtigungen" />
+  <object key="columns permissions" value="Spalten Berechtigungen" />
+  <object key="editableInIns" value="Einf. erl." />
+  <object key="editableInEdit" value="&#xC4;nd. erl." />
+  <object key="colRequired" value="Ben&#xF6;t." />
+  <object key="colVisibile" value="Anzei." />
+
+  <object key="import prices" value="Preise importieren" />
+  <object key="for supplier" value="f&#xFC;r Lieferant" />
+  <object key="in pricelist" value="in Preisliste" />
+  <object key="import sale prices" value="Verkaufspreise importieren" />
+
+  <object key="inventories list" value="Lagerbestand druken" />
+  <object key="stateWAR06" value="State" />
+  <object key="descriptionWAR06" value="Inventory" />
+  <object key="startDateWAR06" value="Start Date" />
+  <object key="endDateWAR06" value="End Date" />
+  <object key="an inventory is in progress" value="An inventory calculation is in progress" />
+  <object key="negdamaged" value="Inv. neg. correct. for damaged items Motive" />
+  <object key="posdamaged" value="Inv. pos. correct. for damaged items Motive" />
+  <object key="neggood" value="Inv. neg. correct. for good items Motive" />
+  <object key="posgood" value="Inv. pos. correct. for good items Motive" />
+  <object key="inventory" value="Inventory items definition" />
+  <object key="import items" value="Import items" />
+  <object key="import items that match the filtering conditions" value="Import items that match the filtering conditions" />
+  <object key="confirm inventory" value="Confirm inventory items" />
+  <object key="close inventory" value="Close inventory" />
+  <object key="stateWAR07" value="State" />
+  <object key="itemCodeItm01WAR07" value="Item code" />
+  <object key="progressiveHie02WAR07" value="Item type" />
+  <object key="progressiveHie01WAR07" value="Location" />
+  <object key="realProgressiveHie01WAR07" value="Real location" />
+  <object key="qtyWAR07" value="Qty" />
+  <object key="realQtyWAR07" value="Real qty" />
+  <object key="deltaQtyWAR07" value="Delta qty" />
+  <object key="items to include in inventory" value="Items to include in inventory" />
+  <object key="an import in inventory is already in progress" value="An import in inventory is already in progress" />
+  <object key="movement motive related to inventory correction not found" value="Movement motive related to inventory correction not found" />
+  <object key="cannot confirm the inventory" value="Cannot confirm the inventory" />
+  <object key="internal error on calculating progressive in WAR02" value="Internal error on calculating progressive in WAR02" />
+  <object key="items confirmed" value="Items confirmed" />
+  <object key="items confirmation completed" value="Items confirmation completed" />
+  <object key="inventory closed" value="Inventory closed" />
+  <object key="items import completed" value="Items import completed" />
+  <object key="months" value="months" />
+  <object key="month" value="Month" />
+  <object key="days" value="days" />
+  <object key="sales graph" value="Sales graph" />
+  <object key="nr" value="Nr." />
+
+  <object key="no warehouse movements" value="No warehouse movements" />
+
+  <object key="cannot delete sheet: it is currently referenced by another sheet" value="Cannot delete sheet: it is currently referenced by another sheet" />
+  <object key="cannot delete sheet: it is currently referenced in an item" value="Cannot delete sheet: it is currently referenced in an item" />
+  <object key="item spare parts" value="Item's Spare parts" />
+  <object key="image" value="Image" />
+  <object key="item models" value="Item Models" />
+  <object key="sheetCodeITM25" value="Sheet Code" />
+  <object key="sheets" value="Sheets" />
+  <object key="spare parts catalogue" value="Spare parts Catalogue" />
+  <object key="start region" value="Start region" />
+  <object key="clear region" value="Clear region" />
+  <object key="save region" value="Save region" />
+  <object key="cannot delete levels: there are sheets having these levels" value="Cannot delete levels: there are sheets having these levels." />
+  <object key="cannot insert levels: there are sheets binded to spare parts" value="Cannot insert levels: there are sheets binded to spare parts" />
+  <object key="levITM29" value="Level" />
+  <object key="spare parts sheets levels" value="Spare parts sheets levels" />
+  <object key="spare parts sheets for level" value="Spare parts sheets for level" />
+  <object key="imageITM05" value="Image" />
+  <object key="item model" value="Item Model" />
+  <object key="itemCodeItm01ITM28" value="Spare Part Code" />
+  <object key="path" value="Path" />
+  <object key="spare parts" value="Spare parts" />
+  <object key="manual doc num in sale docs" value="Allow manual numer. in sales documents" />
+  <object key="show purchased items" value="Show purchased items" />
+  <object key="show only spare parts" value="Show only spare parts" />
+  <object key="sale date" value="Sale date" />
+  <object key="item sold on" value="Item sold on" />
+  <object key="total amount must not be zero" value="Total amount must not be zero!" />
+  <object key="is an ancestor of the current item" value="is an ancestor of the current item" />
+  <object key="only an immediate payment is allowed" value="Only an immediate payment is allowed" />
+  <object key="payedDateDOC19" value="Payed date" />
+  <object key="payedValueDOC19" value="Payed" />
+  <object key="realPaymentTypeCodeReg11DOC19" value="Real Paym. Type" />
+  <object key="realPaymentDescriptionSYS10" value="Real Payment Type" />
+  <object key="create payment immediately" value="Create payment immediately?" />
+  <object key="you need to specify a rounding account code" value="You need to specify a rounding account code" />
+  <object key="roundingAccountCode" value="Rounding Acc. Code" />
+  <object key="roundingDescription" value="Rounding account" />
+  <object key="rounding costs account code" value="Rounding costs account code" />
+  <object key="rounding proceeds account code" value="Rounding proceeds account code" />
+
+  <object key="already payed" value="Already payed" />
+  <object key="payment date" value="Payment date" />
+  <object key="account description" value="Account description" />
+  <object key="exp" value="Exp." />
+  <object key="you need to specify at least one expiration" value="You need to specify at least one expiration" />
+  <object key="expirations must have a payment value" value="Expirations must have a payment value" />
+  <object key="payments specified for expirations are not equal to the total payment value" value="Payments specified for expirations are not equal to the total payment value" />
+  <object key="you need to specify a pricelist for the default customer" value="You need to specify a pricelist for the default customer" />
+  <object key="reports repository path" value="Reports repository path" />
+  <object key="print invoices" value="Print invoices" />
+
+  <object key="brands" value="Brands" />
+  <object key="brand code" value="Brand code" />
+  <object key="ec customer" value="eCommerce Customer" />
+  <object key="ec warehouse" value="eCommerce Warehouse" />
+  <object key="datetime" value="Date+Time"/>
+  <object key="decimal" value="Decimal"/>
+  <object key="item characteristics in ECommerce" value="Item characteristics in eCommerce"/>
+  <object key="fieldTypeITM32" value="Type"/>
+  <object key="selectedITM32" value="Sel."/>
+  <object key="posTM32" value="Position"/>
+  <object key="images per variant" value="Images per variant"/>
+  <object key="lastVariantDescription" value="Variant"/>
+  <object key="smallImage" value="Small Image"/>
+  <object key="largeImage" value="Large Image"/>
+  <object key="company logo" value="Company logo"/>
+  <object key="ec expense" value="eCommerce Expense"/>
+  <object key="hierarTreePanel" value="Hierarchy levels"/>
+  <object key="itemFieldsPanel" value="Fields per level"/>
+  <object key="set image" value="Set image"/>
+  
+  <currencySymbol>€</currencySymbol>
+  <decimalSymbol>,</decimalSymbol>
+  <groupingSymbol>.</groupingSymbol>
+  <dateFormat>DMY</dateFormat>
+  <showCenturyInDateFormat>true</showCenturyInDateFormat>
+  <dateFormatSeparator>.</dateFormatSeparator>
+  <timeFormat>HH:mm</timeFormat>
+
+</objects>

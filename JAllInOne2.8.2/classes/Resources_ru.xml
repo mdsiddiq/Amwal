@@ -1,0 +1,1729 @@
+
+<objects>
+
+<!-- common -->
+  <object key="yes" value="Да" />
+  <object key="no" value="Нет" />
+
+<!-- grid -->
+  <object key="Remove Filter" value="Удалить фильтр" />
+  <object key="This column is not sorteable" value="Сортировка по данному полю не возможна" />
+  <object key="Sorting not allowed" value="Сортировка не возможна" />
+  <object key="Maximum number of sorted columns" value="Максимальное количество полей сортировки" />
+  <object key="Sorting not applicable" value="Сортировка не применяется" />
+  <object key="Selected Row" value="Строка" />
+  <object key="Selected Rows" value="Строки" />
+  <object key="Cancel changes and reload data?" value="Отменить изменения и перезагрузить данные?" />
+  <object key="Attention" value="Внимание" />
+  <object key="Loading data..." value="Загрузка данных..." />
+  <object key="Error while loading data" value="Ошибка при загрузке данных" />
+  <object key="Loading Data Error" value="Ошибка загрузки данных" />
+  <object key="Delete Rows?" value="Удалить строки?" />
+  <object key="Delete Confirmation" value="Подтверждение удаления" />
+  <object key="Deleting Error" value="Ошибка удаления" />
+  <object key="Error while deleting rows." value="Ошибка при удалении строк." />
+  <object key="Error while saving" value="Ошибка при сохранении" />
+  <object key="Saving Error" value="Ошибка сохранения" />
+  <object key="A mandatory column is empty." value="Обязательное поле не заполнено" />
+  <object key="Value not valid" value="Значение не действительно" />
+  <object key="Select the previous row in grid" value="Перейти на предыдущую строку таблицы" />
+  <object key="Select the next row in grid" value="Перейти на следущую строку таблицы" />
+
+<!-- export -->
+  <object key="grid export" value="Таблица экспорта" />
+  <object key="export" value="Экспорт" />
+  <object key="exportmnemonic" value="X" />
+  <object key="column" value="Поле" />
+  <object key="sel." value="Sel." />
+  <object key="you must select at least one column" value="Вы должны выбрать не менее одного поля" />
+  <object key="columns to export" value="Поля для экспорта" />
+  <object key="export type" value="Формат экспорта" />
+
+<!-- import -->
+  <object key="Import records (CTRL+M)" value="Импортировать строки (CTRL+M)" />
+  <object key="grid import" value="Таблица импорта" />
+  <object key="import" value="Импорт" />
+  <object key="importmnemonic" value="M" />
+  <object key="columns to import" value="Поля для импорта" />
+  <object key="import type" value="Формат файла импорта" />
+  <object key="file to import" value="Файл для импорта" />
+  <object key="error while importing data" value="Ошибка при импорте данных" />
+  <object key="import completed" value="Импорт завершен" />
+
+<!-- quick filter -->
+  <object key="To value" value="До значения" />
+  <object key="Filter by" value="Фильтровать по" />
+  <object key="From value" value="От значения" />
+  <object key="equals" value="равно" />
+  <object key="contains" value="содержит" />
+  <object key="starts with" value="начинается на" />
+  <object key="ends with" value="заканчивается на" />
+
+<!-- lookup -->
+  <object key="Code is not correct." value="Код не корректен" />
+  <object key="Code Validation" value="Проверка кода" />
+  <object key="Code Selection" value="Выбор кода" />
+
+<!-- form -->
+  <object key="Confirm deliting data?" value="Подтверждаете удаление данных?" />
+  <object key="Error while saving: incorrect data." value="Ошибка сохранения: некорректные данные." />
+  <object key="Error on deleting:" value="Ошибка удаления:" />
+  <object key="Error on Loading" value="Ошибка загрузки" />
+  <object key="Error while loading data:" value="Ошибка при загрузке данных:" />
+
+<!-- toolbar buttons -->
+  <object key="Delete record (CTRL+D)" value="Удалить строку (CTRL+D)" />
+  <object key="Edit record (CTRL+E)" value="Редактировать строку (CTRL+E)" />
+  <object key="New record (CTRL+I)" value="Новая строка (CTRL+I)" />
+  <object key="Reload record/Cancel current operation (CTRL+Z)" value="Перезагрузить/Сбросить изменения (CTRL+Z)" />
+  <object key="Save record (CTRL+S)" value="Сохранить строку (CTRL+S)" />
+  <object key="Copy record (CTRL+C)" value="Копировать строку (CTRL+C)" />
+  <object key="Export record (CTRL+X)" value="Экспортировать строки (CTRL+X)" />
+  <object key="Load the first block of records" value="Загрузить первый блок строк" />
+  <object key="Load the previous block of records" value="Загрузить предыдущий блок строк" />
+  <object key="Load the next block of records" value="Загрузить следующий блок строк" />
+  <object key="Load the last block of records" value="Загрузить последний блок строк" />
+
+  <object key="Insert" value="Вставить" />
+  <object key="edit" value="Редактировать" />
+  <object key="Edit" value="Редактировать" />
+  <object key="Copy" value="Копировать" />
+  <object key="Delete" value="Удалить" />
+  <object key="Save" value="Сохранить" />
+  <object key="Reload" value="Перезагрузить" />
+  <object key="Export" value="Экспортировать" />
+  <object key="Filter" value="Фильтровать" />
+
+<!-- MDI Frame -->
+  <object key="file" value="Файл" />
+  <object key="exit" value="Выход" />
+  <object key="filemnemonic" value="F" />
+  <object key="exitmnemonic" value="E" />
+  <object key="change user" value="Сменить пользователя" />
+  <object key="changeusermnemonic" value="U" />
+  <object key="changelanguagemnemonic" value="L" />
+  <object key="help" value="Помощь" />
+  <object key="about" value="О программе" />
+  <object key="helpmnemonic" value="H" />
+  <object key="aboutmnemonic" value="A" />
+  <object key="are you sure to quit application?" value="Вы хотите закрыть приложение?" />
+  <object key="quit application" value="Завершение приложения" />
+  <object key="forcegcmnemonic" value="F" />
+  <object key="Force GC" value="Принудительная очистка памяти" />
+  <object key="Java Heap" value="Java Heap" />
+  <object key="used" value="использовано" />
+  <object key="allocated" value="выделено" />
+  <object key="change language" value="Сменить язык" />
+  <object key="changemnemonic" value="L" />
+  <object key="cancelmnemonic" value="C" />
+  <object key="Functions" value="Формы" />
+  <object key="Error while executing function" value="Ошибка при загрузке формы" />
+  <object key="Error" value="Ошибка" />
+  <object key="infoPanel" value="Информация" />
+  <object key="imageButton" value="О программе" />
+  <object key="Window" value="Окна" />
+  <object key="windowmnemonic" value="W" />
+  <object key="Close All" value="Закрыть все" />
+  <object key="closeallmnemonic" value="A" />
+  <object key="Press ENTER to find function" value= "Нажмите ENTER для поиска функции" />
+  <object key="Find Function" value= "Поиск функции" />
+  <object key="Operation in progress..." value="Задача выполняется..." />
+  <object key="close window" value="Закрыть окно" />
+  <object key="reduce to icon" value="Свернуть" />
+  <object key="save changes?" value="Сохранить изменения?" />
+  <object key="confirm window closing" value="Подтверждение закрытия окна" />
+
+  <object key="switch" value="Переключить" />
+  <object key="switchmnemonic" value="S" />
+  <object key="window name" value="Имя окна" />
+  <object key="opened windows" value="Открытые окна" />
+  <object key="tile horizontally" value="Расположить по горизонтали" />
+  <object key="tilehorizontallymnemonic" value="H" />
+  <object key="tile vertically" value="Расположить по вертикали" />
+  <object key="tileverticallymnemonic" value="V" />
+  <object key="cascade" value="Каскадом" />
+  <object key="cascademnemonic" value="C" />
+  <object key="minimize" value="Свернуть" />
+  <object key="minimizemnemonic" value="M" />
+  <object key="minimize all" value="Свернуть все" />
+  <object key="minimizeallmnemonic" value="A" />
+  <object key="change background" value="Сменить фон" />
+  <object key="reset background" value="Восстановить фон по умолчанию" />
+
+
+<!-- select/deselect all -->
+  <object key="select all" value="Выделить все" />
+  <object key="deselect all" value="Сбросить выделение" />
+
+
+<!-- copy/cut/paste -->
+  <object key="copy" value="Копировать" />
+  <object key="copymnemonic" value="C" />
+  <object key="cut" value="Вырезать" />
+  <object key="cutmnemonic" value="T" />
+  <object key="paste" value="Вставить" />
+  <object key="pastemnemonic" value="P" />
+
+<!-- grid profile -->
+  <object key="grid profile management" value="Управление профилем таблицы"/>
+  <object key="restore default grid profile" value="Восстановить стандартный профиль"/>
+  <object key="create new grid profile" value="Создать новый профиль таблицы"/>
+  <object key="profile description" value="Наименование профиля"/>
+  <object key="remove current grid profile" value="Удалить выбранный профиль таблицы"/>
+  <object key="select grid profile" value="Выбрать профиль таблицы"/>
+  <object key="default profile" value="Стандартный профиль"/>
+
+<!-- search box -->
+  <object key="search" value="Поиск"/>
+  <object key="not found" value="Не найдено"/>
+
+
+<!-- server -->
+
+  <object key="Client request not supported" value="Запрос клиента не выполнен" />
+  <object key="User disconnected" value="Пользователь отключен" />
+  <object key="Updating not performed: the record was previously updated." value="Обновление не выполнено: строка ранее была изменена другим пользователем." />
+
+<!-- application domains -->
+
+  <object key="text" value="Текст" />
+  <object key="date" value="Дата" />
+  <object key="numeric" value="Число" />
+
+  <object key="english" value="Английский" />
+  <object key="italian" value="Итальянский" />
+  <object key="spanish" value="Испанский" />
+  <object key="brazilian" value="Бразильский" />
+  <object key="german" value="Немецкий" />
+  <object key="russian" value="Русский" />
+  <object key="croatian" value="Хорватский" />
+
+  <object key="male" value="Мужской" />
+  <object key="female" value="Женский" />
+
+  <object key="officeNr" value="Офис" />
+  <object key="otherRef" value="Другие справочники" />
+
+<!-- application translations -->
+
+  <object key="customizable windows" value="Настраиваемые окна" />
+  <object key="columnNameSYS12" value="Имя поля базы данных" />
+  <object key="columnTypeSYS12" value="Тип поля" />
+  <object key="columnSizeSYS12" value="Размер поля" />
+  <object key="columnDecSYS12" value="Десятичных знаков" />
+  <object key="descriptionSYS10" value="Наименование" />
+  <object key="The specified field name already exixts." value="Выбранное имя поля уже занято." />
+  <object key="Maximum number of customized columns reached." value="Максимальное количество настраиваемых полей достигнуто." />
+  <object key="You must specify the number of integers and decimals for the column" value="Вы должны указать количество разрядов для целых чисел и десятичных знаков для десятичных в столбце" />
+  <object key="You must specify the column length" value="Вы должны задать длину поля" />
+  <object key="You are not allowed to delete the selected row." value=" Вам не разрешено удаление выбранных строк." />
+  <object key="You are not allowed to delete data." value=" Вам не разрешено удаление данных." />
+  <object key="You are not allowed to edit data." value=" Вам не разрешено редактирование данных." />
+  <object key="You are not allowed to insert data." value=" Вам не разрешена вставка данных." />
+  <object key="newlevel.text" value="Добавить новый уровень" />
+  <object key="newlevel.mnemonic" value="N" />
+  <object key="removelevel.text" value="Удалить выбранный уровень" />
+  <object key="removelevel.mnemonic" value="R" />
+  <object key="new level" value="новый уровень" />
+  <object key="You must specify a description for the new level." value="Вы должны задать название для нового уровня." />
+  <object key="this will remove the current level and all sub-levels.Are you sure?" value="Это приведет к удалению текущего уровня и всех подуровней.\nВы уверены?" />
+  <object key="change level description" value="Изменение названия уровня" />
+  <object key="You must specify a description for the level." value="Вы должны задать название для уровня." />
+  <object key="level description: " value="Название уровня: " />
+  <object key="updatelevel.text" value="Изменение названия уровня" />
+  <object key="updatelevel.mnemonic" value="C" />
+
+
+  <object key="companies list" value="Список компаний" />
+  <object key="companyCodeSYS01" value="Код компании" />
+  <object key="company detail" value="Данные компании" />
+  <object key="organization data" value="Организационные данные" />
+  <object key="corporateName1" value="Наименование компании" />
+  <object key="corporateName2" value="Доп. наименование компании" />
+  <object key="address" value="Адрес" />
+  <object key="city" value="Город" />
+  <object key="zip" value="Индекс" />
+  <object key="prov" value="Область" />
+  <object key="country" value="Страна" />
+  <object key="taxCode" value="ИНН" />
+  <object key="phone" value="Телефон" />
+  <object key="fax" value="Факс" />
+  <object key="email" value="Эл. почта" />
+  <object key="webSite" value="Веб сайт" />
+  <object key="lawfulSite" value="Юр. адрес" />
+  <object key="note" value="Описание" />
+  <object key="languages list" value="Список языков" />
+  <object key="languageCodeSYS09" value="Код языка" />
+  <object key="descriptionSYS09" value="Наименование" />
+  <object key="clientLanguageCodeSYS09" value="Язык клиента" />
+
+  <object key="companyCodeSys01WAR01" value="Код компании" />
+  <object key="warehouse" value="Склад" />
+  <object key="warehouseCodeWAR01" value="Код склада" />
+  <object key="descriptionWAR01" value="Наименование склада" />
+  <object key="addressWAR01" value="Адрес" />
+  <object key="cityWAR01" value="Город" />
+  <object key="zipWAR01" value="Индекс" />
+  <object key="provinceWAR01" value="Область" />
+  <object key="countryWAR01" value="Страна" />
+  <object key="warehouses" value="Склады" />
+  <object key="warehouse detail" value="Данные склада" />
+  <object key="warehouse data" value="Данные склада" />
+  <object key="positions" value="Упаковки" />
+  <object key="custom data" value="Пользовательские данные" />
+  <object key="edit/delete warehouse role" value="Редактировать/удалить роль склада" />
+  <object key="bookedItemsPanel" value="Наличие и резерв" />
+  <object key="orderedItemsPanel" value="Заказанный товар" />
+  <object key="warehouseCodeWar01DOC06" value="Код склада" />
+  <object key="warehouseCodeWar01WAR03" value="Код склада" />
+
+  <object key="roles" value="Роли" />
+  <object key="you cannot change the administrator role" value="Вы не можете изменять роль администратора." />
+  <object key="you cannot delete the administrator role" value="Вы не можете удалить роль администратора." />
+  <object key="function" value="Форма" />
+  <object key="canView" value="Просмотр" />
+  <object key="canInsSYS07" value="Вставка" />
+  <object key="canUpdSYS07" value="Изменение" />
+  <object key="canDelSYS07" value="Удаление" />
+  <object key="there are users with the current role associated." value="Данные пользователи ассоциированы с выбранной ролью." />
+  <object key="companyCodeSys01SYS02" value="Код компании" />
+  <object key="canInsSYS02" value="Вставка" />
+  <object key="canUpdSYS02" value="Изменение" />
+  <object key="canDelSYS02" value="Удаление" />
+  <object key="users" value="Пользователи" />
+  <object key="usernameSYS03" value="Имя пользователя" />
+  <object key="passwdSYS03" value="Пароль" />
+  <object key="passwdExpirationSYS03" value="Срок действия пароля" />
+  <object key="languageCodeSys09SYS03" value="Язык" />
+  <object key="firstNameSYS03" value="Имя, Отчество" />
+  <object key="lastNameSYS03" value="Фамилия" />
+  <object key="companyCodeSys01SYS03" value="" />
+  <object key="progressiveReg04SYS03" value="" />
+  <object key="roleDescription" value="Наименование роли" />
+  <object key="selected" value="Выбрано" />
+  <object key="you cannot delete administrator user" value="Вы не можете удалять пользователя с правами администратора." />
+  <object key="user roles" value="Роли пользователей" />
+  <object key="you must specify a date greater than today." value="Вы должны указать дату позже, чем сегодня." />
+
+  <object key="vats" value="Налоги" />
+  <object key="vatDescription" value="Наименование налога" />
+  <object key="vatCodeREG01" value="Код налога" />
+  <object key="valueREG01" value="Ставка налога" />
+  <object key="deductibleREG01" value="Ставка налога %" />
+  <object key="vatDeductibleREG01" value="Ставка налога %" />
+
+  <object key="colors" value="Цвета" />
+  <object key="colorCodeREG13" value="Код цвета" />
+  <object key="colorDescription" value="Наименование цвета" />
+
+  <object key="sizes" value="Размеры" />
+  <object key="sizeCodeREG14" value="Код размера" />
+  <object key="sizeDescription" value="Наименование размера" />
+
+  <object key="banks" value="Банки" />
+  <object key="bank detail" value="Данные банка" />
+  <object key="bankCodeREG12" value="Код банка" />
+  <object key="descriptionREG12" value="Наименование банка" />
+  <object key="bbanREG12" value="БИК" />
+  <object key="ibanREG12" value="Корр.счет" />
+
+  <object key="carriers" value="Перевозчики" />
+  <object key="carrierCodeREG09" value="Код перевозчика" />
+  <object key="carrierDescription" value="Наименование перевозчика" />
+
+  <object key="currencies" value="Валюты" />
+  <object key="currencyCodeREG03" value="Код валюты" />
+  <object key="currencySymbolREG03" value="Символ валюты" />
+  <object key="decimalSymbolREG03" value="Десятичный знак" />
+  <object key="thousandSymbolREG03" value="Знак разделения тысяч" />
+  <object key="currencyCodeReg03REG06" value="Из валюты" />
+  <object key="currencyCode2Reg03REG06" value="В валюту" />
+  <object key="decimalsREG03" value="Десятичных знаков" />
+  <object key="valueREG06" value="Курс" />
+  <object key="currency conversions" value="Конвертация валют" />
+
+  <object key="measures" value="Единицы измерений" />
+  <object key="umCodeREG02" value="Единица измерения" />
+  <object key="decimalsREG02" value="Точность, дес. знаков" />
+  <object key="measure conversions" value="Конвертация единиц измерений" />
+  <object key="umCodeReg02REG05" value="В Е.И." />
+  <object key="umCodeREG05" value="Из Е.И." />
+  <object key="valueREG05" value="Коэффициент конвертации" />
+
+  <object key="tasks" value="Должности" />
+  <object key="taskCodeREG07" value="Код должности" />
+  <object key="activityCodeSal09REG07" value="Код вида деятельности" />
+  <object key="activityDescriptionREG07" value="Наименование вида деятельности" />
+  <object key="companyCodeSys01REG07" value="Код компании" />
+  <object key="taskDescription" value="Наименование должности" />
+  <object key="currencyCodeReg03REG07" value="Код валюты" />
+  <object key="durationREG07" value="Продолжительность операции [мин.]" />
+  <object key="valueREG07" value="Результат операции" />
+  <object key="finiteCapacityREG07" value="Должность закрыта" />
+
+  <object key="item types" value="Группы товара" />
+  <object key="item type" value="Группа товара" />
+  <object key="hierarchy" value="Иерархия" />
+  <object key="companyCodeSys01ITM02" value="Код компании" />
+
+
+  <object key="companyCodeSys01ITM01" value="Код компании" />
+  <object key="itemCodeITM01" value="Код товара" />
+  <object key="items" value="Товары" />
+  <object key="item detail" value="Данные товара" />
+  <object key="images" value="Фотографии" />
+  <object key="level" value="Уровень" />
+  <object key="addDescr" value="Доп. наименование" />
+  <object key="minSellingQtyITM01" value="Мин. заказ" />
+  <object key="minSellingQtyUmCodeReg02ITM01" value="Е.И. мин. заказа" />
+  <object key="vat" value="Налог" />
+  <object key="grossWeightITM01" value="Брутто" />
+  <object key="netWeightITM01" value="Нетто" />
+  <object key="widthITM01" value="Ширина" />
+  <object key="heightITM01" value="Высота" />
+  <object key="load large image" value="Загрузить большую фотографию" />
+  <object key="load small image" value="Загрузить малую фотографию" />
+  <object key="clear large image" value="Удалить большую фотографию" />
+  <object key="clear small image" value="Удалить малую фотографию" />
+  <object key="serial number required" value="Серийник обязателен" />
+
+  <object key="firstname" value="Имя, Отчество" />
+  <object key="lastname" value="Фамилия" />
+  <object key="mobile" value="Мобильный телефон" />
+  <object key="socialsecnum" value="Пенсионная карта" />
+  <object key="personal data" value="Персональные данные" />
+  <object key="marital status" value="Семейное положение" />
+  <object key="birthday" value="День рождения" />
+  <object key="birthplace" value="Место рождения" />
+  <object key="nationality" value="Национальность" />
+
+  <object key="customers" value="Клиенты" />
+  <object key="taxCodeREG04" value="ИНН/Номер пенсионной карты" />
+  <object key="companyCodeSys01REG04" value="Код компании" />
+  <object key="customerCodeSAL07" value="Код клиента" />
+  <object key="name_1REG04" value="Наим. компании/Имя Отчество" />
+  <object key="name_2REG04" value="Доп. наим. компании/Фамилия" />
+  <object key="customer detail" value="Данные клиента" />
+  <object key="generic data" value="Общие данные" />
+  <object key="customer data" value="Комерческие данные" />
+  <object key="customer type" value="Тип клиента" />
+  <object key="bank" value="Банк" />
+  <object key="pricelist" value="Прайс лист" />
+  <object key="payment terms" value="Условия оплаты" />
+  <object key="customer" value="Клиент" />
+  <object key="sex" value="Пол" />
+  <object key="destinations" value="Адреса доставки" />
+  <object key="destinationCodeREG18" value="Код доставки" />
+  <object key="descriptionREG18" value="Наименование" />
+  <object key="customer code already exist." value="Данный код клиента уже существует." />
+
+  <object key="organization" value="Организация" />
+  <object key="organization contact" value="Корпоративный контакт" />
+  <object key="organization customer" value="Корпоративный клиент" />
+  <object key="private contact" value="Частный контакт" />
+  <object key="private customer" value="Частный клиент" />
+  <object key="supplier" value="Поставщик" />
+
+  <object key="private" value="Частное лицо" />
+
+  <object key="payment types" value="Способы платежа" />
+  <object key="paymentTypeCodeREG11" value="Код способа платежа" />
+  <object key="paymentTypeDescription" value="Наименование способа платежа" />
+  <object key="payments" value="Условия оплаты" />
+  <object key="paymentDescription" value="Наименование условия оплаты" />
+  <object key="paymentCodeREG10" value="Код условия оплаты" />
+  <object key="instalmentNumberREG10" value="К-во платежей" />
+  <object key="startDayREG10" value="Начало срока оплаты" />
+  <object key="invoice date" value="Дата счета" />
+  <object key="end month" value="Конец месяца" />
+  <object key="stepREG10" value="Шаг, дни" />
+  <object key="firstInstalmentDaysREG10" value="Первый взнос через, дней:" />
+  <object key="paymentTypeCodeReg11REG10" value="Способ платежа по умолчанию" />
+  <object key="you must define at least one instalment" value="Вы должны указать хотя бы один платеж" />
+  <object key="instalments" value="График платежей" />
+  <object key="rateNumberREG17" value="№" />
+  <object key="paymentTypeCodeReg11REG17" value="Код способа платежа" />
+  <object key="paymentTypeDescriptionSYS10" value="Наименование способа платежа" />
+  <object key="percentageREG17" value="%" />
+  <object key="the sum of percentages must be 100" value="Сумма в процентах должна равняться 100." />
+  <object key="instalmentDaysREG17" value="Срок до платежа, дней:" />
+  <object key="references" value="Ссылки" />
+  <object key="discounts" value="Скидки" />
+  <object key="discountCodeSAL03" value="Код скидки" />
+  <object key="discountDescription" value="Наименование скидки" />
+  <object key="currencyCodeReg03SAL03" value="Код валюты" />
+  <object key="minValueSAL03" value="Мин. значение" />
+  <object key="maxValueSAL03" value="Макс. значение" />
+  <object key="minPercSAL03" value="Мин. %" />
+  <object key="maxPercSAL03" value="Макс. %" />
+  <object key="startDateSAL03" value="Начальная дата" />
+  <object key="endDateSAL03" value="Конечная дата" />
+  <object key="minQtySAL03" value="Мин. к-во" />
+  <object key="multipleQtySAL03" value="К-во в коробке" />
+  <object key="max and min values must be both setted." value="Макс. и мин. значения должны быть указаны." />
+  <object key="max and min percentages must be both setted." value="Макс. и мин. проценты должны быть указаны." />
+  <object key="you must define max and min percentages or max and min values." value="Вы должны указать макс. и мин. проценты или макс. и мин. значения." />
+  <object key="you must define max and min percentages otherwise max and min values." value="Вы должны указать макс. и мин. проценты или макс. и мин. значения." />
+  <object key="min value must be less than or equals to max value." value="Мин. значение должно быть меньше или равно макс. значению." />
+  <object key="min percentage must be less than or equals to max percentage." value="Мин. проценты должны быть меньше или равны макс. процентам." />
+  <object key="start date must be less than or equals to end date." value="Начальная дата должна быть меньше или равна конечной дате." />
+
+  <object key="charges" value="Расходы" />
+  <object key="chargeCodeSAL06" value="Код расхода" />
+  <object key="chargeDescription" value="Наименование расхода" />
+  <object key="valueSAL06" value="Сумма" />
+  <object key="percSAL06" value="%" />
+  <object key="vatCodeReg01SAL06" value="Код налога" />
+  <object key="currencyCodeReg03SAL06" value="Код валюты" />
+  <object key="vatValueREG01" value="Сумма налога" />
+  <object key="companyCodeSys01SAL06" value="Код компании" />
+  <object key="vatDescriptionSYS10" value="Наименование налога" />
+  <object key="you must define a value or a percentage charge." value="Вы должны указать значение или процент расхода." />
+  <object key="a charge must be define as a value or as a percentage." value="Расход должен быть определен значением или процентом" />
+  <object key="vat code is required for a charge expressed as a value." value="Код налога необходим для вычисления суммы налога." />
+
+  <object key="customer hierarchies" value="Иерархия клиентов" />
+  <object key="subjectTypeREG04" value="Тип" />
+  <object key="companyCodeSys01REG08" value="Код компании" />
+  <object key="you must select a leaf node in the tree" value="Вы должны выбрать лист дерева." />
+  <object key="hierarchies" value="Иерархия" />
+  <object key="SubjectHierarchyLevelsPanel" value="Уровень иерархии" />
+  <object key="levelDescriptionSYS10" value="Уровень иерархии" />
+
+  <object key="items hierarchy discounts" value="Иерархия скидок по товарам" />
+  <object key="customers hierarchy discounts" value="Иерархия скидок по клиентам" />
+
+  <object key="referenceTypeREG15" value="Тип ссылки" />
+  <object key="valueREG15" value="Значение" />
+
+  <object key="pricelists" value="Прайс листы" />
+  <object key="companyCodeSys01SAL01" value="Фирма" />
+  <object key="currencyCodeReg03SAL01" value="Валюта" />
+  <object key="pricelistCodeSAL01" value="Прайс лист" />
+  <object key="validity date filter" value="Фильтр по дате действительности" />
+  <object key="item prices" value="Цены товара" />
+  <object key="valueSAL02" value="Цена" />
+  <object key="startDateSAL02" value="Действительна с:" />
+  <object key="endDateSAL02" value="Действительна по:" />
+  <object key="itemCodeItm01SAL02" value="Код товара" />
+  <object key="progressiveHie02ITM01" value="Группа товара" />
+  <object key="itemDescriptionSYS10" value="Наименование товара" />
+  <object key="import items" value="Импорт товаров" />
+  <object key="ok" value="Принять" />
+  <object key="okmnemonic" value="O" />
+  <object key="validation dates and price are required." value="Требуется проверка действительности дат и цен." />
+  <object key="changes to pricelist" value="Изменения прайс листа" />
+  <object key="new start validation date" value="Новая начальная дата действительности" />
+  <object key="new end validation date" value="Новая конечная дата действительности" />
+  <object key="add this delta to all prices" value="Добавить данное изменение во все цены" />
+  <object key="add to all prices a %" value="Увеличить все цены на %" />
+  <object key="truncate decimals" value="Округлить до целых" />
+  <object key="change date interval" value="Изменить интервал дат" />
+  <object key="date interval" value="Интервал дат" />
+  <object key="change prices" value="Изменить цены" />
+  <object key="import all items" value="Импорт всех позиций" />
+  <object key="import all supplier items" value="Импорт всех позиций поставщика" />
+  <object key="validation dates are required." value="Требуется проверка по дате действительности." />
+  <object key="price value is required." value="Требуется значение цены." />
+  <object key="price % is required." value="Требуется значение наценки %." />
+  <object key="pricelistCodeSal01SAL02" value="Код прайс листа" />
+  <object key="pricelistDescriptionSYS10" value="Наименование прайс листа" />
+
+  <object key="trustAmountSAL07" value="Общий итог" />
+
+  <object key="agentTypeDescription" value="Группа агента" />
+  <object key="agent types" value="Группы агентов" />
+  <object key="an agent with the same code already exists." value="Агент с данным кодом уже существует." />
+  <object key="agents" value="Агенты" />
+  <object key="agentCodeSAL10" value="Код агента" />
+  <object key="percentageSAL10" value="Комиссия (%)" />
+  <object key="progressiveSys10SAL10" value="Группа" />
+  <object key="progressiveReg04SAL10" value="Сотрудник" />
+
+  <object key="employees" value="Сотрудники" />
+  <object key="employee detail" value="Информация о сотруднике" />
+  <object key="employee data" value="Данные сотрудника" />
+  <object key="people data" value="Личные данные" />
+  <object key="employeeCodeSCH01" value="Код сотрудника" />
+  <object key="phoneNumberSCH01" value="Телефон" />
+  <object key="officeSCH01" value="Офис" />
+  <object key="taskCodeReg07SCH01" value="Код должности" />
+  <object key="divisionSCH01" value="Отдел" />
+  <object key="engagedDateSCH01" value="Дата принятия на работу" />
+  <object key="dismissalDateSCH01" value="Дата увольнения" />
+  <object key="levelSCH01" value="Уровень" />
+  <object key="salarySCH01" value="Оклад" />
+  <object key="manager" value="Начальник" />
+  <object key="assistant" value="Помощник" />
+  <object key="employee" value="Сотрудник" />
+  <object key="companyCodeSys01SCH01" value="Код компании" />
+
+  <object key="there is already another people with the same first and last name." value="Частное лицо с такими фамилией, именем и отчеством уже существует." />
+  <object key="there is already another organization with same the corporate name" value="Организация с таким наименованием уже существует." />
+  <object key="there is already another employee with the same employee code." value="Сотрудник с данным кодом уже существует." />
+
+  <object key="suppliers" value="Поставщики" />
+  <object key="supplierCodePUR01" value="Код поставщика" />
+  <object key="supplier detail" value="Информация о поставщике" />
+  <object key="supplier data" value="Данные поставщика" />
+  <object key="supplier code already exist." value="Код поставщика уже существует." />
+  <object key="supplier hierarchies" value="Иерархия поставщиков" />
+  <object key="item hierarchies" value="Позиция иерархии" />
+  <object key="supplierItemCodePUR02" value="Код товара поставщика" />
+  <object key="umCodeReg02PUR02" value="Закуп в Е.И." />
+  <object key="minPurchaseQtyPUR02" value="Мин. к-во" />
+  <object key="multipleQtyPUR02" value="К-во в коробке" />
+  <object key="you are allowed to insert data only on a leaf node." value="Вы имеете право вставить данные только в конечном узле." />
+  <object key="supplierItems" value="Товары поставщика" />
+  <object key="import supplier items" value="Импорт товаров поставщика" />
+  <object key="supplierPricelists" value="Прайс листы поставщика" />
+  <object key="companyCodeSys01PUR03" value="Код компании" />
+  <object key="currencyCodeReg03PUR03" value="Код валюты" />
+  <object key="pricelistDescription" value="Наименование прайс листа" />
+  <object key="pricelistCodePUR03" value="Код прайс листа" />
+  <object key="valuePUR04" value="Цена" />
+  <object key="startDatePUR04" value="Действительно с:" />
+  <object key="endDatePUR04" value="Действительно по:" />
+  <object key="itemCodeItm01PUR04" value="Код товара" />
+
+  <object key="document identification" value="Идентификатор документа" />
+  <object key="docNumber" value="Номер документа" />
+  <object key="docYear" value="Год" />
+  <object key="docType" value="Тип документа" />
+  <object key="docRif" value="Связанный документ" />
+  <object key="docDate" value="Дата документа" />
+  <object key="docState" value="Состояние документа" />
+  <object key="supplier data" value="Данные поставщика" />
+  <object key="documents" value="Документы" />
+
+  <object key="companyCodeSys01DOC06" value="Код компании" />
+  <object key="docTypeDOC06" value="Тип документа" />
+  <object key="docStateDOC06" value="Состояние документа" />
+  <object key="pricelistCodePur03DOC06" value="Код прайс листа" />
+  <object key="pricelistDescriptionDOC06" value="Наименование прайс листа" />
+  <object key="currencyCodeReg03DOC06" value="Код валюты" />
+  <object key="docYearDOC06" value="Год" />
+  <object key="docNumberDOC06" value="Номер документа" />
+  <object key="taxableIncomeDOC06" value="Налоговая база" />
+  <object key="totalVatDOC06" value="Всего налог" />
+  <object key="totalDOC06" value="Всего по документу" />
+  <object key="docDateDOC06" value="Дата документа" />
+  <object key="discounts and charges" value="Скидки и расходы" />
+  <object key="discount value" value="Сумма скидки" />
+  <object key="net discount value" value="Скидка на единицу" />
+  <object key="discount perc" value="Скидка %" />
+  <object key="charge value" value="Сумма расходов" />
+  <object key="charge perc" value="Расходы %" />
+  <object key="totals" value="Итого" />
+  <object key="taxableIncome" value="Налоговая база" />
+  <object key="totalVat" value="Сумма налога" />
+  <object key="total" value="Сумма" />
+  <object key="purchase orders" value="Заказы поставщикам" />
+  <object key="purchase order" value="Информация о заказе поставщику" />
+  <object key="header" value="Шапка" />
+  <object key="lines" value="Строки" />
+  <object key="opened" value="Открыт" />
+  <object key="header blocked" value="Шапка блокирована" />
+  <object key="suspended" value="Рассмотрен" />
+  <object key="confirmed" value="Подтвержден" />
+  <object key="closed" value="Закрыт" />
+  <object key="line detail" value="Строка подробно" />
+  <object key="itemCodeItm01DOC07" value="Код товара" />
+  <object key="supplierItemCode" value="Код товара поставщика" />
+  <object key="vatCode" value="ИНН" />
+  <object key="valuePur04DOC07" value="Цена за единицу" />
+  <object key="valueDOC07" value="Сумма" />
+  <object key="qtyDOC07" value="К-во" />
+  <object key="discountValueDOC07" value="Сумма скидки" />
+  <object key="discountPercDOC07" value="Скидка %" />
+  <object key="vatValueDOC07" value="Сумма налога" />
+  <object key="valueReg01DOC07" value="Налог %" />
+  <object key="deductibleReg01DOC07" value="Ставка налога %" />
+  <object key="the price is no more valid" value="Цена более не действительна." />
+  <object key="itemCodeItm01PUR02" value="Код товара" />
+  <object key="item" value="Товар" />
+  <object key="confirm purchase order?" value="Подтверждаете заказ поставщику?&#10;После подтверждения заказ невозможно будет редактировать." />
+  <object key="order confirmation" value="Подтверждение заказа" />
+  <object key="deliveryDateDOC07" value="Ожидаемая дата поставки" />
+  <object key="inQtyDOC07" value="Пришло к-во" />
+
+  <object key="in delivery notes" value="Список приходных накладных" />
+  <object key="companyCodeSys01DOC08" value="Код компании" />
+  <object key="docTypeDOC08" value="Тип документа" />
+  <object key="docStateDOC08" value="Состояние документа" />
+  <object key="warehouseCodeWar01DOC08" value="Код склада" />
+  <object key="docRefDOC08" value="Связанный документ" />
+  <object key="warehouseDescriptionDOC08" value="Наименование склада" />
+  <object key="docDateDOC08" value="Дата документа" />
+  <object key="docYearDOC08" value="Год" />
+  <object key="docNumberDOC08" value="Номер документа" />
+  <object key="in delivery note" value="Приходная накладная" />
+  <object key="delivery note closure" value="Закрытие приходной накладной" />
+  <object key="close delivery note?" value="Закрыть приходную накладную и принять товар на склад?" />
+  <object key="other data" value="Прочие данные" />
+  <object key="docYearDoc06DOC09" value="Год заказа" />
+  <object key="docNumberDoc06DOC09" value="Номер заказа" />
+  <object key="progressiveHie02DOC09" value="Группа товара" />
+  <object key="qtyDOC09" value="К-во" />
+  <object key="supplierQtyDOC09" value="К-во поставщика" />
+  <object key="itemCodeItm01DOC09" value="Код товара" />
+  <object key="supplier items" value="Товары поставщика" />
+  <object key="um" value="Е.И." />
+  <object key="no delivery note to update" value="Не найдено накладной для обновления." />
+  <object key="record not found" value="Строка не найдена" />
+  <object key="warehouse positions" value="Остатки на складе" />
+  <object key="the warehouse motive specified is not defined" value="Склад назначения не указан" />
+  <object key="load items from purchase order" value="Загрузить строки из заказа на поставку" />
+  <object key="purchase order rows" value="Получить строки заказа на поставку" />
+  <object key="import purchase order rows" value="Импортировать строки заказа на поставку" />
+  <object key="purchaseOrder" value="Заказ на закупку" />
+  <object key="confirmed purchase orders" value="Проведенные заказы на закупку" />
+  <object key="unload items from delivery request" value="Выгрузка строк из накладной на отгрузку" />
+  <object key="docSequenceDoc01DOC01" value="Поряд. номер расх." />
+  <object key="docSequenceDOC01" value="Поряд. номер расх." />
+  <object key="docSequenceDoc06DOC06" value="Поряд. номер прих." />
+  <object key="docSequenceDOC06" value="Поряд. номер прих." />
+  <object key="docSequenceDoc06DOC09" value="Поряд. номер прих." />
+  <object key="docSequenceDoc01DOC10" value="Поряд. номер расх." />
+  <object key="docSequenceDOC08" value="№ накладной" />
+  <object key="sectionalDOC01" value="Сборный" />
+
+  <object key="close out delivery note?" value="Закрыть расходную накладную и списать товар со склада?" />
+  <object key="out delivery notes" value="Расходные складские накладные" />
+  <object key="out delivery note" value="Расходная складская накладная" />
+  <object key="docYearDoc01DOC10" value="Год  документа" />
+  <object key="docNumberDoc01DOC10" value="Номер документа" />
+  <object key="progressiveHie02DOC10" value="Группа товара" />
+  <object key="qtyDOC10" value="Отгрузить к-во" />
+  <object key="saleQtyDOC02" value="Продано к-во" />
+  <object key="saleOutQtyDOC02" value="Отгружено к-во" />
+  <object key="itemCodeItm01DOC10" value="Код товара" />
+  <object key="confirmed sale documents" value="Проведенные документы реализации" />
+  <object key="sale document rows" value="Строки документа реализации" />
+  <object key="import delivery request rows" value="Импорт позиций из накладной на отгрузку" />
+
+  <object key="locationDescriptionSYS10" value="Единица хранения" />
+  <object key="itemCodeItm01WAR03" value="Код товара" />
+  <object key="availableQtyWAR03" value="Доступно к-во" />
+  <object key="damagedQtyWAR03" value="Брак к-во" />
+  <object key="item availability" value="Наличие к-во" />
+
+  <object key="warehouse motives" value="Основания операций" />
+  <object key="warehouseMotiveWAR04" value="Код основания" />
+  <object key="motiveDescription" value="Наименование основания" />
+  <object key="itemTypeWAR04" value="Группа товара" />
+  <object key="qtySignWAR04" value="Направление операции" />
+  <object key="good item" value="Ликвидный товар" />
+  <object key="damaged item" value="Бракованный товар" />
+  <object key="add" value="Приходовать" />
+  <object key="substract" value="Списать" />
+
+  <object key="warehouse movements" value="Складские операции" />
+  <object key="sign" value="Направление операции" />
+  <object key="type" value="Тип операции" />
+  <object key="warehouseCodeWar01WAR02" value="Код склада" />
+  <object key="itemCodeItm01WAR02" value="Код товара" />
+  <object key="movementDateWAR02" value="Дата операции" />
+  <object key="usernameWAR02" value="Пользователь" />
+  <object key="noteWAR02" value="Описание" />
+  <object key="deltaQtyWAR02" value="Изменение к-ва" />
+  <object key="warehouseMotiveWar04WAR02" value="Код основания" />
+  <object key="motiveDescriptionSYS10" value="Наименование основания" />
+  <object key="update not allowed until serial numbers are not defined" value="Списание не разрешено, пока не указан серийный номер" />
+  <object key="insert not allowed until serial numbers are not defined" value="Приходование не разрешено, пока не указан серийный номер" />
+  <object key="serial numbers from item" value="Серийные номера для данной позиции" />
+  <object key="serial number" value="Серийный номер" />
+  <object key="bar code" value="Штрих код" />
+  <object key="you must define a serial number for each row" value="Вы должны указать серийные номера для всех позиций" />
+  <object key="close" value="Закрыть" />
+
+  <object key="booked items and availability" value="Наличие и резерв" />
+  <object key="future item availability" value="Товар ожидаемый" />
+  <object key="itemCodeItm01DOC02" value="Код товара" />
+  <object key="bookQtyDOC02" value="Резерв" />
+  <object key="orderQtyDOC07" value="Заказано" />
+
+  <object key="manual movement" value="Складская операция" />
+  <object key="manual movement correctly inserted" value="Складская операция корректно добавлена." />
+
+  <object key="companyCodeSys01DOC01" value="Код компании" />
+  <object key="docTypeDOC01" value="Тип документа" />
+  <object key="docStateDOC01" value="Состояние документа" />
+  <object key="pricelistCodeSal01DOC01" value="Код прайс листа" />
+  <object key="pricelistDescriptionDOC01" value="Наименование прайс листа" />
+  <object key="currencyCodeReg03DOC01" value="Код валюты" />
+  <object key="docYearDOC01" value="Год" />
+  <object key="docNumberDOC01" value="№ документа" />
+  <object key="taxableIncomeDOC01" value="Налоговая база" />
+  <object key="totalVatDOC01" value="Всего налог" />
+  <object key="totalDOC01" value="Всего" />
+  <object key="docDateDOC01" value="Дата документа" />
+  <object key="valueSal02DOC02" value="Цена за единицу" />
+  <object key="valueDOC02" value="Итого" />
+  <object key="qtyDOC02" value="К-во" />
+  <object key="totalDiscountDOC02" value="Скидка всего" />
+  <object key="vatValueDOC02" value="Налог" />
+  <object key="valueReg01DOC02" value="Налог %" />
+  <object key="deductibleReg01DOC02" value="Ставка налога %" />
+  <object key="deliveryDateDOC02" value="Ожид. дата доставки" />
+  <object key="outQtyDOC02" value="Отпущено к-во" />
+  <object key="sale orders" value="Расходные накладные" />
+  <object key="notes" value="Комментарии" />
+  <object key="allowanceDOC01" value="Допуск" />
+  <object key="depositDOC01" value="Предоплата" />
+  <object key="docRef" value="Связанный документ" />
+  <object key="percentageDOC01" value="Комиссия %" />
+  <object key="header note" value="Заголовок комментария" />
+  <object key="footer note" value="Колонтитул комментария" />
+  <object key="delivery note" value="Транспортная накладная" />
+  <object key="sale order" value="Заказ на закупку" />
+  <object key="agent" value="Агент" />
+  <object key="error on applying item discounts" value="Ошибка в применении скидки" />
+  <object key="confirm sale order?" value="Подтвердить заказ на закупку?" />
+  <object key="document total cannot be less than zero!" value="Сумма документа не должна быть меньше нуля!" />
+  <object key="item discounts" value="Скидка" />
+  <object key="minValueDOC04" value="Мин. значение" />
+  <object key="maxValueDOC04" value="Макс. значение" />
+  <object key="minPercDOC04" value="Мин. %" />
+  <object key="maxPercDOC04" value="Макс. %" />
+  <object key="discountCodeSal03DOC04" value="Код скидки" />
+  <object key="discountDescriptionDOC04" value="Наименование скидки" />
+  <object key="valueDOC04" value="Значение" />
+  <object key="percDOC04" value="%" />
+  <object key="minQtyDOC04" value="Мин. к-во" />
+  <object key="multipleQtyDOC04" value="К-во в коробке" />
+
+  <object key="customer discounts" value="Скидки покупателя" />
+  <object key="minValueDOC05" value="Мин. значение" />
+  <object key="maxValueDOC05" value="Макс. значение" />
+  <object key="minPercDOC05" value="Мин. %" />
+  <object key="maxPercDOC05" value="Макс. %" />
+  <object key="discountCodeSal03DOC05" value="Код скидки" />
+  <object key="discountDescriptionDOC05" value="Наименование скидки" />
+  <object key="valueDOC05" value="Значение" />
+  <object key="percDOC05" value="%" />
+  <object key="you must define a discount as value or as a percentage" value="Вы должны указать скидку в виде значения или в процентах" />
+
+  <object key="you must define a charge as value or as a percentage" value="Вы должны указать расход в виде значения или в процентах" />
+  <object key="valueSal06DOC03" value="Значение по умолчанию" />
+  <object key="percSal06DOC03" value="По умолчанию %" />
+  <object key="chargeCodeSal06DOC03" value="Код расхода" />
+  <object key="chargeDescriptionDOC03" value="Наименование расхода" />
+  <object key="valueDOC03" value="Значение" />
+  <object key="percDOC03" value="%" />
+
+  <object key="sale activities" value="Виды деятельности" />
+  <object key="scheduled activities" value="Запланированные мероприятия" />
+  <object key="activityCodeSAL09" value="Код деятельности" />
+  <object key="activityDescriptionDOC13" value="Наменование мероприятия" />
+  <object key="valueSAL09" value="Цена" />
+  <object key="valueSal09DOC13" value="Цена за час" />
+  <object key="valueReg01DOC13" value="Ставка налога" />
+  <object key="currencyCodeReg03SAL09" value="Код валюты" />
+  <object key="currencyCodeReg03DOC13" value="Код валюты" />
+  <object key="descriptionSCH06" value="Наменование запланированного мероприятия" />
+  <object key="startDateSCH06" value="Дата начала мероприятия" />
+  <object key="endDateSCH06" value="Дата окончания мероприятия" />
+  <object key="durationSCH06" value="Продолжительность [мин.]" />
+  <object key="durationDOC13" value="Продолжительность [мин.]" />
+  <object key="valueDOC13" value="Всего" />
+  <object key="companyCodeSys01SAL09" value="Код компании" />
+  <object key="vatCodeReg01SAL09" value="Код налога" />
+  <object key="vatCodeSal09DOC13" value="Код налога" />
+  <object key="activityCodeSal09DOC13" value="Код мероприятия" />
+  <object key="vatValueDOC13" value="Сумма налога" />
+  <object key="vatDeductibleDOC13" value="Ставка %" />
+  <object key="vatDescriptionDOC13" value="Наименование налога" />
+
+  <object key="sale contract" value="Договор купли-продажи" />
+  <object key="sale contracts" value="Договора купли-продажи" />
+  <object key="contract confirmation" value="Подтверждение договора" />
+  <object key="confirm sale contract?" value="Подтверждаете договор?" />
+
+  <object key="sale estimate" value="Коммерческое предложение" />
+  <object key="sale estimates" value="Коммерческие предложения" />
+
+  <object key="desk selling" value="Розничная продажа" />
+  <object key="desk sellings" value="Розничные продажи" />
+  <object key="confirm desk selling?" value="Закрыть розничную накладную и отпустить товар со склада?" />
+  <object key="desk selling confirmation" value="Закрытие розничной накладной и отпуск товара со склада" />
+  <object key="document closing not allowed: item not available in warehouse" value="Документ не может быть закрыт: недостаточно товара на складе" />
+  <object key="create sale invoice?" value="Создать исходящую счет-фактуру?" />
+  <object key="desk selling invoice" value="Розничная накладная" />
+  <object key="manually created" value="Созданы вручную" />
+  <object key="from deliv.note" value="Из расходной со склада" />
+  <object key="from sale doc." value="Из документа продажи" />
+
+  <object key="user parameters" value="Параметры пользователя" />
+  <object key="company" value="Компания" />
+  <object key="retail sale customer" value="Клиент, используемый в розничной торговле" />
+  <object key="retail warehouse" value="Склад, используемый в розничной торговле" />
+  <object key="receipt manager" value="ПО кассового узла" />
+  <object key="receipts management program selection" value="Путь к ПО кассового узла" />
+  <object key="retail sale export non allowed: receipt path has not been defined as user parameter." value="Экспорт розничных продаж не возможен:&#10;путь получения не был определен в параметрах пользователя." />
+  <object key="company not found." value="Компания не найдена." />
+  <object key="error while executing external application; return code:" value="Ошибка при выполнении внешнего приложения; возвращен код:" />
+
+  <object key="sale invoices" value="Исходящие счета-фактуры" />
+  <object key="sale invoice" value="Исходящая счет-фактура" />
+  <object key="close sale invoice?" value="Закрыть исходящую счет-фактуру?" />
+  <object key="invoice closing" value="Закрытие исходящей счет-фактуры" />
+  <object key="sale invoice from delivery notes" value="Исходящая счет-фактура из складских накладных" />
+  <object key="sale invoice from sale document" value="Исходящая счет-фактура из документа продажи" />
+  <object key="invoiceQtyDOC02" value="К-во по фактуре" />
+  <object key="invoiceType" value="Тип счета-фактуры" />
+  <object key="invoiceNumber" value="№ счета-фактуры" />
+  <object key="create sale document from estimate" value="Создание расходной накладной из коммерческого предложения" />
+  <object key="create sale document from estimate?" value="Создать расходную накладную из коммерческого предложения?" />
+  <object key="sale document creation" value="Создание документа продажи" />
+  <object key="estimate nr. " value="№ счета" />
+  <object key="province" value="Область" />
+  <object key="invoicedValueDOC13" value="Сумма по счет-фактуре" />
+  <object key="invoicedValueDOC03" value="Сумма по счет-фактуре" />
+
+  <object key="credit notes" value="Расходные на реализацию" />
+  <object key="credit note" value="Расходная на реализацию" />
+  <object key="credit note closing" value="Расходная на реализацию закрыта" />
+  <object key="close credit note?" value="Закрыть расходная на реализацию?" />
+  <object key="debiting notes" value="Приходные на реализацию" />
+  <object key="debiting note" value="Приходная на реализацию" />
+  <object key="close debiting note?" value="Закрыть приходную на реализацию?" />
+  <object key="debiting note closing" value="Приходная на реализацию закрыта" />
+  <object key="noteNumber" value="Реализация №" />
+
+  <object key="expirations" value="Документы к оплате" />
+  <object key="docTypeDOC19" value="Тип документа" />
+  <object key="docYearDOC19" value="Год" />
+  <object key="docSequenceDOC19" value="№" />
+  <object key="companyCodeSys01DOC19" value="Код компании" />
+  <object key="valueDOC19" value="Сумма" />
+  <object key="expirationDateDOC19" value="Срок оплаты" />
+  <object key="docDateDOC19" value="Дата документа" />
+  <object key="customerSupplierCodeDOC19" value="Код контрагента" />
+  <object key="name_1DOC19" value="Наим. контрагента" />
+  <object key="name_2DOC19" value="Доп. наим. контрагента" />
+  <object key="payedDOC19" value="Оплачено" />
+  <object key="startDate" value="С даты" />
+  <object key="endDate" value="По дату" />
+  <object key="show also payed expirations" value="Показывать также оплаченные документы" />
+  <object key="purchase invoice" value="Входящая счет-фактура" />
+  <object key="all invoices" value="Все счета-фактуры" />
+  <object key="you must select at least one delivery note" value="Вы должны выбрать хотя бы одну накладную" />
+  <object key="delivery notes" value="Товарно-транспортные накладные" />
+  <object key="descriptionDOC08" value="Наменование доставки" />
+  <object key="destinationCodeReg18DOC08" value="Код доставки" />
+
+  <object key="contact" value="Контакт" />
+  <object key="contact detail" value="Контакт подробно" />
+  <object key="contacts" value="Контакты" />
+  <object key="contact type" value="Тип контакта" />
+  <object key="contacts hierarchies" value="Иерархия контактов" />
+  <object key="organizationName_1REG04" value="Связанная организация" />
+
+  <object key="create purchase invoice?" value="Создать входящую счет-фактуру?" />
+  <object key="from purchase doc." value="Из заказов поставщикам" />
+  <object key="purchase invoices" value="Входящие счета-фактуры" />
+  <object key="close purchase invoice?" value="Закрыть входящую счет-фактуру?" />
+  <object key="purchase invoice from delivery notes" value="Входящая счет-фактура из приходных на склад" />
+  <object key="purchase invoice from purchase document" value="Входящая счет-фактура из заказов поставщикам" />
+  <object key="invoiceQtyDOC07" value="К-во по счет-фактуре" />
+  <object key="purchase document creation" value="Создание входящей счет-фактуры" />
+
+  <object key="jasper file not found: report generation is not possible." value="Файл шаблона отчета не найден: построение отчета не возможно." />
+  <object key="print document" value="Печать документа" />
+  <object key="warehouse inventory" value="Инвентаризация склада" />
+  <object key="please select a company" value="Пожалуйста, выберете компанию!" />
+
+  <object key="contact to customer conversion" value="Преобразование контакта в клиента" />
+  <object key="convert contact to customer" value="Преобразовать контакт в клиента" />
+  <object key="transport motives" value="Основания перевозки" />
+  <object key="transportMotiveCodeREG20" value="Код основания перевозки" />
+  <object key="deliveryDate" value="Дата доставки" />
+
+  <object key="ledger" value="Журналы учета" />
+  <object key="ledgerCodeACC01" value="Код журнала" />
+  <object key="accountTypeACC01" value="Тип счета" />
+  <object key="patrimonial" value="Балансовые счета" />
+  <object key="economic" value="Счета прибылей и убытков" />
+
+  <object key="accountingMotives" value="Основания учета" />
+  <object key="accountingMotiveCodeACC03" value="Код основания учета" />
+  <object key="deleting not allowed" value="Удаление запрещено" />
+  <object key="intracom. on purchase" value="Внутренний заказ на закупку" />
+  <object key="intracom. on selling" value="Внутренний заказ на продажу" />
+  <object key="selling" value="Реализация" />
+  <object key="retail" value="Розничная продажа" />
+  <object key="purchase" value="Закупки" />
+  <object key="accountCodeAcc02ACC04" value="Код счета" />
+  <object key="registerTypeACC04" value="Тип" />
+  <object key="accountDescriptionACC04" value="Наименование счета" />
+  <object key="edit not allowed" value="Редактирование запрещено" />
+  <object key="vat registers" value="Налоговые регистры" />
+  <object key="vat register" value="Налоговый регистр" />
+  <object key="registerCodeACC04" value="Код регистра" />
+  <object key="companyCode" value="Код компании" />
+  <object key="insert not allowed" value="Вставка запрещена" />
+  <object key="accountCodeACC02" value="Код счета" />
+  <object key="accountTypeACC02" value="Тип счета" />
+  <object key="ledgerCodeAcc01ACC02" value="Код журнала" />
+  <object key="ledgerDescriptionACC02" value="Наименование журнала" />
+  <object key="debits/proceedings" value="Долги/выручка" />
+  <object key="credits/costs" value="Кредиты/издержки" />
+  <object key="accounts" value="Счета" />
+
+  <object key="company filter" value="Фильтр по компании" />
+  <object key="retail selling" value="Розничная торговля" />
+  <object key="accounting" value="Бухучет" />
+  <object key="credits account" value="Счет кредит" />
+  <object key="selling items account" value="Счет реализация" />
+  <object key="selling activities account" value="Счет мероприятия реализации" />
+  <object key="selling charges account" value="Счет расходы реализации" />
+  <object key="debits account" value="Счет дебет" />
+  <object key="purchase costs account" value="Счет расходы на закупку" />
+  <object key="case account" value="Счет касса" />
+
+  <object key="print journal" value="Печать журнала" />
+  <object key="from item number" value="Со строки номер" />
+  <object key="from date" value="С даты" />
+  <object key="to date" value="По дату" />
+  <object key="please set a from/to date" value="Пожалуйста, задайте диапазон дат" />
+  <object key="print costs/preceedings" value="Печать доходов/расходов" />
+  <object key="print debit/credit" value="Печать дебет/кредит" />
+  <object key="print budget" value="Печать общего баланса" />
+  <object key="print accounts movements" value="Печать движения по счетам" />
+  <object key="please set a from/to account code" value="Пожалуйста, выберите счет отправителя/получателя" />
+  <object key="from account" value="Со счета" />
+  <object key="to account" value="На счет" />
+  <object key="print statement of account" value="Печать выписки по счету" />
+  <object key="please set a customer code" value="Пожалуйста, введите код клиента" />
+  <object key="vat endorsing" value="Рассчет налога" />
+  <object key="please set the date" value="Пожалуйста, введите дату" />
+  <object key="vat endorsing completed." value="Расчет налога произведен." />
+  <object key="endorse vat from register" value="Рассчитать налог из регистра" />
+  <object key="period" value="Период" />
+  <object key="vat endorse account" value="Счет налога" />
+  <object key="bank account" value="Банковский счет" />
+  <object key="itemNumber" value="№ строки" />
+  <object key="registrationDate" value="Дата записи" />
+  <object key="accountingMotive" value="Основание учета" />
+  <object key="description" value="Описание" />
+  <object key="cust./suppl./acc." value="Клиенты/Поставщики/Счета" />
+  <object key="code" value="Код" />
+  <object key="debit" value="Дебет" />
+  <object key="credit" value="Кредит" />
+  <object key="totalDebit" value="Дебет всего" />
+  <object key="totalCredit" value="Кредит всего" />
+  <object key="lack of balance" value="Отсутствие баланса" />
+  <object key="new item without vat" value="Новая строка без налога" />
+  <object key="descriptionACC06" value="Описание" />
+  <object key="accountCodeACC06" value="Код счета" />
+  <object key="accountDescriptionACC06" value="Наименование счета" />
+  <object key="debitAmountACC06" value="Дебет" />
+  <object key="creditAmountACC06" value="Кредит" />
+  <object key="accountCodeTypeACC06" value="Клиенты/Поставщики/Счета" />
+  <object key="you must specify a debit or credit amount" value="Вы должны указать сумму дебета или кредита" />
+  <object key="you must specify a code" value="Вы должны указать код" />
+  <object key="you must insert al least two rows" value="Вы должны вставить не менее двух строк" />
+  <object key="there is a lack of balance between debit and credit amounts" value="Существует диспропорция между суммой дебета и кредита" />
+  <object key="item created" value="Запись создана" />
+  <object key="you must insert al least one row" value="Вы должны вставить не менее одной строки" />
+  <object key="new item with vat" value="Новый пункт с налогом" />
+  <object key="cust./suppl." value="Клиент/Поставщик" />
+  <object key="payment" value="Оплата" />
+  <object key="sale generic document" value="Общий документ продажи" />
+  <object key="purchase generic document" value="Общий документ закупки" />
+  <object key="docNr" value="№ док-та" />
+  <object key="please set a date" value="Пожалуйста, введите дату" />
+  <object key="item date" value="Пункт дата" />
+  <object key="loss/profit econ. account" value="Приход/расход экономического счета" />
+  <object key="loss/profit patrim. account" value="Приход/расход балансового счета" />
+  <object key="endorse loss/profit to econ. account" value="Передать приход/расход на экономический счет" />
+  <object key="endorse loss/profit to patrim. account" value="Передать приход/расход на балансовый счет" />
+  <object key="closing account" value="Закрытие счета" />
+  <object key="close accounts" value="Закрытые счета" />
+  <object key="please set the economic account code" value="Пожалуйста, выберете код экономического счета" />
+  <object key="please set the patrimonial account code" value="Пожалуйста, выберете код балансового счета" />
+  <object key="after closing accounts you will not be able to move settlements to new year. Continue?" value="После закрытия счета вы не сможете перенести остатки на следующий год. Продолжить?" />
+  <object key="operation completed" value="Операция завершена." />
+  <object key="no loss/profit found in the economic account" value="Не найдено прибылей/убытков на экономическом счете" />
+  <object key="endorse profit to patrimonial account" value="Записать приход на балансовый счет" />
+  <object key="endorse loss to patrimonial account" value="Записать расход на балансовый счет" />
+  <object key="close patrimonial accounts" value="Закрытие балансовых счетов" />
+  <object key="open patrimonial accounts, using patrimonial settlements of year " value="Открыть балансовые счета, используя годовые отчеты" />
+  <object key="endorse economic accounts to loss/profit economic account and to loss/profit patrimonial account" value="Передать экономические счета на приход/расход экономического счета и на приход/расход балансового счета" />
+  <object key="endorse patrimonial accounts settlements of the previous year to the current one" value="Передать балансы балансовых счетов из предыдущего года в текущий" />
+  <object key="open accounts" value="Открытые счета" />
+  <object key="opening account" value="Открытие счета" />
+  <object key="account" value="Счет" />
+
+  <object key="application parameters" value="Параметры приложения" />
+  <object key="image repository path" value="Путь к хранилищу фотографий" />
+  <object key="image repository path selection" value="Выбор пути к хранилищу фотографий" />
+  <object key="company parameters" value="Параметры компании" />
+  <object key="document repository path" value="Путь к хранилищу документов" />
+  <object key="document repository path selection" value="Выбор пути к хранилищу документов" />
+
+  <object key="loss/profit econ. endorse account" value="Передача прихода/расхода экономического счета" />
+  <object key="loss/profit patrim. endorse account" value="Передача прихода/расхода балансового счета" />
+  <object key="accounts closing account" value="Счета закрытых счетов" />
+  <object key="accounts opening account" value="Счета открытых счетов" />
+  <object key="user level parameters" value="Параметры уровня пользователя" />
+  <object key="company level parameters" value="Параметры уровня компании" />
+
+  <object key="companyCodeSys01SYS15" value="Код компании" />
+  <object key="customize reports" value="Пользовательские отчеты" />
+  <object key="upload files" value="Загрузка файлов" />
+  <object key="reports list" value="Список отчетов" />
+  <object key="reportNameSYS15" value="Имя файла отчета" />
+  <object key="functionDescription" value="Наименование формы" />
+  <object key="files to upload" value="Файлы для загрузки" />
+  <object key="clear files" value="Очистить файлы" />
+  <object key="import files" value="Импорт файлов" />
+  <object key="there already exists a file with the same name in the list" value="Файл с таким именем уже существует в списке." />
+  <object key="select files" value="Выбор файлов" />
+  <object key="you must select at least one file to upload" value="Вы должны выбрать хотя бы один файл для загрузки." />
+  <object key="reportFileName" value="Имя файла отчета" />
+  <object key="files" value="Файлы" />
+  <object key="customFunction" value="Пользовательские формы" />
+  <object key="upload completed." value="Загрузка завершена." />
+  <object key="some uploaded files already exists. overwrite them?" value="Некоторые из загруженых файлов уже существуют. Заменить их?" />
+
+  <object key="sunday" value="Воскресенье" />
+  <object key="monday" value="Понедельник" />
+  <object key="tuesday" value="Вторник" />
+  <object key="wednesday" value="Среда" />
+  <object key="thursday" value="Четверг" />
+  <object key="friday" value="Пятница" />
+  <object key="saturday" value="Суббота" />
+  <object key="dayOfWeekSCH02" value="День недели" />
+  <object key="morningStartHourSCH02" value="Начало раб. дня" />
+  <object key="morningEndHourSCH02" value="Начало обеда" />
+  <object key="afternoonStartHourSCH02" value="Конец обеда" />
+  <object key="afternoonEndHourSCH02" value="Конец раб. дня" />
+  <object key="start time must be less than end time" value="Время начала должно быть меньше времени окончания." />
+  <object key="working days" value="Рабочие дни" />
+
+  <object key="scheduled activity" value="Запланированные мероприятия" />
+  <object key="companyCodeSys01SCH06" value="Код компании" />
+  <object key="activityPaleSCH06" value="Место" />
+  <object key="managerName_1SCH06" value="Имя Отчество менеджера" />
+  <object key="managerName_2SCH06" value="Фамилия менеджера" />
+  <object key="subjectName_1SCH06" value="Имя Отчество контакта" />
+  <object key="subjectName_2SCH06" value="Фамилия контакта" />
+  <object key="activityCodeSal09SCH06" value="Код мероприятия" />
+  <object key="activityDescriptionSCH06" value="Наименование мероприятия" />
+
+  <object key="call-out types" value="Типы поддержки" />
+  <object key="call-out type" value="Тип поддержки" />
+  <object key="companyCodeSys01SCH11" value="Код компании" />
+  <object key="call-outs" value="Поддержка" />
+  <object key="callOutCodeSCH10" value="Код поддержки" />
+  <object key="companyCodeSys01SCH10" value="Код компании" />
+  <object key="call-out detail" value="Поддержка подробно" />
+  <object key="rateSCH10" value="Цена" />
+  <object key="machineries" value="Оборудование" />
+  <object key="call-out resources" value="Ресурсы поддержки" />
+  <object key="taskCodeReg07SCH12" value="Код должности" />
+  <object key="machineryCodePro03SCH13" value="Код оборудования" />
+  <object key="itemCodeItm01SCH14" value="Код товара" />
+
+  <object key="call-out requests" value="Запросы поддержки" />
+  <object key="call-out request detail" value="Запросы поддержки детально" />
+  <object key="progressiveSCH03" value="№ запроса" />
+  <object key="requestYearSCH03" value="Год запроса" />
+  <object key="callOutDescriptionSYS10" value="Наименование поддержки" />
+  <object key="callOutCodeSch10SCH03" value="Код поддержки" />
+  <object key="prioritySCH03" value="Приоритет" />
+  <object key="callOutStateSCH03" value="Состояние запроса" />
+  <object key="requestDateSCH03" value="Дата запроса" />
+  <object key="usernameSys03SCH03" value="Принял пользователь" />
+  <object key="descriptionSCH03" value="Описание запроса" />
+  <object key="companyCodeSys01SCH03" value="Компания" />
+  <object key="subject identification" value="Идентификатор субьекта" />
+  <object key="retrieve organization type subjects" value="Получить группу субьекта-организации" />
+  <object key="retrieve people type subjects" value="Получить группу субьекта-частного лица" />
+  <object key="organizations" value="Организации" />
+  <object key="people" value="Частные лица" />
+  <object key="reload non allowed" value="Возврат не допускается" />
+  <object key="subject type" value="Тип субьекта" />
+  <object key="call-out number" value="Номер поддержки" />
+  <object key="highest" value="Наивысший" />
+  <object key="high" value="Высокий" />
+  <object key="normal" value="Нормальный" />
+  <object key="low" value="Низкий" />
+  <object key="trivial" value="Обычный" />
+  <object key="callOutType" value="Тип поддержки" />
+  <object key="noteSCH03" value="Заметки" />
+  <object key="invoiced" value="Выставленный счет" />
+
+  <object key="activityTypeSCH06" value="Тип мероприятия" />
+  <object key="generic task" value="Общая задача" />
+  <object key="appointment" value="Назначить встречу" />
+  <object key="send email" value="Отправить эл.почту" />
+  <object key="send fax" value="Отправить факс" />
+  <object key="meeting" value="Встреча" />
+  <object key="telephone call" value="Телефонный разговор" />
+  <object key="telephone" value="Телефонный звонок" />
+  <object key="call-out" value="Претензия" />
+  <object key="absence" value="Неявка" />
+  <object key="holiday" value="Праздник" />
+  <object key="illness" value="Болезнь" />
+  <object key="activityStateSCH06" value="Состояние мероприятия" />
+  <object key="estimatedEndDateSCH06" value="Предполагаемая дата окончания" />
+  <object key="expirationDateSCH06" value="Срок сдачи" />
+  <object key="estimatedDurationSCH06" value="Предполагаемая продолжит. [мин.]" />
+  <object key="prioritySCH06" value="Приоритет" />
+  <object key="completionPercSCH06" value="Завершено %" />
+  <object key="activityPlaceSCH06" value="Место мероприятия" />
+  <object key="noteSCH06" value="Заметки" />
+  <object key="noteSCH07" value="Заметки" />
+  <object key="durationSCH07" value="Продолжительность [мин.]" />
+  <object key="startDateSCH07" value="Дата начала мероприятия" />
+  <object key="endDateSCH07" value="Дата завершения мероприятия" />
+  <object key="taskCodeReg07SCH07" value="Код должности" />
+  <object key="employeeCodeSch01SCH07" value="Код работника" />
+  <object key="machineryDescription" value="Описание оборудования" />
+  <object key="noteSCH09" value="Заметки" />
+  <object key="durationSCH09" value="Продолжительность [мин.]" />
+  <object key="startDateSCH09" value="Дата начала мероприятия" />
+  <object key="endDateSCH09" value="Дата завершения мероприятия" />
+  <object key="machineryCodePro03SCH09" value="Код оборудования" />
+  <object key="descriptionDOC14" value="Имя документа" />
+  <object key="itemCodeItm01SCH15" value="Код товара" />
+  <object key="qtySCH15" value="К-во товара" />
+  <object key="scheduled resources" value="Запланированные ресурсы" />
+  <object key="progressiveDoc14SCH08" value="Выбрать" />
+  <object key="attached documents" value="Документация" />
+  <object key="activity resources" value="Ресурсы мероприятия" />
+
+  <object key="finiteCapacityPRO03" value="Окончание лимита" />
+  <object key="companyCodeSys01PRO03" value="Код компании" />
+  <object key="machineryCodePRO03" value="Код оборудования" />
+  <object key="valuePRO03" value="Значение" />
+  <object key="currencyCodeReg03PRO03" value="Код валюты" />
+  <object key="durationPRO03" value="Продолжительность [мин.]" />
+
+  <object key="close activity" value="Закрытие мероприятия" />
+  <object key="confirm activity closing?" value="Подтверждаете закрытие мероприятия?" />
+  <object key="activity closing" value="Мероприятие закрыто" />
+  <object key="confirm call-out request closing?" value="Подтверждаете запрос поддержки?" />
+  <object key="call-out request" value="Запрос поддержки" />
+  <object key="create invoice" value="Создать счет" />
+  <object key="invoice creation" value="Создание счета" />
+  <object key="you must define the customer code" value="Вы должны указать код клиента" />
+  <object key="you must select a pricelist" value="Вы должны выбрать прайс лист" />
+  <object key="invoice from call-out request nr." value="Счет из запроса поддержки №" />
+  <object key="you must select a payment" value="Вы должны выбрать платеж" />
+  <object key="no price defined for the scheduled item" value="Цены не определены для запланированного пункта" />
+  <object key="no task defined for the scheduled employee" value="Нет должности, закрепленного за данным сотрудником" />
+  <object key="you must select all account codes" value="Вы должны выбрать все коды счетов" />
+  <object key="no sale activity code linked to the task" value="Нет кода мероприятия, связанного с данной должностью" />
+  <object key="you must select a warehouse" value="Вы должны выбрать склад" />
+  <object key="view invoice" value="Открыть счет" />
+
+  <object key="day appointments" value="Календарь" />
+  <object key="no employee code linked to the current user" value="Ни один код сотрудника не связан с текущим пользователем" />
+  <object key="appointments cannot be viewed" value="Запланированные задачи не доступны" />
+  <object key="absences" value="Отсутствия" />
+  <object key="find next appointment" value="Найти следующую запланированную задачу" />
+  <object key="find appointment" value="Поиск запланированной задачи" />
+  <object key="no appointment found" value="Запланированные задачи не найдены" />
+  <object key="gantt diagram" value="Диаграмма Ганта" />
+  <object key="employees having task" value="Сотрудники, имеющие рабочие задачи" />
+  <object key="gantt" value="Гант" />
+  <object key="reload data" value="Перезагрузить данные" />
+  <object key="you must specify both dates" value="Вы должны указать обе даты" />
+  <object key="fill in the whole day" value="Заполните весь день" />
+  <object key="remove all day appointments" value="Удалить все запланированные задачи дня" />
+  <object key="no working hours defined for this day" value="Нет работы, определенной на этот день" />
+  <object key="you must specify employee code" value="Вы должны указать код сотрудника" />
+
+  <object key="document types" value="Иерархия документов" />
+  <object key="document type" value="Тип документа" />
+  <object key="companyCodeSys01DOC16" value="Код компании" />
+  <object key="companyCodeSys01DOC14" value="Код компании" />
+  <object key="document detail" value="Реквизиты документа" />
+  <object key="document links" value="Ссылки документа" />
+  <object key="document versions" value="Версии документа" />
+  <object key="document properties" value="Параметры документа" />
+  <object key="documentType" value="Тип документа" />
+  <object key="you must attach a file" value="Вы должны присоединить файл" />
+  <object key="you are not allowed to delete all document versions" value="Вы не можете удалить все версии документа" />
+  <object key="you are not allowed to delete all document links" value="Вы не можете удалить все ссылки документа" />
+  <object key="you must select a tree level before inserting new document" value="Вы должны выбрать уровень дерева, прежде, чем вставлять документ" />
+  <object key="uploaded document" value="Загруженные документы" />
+  <object key="progressiveHie01DOC17" value="Уровень" />
+  <object key="createUsernameDOC15" value="Пользователь, загрузивший документ" />
+  <object key="createDateDOC15" value="Дата создания" />
+  <object key="versionDOC15" value="Версия документа" />
+  <object key="double click to open the document" value="Дважды щелкните, чтобы открыть документ" />
+  <object key="you must select a tree level before inserting new property" value="Вы должны выбрать уровень дерева, прежде, чем добавлять новые свойства" />
+  <object key="companyCodeSys01DOC21" value="Код компании" />
+  <object key="propertyTypeDOC21" value="Тип" />
+  <object key="properties" value="Параметры" />
+  <object key="documents filter" value="Фильтр по документам" />
+  <object key="docsPanel" value="Документация" />
+  <object key="progressiveDoc14ITM05" value="Выбрать" />
+
+  <object key="products" value="Продукция" />
+  <object key="billofmaterial" value="Спецификации" />
+  <object key="product detail" value="Продукция подробно" />
+  <object key="components" value="Компоненты" />
+  <object key="manufactures" value="Изделия" />
+  <object key="versionITM01" value="Версия" />
+  <object key="revisionITM01" value="Модификация" />
+  <object key="versionITM03" value="Версия" />
+  <object key="revisionITM03" value="Модификация" />
+  <object key="startDateITM01" value="Действительно с" />
+  <object key="startDateITM03" value="Действительно с" />
+  <object key="endDateITM03" value="Действительно по" />
+  <object key="itemType" value="Группа товара" />
+  <object key="manufactureCodePro01ITM01" value="Код производства" />
+  <object key="itemCodeItm01ITM03" value="Код товара" />
+  <object key="sequenceITM03" value="№" />
+  <object key="qtyITM03" value="К-во" />
+  <object key="itemDescription" value="Наименование товара" />
+  <object key="itemDescription2" value="Альтернативное наименование товара" />
+  <object key="substItemCodeItm01ITM03" value="Аналогичный товар" />
+  <object key="production cycles" value="Производственный цикл" />
+  <object key="you must define either a machinery or a duty" value="Вы должны определить либо оборудование либо должность." />
+  <object key="internal" value="Внутренний" />
+  <object key="external" value="Внешний" />
+  <object key="you must define the resources number" value="Вы должны определить количество ресурсов." />
+  <object key="qtyPRO02" value="№ ресурса" />
+  <object key="valuePRO02" value="Цена" />
+  <object key="durationPRO02" value="Продолжительность" />
+  <object key="phaseNumberPRO02" value="Фаза" />
+  <object key="manufactureTypePRO02" value="Тип операции" />
+  <object key="completionPercPRO02" value="Выполнено %" />
+  <object key="notePRO02" value="Примечание" />
+  <object key="taskCodeReg07PRO02" value="Код должности" />
+  <object key="taskDescriptionSYS10" value="Наименование должности" />
+  <object key="machineryDescriptionSYS10" value="Наименование оборудования" />
+  <object key="machineryCodePro03PRO02" value="Код оборудования" />
+  <object key="companyCodeSys01PRO01" value="Компания" />
+  <object key="description2" value="Аналог операции" />
+  <object key="operations" value="Операции" />
+  <object key="qtyPRO04" value="№ ресурса" />
+  <object key="valuePRO04" value="Цена" />
+  <object key="durationPRO04" value="Продолжительность" />
+  <object key="machineryCodePro03PRO04" value="Код оборудования" />
+  <object key="taskCodeReg07PRO04" value="Код должности" />
+  <object key="notePRO04" value="Примечание" />
+  <object key="companyCodeSys01PRO04" value="Компания" />
+  <object key="operationCodePro04PRO02" value="Код операции" />
+  <object key="operationCodePRO04" value="Код операции" />
+  <object key="currencyCodeReg03PRO01" value="Код валюты" />
+  <object key="manufactureCodePRO01" value="Код" />
+  <object key="completion % must be between 0 and 100" value="Степень завершения должна быть между 0 % и 100 %" />
+  <object key="specified item already defined as product" value="Указанный элемент уже определен как продукт" />
+  <object key="implosionPanel" value="Содержится в продуктах" />
+  <object key="explosionPanel" value="Содержит продукты" />
+  <object key="productInfo" value="Спецификации" />
+  <object key="totalCosts" value="Общая себестоимость" />
+  <object key="totalPrices" value="Общая цена" />
+  <object key="parentItemCodeItm01ITM03" value="Продукция" />
+  <object key="supplierDescription" value="Поставщик" />
+  <object key="pricelistCodePur03PUR04" value="Код прайс листа" />
+  <object key="purchase item prices" value="Закупочная цена товара" />
+  <object key="the selected item requires serial number definition: this kind of item is not allowed" value="Для выбранного товара требуется указание серийного номера: данная опция не допустима" />
+  <object key="a product cannot require serial number definition" value="Продукт не может требовать указания серийного номера" />
+
+  <object key="component is not available in the specified warehouse" value="Компонент не доступен на указанном складе" />
+  <object key="found" value="Найдено" />
+  <object key="required" value="Требуется" />
+  <object key="unload items from production order" value="Выгрузка комплектующих из производственного заказа" />
+  <object key="load items from production order" value="Загрузка комплектующих из производственного заказа" />
+  <object key="production orders" value="Производственные заказы" />
+  <object key="production order" value="Производственный заказ" />
+  <object key="descriptionWar01DOC22" value="Склад комплектующих" />
+  <object key="description2War01DOC22" value="Склад продукции" />
+  <object key="warehouseCodeWar01DOC22" value="Код склада комплектующих" />
+  <object key="warehouseCode2War01DOC22" value="Код склада продукции" />
+  <object key="docYearDOC22" value="Год" />
+  <object key="docSequenceDOC22" value="№ заказа" />
+  <object key="companyCodeSys01DOC22" value="Компания" />
+  <object key="docDateDOC22" value="Дата заказа" />
+  <object key="docStateDOC22" value="Состояние заказа" />
+  <object key="confirm production order?" value="Подтверждаете производственный заказ?" />
+  <object key="availableQty" value="Доступно к-во" />
+  <object key="qtyDOC24" value="Требуемое к-во" />
+  <object key="qtyDOC23" value="К-во" />
+  <object key="itemCodeItm01DOC23" value="Код товара" />
+  <object key="itemCodeItm01DOC24" value="Код компонента" />
+  <object key="progressiveHie01DOC23" value="Место хранения" />
+  <object key="progressiveHie02DOC23" value="Группа товара" />
+  <object key="headerFormPanel" value="Производственный заказ" />
+  <object key="order closing" value="Заказ закрыт" />
+  <object key="close production order?" value="Закрыть производственный заказ?" />
+  <object key="print bill of materials" value="Печать спецификации" />
+  <object key="alternativeComponents" value="Аналоги" />
+  <object key="you cannot define this item as a product because there are alternative components defined." value="Вы не можете выбрать данный товар в качестве продукта, поскольку аналоги уже определены." />
+  <object key="itemCodeItm01ITM04" value="Код аналога" />
+  <object key="you cannot set the current item as alternative component" value="Вы не можете использовать текущий товар в качестве аналога" />
+  <object key="you cannot set the current item as a product, because it has alternative components" value="Вы не можете выбрать данный товар в качестве продукта, поскольку он имеет аналогичные комплектующие." />
+
+  <object key="application functions" value="Формы приложения" />
+  <object key="new description:" value="Новое наименование:" />
+  <object key="change description" value="Изменить наименование" />
+  <object key="which operation?" value="Какие операции?" />
+  <object key="node dropped" value="Узел удален" />
+  <object key="move node" value="Переместить узел" />
+  <object key="copy node" value="Копировать узел" />
+
+  <object key="employees hierarchies" value="Иерархии сотрудников" />
+
+  <object key="sql" value="SQL консоль" />
+  <object key="entities" value="Список параметров" />
+  <object key="data" value="Данные" />
+  <object key="structure" value="Структура" />
+  <object key="tables" value="Таблицы" />
+  <object key="views" value="Представления" />
+  <object key="synonyms" value="Синонимы" />
+  <object key="sql tool" value="Инструментарий SQL" />
+  <object key="you must define a sql statement!" value="Вы должны определить выражение SQL!" />
+  <object key="rows affected." value="Строк возвращено" />
+  <object key="select has not been correctly parsed" value="Запрос не может быть корректно обработан" />
+  <object key="no pk defined: delete not allowed" value="Не определен первичный ключ: удаление не допускается" />
+  <object key="no pk defined: update not allowed" value="Не определен первичный ключ: изменение не допускается" />
+  <object key="columnNameWithoutTable" value="Имя поля" />
+  <object key="columnType" value="Тип поля" />
+  <object key="primaryKey" value="Первичный ключ" />
+  <object key="columnRequired" value="Обязательное" />
+
+  <object key="custom functions" value="Пользовательские формы" />
+  <object key="functionCodeSYS06" value="Код формы" />
+  <object key="functionCodeSys06SYS16" value="Код формы" />
+  <object key="custom function" value="Пользовательская форма" />
+  <object key="useCompanyCodeSYS06" value="Доступ на уровне компании" />
+  <object key="column properties" value="Свойства поля" />
+  <object key="tables to save" value="Таблицы для сохранения" />
+  <object key="columnNameSYS22" value="Имя поля" />
+  <object key="columnTypeSYS22" value="Тип" />
+  <object key="defaultValueTextSYS22" value="Текст по умолч." />
+  <object key="defaultValueNumSYS22" value="Число по умолч." />
+  <object key="defaultValueDateSYS22" value="Дата по умолч." />
+  <object key="columnVisibleSYS22" value="Видимый" />
+  <object key="autoLoadDataSYS16" value="Автозагрузка данных" />
+  <object key="select" value="SQL" />
+  <object key="enumeration" value="Перечисление" />
+  <object key="progressive" value="Счетчик" />
+  <object key="constraintValuesSYS22" value="Ограничение" />
+  <object key="show data" value="Показать данные" />
+  <object key="isParamSYS22" value="Параметр Where" />
+  <object key="isParamRequiredSYS22" value="Параметр обязателен в выражении Where" />
+  <object key="filter conditions" value="Условия фильтра" />
+  <object key="where param" value="Параметры выражения Where" />
+  <object key="variantsPanel" value="Свойства и подсвойства" />
+  <object key="variantType" value="Подсвойство" />
+  <object key="variantTypeDesc" value="Наименование подсвойства" />
+  <object key="variantCode" value="Свойство" />
+  <object key="variantDesc" value="Наименование свойства" />
+  <object key="variant types" value="Подсвойство" />
+  <object key="variant" value="Свойство" />
+  <object key="variants" value="Свойства" />
+  <object key="codeOrder" value="Порядок сортировки" />
+  <object key="filenameDOC14" value="Имя файла" />
+  <object key="barcode" value="Штрих-код" />
+  <object key="barcodes" value="Штрих-коды" />
+  <object key="serialNumbers" value="Серийные номера" />
+  <object key="subtotal" value="Пром. итог" />
+  <object key="discount" value="Скидка" />
+  <object key="payed" value="Оплата" />
+  <object key="change" value="Изменить" />
+  <object key="enter" value="Принять" />
+  <object key="cancel" value="Отмена" />
+  <object key="company selection" value="Выбор компании" />
+  <object key="you need to specifify the default customer for retail sale" value="Вы должны выбрать клиента по умолчанию для розничной продажи" />
+  <object key="you need to specifify the default warehouse for retail sale" value="Вы должны выбрать склад по умолчанию для розничной продажи" />
+  <object key="ESC back" value="ESC Назад" />
+  <object key="ESC back tooltip" value="Отмена текущей операции" />
+  <object key="1 remove" value="1 Удалить" />
+  <object key="1 remove tooltip" value="Удалить выбранную позицию" />
+  <object key="2 qty" value="2 К-во" />
+  <object key="2 qty tooltip" value="Изменить к-во" />
+  <object key="3 discount" value="3 Скидка на позицию" />
+  <object key="3 discount tooltip" value="Установить скидку для выбранной позиции" />
+  <object key="4 customer" value="4 Клиент" />
+  <object key="4 customer tooltip" value="Выбрать клиента" />
+  <object key="5 start" value="5 Открыть чек" />
+  <object key="5 start tooltip" value="Начать новую розничную продажу" />
+  <object key="6 close" value="6 Закрыть чек" />
+  <object key="6 close tooltip" value="Закрыть новую розничную продажу" />
+  <object key="7 exit" value="7 Выход" />
+  <object key="7 exit tooltip" value="Выйти из текущего окна" />
+  <object key="are you sure to quit" value="Вы действительно хотите закрыть окно?" />
+  <object key="quit window" value="Закрыть окно" />
+  <object key="point of sale" value="POS секция" />
+  <object key="barcodesPanel" value="Штрих-код" />
+  <object key="discountValue" value="Скидка" />
+  <object key="confirm sale closing" value="Подверждаете закрытие документа розницы?" />
+  <object key="sale closing" value="Документ розницы закрыт" />
+  <object key="customers that have bought these items also bought" value="Клиенты, купившие эти товары, также покупают" />
+  <object key="avg. purchase cost" value="Средняя цена закупки" />
+  <object key="last purchase cost" value="Последняя цена закупки" />
+  <object key="last purchase date" value="Последняя дата закупки" />
+  <object key="order tracking" value="Отслеживание заказа" />
+  <object key="docSequence" value="№ документа" />
+  <object key="customerSupplierCode" value="Код контрагента" />
+  <object key="docTypeDescr" value="Тип документа" />
+  <object key="barcode already assigned to another item" value="Штрих-код закреплен за другим товаром" />
+  <object key="print barcode labels" value="Печать этикеток" />
+  <object key="qty" value="К-во" />
+  <object key="set the same value when matching the same" value="Установить такое же значение во всех совпадениях" />
+  <object key="prices saved" value="Цены сохранены" />
+  <object key="it is not allowed to insert variants having different unit prices" value="Не допускается добавление вариантов, имеющих разную цену за единицу" />
+  <object key="supplierCustomerCodeDOC08" value="Код клиента/поставщика" />
+  <object key="Error while validating data:" value="Следующие элементы управления не действительны:" />
+  <object key="Validation Error" value="Данные не корректны" />
+  <object key="pivot table for sales" value="Сводная таблица продаж" />
+  <object key="sellAmount" value="Сумма" />
+  <object key="sellQty" value="К-во" />
+  <object key="data fields" value="Поля данных" />
+  <object key="row fields" value="Строка полей" />
+  <object key="column fields" value="Колонка полей" />
+  <object key="warehouseCodeWar01DOC01" value="Склад" />
+  <object key="year" value="Год" />
+  <object key="quarter" value="Квартал" />
+  <object key="pivot table settings" value="Настройки сводной таблицы" />
+  <object key="field" value="Поле" />
+  <object key="checked" value="Проверено" />
+  <object key="Error on reading data in input." value="Ошибка ввода данных." />
+  <object key="delivery request" value="Накладная на отгрузку" />
+  <object key="delivery requests" value="Накладные на отгрузку" />
+  <object key="deliveryDateDOC01" value="Дата доставки" />
+  <object key="delivery request rows" value="Строки накладной на отгрузку" />
+  <object key="delivreqnr" value="№ накладной на отгрузку" />
+  <object key="until date" value="До даты" />
+
+  <object key="translations" value="Переводы" />
+  <object key="item descriptions" value="Наименования товаров" />
+  <object key="item additional descriptions" value="Доп. наименования товаров" />
+  <object key="vat descriptions" value="Наименования налогов" />
+  <object key="topic" value="Группа" />
+  <object key="hierarchies names" value="Иерархии имен" />
+  <object key="hierarchy levels names" value="Иерархии имен уровней" />
+  <object key="variant names" value="Наименования свойств" />
+  <object key="variant type" value="Типы свойства" />
+  <object key="task descriptions" value="Наименования должностей" />
+  <object key="payment descriptions" value="Наименования оплат" />
+  <object key="payment type descriptions" value="Наименования способов платежа" />
+  <object key="pricelist descriptions" value="Наименования прайс листов" />
+  <object key="discount descriptions" value="Наименования скидок" />
+  <object key="charge descriptions" value="Наименования расходов" />
+  <object key="activity descriptions" value="Наименования мероприятий" />
+  <object key="role descriptions" value="Наименования ролей" />
+  <object key="function descriptions" value="Наименования форм" />
+  <object key="ledger descriptions" value="Наименования журналов учета" />
+  <object key="account descriptions" value="Наименования счетов" />
+  <object key="account motives" value="Наименования оснований учета" />
+
+  <object key="connected users" value="Поключенные пользователи" />
+
+  <object key="min stock" value="Минимальный остаток" />
+  <object key="items reorder" value="Повторный заказ товаров" />
+  <object key="minStockITM23" value="Мин. остатки" />
+  <object key="proposedQty" value="Предлагаемое к-во" />
+  <object key="pawnedQty" value="Заказываемое к-во" />
+  <object key="goodQty" value="Норм. кол-во" />
+  <object key="orderedQty" value="Ожидаемое кол-во" />
+  <object key="create orders" value="Создание заказов" />
+  <object key="orders created" value="Созданные заказы." />
+  <object key="you must select at least one row and a qty greater than zero" value="Вы должны выбрать хотя бы одну позицию с количеством больше нуля." />
+  <object key="order created using reorder functionality" value="Создания заказа при помощи функции повторного заказа" />
+
+  <object key="abc classification" value="ABC классификация" />
+  <object key="create abc" value="Создать ABC классификацию" />
+  <object key="invoiced" value="Востребованный" />
+  <object key="unsold" value="Залежавшийся" />
+  <object key="abc aa" value="высокий уровень запасов и высокий уровень продаж: эти товары могут лучше управляться на складе за счет снижения остатков" />
+  <object key="abc ac" value="высокий уровень запасов и низкий уровень продаж: этим товарам необходимо лучшее управление запасами за счет снижения остатков" />
+  <object key="abc ca" value="низкий уровень запасов и высокий уровень продаж: отличное управление запасами и изменения не нужны" />
+  <object key="abc cc" value="низкий уровень запасов и низкий уровень продаж: эти товары не являются важными и управление запасами можно не изменять" />
+  <object key="change min stocks" value="Изменение мин. запасов для выбранных товаров" />
+  <object key="perc1Invoiced" value="A часть востребованного: 0..%" />
+  <object key="perc2Invoiced" value="C часть востребованного: %..100%" />
+  <object key="perc1Unsold" value="A часть залежавшегося: 0..%" />
+  <object key="perc2Unsold" value="C часть залежавшегося: %..100%" />
+  <object key="abc" value="ABC" />
+  <object key="you have to select at least one row" value="Вы должны выбрать хотя бы одну строку" />
+  <object key="min stocks updated" value="Минимальные запасы обновлены." />
+  <object key="set qty to zero" value="Установить к-во в ноль" />
+  <object key="update completed" value="Обновление закончено" />
+
+  <object key="increment value in progr" value="Следующее значение в программе" />
+  <object key="initial value in progr" value="Начальное значение в программе" />
+  <object key="default company" value="Компания по умолчанию" />
+  <object key="etl processes" value="Импорт данных продолжается" />
+  <object key="etl process" value="Процесс импорта данных" />
+  <object key="scheduler settings" value="Настройки расписания" />
+  <object key="import settings" value="Импорт настроек" />
+  <object key="field.start" value="Старт" />
+  <object key="field.end" value="Конец" />
+  <object key="field.pos" value="Позиция" />
+  <object key="useVariant1ITM01" value="Использовать вариант 1" />
+  <object key="useVariant2ITM01" value="Использовать вариант 2" />
+  <object key="useVariant3ITM01" value="Использовать вариант 3" />
+  <object key="useVariant4ITM01" value="Использовать вариант 4" />
+  <object key="useVariant5ITM01" value="Использовать вариант 5" />
+  <object key="barcode type" value="Тип штрих-кода" />
+  <object key="minSellingUmCodeReg02ITM01" value="Е.И. мин. кол-ва в упаковке" />
+  <object key="grossWeightUmCodeReg02ITM01" value="Е.И. веса брутто" />
+  <object key="netWeightUmCodeReg02ITM01" value="Е.И. веса нетто" />
+  <object key="widthUmCodeReg02ITM01" value="Е.И. ширины" />
+  <object key="heightUmCodeReg02ITM01" value="Е.И. высоты" />
+  <object key="data import type" value="Импорт данных" />
+  <object key="file format" value="Формат файла" />
+  <object key="local file" value="Локальный файл" />
+  <object key="remote file" value="Удаленный файл" />
+  <object key="no scheduling" value="Нет заданий" />
+  <object key="each day" value="Каждый день" />
+  <object key="each week" value="Каждую неделю" />
+  <object key="start date" value="Начало дата/время" />
+  <object key="start process now" value="Начать процесс сейчас" />
+  <object key="File not exists" value="Файл не найден" />
+  <object key="file preview" value="Просмотр файла" />
+  <object key="field.dateFormatSYS24" value="Формат даты" />
+  <object key="execution time" value="Время выполнения" />
+  <object key="records read" value="Читать строки" />
+  <object key="records inserted" value="Вставить строки" />
+  <object key="records updated" value="Обновить строки" />
+  <object key="data import completed" value="Импорт данных завершен" />
+  <object key="levels separator" value="Разделитель уровней" />
+  <object key="companies permissions" value="Привилегии на компанию" />
+  <object key="columns permissions" value="Привилегии на колонку" />
+  <object key="editableInIns" value="Можно добавлять" />
+  <object key="editableInEdit" value="Можно редактировать" />
+  <object key="colRequired" value="Обязательное" />
+  <object key="colVisibile" value="Видимое" />
+
+  <object key="import prices" value="Импорт прайс листов" />
+  <object key="for supplier" value="для поставщиков" />
+  <object key="in pricelist" value="в прайс листе" />
+  <object key="import sale prices" value="Импорт прайс листов реализации" />
+  <object key="treePosition" value="Позиция меню" />
+  <object key="inventories list" value="Список инвертаризаций" />
+
+  <object key="stateWAR06" value="Состояние" />
+  <object key="descriptionWAR06" value="Инвентаризация" />
+  <object key="startDateWAR06" value="Дата начала" />
+  <object key="endDateWAR06" value="Дата окончания" />
+  <object key="an inventory is in progress" value="Расчет инвентаризации продолжается" />
+  <object key="negdamaged" value="Списание брака по итогам инвентаризации" />
+  <object key="posdamaged" value="Приходование брака по итогам инвентаризации" />
+  <object key="neggood" value="Списание товара по итогам инвентаризации" />
+  <object key="posgood" value="Приходование товара по итогам инвентаризации" />
+  <object key="inventory" value="Наименование позиций инвентаризации" />
+  <object key="import items" value="Импорт позиций" />
+  <object key="import items that match the filtering conditions" value="Импорт позиций, соответствующих условиям фильтрации" />
+  <object key="confirm inventory" value="Подтвердите позиции инвентаризации" />
+  <object key="close inventory" value="Закрытие инвентаризации" />
+  <object key="stateWAR07" value="Состояние" />
+  <object key="itemCodeItm01WAR07" value="Код товара" />
+  <object key="progressiveHie02WAR07" value="Группа товара" />
+  <object key="progressiveHie01WAR07" value="Место хранения" />
+  <object key="realProgressiveHie01WAR07" value="Фактическое место хранения" />
+  <object key="qtyWAR07" value="К-во" />
+  <object key="realQtyWAR07" value="Фактическое к-во" />
+  <object key="deltaQtyWAR07" value="Разница к-во" />
+  <object key="items to include in inventory" value="Позиции для включения в инвентаризацию" />
+  <object key="an import in inventory is already in progress" value="Импорт инвентаризации продолжается" />
+  <object key="movement motive related to inventory correction not found" value="Основание на перемещение, связанное с инвентаризационной коррекцией не найдено" />
+  <object key="cannot confirm the inventory" value="Не возможно подтвердить инвентаризацию" />
+  <object key="internal error on calculating progressive in WAR02" value="Внутренняя ошибка при вычислении последовательности в WAR02" />
+  <object key="items confirmed" value="Позиции подтверждены" />
+  <object key="items confirmation completed" value="Подтверждение позиций завершено" />
+  <object key="inventory closed" value="Инвентаризация закрыта" />
+  <object key="items import completed" value="Импорт позиций завершен" />
+  <object key="months" value="месяцев" />
+  <object key="month" value="Месяц" />
+  <object key="days" value="дней" />
+  <object key="sales graph" value="График продаж" />
+  <object key="nr" value="№" />
+
+   <object key="no warehouse movements" value="Складские операции запрещены" />
+
+  <object key="cannot delete sheet: it is currently referenced by another sheet" value="Не возможно удалить узел: на него ссылается другой узел" />
+  <object key="cannot delete sheet: it is currently referenced in an item" value="Не возможно удалить узел: на него ссылается товарная позиция" />
+  <object key="item spare parts" value="Запасные части" />
+  <object key="image" value="Фото" />
+  <object key="item models" value="Модели" />
+  <object key="sheetCodeITM25" value="Код узла" />
+  <object key="sheets" value="Узлы" />
+  <object key="spare parts catalogue" value="Каталог запасных частей" />
+  <object key="start region" value="Задать область" />
+  <object key="clear region" value="Очистить область" />
+  <object key="save region" value="Сохранить область" />
+  <object key="cannot delete levels: there are sheets having these levels" value="Не возможно удалить уровни: на данных уровнях имеются узлы" />
+  <object key="cannot insert levels: there are sheets binded to spare parts" value="Не возможно добавить уровни: имеются узлы, содержащие запасные части" />
+  <object key="levelITM29" value="Уровень" />
+  <object key="spare parts sheets levels" value="Уровни деталировки" />
+  <object key="spare parts sheets for level" value="Уровень деталировки" />
+  <object key="imageITM05" value="Схема" />
+  <object key="item model" value="Модель" />
+  <object key="itemCodeItm01ITM28" value="Код запасной части" />
+  <object key="path" value="Путь" />
+  <object key="spare parts" value="Запасные части" />
+  <object key="manual doc num in sale docs" value="Разрешить изменение номера в расходных документах" />
+
+  <object key="show purchased items" value="Показать закупленные товары" />
+  <object key="show only spare parts" value="Показать только запасные части" />
+  <object key="sale date" value="Дата продажи" />
+  <object key="item sold on" value="Товары продаются на" />
+  <object key="total amount must not be zero" value="Общая сумма не должна равняться нулю!" />
+  <object key="is an ancestor of the current item" value="предок текущего элемента" />
+  <object key="only an immediate payment is allowed" value="Допускается только немедленная оплата" />
+  <object key="payedDateDOC19" value="Дата оплаты" />
+  <object key="payedValueDOC19" value="Сумма оплаты" />
+  <object key="realPaymentTypeCodeReg11DOC19" value="Код факт. типа оплаты" />
+  <object key="realPaymentDescriptionSYS10" value="Фактический тип оплаты" />
+  <object key="create payment immediately" value="Создать платеж сейчас?" />
+  <object key="you need to specify a rounding account code" value="Вам необходимо указать код счета округления" />
+  <object key="roundingAccountCode" value="Код счета округления" />
+  <object key="roundingDescription" value="Счет округления" />
+  <object key="rounding costs account code" value="Код счета округления расходов" />
+  <object key="rounding proceeds account code" value="Код счета округления выручки" />
+  <object key="" value="" />
+  <object key="" value="" />
+  <object key="" value="" />
+
+  <object key="already payed" value="Already payed" />
+  <object key="payment date" value="Payment date" />
+  <object key="account description" value="Account description" />
+  <object key="exp" value="Exp." />
+  <object key="you need to specify at least one expiration" value="You need to specify at least one expiration" />
+  <object key="expirations must have a payment value" value="Expirations must have a payment value" />
+  <object key="payments specified for expirations are not equal to the total payment value" value="Payments specified for expirations are not equal to the total payment value" />
+  <object key="you need to specify a pricelist for the default customer" value="You need to specify a pricelist for the default customer" />
+  <object key="reports repository path" value="Reports repository path" />
+  <object key="print invoices" value="Print invoices" />
+
+  <object key="brands" value="Brands" />
+  <object key="brand code" value="Brand code" />
+  <object key="ec customer" value="eCommerce Customer" />
+  <object key="ec warehouse" value="eCommerce Warehouse" />  
+  <object key="datetime" value="Date+Time"/>
+  <object key="decimal" value="Decimal"/>
+  <object key="item characteristics in ECommerce" value="Item characteristics in eCommerce"/>
+  <object key="fieldTypeITM32" value="Type"/>
+  <object key="selectedITM32" value="Sel."/>
+  <object key="posTM32" value="Position"/>
+  <object key="images per variant" value="Images per variant"/>
+  <object key="lastVariantDescription" value="Variant"/>
+  <object key="smallImage" value="Small Image"/>
+  <object key="largeImage" value="Large Image"/>
+  <object key="company logo" value="Company logo"/>
+  <object key="ec expense" value="eCommerce Expense"/>
+  <object key="hierarTreePanel" value="Hierarchy levels"/>
+  <object key="itemFieldsPanel" value="Fields per level"/>
+  <object key="set image" value="Set image"/>
+
+  <currencySymbol>р</currencySymbol>
+  <decimalSymbol>,</decimalSymbol>
+  <groupingSymbol> </groupingSymbol>
+  <dateFormat>DMY</dateFormat>
+  <showCenturyInDateFormat>false</showCenturyInDateFormat>
+  <dateFormatSeparator>.</dateFormatSeparator>
+  <timeFormat>h:mm aaa</timeFormat>
+
+</objects>

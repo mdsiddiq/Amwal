@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rule-execution-set>
+  <name>Custmization rules</name>
+  <description>Rule Execution Set that customize JAllInOne behaviour</description>
+
+  <synonymn name="event" class="org.jallinone.events.server.GenericEvent" />
+  <synonymn name="eventsManager" class="org.jallinone.events.server.EventsManager" />
+
+<!--
+  <rule name="Rule1" description="Example1" >
+    <if leftTerm="event.getRequestName" op="=" rightTerm="updateAccountingMotives" />
+    <then method="event.setErrorMessage" arg1="This is an example" />
+  </rule>
+-->
+
+</rule-execution-set>

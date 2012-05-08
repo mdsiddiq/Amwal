@@ -1,0 +1,843 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:aop="http://www.springframework.org/schema/aop"
+    xmlns:tx="http://www.springframework.org/schema/tx"
+    xsi:schemaLocation="
+    http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd
+    http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.0.xsd
+    http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.0.xsd">
+
+   <bean id="JALLINONE" class="org.enhydra.jdbc.standard.StandardDataSource" destroy-method="shutdown" >
+     <property name="driverName" value="com.mysql.jdbc.Driver"/>
+     <property name="url" value="jdbc:mysql://localhost:3306/j"/>
+     <property name="user" value="j"/>
+     <property name="password" value="j"/>
+   </bean>
+
+   <bean id="AccountingMotivesBean" scope="prototype" class="org.jallinone.accounting.accountingmotives.server.AccountingMotivesBean" >
+     <property name="dataSource" ref="JALLINONE" />
+   </bean>
+   <bean id="ItemVariantImagesBean" scope="prototype" class="org.jallinone.items.server.ItemVariantImagesBean" >
+     <property name="dataSource" ref="JALLINONE" />
+   </bean>
+   <bean id="ItemFieldsBean" scope="prototype" class="org.jallinone.items.server.ItemFieldsBean" >
+     <property name="dataSource" ref="JALLINONE" />
+   </bean>
+   <bean id="BrandsBean" scope="prototype" class="org.jallinone.items.server.BrandsBean" >
+     <property name="dataSource" ref="JALLINONE" />
+   </bean>
+   <bean id="AccountsBean" scope="prototype" class="org.jallinone.accounting.accounts.server.AccountsBean">
+     <property name="dataSource" ref="JALLINONE" />
+   </bean>
+   <bean id="LedgerServicesBean" scope="prototype" class="org.jallinone.accounting.ledger.server.LedgerServicesBean">
+     <property name="dataSource" ref="JALLINONE" />
+   </bean>
+   <bean id="InsertJournalItemBean" scope="prototype" class="org.jallinone.accounting.movements.server.InsertJournalItemBean">
+     <property name="dataSource" ref="JALLINONE" />
+   </bean>
+   <bean id="AccountingMovementsBean" scope="prototype" class="org.jallinone.accounting.movements.server.AccountingMovementsBean">
+     <property name="dataSource" ref="JALLINONE"  />
+     <property name="bean" ref="InsertJournalItemBean"  />
+   </bean>
+   <bean id="VatRegistersBean" scope="prototype" class="org.jallinone.accounting.vatregisters.server.VatRegistersBean">
+     <property name="dataSource" ref="JALLINONE" />
+     <property name="bean" ref="InsertJournalItemBean" />
+     <property name="userParamAction" ref="ParamsBean" />
+   </bean>
+   <bean id="ContactBean" scope="prototype" class="org.jallinone.contacts.server.ContactBean">
+     <property name="dataSource" ref="JALLINONE" />
+   </bean>
+   <bean id="ContactsBean" scope="prototype" class="org.jallinone.contacts.server.ContactsBean">
+     <property name="dataSource" ref="JALLINONE" />
+     <property name="peopleBean" ref="PeopleBean" />
+     <property name="organizationBean" ref="OrganizationBean" />
+     <property name="bean" ref="ContactBean" />
+   </bean>
+   <bean id="LoadDocumentLinksBean" scope="prototype" class="org.jallinone.documents.server.LoadDocumentLinksBean">
+     <property name="dataSource" ref="JALLINONE" />
+   </bean>
+   <bean id="InsertDocumentLinkBean" scope="prototype" class="org.jallinone.documents.server.InsertDocumentLinkBean">
+     <property name="dataSource" ref="JALLINONE" />
+   </bean>
+   <bean id="DocumentsBean" scope="prototype" class="org.jallinone.documents.server.DocumentsBean">
+     <property name="dataSource" ref="JALLINONE" />
+     <property name="bean" ref="LoadDocumentLinksBean" />
+     <property name="insertDocumentLinkBean" ref="InsertDocumentLinkBean" />
+   </bean>
+   <bean id="DocumentTypesBean" scope="prototype" class="org.jallinone.documents.server.DocumentTypesBean">
+     <property name="dataSource" ref="JALLINONE" />
+   </bean>
+   <bean id="InsertEmployeeCalendarsBean" scope="prototype" class="org.jallinone.employees.server.InsertEmployeeCalendarsBean">
+     <property name="dataSource" ref="JALLINONE" />
+   </bean>
+   <bean id="EmployeesBean" scope="prototype" class="org.jallinone.employees.server.EmployeesBean">
+     <property name="dataSource" ref="JALLINONE" />
+     <property name="loadPars" ref="ParamsBean" />
+     <property name="bean" ref="PeopleBean" />
+     <property name="calbean" ref="InsertEmployeeCalendarsBean" />
+   </bean>
+   <bean id="LoadExpirationsBean" scope="prototype" class="org.jallinone.expirations.server.LoadExpirationsBean">
+     <property name="dataSource" ref="JALLINONE" />
+     <property name="currAction" ref="CurrenciesBean" />
+   </bean>
+   <bean id="UpdateExpirationsBean" scope="prototype" class="org.jallinone.expirations.server.UpdateExpirationsBean">
+     <property name="dataSource" ref="JALLINONE" />
+     <property name="insJornalItemAction" ref="InsertJournalItemBean" />
+     <property name="userParamAction" ref="ParamsBean" />
+   </bean>
+   <bean id="CompanyHierarchiesBean" scope="prototype" class="org.jallinone.hierarchies.server.CompanyHierarchiesBean">
+     <property name="dataSource" ref="JALLINONE" />
+   </bean>
+   <bean id="HierarchiesBean" scope="prototype" class="org.jallinone.hierarchies.server.HierarchiesBean">
+     <property name="dataSource" ref="JALLINONE" />
+   </bean>
+   <bean id="CreateBarcodeLabelsDataBean" scope="prototype" class="org.jallinone.items.server.CreateBarcodeLabelsDataBean">
+     <property name="dataSource" ref="JALLINONE" />
+     <property name="bean" ref="LoadItemBean" />
+   </bean>
+   <bean id="DeleteBarcodeLabelsDataBean" scope="prototype" class="org.jallinone.items.server.DeleteBarcodeLabelsDataBean">
+     <property name="dataSource" ref="JALLINONE" />
+   </bean>
+   <bean id="DeleteItemAttachedDocsBean" scope="prototype" class="org.jallinone.items.server.DeleteItemAttachedDocsBean">
+     <property name="dataSource" ref="JALLINONE" />
+   </bean>
+   <bean id="DeleteItemsBean" scope="prototype" class="org.jallinone.items.server.DeleteItemsBean">
+     <property name="dataSource" ref="JALLINONE" />
+   </bean>
+   <bean id="DeleteItemTypeBean" scope="prototype" class="org.jallinone.items.server.DeleteItemTypeBean">
+     <property name="dataSource" ref="JALLINONE" />
+   </bean>
+   <bean id="InsertItemBean" scope="prototype" class="org.jallinone.items.server.InsertItemBean">
+     <property name="dataSource" ref="JALLINONE" />
+   </bean>
+   <bean id="InsertItemAttachedDocsBean" scope="prototype" class="org.jallinone.items.server.InsertItemAttachedDocsBean">
+     <property name="dataSource" ref="JALLINONE" />
+   </bean>
+   <bean id="InsertItemTypeBean" scope="prototype" class="org.jallinone.items.server.InsertItemTypeBean">
+     <property name="dataSource" ref="JALLINONE" />
+   </bean>
+   <bean id="LoadItemBean" scope="prototype" class="org.jallinone.items.server.LoadItemBean">
+     <property name="dataSource" ref="JALLINONE" />
+   </bean>
+   <bean id="LoadItemAttachedDocsBean" scope="prototype" class="org.jallinone.items.server.LoadItemAttachedDocsBean">
+     <property name="dataSource" ref="JALLINONE" />
+   </bean>
+   <bean id="LoadItemsBean" scope="prototype" class="org.jallinone.items.server.LoadItemsBean">
+     <property name="dataSource" ref="JALLINONE" />
+   </bean>
+   <bean id="LoadItemTypesBean" scope="prototype" class="org.jallinone.items.server.LoadItemTypesBean">
+     <property name="dataSource" ref="JALLINONE" />
+   </bean>
+   <bean id="LoadItemVariantsBean" scope="prototype" class="org.jallinone.items.server.LoadItemVariantsBean">
+     <property name="dataSource" ref="JALLINONE" />
+   </bean>
+   <bean id="LoadVariantBarcodesBean" scope="prototype" class="org.jallinone.items.server.LoadVariantBarcodesBean">
+     <property name="dataSource" ref="JALLINONE" />
+   </bean>
+   <bean id="LoadVariantMinStocksBean" scope="prototype" class="org.jallinone.items.server.LoadVariantMinStocksBean">
+     <property name="dataSource" ref="JALLINONE" />
+   </bean>
+   <bean id="UpdateItemBean" scope="prototype" class="org.jallinone.items.server.UpdateItemBean">
+     <property name="dataSource" ref="JALLINONE" />
+   </bean>
+   <bean id="UpdateItemTypesBean" scope="prototype" class="org.jallinone.items.server.UpdateItemTypesBean">
+     <property name="dataSource" ref="JALLINONE" />
+   </bean>
+   <bean id="UpdateItemVariantsBean" scope="prototype" class="org.jallinone.items.server.UpdateItemVariantsBean">
+     <property name="dataSource" ref="JALLINONE" />
+     <property name="bean" ref="UpdateVariantBarcodesBean" />
+     <property name="matrixBean" ref="LoadProductVariantsMatrixBean" />
+     <property name="itemBean" ref="LoadItemBean" />
+   </bean>
+   <bean id="LoadProductVariantsMatrixBean" scope="prototype" class="org.jallinone.variants.server.LoadProductVariantsMatrixBean">
+     <property name="dataSource" ref="JALLINONE" />
+     <property name="bean" ref="LoadItemVariantsBean" />
+   </bean>
+   <bean id="UpdateMinStocksBean" scope="prototype" class="org.jallinone.items.server.UpdateMinStocksBean">
+     <property name="dataSource" ref="JALLINONE" />
+   </bean>
+   <bean id="UpdateVariantBarcodesBean" scope="prototype" class="org.jallinone.items.server.UpdateVariantBarcodesBean">
+     <property name="dataSource" ref="JALLINONE" />
+   </bean>
+   <bean id="UpdateVariantMinStocksBean" scope="prototype" class="org.jallinone.items.server.UpdateVariantMinStocksBean">
+     <property name="dataSource" ref="JALLINONE" />
+   </bean>
+   <bean id="ValidateItemCodeBean" scope="prototype" class="org.jallinone.items.server.ValidateItemCodeBean">
+     <property name="dataSource" ref="JALLINONE" />
+   </bean>
+   <bean id="ValidateVariantBarcodeBean" scope="prototype" class="org.jallinone.items.server.ValidateVariantBarcodeBean">
+     <property name="dataSource" ref="JALLINONE" />
+   </bean>
+   <bean id="LoadOrderTrackingBean" scope="prototype" class="org.jallinone.ordertracking.server.LoadOrderTrackingBean">
+     <property name="dataSource" ref="JALLINONE" />
+   </bean>
+   <bean id="BillOfMaterialsBean" scope="prototype" class="org.jallinone.production.billsofmaterial.server.BillOfMaterialsBean">
+     <property name="dataSource" ref="JALLINONE" />
+     <property name="compCurr" ref="CurrenciesBean" />
+   </bean>
+   <bean id="MachineriesBean" scope="prototype" class="org.jallinone.production.machineries.server.MachineriesBean">
+     <property name="dataSource" ref="JALLINONE" />
+   </bean>
+   <bean id="ManufacturePhasesBean" scope="prototype" class="org.jallinone.production.manufactures.server.ManufacturePhasesBean">
+     <property name="dataSource" ref="JALLINONE" />
+   </bean>
+   <bean id="OperationsBean" scope="prototype" class="org.jallinone.production.manufactures.server.OperationsBean">
+     <property name="dataSource" ref="JALLINONE" />
+   </bean>
+   <bean id="ManufacturesBean" scope="prototype" class="org.jallinone.production.manufactures.server.ManufacturesBean">
+     <property name="dataSource" ref="JALLINONE" />
+   </bean>
+   <bean id="ProdOrdersBean" scope="prototype" class="org.jallinone.production.orders.server.ProdOrdersBean">
+     <property name="dataSource" ref="JALLINONE" />
+     <property name="rowsAction" ref="ProdOrderProductsBean" />
+     <property name="mov" ref="AddMovementBean" />
+     <property name="check" ref="CheckComponentsAvailabilityBean" />
+     <property name="bill" ref="BillOfMaterialsBean" />
+     <property name="item" ref="LoadItemBean" />
+     <property name="ops" ref="ManufacturePhasesBean" />
+     <property name="conv" ref="MeasuresBean" />
+     <property name="compCurr" ref="CurrenciesBean" />
+   </bean>
+   <bean id="CheckComponentsAvailabilityBean" scope="prototype" class="org.jallinone.production.orders.server.CheckComponentsAvailabilityBean">
+     <property name="dataSource" ref="JALLINONE" />
+     <property name="bean" ref="BillOfMaterialsBean" />
+     <property name="avail" ref="ItemAvailabilitiesBean" />
+     <property name="conv" ref="MeasuresBean" />
+     <property name="compCurr" ref="CurrenciesBean" />
+   </bean>
+   <bean id="ProdOrderProductsBean" scope="prototype" class="org.jallinone.production.orders.server.ProdOrderProductsBean">
+     <property name="dataSource" ref="JALLINONE" />
+   </bean>
+   <bean id="ClosePurchaseDocBean" scope="prototype" class="org.jallinone.purchases.documents.server.ClosePurchaseDocBean">
+     <property name="dataSource" ref="JALLINONE" />
+     <property name="rowsAction" ref="LoadPurchaseDocRowsBean" />
+     <property name="docAction" ref="LoadPurchaseDocBean" />
+     <property name="movBean" ref="ManualMovementsBean" />
+     <property name="rowAction" ref="LoadPurchaseDocRowBean" />
+     <property name="payAction" ref="PaymentsBean" />
+     <property name="insJornalItemAction" ref="InsertJournalItemBean" />
+     <property name="taxableIncomeAction" ref="PurchaseDocTaxableIncomesBean" />
+     <property name="vatRegisterAction" ref="AccountingMovementsBean" />
+     <property name="userParamAction" ref="ParamsBean" />
+   </bean>
+   <bean id="ConfirmPurchaseOrderBean" scope="prototype" class="org.jallinone.purchases.documents.server.ConfirmPurchaseOrderBean">
+     <property name="dataSource" ref="JALLINONE" />
+   </bean>
+   <bean id="CreateBarcodeLabelsDataFromPurchaseDocBean" scope="prototype" class="org.jallinone.purchases.documents.server.CreateBarcodeLabelsDataFromPurchaseDocBean">
+     <property name="dataSource" ref="JALLINONE" />
+     <property name="action" ref="LoadPurchaseDocRowsBean" />
+   </bean>
+   <bean id="CreateInvoiceFromInDelivNotesBean" scope="prototype" class="org.jallinone.purchases.documents.server.CreateInvoiceFromInDelivNotesBean">
+     <property name="dataSource" ref="JALLINONE" />
+     <property name="rowsAction" ref="LoadPurchaseDocRowsBean" />
+     <property name="docAction" ref="LoadPurchaseDocBean" />
+     <property name="rowAction" ref="LoadPurchaseDocRowBean" />
+     <property name="insDocAction" ref="InsertPurchaseDocBean" />
+     <property name="insRowAction" ref="InsertPurchaseDocRowBean" />
+     <property name="custAction" ref="SuppliersBean" />
+   </bean>
+   <bean id="CreateInvoiceFromPurchaseDocBean" scope="prototype" class="org.jallinone.purchases.documents.server.CreateInvoiceFromPurchaseDocBean">
+     <property name="dataSource" ref="JALLINONE" />
+     <property name="rowsAction" ref="LoadPurchaseDocRowsBean" />
+     <property name="docAction" ref="LoadPurchaseDocBean" />
+     <property name="rowAction" ref="LoadPurchaseDocRowBean" />
+     <property name="insDocAction" ref="InsertPurchaseDocBean" />
+     <property name="insRowAction" ref="InsertPurchaseDocRowBean" />
+     <property name="custAction" ref="SuppliersBean" />
+   </bean>
+   <bean id="CreatePurchaseOrdersBean" scope="prototype" class="org.jallinone.purchases.documents.server.CreatePurchaseOrdersBean">
+     <property name="dataSource" ref="JALLINONE" />
+     <property name="bean" ref="InsertPurchaseDocBean" />
+     <property name="rowbean" ref="InsertPurchaseDocRowBean" />
+   </bean>
+   <bean id="DeletePurchaseDocRowsBean" scope="prototype" class="org.jallinone.purchases.documents.server.DeletePurchaseDocRowsBean">
+     <property name="dataSource" ref="JALLINONE" />
+     <property name="totalBean" ref="PurchaseDocTotalsBean" />
+     <property name="docBean" ref="LoadPurchaseDocBean" />
+   </bean>
+   <bean id="DeletePurchaseDocsBean" scope="prototype" class="org.jallinone.purchases.documents.server.DeletePurchaseDocsBean">
+     <property name="dataSource" ref="JALLINONE" />
+   </bean>
+   <bean id="InsertPurchaseDocBean" scope="prototype" class="org.jallinone.purchases.documents.server.InsertPurchaseDocBean">
+     <property name="dataSource" ref="JALLINONE" />
+     <property name="payBean" ref="PaymentsBean" />
+     <property name="currBean" ref="CurrenciesBean" />
+   </bean>
+   <bean id="InsertPurchaseDocRowBean" scope="prototype" class="org.jallinone.purchases.documents.server.InsertPurchaseDocRowBean">
+     <property name="dataSource" ref="JALLINONE" />
+     <property name="totalBean" ref="PurchaseDocTotalsBean" />
+     <property name="docBean" ref="LoadPurchaseDocBean" />
+   </bean>
+   <bean id="InsertPurchaseDocRowsBean" scope="prototype" class="org.jallinone.purchases.documents.server.InsertPurchaseDocRowsBean">
+     <property name="dataSource" ref="JALLINONE" />
+     <property name="totalBean" ref="PurchaseDocTotalsBean" />
+     <property name="docBean" ref="LoadPurchaseDocBean" />
+   </bean>
+   <bean id="LoadInDeliveryNotesForPurchaseDocBean" scope="prototype" class="org.jallinone.purchases.documents.server.LoadInDeliveryNotesForPurchaseDocBean">
+     <property name="dataSource" ref="JALLINONE" />
+   </bean>
+   <bean id="LoadPurchaseDocBean" scope="prototype" class="org.jallinone.purchases.documents.server.LoadPurchaseDocBean">
+     <property name="dataSource" ref="JALLINONE" />
+   </bean>
+   <bean id="LoadPurchaseDocAndDelivNoteRowsBean" scope="prototype" class="org.jallinone.purchases.documents.server.LoadPurchaseDocAndDelivNoteRowsBean">
+     <property name="dataSource" ref="JALLINONE" />
+     <property name="convBean" ref="MeasuresBean" />
+   </bean>
+   <bean id="LoadPurchaseDocRowBean" scope="prototype" class="org.jallinone.purchases.documents.server.LoadPurchaseDocRowBean">
+     <property name="dataSource" ref="JALLINONE" />
+   </bean>
+   <bean id="LoadPurchaseDocRowsBean" scope="prototype" class="org.jallinone.purchases.documents.server.LoadPurchaseDocRowsBean">
+     <property name="dataSource" ref="JALLINONE" />
+   </bean>
+   <bean id="LoadPurchaseDocsBean" scope="prototype" class="org.jallinone.purchases.documents.server.LoadPurchaseDocsBean">
+     <property name="dataSource" ref="JALLINONE" />
+   </bean>
+   <bean id="LoadPurchaseDocVariantsRowBean" scope="prototype" class="org.jallinone.purchases.documents.server.LoadPurchaseDocVariantsRowBean">
+     <property name="dataSource" ref="JALLINONE" />
+   </bean>
+   <bean id="LoadSupplierPriceItemsBean" scope="prototype" class="org.jallinone.purchases.documents.server.LoadSupplierPriceItemsBean">
+     <property name="dataSource" ref="JALLINONE" />
+   </bean>
+   <bean id="PurchaseDocTotalsBean" scope="prototype" class="org.jallinone.purchases.documents.server.PurchaseDocTotalsBean">
+     <property name="dataSource" ref="JALLINONE" />
+   </bean>
+   <bean id="ReorderFromMinStocksBean" scope="prototype" class="org.jallinone.purchases.documents.server.ReorderFromMinStocksBean">
+     <property name="dataSource" ref="JALLINONE" />
+   </bean>
+   <bean id="UpdatePurchaseDocBean" scope="prototype" class="org.jallinone.purchases.documents.server.UpdatePurchaseDocBean">
+     <property name="dataSource" ref="JALLINONE" />
+     <property name="payBean" ref="PaymentsBean" />
+     <property name="currBean" ref="CurrenciesBean" />
+     <property name="totalBean" ref="PurchaseDocTotalsBean" />
+   </bean>
+   <bean id="UpdatePurchaseDocRowBean" scope="prototype" class="org.jallinone.purchases.documents.server.UpdatePurchaseDocRowBean">
+     <property name="dataSource" ref="JALLINONE" />
+     <property name="totalBean" ref="PurchaseDocTotalsBean" />
+     <property name="docBean" ref="LoadPurchaseDocBean" />
+   </bean>
+   <bean id="ValidatePurchaseDocNumberBean" scope="prototype" class="org.jallinone.purchases.documents.server.ValidatePurchaseDocNumberBean">
+     <property name="dataSource" ref="JALLINONE" />
+   </bean>
+   <bean id="ValidateSupplierPriceItemCodeBean" scope="prototype" class="org.jallinone.purchases.documents.server.ValidateSupplierPriceItemCodeBean">
+     <property name="dataSource" ref="JALLINONE" />
+   </bean>
+   <bean id="DeleteABCBean" scope="prototype" class="org.jallinone.purchases.items.server.DeleteABCBean">
+     <property name="dataSource" ref="JALLINONE" />
+   </bean>
+   <bean id="ABCServiceBean" scope="prototype" class="org.jallinone.purchases.items.server.ABCServiceBean">
+     <property name="dataSource" ref="JALLINONE" />
+     <property name="bean" ref="DeleteABCBean" />
+   </bean>
+   <bean id="SupplierItemsBean" scope="prototype" class="org.jallinone.purchases.items.server.SupplierItemsBean">
+     <property name="dataSource" ref="JALLINONE" />
+     <property name="convBean" ref="MeasuresBean" />
+   </bean>
+   <bean id="SupplierPricelistsBean" scope="prototype" class="org.jallinone.purchases.pricelist.server.SupplierPricelistsBean">
+     <property name="dataSource" ref="JALLINONE" />
+   </bean>
+   <bean id="SupplierPricesBean" scope="prototype" class="org.jallinone.purchases.pricelist.server.SupplierPricesBean">
+     <property name="dataSource" ref="JALLINONE" />
+     <property name="insItem" ref="SupplierItemsBean" />
+     <property name="loadItem" ref="LoadItemBean" />
+   </bean>
+   <bean id="SuppliersBean" scope="prototype" class="org.jallinone.purchases.suppliers.server.SuppliersBean">
+     <property name="dataSource" ref="JALLINONE" />
+     <property name="organizationBean" ref="OrganizationBean" />
+     <property name="accountAction" ref="AccountsBean" />
+   </bean>
+   <bean id="BanksBean" scope="prototype" class="org.jallinone.registers.bank.server.BanksBean">
+     <property name="dataSource" ref="JALLINONE" />
+   </bean>
+   <bean id="CarriersBean" scope="prototype" class="org.jallinone.registers.carrier.server.CarriersBean">
+     <property name="dataSource" ref="JALLINONE" />
+   </bean>
+   <bean id="CurrenciesBean" scope="prototype" class="org.jallinone.registers.currency.server.CurrenciesBean">
+     <property name="dataSource" ref="JALLINONE" />
+   </bean>
+   <bean id="MeasuresBean" scope="prototype" class="org.jallinone.registers.measure.server.MeasuresBean">
+     <property name="dataSource" ref="JALLINONE" />
+   </bean>
+   <bean id="PaymentsBean" scope="prototype" class="org.jallinone.registers.payments.server.PaymentsBean">
+     <property name="dataSource" ref="JALLINONE" />
+   </bean>
+   <bean id="TasksBean" scope="prototype" class="org.jallinone.registers.task.server.TasksBean">
+     <property name="dataSource" ref="JALLINONE" />
+   </bean>
+   <bean id="TransportMotivesBean" scope="prototype" class="org.jallinone.registers.transportmotives.server.TransportMotivesBean">
+     <property name="dataSource" ref="JALLINONE" />
+   </bean>
+   <bean id="VatsBean" scope="prototype" class="org.jallinone.registers.vat.server.VatsBean">
+     <property name="dataSource" ref="JALLINONE" />
+   </bean>
+   <bean id="SaleActivitiesBean" scope="prototype" class="org.jallinone.sales.activities.server.SaleActivitiesBean">
+     <property name="dataSource" ref="JALLINONE" />
+   </bean>
+   <bean id="AgentsBean" scope="prototype" class="org.jallinone.sales.agents.server.AgentsBean">
+     <property name="dataSource" ref="JALLINONE" />
+   </bean>
+   <bean id="ChargesBean" scope="prototype" class="org.jallinone.sales.charges.server.ChargesBean">
+     <property name="dataSource" ref="JALLINONE" />
+   </bean>
+   <bean id="CustomersBean" scope="prototype" class="org.jallinone.sales.customers.server.CustomersBean">
+     <property name="dataSource" ref="JALLINONE" />
+     <property name="accountAction" ref="AccountsBean" />
+     <property name="peopleBean" ref="PeopleBean" />
+     <property name="organizationBean" ref="OrganizationBean" />
+   </bean>
+   <bean id="DestinationsBean" scope="prototype" class="org.jallinone.sales.destinations.server.DestinationsBean">
+     <property name="dataSource" ref="JALLINONE" />
+   </bean>
+   <bean id="CustomerDiscountsBean" scope="prototype" class="org.jallinone.sales.discounts.server.CustomerDiscountsBean">
+     <property name="dataSource" ref="JALLINONE" />
+     <property name="discountBean" ref="DiscountBean" />
+   </bean>
+   <bean id="HierarCustomerDiscountsBean" scope="prototype" class="org.jallinone.sales.discounts.server.HierarCustomerDiscountsBean">
+     <property name="dataSource" ref="JALLINONE" />
+     <property name="discountBean" ref="DiscountBean" />
+   </bean>
+   <bean id="HierarItemDiscountsBean" scope="prototype" class="org.jallinone.sales.discounts.server.HierarItemDiscountsBean">
+     <property name="dataSource" ref="JALLINONE" />
+     <property name="discountBean" ref="DiscountBean" />
+   </bean>
+   <bean id="ItemDiscountsBean" scope="prototype" class="org.jallinone.sales.discounts.server.ItemDiscountsBean">
+     <property name="dataSource" ref="JALLINONE" />
+     <property name="discountBean" ref="DiscountBean" />
+   </bean>
+   <bean id="InsertSaleDocActivitiesBean" scope="prototype" class="org.jallinone.sales.documents.activities.server.InsertSaleDocActivitiesBean">
+     <property name="dataSource" ref="JALLINONE" />
+     <property name="totals" ref="UpdateTaxableIncomesBean" />
+     <property name="bean" ref="SaleDocActivitiesBean" />
+   </bean>
+   <bean id="SaleDocActivitiesBean" scope="prototype" class="org.jallinone.sales.documents.activities.server.SaleDocActivitiesBean">
+     <property name="dataSource" ref="JALLINONE" />
+     <property name="totals" ref="UpdateTaxableIncomesBean" />
+     <property name="totalBean" ref="SaleDocTotalsBean" />
+     <property name="docBean" ref="LoadSaleDocBean" />
+     <property name="rowBean" ref="SaleDocRowsBean" />
+   </bean>
+   <bean id="SaleDocChargesBean" scope="prototype" class="org.jallinone.sales.documents.headercharges.server.SaleDocChargesBean">
+     <property name="dataSource" ref="JALLINONE" />
+     <property name="totals" ref="UpdateTaxableIncomesBean" />
+     <property name="totalBean" ref="SaleDocTotalsBean" />
+     <property name="docBean" ref="LoadSaleDocBean" />
+     <property name="rowBean" ref="SaleDocRowsBean" />
+   </bean>
+   <bean id="SaleDocDiscountsBean" scope="prototype" class="org.jallinone.sales.documents.headerdiscounts.server.SaleDocDiscountsBean">
+     <property name="dataSource" ref="JALLINONE" />
+     <property name="totals" ref="UpdateTaxableIncomesBean" />
+     <property name="totalBean" ref="SaleDocTotalsBean" />
+     <property name="docBean" ref="LoadSaleDocBean" />
+     <property name="rowBean" ref="SaleDocRowsBean" />
+     <property name="discountBean" ref="DiscountBean" />
+   </bean>
+   <bean id="SaleDocRowDiscountsBean" scope="prototype" class="org.jallinone.sales.documents.itemdiscounts.server.SaleDocRowDiscountsBean">
+     <property name="dataSource" ref="JALLINONE" />
+     <property name="totals" ref="UpdateTaxableIncomesBean" />
+     <property name="totalBean" ref="SaleDocTotalsBean" />
+     <property name="docBean" ref="LoadSaleDocBean" />
+     <property name="loadSaleDocRowBean" ref="LoadSaleDocRowBean" />
+     <property name="itemDiscountBean" ref="SaleItemTotalDiscountBean" />
+     <property name="discountBean" ref="DiscountBean" />
+     <property name="bean" ref="InsertSaleDocRowDiscountsBean" />
+   </bean>
+   <bean id="InsertSaleDocRowDiscountBean" scope="prototype" class="org.jallinone.sales.documents.itemdiscounts.server.InsertSaleDocRowDiscountBean">
+     <property name="dataSource" ref="JALLINONE" />
+   </bean>
+   <bean id="InsertSaleDocRowDiscountsBean" scope="prototype" class="org.jallinone.sales.documents.itemdiscounts.server.InsertSaleDocRowDiscountsBean">
+     <property name="dataSource" ref="JALLINONE" />
+     <property name="totals" ref="UpdateTaxableIncomesBean" />
+     <property name="bean" ref="InsertSaleDocRowDiscountBean" />
+   </bean>
+   <bean id="CloseSaleDocBean" scope="prototype" class="org.jallinone.sales.documents.server.CloseSaleDocBean">
+     <property name="dataSource" ref="JALLINONE" />
+     <property name="rowsAction" ref="LoadSaleDocRowsBean" />
+     <property name="docAction" ref="LoadSaleDocBean" />
+     <property name="availAction" ref="ItemAvailabilitiesBean" />
+     <property name="movBean" ref="AddMovementBean" />
+     <property name="expAction" ref="ExportRetailSaleOnFileBean" />
+     <property name="payAction" ref="PaymentsBean" />
+     <property name="insJornalItemAction" ref="InsertJournalItemBean" />
+     <property name="taxableIncomeAction" ref="UpdateTaxableIncomesBean" />
+     <property name="vatRegisterAction" ref="AccountingMovementsBean" />
+     <property name="parsBean" ref="ParamsBean" />
+     <property name="loadSaleDocRowBean" ref="LoadSaleDocRowBean" />
+   </bean>
+   <bean id="ConfirmSaleDocBean" scope="prototype" class="org.jallinone.sales.documents.server.ConfirmSaleDocBean">
+     <property name="dataSource" ref="JALLINONE" />
+     <property name="bean" ref="SaleDocsBean" />
+     <property name="rowsBean" ref="LoadSaleDocRowsBean" />
+     <property name="insbean" ref="InsertSaleItemBean" />
+     <property name="loadSaleDocBean" ref="LoadSaleDocBean" />
+     <property name="loadSaleDocRowBean" ref="LoadSaleDocRowBean" />
+   </bean>
+   <bean id="CreateInvoiceFromOutDelivNotesBean" scope="prototype" class="org.jallinone.sales.documents.server.CreateInvoiceFromOutDelivNotesBean">
+     <property name="dataSource" ref="JALLINONE" />
+     <property name="rowsAction" ref="LoadSaleDocRowsBean" />
+     <property name="docAction" ref="SaleDocsBean" />
+     <property name="custAction" ref="CustomersBean" />
+     <property name="chargesAction" ref="SaleDocChargesBean" />
+     <property name="actAction" ref="SaleDocActivitiesBean" />
+     <property name="discAction" ref="SaleDocDiscountsBean" />
+     <property name="itemDiscAction" ref="SaleDocRowDiscountsBean" />
+     <property name="totals" ref="UpdateTaxableIncomesBean" />
+     <property name="bean" ref="InsertSaleItemBean" />
+     <property name="loadSaleDocBean" ref="LoadSaleDocBean" />
+     <property name="insBean" ref="InsertSaleDocRowDiscountBean" />
+     <property name="loadSaleDocRowBean" ref="LoadSaleDocRowBean" />
+   </bean>
+   <bean id="CreateInvoiceFromSaleDocBean" scope="prototype" class="org.jallinone.sales.documents.server.CreateInvoiceFromSaleDocBean">
+     <property name="dataSource" ref="JALLINONE" />
+     <property name="rowsAction" ref="LoadSaleDocRowsBean" />
+     <property name="docAction" ref="SaleDocsBean" />
+     <property name="custAction" ref="CustomersBean" />
+     <property name="chargesAction" ref="SaleDocChargesBean" />
+     <property name="actAction" ref="SaleDocActivitiesBean" />
+     <property name="discAction" ref="SaleDocDiscountsBean" />
+     <property name="itemDiscAction" ref="SaleDocRowDiscountsBean" />
+     <property name="totals" ref="UpdateTaxableIncomesBean" />
+     <property name="bean" ref="InsertSaleItemBean" />
+     <property name="loadSaleDocBean" ref="LoadSaleDocBean" />
+     <property name="insBean" ref="InsertSaleDocRowDiscountBean" />
+     <property name="loadSaleDocRowBean" ref="LoadSaleDocRowBean" />
+   </bean>
+   <bean id="CreateSaleDocFromEstimateBean" scope="prototype" class="org.jallinone.sales.documents.server.CreateSaleDocFromEstimateBean">
+     <property name="dataSource" ref="JALLINONE" />
+     <property name="rowsAction" ref="LoadSaleDocRowsBean" />
+     <property name="docAction" ref="SaleDocsBean" />
+     <property name="custAction" ref="CustomersBean" />
+     <property name="chargesAction" ref="SaleDocChargesBean" />
+     <property name="actAction" ref="SaleDocActivitiesBean" />
+     <property name="discAction" ref="SaleDocDiscountsBean" />
+     <property name="itemDiscAction" ref="SaleDocRowDiscountsBean" />
+     <property name="totals" ref="UpdateTaxableIncomesBean" />
+     <property name="bean" ref="InsertSaleItemBean" />
+     <property name="loadSaleDocBean" ref="LoadSaleDocBean" />
+     <property name="insBean" ref="InsertSaleDocRowDiscountBean" />
+     <property name="loadSaleDocRowBean" ref="LoadSaleDocRowBean" />
+   </bean>
+
+   <bean id="InsertSaleItemBean" scope="prototype" class="org.jallinone.sales.documents.server.InsertSaleItemBean">
+     <property name="dataSource" ref="JALLINONE" />
+     <property name="totals" ref="UpdateTaxableIncomesBean" />
+   </bean>
+   <bean id="SaleDocRowsBean" scope="prototype" class="org.jallinone.sales.documents.server.SaleDocRowsBean">
+     <property name="dataSource" ref="JALLINONE" />
+     <property name="totals" ref="UpdateTaxableIncomesBean" />
+     <property name="serialNumBean" ref="InsertSaleSerialNumbersBean" />
+     <property name="bean" ref="InsertSaleItemBean" />
+     <property name="loadSaleDocRowBean" ref="LoadSaleDocRowBean" />
+   </bean>
+
+   <bean id="LoadSaleDocBean" scope="prototype" class="org.jallinone.sales.documents.server.LoadSaleDocBean">
+     <property name="dataSource" ref="JALLINONE" />
+   </bean>
+
+   <bean id="SaleDocsBean" scope="prototype" class="org.jallinone.sales.documents.server.SaleDocsBean">
+     <property name="dataSource" ref="JALLINONE" />
+     <property name="payBean" ref="PaymentsBean" />
+     <property name="currBean" ref="CurrenciesBean" />
+     <property name="userBean" ref="ParamsBean" />
+     <property name="totals" ref="UpdateTaxableIncomesBean" />
+     <property name="bean" ref="LoadSaleDocBean" />
+   </bean>
+   <bean id="LoadItemsSoldToOtherCustomersBean" scope="prototype" class="org.jallinone.sales.documents.server.LoadItemsSoldToOtherCustomersBean">
+     <property name="dataSource" ref="JALLINONE" />
+   </bean>
+   <bean id="LoadOutDeliveryNotesForSaleDocBean" scope="prototype" class="org.jallinone.sales.documents.server.LoadOutDeliveryNotesForSaleDocBean">
+     <property name="dataSource" ref="JALLINONE" />
+   </bean>
+   <bean id="LoadPriceItemsBean" scope="prototype" class="org.jallinone.sales.documents.server.LoadPriceItemsBean">
+     <property name="dataSource" ref="JALLINONE" />
+   </bean>
+   <bean id="LoadSaleDocAndDelivNoteRowsBean" scope="prototype" class="org.jallinone.sales.documents.server.LoadSaleDocAndDelivNoteRowsBean">
+     <property name="dataSource" ref="JALLINONE" />
+     <property name="convBean" ref="MeasuresBean" />
+   </bean>
+   <bean id="SaleDocTotalsBean" scope="prototype" class="org.jallinone.sales.documents.server.SaleDocTotalsBean">
+     <property name="dataSource" ref="JALLINONE" />
+     <property name="vatBean" ref="VatsBean" />
+     <property name="docAction" ref="LoadSaleDocBean" />
+   </bean>
+   <bean id="SaleItemTotalDiscountBean" scope="prototype" class="org.jallinone.sales.documents.server.SaleItemTotalDiscountBean">
+     <property name="dataSource" ref="JALLINONE" />
+   </bean>
+   <bean id="ValidatePriceItemCodeBean" scope="prototype" class="org.jallinone.sales.documents.server.ValidatePriceItemCodeBean">
+     <property name="dataSource" ref="JALLINONE" />
+   </bean>
+   <bean id="SalePricelistsBean" scope="prototype" class="org.jallinone.sales.pricelist.server.SalePricelistsBean">
+     <property name="dataSource" ref="JALLINONE" />
+   </bean>
+   <bean id="SalePricesBean" scope="prototype" class="org.jallinone.sales.pricelist.server.SalePricesBean">
+     <property name="dataSource" ref="JALLINONE" />
+   </bean>
+   <bean id="ScheduledActivitiesBean" scope="prototype" class="org.jallinone.scheduler.activities.server.ScheduledActivitiesBean">
+     <property name="dataSource" ref="JALLINONE" />
+   </bean>
+   <bean id="SchedulerAttachedDocsBean" scope="prototype" class="org.jallinone.scheduler.activities.server.SchedulerAttachedDocsBean">
+     <property name="dataSource" ref="JALLINONE" />
+   </bean>
+   <bean id="ScheduledEmployeesBean" scope="prototype" class="org.jallinone.scheduler.activities.server.ScheduledEmployeesBean">
+     <property name="dataSource" ref="JALLINONE" />
+   </bean>
+   <bean id="ScheduledItemsBean" scope="prototype" class="org.jallinone.scheduler.activities.server.ScheduledItemsBean">
+     <property name="dataSource" ref="JALLINONE" />
+   </bean>
+   <bean id="ScheduledMachineriesBean" scope="prototype" class="org.jallinone.scheduler.activities.server.ScheduledMachineriesBean">
+     <property name="dataSource" ref="JALLINONE" />
+   </bean>
+   <bean id="CreateInvoiceFromScheduledActivityBean" scope="prototype" class="org.jallinone.scheduler.callouts.server.CreateInvoiceFromScheduledActivityBean">
+     <property name="dataSource" ref="JALLINONE" />
+     <property name="saleDoc" ref="SaleDocsBean" />
+     <property name="insItemRow" ref="InsertSaleItemBean" />
+     <property name="insActRow" ref="SaleDocActivitiesBean" />
+     <property name="loadItemsRow" ref="ScheduledItemsBean" />
+     <property name="price" ref="ValidatePriceItemCodeBean" />
+     <property name="totals" ref="UpdateTaxableIncomesBean" />
+   </bean>
+   <bean id="CallOutItemsBean" scope="prototype" class="org.jallinone.scheduler.callouts.server.CallOutItemsBean">
+     <property name="dataSource" ref="JALLINONE" />
+   </bean>
+   <bean id="CallOutMachineriesBean" scope="prototype" class="org.jallinone.scheduler.callouts.server.CallOutMachineriesBean">
+     <property name="dataSource" ref="JALLINONE" />
+   </bean>
+   <bean id="CallOutRequestsBean" scope="prototype" class="org.jallinone.scheduler.callouts.server.CallOutRequestsBean">
+     <property name="dataSource" ref="JALLINONE" />
+     <property name="delAct" ref="ScheduledActivitiesBean" />
+   </bean>
+   <bean id="CallOutsBean" scope="prototype" class="org.jallinone.scheduler.callouts.server.CallOutsBean">
+     <property name="dataSource" ref="JALLINONE" />
+   </bean>
+   <bean id="CallOutTasksBean" scope="prototype" class="org.jallinone.scheduler.callouts.server.CallOutTasksBean">
+     <property name="dataSource" ref="JALLINONE" />
+   </bean>
+   <bean id="CallOutTypesBean" scope="prototype" class="org.jallinone.scheduler.callouts.server.CallOutTypesBean">
+     <property name="dataSource" ref="JALLINONE" />
+   </bean>
+   <bean id="LinkScheduledActivityToCallOutRequestBean" scope="prototype" class="org.jallinone.scheduler.callouts.server.LinkScheduledActivityToCallOutRequestBean">
+     <property name="dataSource" ref="JALLINONE" />
+     <property name="insAct" ref="ScheduledActivitiesBean" />
+     <property name="updReq" ref="CallOutRequestsBean" />
+   </bean>
+   <bean id="SubjectsBean" scope="prototype" class="org.jallinone.subjects.server.SubjectsBean">
+     <property name="dataSource" ref="JALLINONE" />
+     <property name="peopleBean" ref="PeopleBean" />
+     <property name="orgBean" ref="OrganizationBean" />
+   </bean>
+   <bean id="CompaniesBean" scope="prototype" class="org.jallinone.system.companies.server.CompaniesBean">
+     <property name="dataSource" ref="JALLINONE" />
+     <property name="bean" ref="OrganizationBean" />
+   </bean>
+   <bean id="DeleteCustomFunctionsBean" scope="prototype" class="org.jallinone.system.customizations.server.DeleteCustomFunctionsBean">
+     <property name="dataSource" ref="JALLINONE" />
+   </bean>
+   <bean id="DeleteWindowCustomizationsBean" scope="prototype" class="org.jallinone.system.customizations.server.DeleteWindowCustomizationsBean">
+     <property name="dataSource" ref="JALLINONE" />
+   </bean>
+   <bean id="InsertCustomFunctionBean" scope="prototype" class="org.jallinone.system.customizations.server.InsertCustomFunctionBean">
+     <property name="dataSource" ref="JALLINONE" />
+   </bean>
+   <bean id="InsertWindowCustomizationsBean" scope="prototype" class="org.jallinone.system.customizations.server.InsertWindowCustomizationsBean">
+     <property name="dataSource" ref="JALLINONE" />
+   </bean>
+   <bean id="LoadCustomColumnsBean" scope="prototype" class="org.jallinone.system.customizations.server.LoadCustomColumnsBean">
+     <property name="dataSource" ref="JALLINONE" />
+   </bean>
+   <bean id="LoadCustomFunctionBean" scope="prototype" class="org.jallinone.system.customizations.server.LoadCustomFunctionBean">
+     <property name="dataSource" ref="JALLINONE" />
+   </bean>
+   <bean id="LoadCustomFunctionsBean" scope="prototype" class="org.jallinone.system.customizations.server.LoadCustomFunctionsBean">
+     <property name="dataSource" ref="JALLINONE" />
+   </bean>
+   <bean id="LoadCustomizedReportsBean" scope="prototype" class="org.jallinone.system.customizations.server.LoadCustomizedReportsBean">
+     <property name="dataSource" ref="JALLINONE" />
+   </bean>
+   <bean id="LoadWindowCustomizationsBean" scope="prototype" class="org.jallinone.system.customizations.server.LoadWindowCustomizationsBean">
+     <property name="dataSource" ref="JALLINONE" />
+   </bean>
+   <bean id="UpdateCustomColumnsBean" scope="prototype" class="org.jallinone.system.customizations.server.UpdateCustomColumnsBean">
+     <property name="dataSource" ref="JALLINONE" />
+   </bean>
+   <bean id="UpdateCustomFunctionBean" scope="prototype" class="org.jallinone.system.customizations.server.UpdateCustomFunctionBean">
+     <property name="dataSource" ref="JALLINONE" />
+   </bean>
+   <bean id="UpdateCustomReportsBean" scope="prototype" class="org.jallinone.system.customizations.server.UpdateCustomReportsBean">
+     <property name="dataSource" ref="JALLINONE" />
+   </bean>
+   <bean id="UpdateWindowCustomizationsBean" scope="prototype" class="org.jallinone.system.customizations.server.UpdateWindowCustomizationsBean">
+     <property name="dataSource" ref="JALLINONE" />
+   </bean>
+   <bean id="DeleteETLProcessesBean" scope="prototype" class="org.jallinone.system.importdata.server.DeleteETLProcessesBean">
+     <property name="dataSource" ref="JALLINONE" />
+   </bean>
+   <bean id="GetFolderContentBean" scope="prototype" class="org.jallinone.system.importdata.server.GetFolderContentBean">
+     <property name="dataSource" ref="JALLINONE" />
+   </bean>
+   <bean id="GetFileContentBean" scope="prototype" class="org.jallinone.system.importdata.server.GetFileContentBean">
+     <property name="dataSource" ref="JALLINONE" />
+   </bean>
+   <bean id="InsertETLProcessBean" scope="prototype" class="org.jallinone.system.importdata.server.InsertETLProcessBean">
+     <property name="dataSource" ref="JALLINONE" />
+     <property name="bean" ref="DeleteETLProcessesBean" />
+   </bean>
+   <bean id="LoadETLProcessesBean" scope="prototype" class="org.jallinone.system.importdata.server.LoadETLProcessesBean">
+     <property name="dataSource" ref="JALLINONE" />
+   </bean>
+   <bean id="LoadETLProcessBean" scope="prototype" class="org.jallinone.system.importdata.server.LoadETLProcessBean">
+     <property name="dataSource" ref="JALLINONE" />
+   </bean>
+   <bean id="LoadSelectableFieldsBean" scope="prototype" class="org.jallinone.system.importdata.server.LoadSelectableFieldsBean">
+     <property name="dataSource" ref="JALLINONE" />
+     <property name="bean" ref="LoadETLProcessFieldsBean" />
+     <property name="langsBean" ref="LanguagesBean" />
+   </bean>
+   <bean id="LoadETLProcessFieldsBean" scope="prototype" class="org.jallinone.system.importdata.server.LoadETLProcessFieldsBean">
+     <property name="dataSource" ref="JALLINONE" />
+   </bean>
+   <bean id="StartETLProcessBean" scope="prototype" class="org.jallinone.system.importdata.server.StartETLProcessBean">
+     <property name="dataSource" ref="JALLINONE" />
+     <property name="bean" ref="ImportDataBean" />
+     <property name="fieldsBean" ref="LoadETLProcessFieldsBean" />
+     <property name="langsBean" ref="LanguagesBean" />
+   </bean>
+
+   <bean id="LoadLanguagesBean" scope="prototype" class="org.jallinone.system.server.LoadLanguagesBean">
+     <property name="dataSource" ref="JALLINONE" />
+   </bean>
+
+   <bean id="LanguagesBean" scope="prototype" class="org.jallinone.system.languages.server.LanguagesBean">
+     <property name="dataSource" ref="JALLINONE" />
+   </bean>
+   <bean id="RolesBean" scope="prototype" class="org.jallinone.system.permissions.server.RolesBean">
+     <property name="dataSource" ref="JALLINONE" />
+   </bean>
+   <bean id="UsersBean" scope="prototype" class="org.jallinone.system.permissions.server.UsersBean">
+     <property name="dataSource" ref="JALLINONE" />
+     <property name="loadCompaniesAction" ref="CompaniesBean" />
+   </bean>
+   <bean id="FunctionsBean" scope="prototype" class="org.jallinone.system.permissions.server.FunctionsBean">
+     <property name="dataSource" ref="JALLINONE" />
+   </bean>
+   <bean id="ParamsBean" scope="prototype" class="org.jallinone.system.server.ParamsBean">
+     <property name="dataSource" ref="JALLINONE" />
+     <property name="custBean" ref="CustomersBean" />
+     <property name="wareBean" ref="WarehousesBean" />
+   </bean>
+   <bean id="UserAuthorizationsBean" scope="prototype" class="org.jallinone.system.server.UserAuthorizationsBean">
+     <property name="dataSource" ref="JALLINONE" />
+   </bean>
+   <bean id="UserLoginBean" scope="prototype" class="org.jallinone.system.server.UserLoginBean">
+     <property name="dataSource" ref="JALLINONE" />
+   </bean>
+   <bean id="TranslationsBean" scope="prototype" class="org.jallinone.system.translations.server.TranslationsBean">
+     <property name="dataSource" ref="JALLINONE" />
+   </bean>
+   <bean id="VariantsBean" scope="prototype" class="org.jallinone.variants.server.VariantsBean">
+     <property name="dataSource" ref="JALLINONE" />
+   </bean>
+   <bean id="VariantTypesBean" scope="prototype" class="org.jallinone.variants.server.VariantTypesBean">
+     <property name="dataSource" ref="JALLINONE" />
+   </bean>
+   <bean id="ItemAvailabilitiesBean" scope="prototype" class="org.jallinone.warehouse.availability.server.ItemAvailabilitiesBean">
+     <property name="dataSource" ref="JALLINONE" />
+   </bean>
+   <bean id="DeliveryNotesBean" scope="prototype" class="org.jallinone.warehouse.documents.server.DeliveryNotesBean">
+     <property name="dataSource" ref="JALLINONE" />
+     <property name="inQtyBean" ref="InDeliveryNotesBean" />
+     <property name="outQtyBean" ref="OutDeliveryNotesBean" />
+   </bean>
+   <bean id="WarehouseUtilsBean" scope="prototype" class="org.jallinone.warehouse.documents.server.WarehouseUtilsBean">
+     <property name="dataSource" ref="JALLINONE" />
+     <property name="convBean" ref="MeasuresBean" />
+   </bean>
+   <bean id="InDeliveryNotesBean" scope="prototype" class="org.jallinone.warehouse.documents.server.InDeliveryNotesBean">
+     <property name="dataSource" ref="JALLINONE" />
+     <property name="movBean" ref="AddMovementBean" />
+     <property name="bean" ref="WarehouseUtilsBean" />
+     <property name="convBean" ref="MeasuresBean" />
+   </bean>
+   <bean id="OutDeliveryNotesBean" scope="prototype" class="org.jallinone.warehouse.documents.server.OutDeliveryNotesBean">
+     <property name="dataSource" ref="JALLINONE" />
+     <property name="movBean" ref="AddMovementBean" />
+     <property name="bean" ref="WarehouseUtilsBean" />
+     <property name="loadSaleDocBean" ref="LoadSaleDocBean" />
+   </bean>
+   <bean id="WarehousesBean" scope="prototype" class="org.jallinone.warehouse.server.WarehousesBean">
+     <property name="dataSource" ref="JALLINONE" />
+   </bean>
+   <bean id="WarehouseMotivesBean" scope="prototype" class="org.jallinone.warehouse.tables.motives.server.WarehouseMotivesBean">
+     <property name="dataSource" ref="JALLINONE" />
+   </bean>
+   <bean id="LoadMovementsBean" scope="prototype" class="org.jallinone.warehouse.tables.movements.server.LoadMovementsBean">
+     <property name="dataSource" ref="JALLINONE" />
+   </bean>
+   <bean id="PurchaseDocTaxableIncomesBean" scope="prototype" class="org.jallinone.purchases.documents.server.PurchaseDocTaxableIncomesBean">
+     <property name="dataSource" ref="JALLINONE" />
+     <property name="vatBean" ref="VatsBean" />
+     <property name="docAction" ref="LoadPurchaseDocBean" />
+   </bean>
+   <bean id="DiscountBean" scope="prototype" class="org.jallinone.sales.discounts.server.DiscountBean">
+     <property name="dataSource" ref="JALLINONE" />
+   </bean>
+   <bean id="ExportRetailSaleOnFileBean" scope="prototype" class="org.jallinone.sales.documents.server.ExportRetailSaleOnFileBean">
+     <property name="dataSource" ref="JALLINONE" />
+     <property name="userParAction" ref="ParamsBean" />
+     <property name="companyAction" ref="CompaniesBean" />
+   </bean>
+   <bean id="InsertSaleSerialNumbersBean" scope="prototype" class="org.jallinone.sales.documents.server.InsertSaleSerialNumbersBean">
+     <property name="dataSource" ref="JALLINONE" />
+   </bean>
+   <bean id="SaleDocTaxableIncomesBean" scope="prototype" class="org.jallinone.sales.documents.server.SaleDocTaxableIncomesBean">
+     <property name="dataSource" ref="JALLINONE" />
+     <property name="vatBean" ref="VatsBean" />
+     <property name="docAction" ref="LoadSaleDocBean" />
+   </bean>
+   <bean id="CheckSubjectExistBean" scope="prototype" class="org.jallinone.subjects.server.CheckSubjectExistBean">
+     <property name="dataSource" ref="JALLINONE" />
+   </bean>
+   <bean id="OrganizationBean" scope="prototype" class="org.jallinone.subjects.server.OrganizationBean">
+     <property name="dataSource" ref="JALLINONE" />
+     <property name="bean" ref="CheckSubjectExistBean" />
+   </bean>
+   <bean id="PeopleBean" scope="prototype" class="org.jallinone.subjects.server.PeopleBean">
+     <property name="dataSource" ref="JALLINONE" />
+     <property name="bean" ref="CheckSubjectExistBean" />
+   </bean>
+   <bean id="ImportDataBean" scope="prototype" class="org.jallinone.system.importdata.server.ImportDataBean">
+     <property name="dataSource" ref="JALLINONE" />
+     <property name="bean" ref="CompanyHierarchiesBean" />
+   </bean>
+   <bean id="AddMovementBean" scope="prototype" class="org.jallinone.warehouse.movements.server.AddMovementBean">
+     <property name="dataSource" ref="JALLINONE" />
+   </bean>
+   <bean id="ManualMovementsBean" scope="prototype" class="org.jallinone.warehouse.movements.server.ManualMovementsBean">
+     <property name="dataSource" ref="JALLINONE" />
+     <property name="bean" ref="AddMovementBean" />
+   </bean>
+   <bean id="LoadSaleDocRowsBean" scope="prototype" class="org.jallinone.sales.documents.server.LoadSaleDocRowsBean">
+     <property name="dataSource" ref="JALLINONE" />
+   </bean>
+   <bean id="UpdateTaxableIncomesBean" scope="prototype" class="org.jallinone.sales.documents.server.UpdateTaxableIncomesBean">
+     <property name="dataSource" ref="JALLINONE" />
+     <property name="vatBean" ref="VatsBean" />
+     <property name="docBean" ref="LoadSaleDocBean" />
+     <property name="rowsBean" ref="LoadSaleDocRowsBean" />
+     <property name="itemDiscountBean" ref="SaleItemTotalDiscountBean" />
+     <property name="bean" ref="LoadSaleDocRowBean" />
+   </bean>
+   <bean id="LoadSaleDocRowBean" scope="prototype" class="org.jallinone.sales.documents.server.LoadSaleDocRowBean">
+     <property name="dataSource" ref="JALLINONE" />
+   </bean>
+   <bean id="InventoriesBean" scope="prototype" class="org.jallinone.warehouse.server.InventoriesBean">
+     <property name="dataSource" ref="JALLINONE" />
+     <property name="bean" ref="CompanyHierarchiesBean" />
+   </bean>
+   <bean id="ItemSheetsBean" scope="prototype" class="org.jallinone.items.spareparts.server.ItemSheetsBean">
+     <property name="dataSource" ref="JALLINONE" />
+   </bean>
+   <bean id="SetLevelImageBean" scope="prototype" class="org.jallinone.items.spareparts.server.SetLevelImageBean">
+     <property name="dataSource" ref="JALLINONE" />
+   </bean>
+
+
+</beans>
